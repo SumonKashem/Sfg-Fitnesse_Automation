@@ -66,8 +66,6 @@
 |elementVerification;|${SalesForce_SellLine_Original_Targets_Label_Text}|Yes|Original Targets Label|
 |elementVerification;|${SalesForce_SellLine_KPI_Information_Label_Text}|Yes|KPI Information Label|
 |elementVerification;|${SalesForce_SellLine_Primary_KPI_DropDown}|Yes|Primary KPI Dropdown|
-|elementVerification;|${SalesForce_SellLine_KPI_Type_DropDown}|Yes|KPI Type Dropdown|
-|elementVerification;|${SalesForce_KPI_Type_Value_Field}|Yes|KPI Type Value Field|
 |elementVerification;|${SalesForce_SellLine_Primary_KPI_Details_Field}|Yes|Primary KPI Details Field|
 |elementVerification;|${SalesForce_SellLine_Secondary_KPI_DropDown}|Yes|Secondary KPI Dropdown|
 |elementVerification;|${SalesForce_SellLine_Secondary_KPI_Details_Field}|Yes|Secondary KPI Details Field|

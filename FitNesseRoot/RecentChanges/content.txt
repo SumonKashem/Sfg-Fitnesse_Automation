@@ -1,3 +1,9 @@
+|BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest||13:52:05 Thu, Aug 30, 2018|
+|BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest||13:51:18 Thu, Aug 30, 2018|
+|BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest||13:51:00 Thu, Aug 30, 2018|
+|BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest||13:50:37 Thu, Aug 30, 2018|
+|BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest||13:50:22 Thu, Aug 30, 2018|
+|BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest||13:49:59 Thu, Aug 30, 2018|
 |BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test30CreateEmergentAccountTest||10:33:30 Thu, Aug 30, 2018|
 |BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test04CreateUsAccountTest||10:27:16 Thu, Aug 30, 2018|
 |BizOpsAutomation.ManageSuite.CanadaVariablesPage||10:18:46 Thu, Aug 30, 2018|
@@ -92,9 +98,3 @@
 |BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test15CreatePlistaAccountTest||16:47:02 Wed, Aug 01, 2018|
 |BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test05CreateLightReactionOpportunityTest||16:46:42 Wed, Aug 01, 2018|
 |BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test04CreateLightReactionAccountTest||16:46:29 Wed, Aug 01, 2018|
-|BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test26CreateLightReactionAccountTest||16:44:26 Wed, Aug 01, 2018|
-|BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test23CreatePlistaNonGroupmAccountTest||16:33:57 Wed, Aug 01, 2018|
-|BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test20CreatePlistaAccountTest||16:33:11 Wed, Aug 01, 2018|
-|BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test05CreateXaxisOpportunityTest||16:32:05 Wed, Aug 01, 2018|
-|BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test04CreateXaxisAccountTest||16:24:42 Wed, Aug 01, 2018|
-|BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test03CreateAdvertiserTest||16:11:40 Wed, Aug 01, 2018|
