@@ -1,0 +1,37 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** script below allows you to store a method 'getUniqueName' for reusability
+!|script|DriverClass|
+|$miamiLatamAgencyName=|getUniqueName;|LATAM Miami Agency|
+|$miamiLatamAdvertiserName=|getUniqueName;|LATAM Miami Advertiser|
+|$miamiLatamAccountName=|getUniqueName;|LATAM Miami Account|
+|$miamiLatamOppName=|getUniqueName;|LATAM Miami Opportunity|
+|$latamSLName_Xax=|getUniqueName;|LATAM Xax SL|
+|$latamSLName_Pl=|getUniqueName;|LATAM Pl SL|
+|$latamSLName_LR=|getUniqueName;|LATAM LR SL|
+|$latamBPName_LR=|getUniqueName;|LATAM LR BP|
+**********!
+
+!***** script below allows you to store a value in variables for Start & End date for reusability
+!define latamSellLineStartDate {01/10/2018}
+!define latamSellLineEndDate {31/12/2018}
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'numberOfDays' for reusability
+!|script|DriverClass|
+|$closeDateForlatamOpp=|getDesiredDateInFormat;|31|/|
+**********!
+
+!***** variable below allows you to store an latam user name
+!define SalesForce_LATAM_User_Name {Fernando Apolinar}
+**********!
+
+!***** variable below allows you to store an latam Agency Market Value
+!define SalesForce_LATAM_Agency_Market_Value {Miami}
+**********!
+
+!***** variable below allows you to store an latam Business Unit Value
+!define SalesForce_LATAM_Business_Unit_Value {Xaxis}
+**********!

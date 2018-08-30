@@ -1,0 +1,26 @@
+'''Scenario Name: ''' Clone an existing Canada Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   navitage to Opp URL
+   Click on 'Clone' opportunity button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test14Can-Clone an existing 'Canada' Opportunity|
+|open;|$ntamOpportunityPageUrl|
+|clickByJavaScript;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|wait;|800|
+|type;|${SalesForce_Opportunities_Name_Field}|$ntamOppName Cloned|Opportunity Name Field|
+|clickByJavaScript;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|$ntamOppName Cloned|Opportunity Detail Page|
+|stopExtentReport;|
+**********!

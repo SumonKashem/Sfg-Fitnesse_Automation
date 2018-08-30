@@ -1,0 +1,167 @@
+Cases variables defined here...
+
+!define SalesForce_Cases_LR_Germany_PO_Button {//*[@name="lr_germany_po"]}
+!define SalesForce_Cases_RTA_Consultation_Button {//*[@name="rta_consultation"]}
+!define SalesForce_Cases_RTA_Proposal_Briefing_Button {//*[@name="rta_proposal_briefing"]}
+!define SalesForce_Cases_Link {//*[@title="Cases"]}
+!define SalesForce_Cases_Client_IO_Button {//*[@title="Client IO"]}
+!define SalesForce_Cases_Edit_Button {//*[@title="Edit"]}
+!define SalesForce_Cases_Cancel_Button {//*[@title="Cancel"]}
+!define SalesForce_Cases_Close_Case_Button {//*[@title="Close Case"]}
+!define SalesForce_Cases_Tab {//*[@id="Case_Tab"]}
+!define SalesForce_Cases_New_Button {//*[@name="new"]}
+!define SalesForce_Cases_Record_Type_Dropdown {//*[@id="p3"]}
+!define SalesForce_Cases_Continue_Button {//*[@title="Continue"]}
+!define SalesForce_Cases_Account_Name_Field {//*[@id="cas4"]}
+!define SalesForce_Cases_Opp_Name_Field {//*[@id="CF00Ni000000COiX6"]}
+!define SalesForce_Cases_Market_Dropdown {//*[@id="00Ni000000DPgCx"]}
+!define SalesForce_Cases_Status_Dropdown {//*[@id="cas7"]}
+!define SalesForce_Cases_Priority_Dropdown {//*[@id="cas8"]}
+!define SalesForce_Cases_Reason_Dropdown {//*[@id="cas6"]}
+!define SalesForce_Cases_Type_Dropdown {//*[@id="cas5"]}
+!define SalesForce_Cases_Time_Spent_Field {//*[@id="00Ni000000COiX1"]}
+!define SalesForce_Cases_Save_Button {//*[@class="btn" and @name="save"]}
+!define SalesForce_Cases_Record_Type_Text {//*[@id="RecordType_ileinner"]}
+!define SalesForce_Cases_New_Owner_Field {//*[@id="newOwn"]}
+!define SalesForce_Cases_Status_Text_Field {//*[@id="cas7_ileinner"]}
+
+!define SalesForce_Cases_BC_Account_Field {//*[@id="CF00Ni000000FsnLB"]}
+!define SalesForce_Cases_BC_Opp_Field {//*[@id="CF00Ni000000FsnLG"]}
+!define SalesForce_Cases_BC_Currency_Dropdown {//*[@id="cas24"]}
+!define SalesForce_Cases_BC_Status_Dropdown {//*[@id="cas7"]}
+!define SalesForce_Cases_BC_Case_Origin_Dropdown {//*[@id="cas11"]}
+!define SalesForce_Cases_BC_Subject_Field {//*[@id="cas14"]}
+!define SalesForce_Cases_BC_Description_Field {//*[@id="cas15"]}
+!define SalesForce_Cases_BC_Detail_Tab {//*[@class="optionLabel" and text()="Details"]}
+!define SalesForce_Cases_Amendment_Details_Field {//*[@id="00N5A00000GbwMe"]}
+!define SalesForce_Cases_Start_Date_Field {//*[@id="00N5A00000GbwLZ"]}
+!define SalesForce_Cases_Start_Date_Link {//*[@class="dateFormat"][@id="00N5A00000GbwLZ"]}
+!define SalesForce_Cases_Date_Format_Link {//*[@class="dateFormat"]/a}
+!define SalesForce_Cases_End_Date_Field {//*[@id="00N5A00000GbwKu"]}
+!define SalesForce_Cases_End_Date_Link {//*[@class="dateFormat"][@id="00N5A00000GbwKu"]}
+!define SalesForce_Cases_Due_Date_Field {//*[@id="00Ni000000EGupF"]}
+!define SalesForce_Cases_Due_Date_Link {//*[@class="dateFormat"][@id="00Ni000000EGupF"]}
+!define SalesForce_Cases_Data_Sources_Right_Arrow {//*[@id="00N5A00000GbwLY_right_arrow"]}
+!define SalesForce_Cases_Data_Sources_Picklist {//*[@id="00N5A00000GbwLY_unselected"]}
+!define SalesForce_Cases_Radia_Campaign_Setup_Case_Button {//*[@name="radia_campaign_setup_case"]}
+!define SalesForce_Cases_DSP_Cutovers_Button {//*[@name="dsp_cutovers"]}
+!define SalesForce_Cases_NTAM_Ad_Labs_Button {//*[@name="ntam_ad_labs"]}
+!define SalesForce_Cases_ActionX_Button {//*[@name="actionx"]}
+!define SalesForce_Cases_Ad_Ops_Button {//*[@name="adops_case"]}
+!define SalesForce_Cases_Ad_Hoc_Request_Button {//*[@name="ad_hoc_request"]}
+!define SalesForce_Cases_Analytics_Button {//*[@name="analytics"]}
+!define SalesForce_Cases_LATAM_Analytics_Request_Button {//*[@value="LATAM Analytics Request"]}
+!define SalesForce_Cases_LATAM_Spotlight_Request_Button {//*[@value="LATAM Spotlight Request"]}
+!define SalesForce_Cases_Turbine_Button {//*[@name="turbine"]}
+!define SalesForce_Cases_Technical_Operation_Button {//*[@name="technical_operation"]}
+!define SalesForce_Cases_BC_Campaign_Setup_Button {//*[@name="bc_campaign_setup"]}
+!define SalesForce_Cases_Campaign_Management_Button {//*[@name="campaign_management"]}
+!define SalesForce_Cases_Product_Support_Button {//*[@name="product_support"]}
+!define SalesForce_Cases_Audience_insights_Button {//*[@name="audience_insights"]}
+!define SalesForce_Cases_Brand_Uplift_Study_Button {//*[@name="brand_uplift_study"]}
+!define SalesForce_Cases_Optimisation_insights_Button {//*[@name="optimisation_insights"]}
+!define SalesForce_Cases_Performance_insights_Button {//*[@name="performance_insights"]}
+!define SalesForce_Cases_APac_Ad_Ops_Button {//*[@name="apac_ad_ops"]}
+!define SalesForce_Cases_Australia_Reporting_Button {//*[@name="australia_reporting"]}
+!define SalesForce_Cases_US_Analystics_Button {//*[@name="us_analytics"]}
+!define SalesForce_Cases_RTA_Campaign_Briefing_Button {//*[@name="rta_campaign_briefing"]}
+
+!define SalesForce_Cases_Assign_To_Field {//*[@id="CF00N5A00000HEP7R"]}
+!define SalesForce_Cases_Floodlights_Field {//*[@id="00N5A00000GbwLa"]}
+!define SalesForce_Cases_Platform_Dropdown {//*[@id="00Ni000000EIlgF"]}
+!define SalesForce_Cases_App_Sdk_Dropdown {//*[@id="00N3100000GvUdz"]}
+!define SalesForce_Cases_Mookied_Campaign_Dropdown {//*[@id="00Ni000000COiX5"]}
+!define SalesForce_Cases_Request_Details_Field {//*[@id="00N5A00000GOs5r"]}
+!define SalesForce_Cases_Due_Date_Field {//*[@id="00Ni000000EGupF"]}
+!define SalesForce_Cases_KPI_Field {//*[@id="00N5A00000GbwIj"]}
+!define SalesForce_Cases_KPI_Goal_Field {//*[@id="00Ni000000EGupG"]}
+!define SalesForce_Cases_Client_Overall_Goals_Field {//*[@id="00N5A00000GbwIk"]}
+!define SalesForce_Cases_DAX_Assignee_Comments_Field {//*[@id="00N5A00000GbwIl"]}
+!define SalesForce_Cases_Report_Goals_Field {//*[@id="00N5A00000GbwIr"]}
+!define SalesForce_Cases_Analysis_Type_Dropdown {//*[@id="00N5A00000GOs5i"]}
+!define SalesForce_Cases_Analysis_Checklist_Picklist {//*[@id="00N5A00000GOs5O_unselected"]}
+!define SalesForce_Cases_Analysis_Checklist_Right_Arrow {//*[@id="00N5A00000GOs5O_right_arrow"]}
+!define SalesForce_Cases_Required_Uploads_Picklist {//*[@id="00N5A00000GOs5s_unselected"]}
+!define SalesForce_Cases_Required_Uploads_Right_Arrow {//*[@id="00N5A00000GOs5s_right_arrow"]}
+!define SalesForce_Cases_Notes_For_Attributes_Field {//*[@id="00N5A00000GOs5j"]}
+!define SalesForce_Cases_Additional_Notes_Field {//*[@id="00N5A00000GOs5l"]}
+!define SalesForce_Cases_Report_Availability_Date_Field {//*[@id="00N5A00000GOs5p"]}
+!define SalesForce_Cases_Report_Status_Dropdown {//*[@id="00N5A00000GOs5q"]}
+!define SalesForce_Cases_Notes_For_Campaign_Goal_Field {//*[@id="00N5A00000GOs5k"]}
+
+!define SalesForce_Cases_Details_Page_Case_Owner_Field {//*[contains(@href,"00G5A000004WabE")]}
+!define SalesForce_Cases_Details_Page_Case_Owner_Field_2 {//*[@id="cas1_ileinner"]}
+!define SalesForce_Cases_Details_Page_Case_Owner_Change_Link {//*[@id="cas1_ileinner"]/a[contains(text(),"Change")]}
+!define SalesForce_Cases_Details_Record_Type_Field {//*[@id="RecordType_ileinner"]}
+
+!define SalesForce_Cases_Status_Error_Message {//*[@class="errorMsg"]}
+!define SalesForce_Cases_DAX_Assignee_Dropdown {//*[@id="CF00N5A00000GbwIm_mlktp"]}
+!define SalesForce_Cases_DAX_Assignee_Input_Field {//*[@id="CF00N5A00000GbwIm"]}
+!define SalesForce_Cases_Optimiser_Dropdown {//*[@id="CF00N5A00000GbwIo_mlktp"]}
+!define SalesForce_Cases_Optimiser_Input_Field {//*[@id="CF00N5A00000GbwIo"]}
+!define SalesForce_Cases_Report_Owner_Dropdown {//*[@id="CF00N5A00000GbwIs_mlktp"]}
+!define SalesForce_Cases_Report_Owner_Input_Field {//*[@id="CF00N5A00000GbwIs"]}
+!define SalesForce_Cases_Report_Audience_Dropdown {//*[@id="00N5A00000GbwIq"]}
+!define SalesForce_Cases_Report_Type_Dropdown {//*[@id="00N5A00000GbwIu"]}
+!define SalesForce_Cases_Report_Request_Due_Date_Field {//*[@id="00N5A00000GbwIv"]}
+
+!define SalesForce_Cases_Hub_Dropdown {//*[@id="00N3100000FuAbo"]}
+!define SalesForce_Cases_Request_Type_Dropdown {//*[@id="00Ni000000COiXA"]}
+!define SalesForce_Cases_Campaign_Type_Dropdown {//*[@id="00N3100000GvUe0"]}
+!define SalesForce_Cases_Hub_Field_Detail_Page {//*[@id="00N3100000FuAbo_ileinner"]}
+!define SalesForce_Cases_Product_Dropdown {//*[@id="00N3100000GjzRW"]}
+!define SalesForce_Cases_Contact_Name_Field {//*[@id="cas3"]}
+!define SalesForce_Cases_Contact_Name_Dropdown {//*[@id="cas3_lkid"]}
+!define SalesForce_Cases_Case_Edit_Label {//*[text()="Case Edit"]}
+
+!define SalesForce_Cases_Agency_Field {//*[@id="00N0q0000011xTm"]}
+!define SalesForce_Cases_Last_Quarter_Dropdown {//*[@id="00N5A00000HEPJk"]}
+!define SalesForce_Cases_Available_Adformats_Picklist {//*[@title="Available Adformats - Available"]}
+!define SalesForce_Cases_Available_Adformats_Right_Arrow {//*[@id="00N5A00000GbwNz_right_arrow"]}
+!define SalesForce_Cases_Type_Of_Report_Picklist {//*[@title="Type of Report - Available"]}
+!define SalesForce_Cases_Type_Of_Report_Right_Arrow {//*[@id="00N5A00000HEPJm_right_arrow"]}
+!define SalesForce_Cases_Type_Of_Analysis_Picklist {//*[@title="Type of Analysis - Available"]}
+!define SalesForce_Cases_Type_Of_Analysis_Right_Arrow {//*[@id="00N5A00000HEPJm_right_arrow"]}
+!define SalesForce_Cases_Internal_Contact_Name_Field {//*[@id="CF00N3100000HADb3"]}
+!define SalesForce_Cases_DSP_DMP_Field {//*[@id="00N5A00000HEPJi"]}
+!define SalesForce_Cases_Activity_Name_Field {//*[@id="00N0q0000011xTk"]}
+!define SalesForce_Cases_Requested_Info_Picklist {//*[@title="Requested Info - Available"]}
+!define SalesForce_Cases_Requested_Info_Right_Arrow {//*[@id="00N5A00000HEPJl_right_arrow"]}
+!define SalesForce_Cases_DSP_Dropdown {//*[@id="00N0t000000b4FZ"]}
+!define SalesForce_Cases_Upload_Type_Dropdown {//*[@id="00N0t000000b4Fd"]}
+!define SalesForce_Cases_Viewability_Picklist {//*[@title="Viewability - Available"]}
+!define SalesForce_Cases_Viewability_Right_Arrow {//*[@id="00N0t000000b4Fg_right_arrow"]}
+!define SalesForce_Cases_Secondary_User_Input_Field {//*[@id="CF00N3100000GxVXh"]}
+!define SalesForce_Cases_Troubleshoot_Type_Picklist {//*[@title="Troubleshoot Type - Available"]}
+!define SalesForce_Cases_Troubleshoot_Type_Right_Arrow {//*[@id="00N0t000000b4Fc_right_arrow"]}
+
+!define SalesForce_Cases_AppNexus_Seat_Id_Field {//*[@id="00N0t000000h5kj"]}
+!define SalesForce_Cases_AppNexus_Order_Id_Field {//*[@id="00Ni000000EGupC"]}
+!define SalesForce_Cases_KPI_Types_Field {//*[@id="00N0t000000h5kn"]}
+!define SalesForce_Cases_Inventory_Type_Picklist {//*[@title="Inventory type - Available"]}
+!define SalesForce_Cases_Inventory_Type_Right_Arrow {//*[@id="00N0t000000h5km_right_arrow"]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

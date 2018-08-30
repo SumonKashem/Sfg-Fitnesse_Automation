@@ -1,0 +1,61 @@
+'''Scenario Name: ''' Create an 'Audience Insights' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp Url
+   Scroll Into 'Audience Insights' Button
+   Click on 'Audience Insights' Button
+   Enter Opportunity Name $ausOpportunityName
+   Select Status as 'New'
+   Select Market as Australia
+   Select Analysis Type as 'Audience Profile'
+   Select Analysis Checklist as 'Turbine Tags implemented & activated 48 hours before'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Select Analysis Checklist as 'Tagged up Full User/Creative Journey/Conversion Funnel path'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Select Analysis Checklist as 'Tags have sufficient volume'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Select Required Uploads as 'Pixel Sheet Uploaded'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Enter Text on Notes for Attributes Field
+   Enter Due Date on Due Date Field
+   Enter Text on KPIs Field
+   Enter Text on Client Overall Goals Field
+   Enter Text on Report Goals Field
+   Click on 'Save' button
+   Verify Case Owner as 'APAC Insights & Analytics' on Case Detail page
+   Verify Case Record Type as 'APAC Analytics - Ad Hoc Request' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test16Aus-Create a Audience Insights Case|
+|open;|$ausOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_Ad_Hoc_Request_Button}|
+|click;|${SalesForce_Cases_Audience_insights_Button}|Audience Insights Button|
+|type;|${SalesForce_Cases_Opp_Name_Field}|$ausOpportunityName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Australia|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Type_Dropdown}|Audience Profile|Analysis Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Checklist_Picklist}|Turbine Tags implemented & activated 48 hours before|Analysis Checklist Picklist|
+|click;|${SalesForce_Cases_Analysis_Checklist_Right_Arrow}|Analysis Checklist Right Arrow|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Checklist_Picklist}|Tagged up Full User/Creative Journey/Conversion Funnel path|Analysis Checklist Picklist|
+|click;|${SalesForce_Cases_Analysis_Checklist_Right_Arrow}|Analysis Checklist Right Arrow|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Checklist_Picklist}|Tags have sufficient volume|Analysis Checklist Picklist|
+|click;|${SalesForce_Cases_Analysis_Checklist_Right_Arrow}|Analysis Checklist Right Arrow|
+|selectDropDownByText;|${SalesForce_Cases_Required_Uploads_Picklist}|Pixel Sheet Uploaded|Required Uploads Picklist|
+|click;|${SalesForce_Cases_Required_Uploads_Right_Arrow}|Required Uploads Right Arrow|
+|type;|${SalesForce_Cases_Notes_For_Attributes_Field}|Test|Notes for Attributes Field|
+|type;|${SalesForce_Cases_Due_Date_Field}|$audInsightsDueDate 00:00|Due Date Field|
+|type;|${SalesForce_Cases_KPI_Field}|Test|KPIs Field|
+|type;|${SalesForce_Cases_Client_Overall_Goals_Field}|Test|Client OVerall Goals Field|
+|type;|${SalesForce_Cases_Report_Goals_Field}|Test|Report Goals Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field}|APAC Insights & Analytics|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|APAC Analytics - Audience Insights [Change]|Record Type on Case Detail Page|
+|$audienceInsightsPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

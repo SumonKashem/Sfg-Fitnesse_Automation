@@ -1,0 +1,58 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** script below allows you to store a method 'getUniqueName' for reusability
+!|script|DriverClass|
+|$chinaAgencyName=|getUniqueName;|APAC China Agency|
+|$chinaAdvertiserName=|getUniqueName;|APAC China Advertiser|
+|$chinaAccountName=|getUniqueName;|APAC China Account|
+|$chinaOpportunityName=|getUniqueName;|APAC China Opportunity|
+|$ausAgencyName=|getUniqueName;|APAC Australia Agency|
+|$ausAdvertiserName=|getUniqueName;|APAC Australia Advertiser|
+|$ausAccountName=|getUniqueName;|APAC Australia Account|
+|$ausOpportunityName=|getUniqueName;|APAC Australia Opportunity|
+|$indAgencyName=|getUniqueName;|APAC India Agency|
+|$indAdvertiserName=|getUniqueName;|APAC India Advertiser|
+|$indAccountName=|getUniqueName;|APAC India Account|
+|$indOpportunityName=|getUniqueName;|APAC India Opportunity|
+|$apacSellName_Xax=|getUniqueName;|APAC Xax SL|
+|$apacSellName_Pl=|getUniqueName;|APAC Pl SL|
+|$apacSellName_LR=|getUniqueName;|APAC LR SL|
+|$apacBuyPlacementName=|getUniqueName;|APAC Buy Placement|
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'numberOfDays' for reusability
+#|$apacSellLineStartDate=|getDesiredDateInFormat;|0|/|
+#|$apacSellLineEndDate=|01/10/2018|
+!define apacSellLineStartDate {01/10/2018}
+!define apacSellLineEndDate {31/12/2018}
+!|script|DriverClass|
+|$closeDateForAPACOpp=|getDesiredDateInFormat;|30|/|
+|$audInsightsDueDate=|getDesiredDateInFormat;|15|/|
+|$brandUpliftStudyDueDate=|getDesiredDateInFormat;|22|/|
+|$ausReportingDueDate=|getDesiredDateInFormat;|0|/|
+
+**********!
+
+!***** variable below allows you to store a business unit(Xaxis,Light Reaction & Plista)
+!define SalesForce_APAC_Business_Unit_Value {Xaxis}
+**********!
+
+!***** variable below allows you to store a business unit(Xaxis,Light Reaction & Plista) for sell line
+!define SalesForce_APAC_SL_Business_Unit_Value {Xaxis}
+**********!
+
+!***** variable below allows you to store an APAC Market for APAC agency
+!define SalesForce_APAC_Agency_Market_Value {China}
+**********!
+
+!***** variable below allows you to store an APAC Market for sell line
+!define SalesForce_APAC_Cases_Market_Value {China}
+**********!
+
+!***** variable below allows you to store an APAC user name
+!define SalesForce_APAC_User_Name {Apurva Prasanna}
+!define SalesForce_Australia_User_Name {Apurva Prasanna}
+!define SalesForce_India_User_Name {Lucas Alonso}
+**********!

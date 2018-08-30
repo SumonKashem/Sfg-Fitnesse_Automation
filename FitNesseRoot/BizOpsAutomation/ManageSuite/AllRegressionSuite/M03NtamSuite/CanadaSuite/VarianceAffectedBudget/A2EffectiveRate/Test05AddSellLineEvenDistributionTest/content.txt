@@ -1,0 +1,262 @@
+'''INTENT: ''' Add a Sell Line For Even Distribution
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Right Click on Existing Sell Line
+   Click on 'Add Sell Line' button
+   Click on Placement Name Field
+   Enter New Sell Line Name on Placement Name Field
+   Click on Billing Platform dropdown
+   Select first value from the dropdown
+   Click on Device dropdown
+   Select first value from the dropdown
+   Click on Channel dropdown
+   Select first value from the dropdown
+   Click on Media Type dropdown
+   Select first value from the dropdown
+   Click on Product dropdown
+   Select first value from the dropdown
+   Click on Start Date dropdown
+   Enter Start Date as current day
+   Click on End Date dropdown
+   Enter End Date as current day + 60
+   Click on Rate Type dropdown
+   Enter value as CPM
+   Click on Budget Field
+   Enter Budget as $200 
+   Click on Rate Field
+   Enter Rate as $50
+   Click on Net Cost
+   Enter Net Cost as 50
+   Verify Planned Total Gross Budget is 400 in opp detail section
+   Verify Opportunity Net Cost is 100 in opp detail section
+   Verify Total Gross Budget 
+   Verify Total Gross Quantity
+   Verify Total Net Budget
+   Verify Total Net Quantity
+   Click on Sync With SF button
+   Switch to Second window tab
+   Navigate to SF URL
+   Verify Total Planned Gross Budget as USD 400.00
+   Verify Total Planned Net Cost as USD 100.00
+   Switch back to previou window tab
+   Verify Planned Total Gross Budget is 400 in opp detail section
+   Verify Opportunity Net Cost is 100 in opp detail section
+   Verify Total Gross Budget 
+   Verify Total Gross Quantity
+   Verify Total Net Budget
+   Verify Total Net Quantity
+   scroll to Monthly Schedule
+   Verify All Monthly Schedule Budgets
+   Reload Page
+   Wait For Placement Name to load and indicate it is synced
+   scroll to First Monthly schedule
+   Change Plan Budget to  70
+   Verify Total Variance as -2.609USD
+   Verify Sell Line Variance as -2.608696
+   Right click on Monthly Budget Field
+   Choose Distribution as 'Subtract Variance from Future Months Evenly
+   Verify Total Variance as 0USD
+   Verify Sell Line Variance as 0.00
+   Refresh Plan view by click on 'Leave' button
+   Click on Actualize button
+   Click on First Monthly Schedule
+   Click on Variance Effected Dropdown
+   Click on Budget for Variance Effected
+   Select and Enter Actual Method as 'Effective Rate'
+   Change Actual Budget to 75
+   Change Actual Quantity to 1300
+   Verify Actual Rate
+   Verify Variance Total
+   Verify Line Variance
+   Right Click on line variance
+   Choose Distribution as 'Subtract Variance from Future Months Evenly
+   Verify Actual Rate
+   Verify Total Variance as 0USD
+   Verify Sell Line Variance as 0.00
+   Verify Planned Budget
+   Verify Planned Quantity
+   Verify Next two months Plan Budgets
+   Scroll To Line
+   Verify Line Rate as 52.6316
+   Verify Line Quantity as 2,800
+   Verify Total Gross Quantity as 7,800
+   Verify Opp Total SellLine Volume as 7,800
+   Sync with SF
+   Scroll to Monthly Schedules
+   Verify all three months Plan Budget
+   Verify Opp Budget Gross
+   Verify Opp Sell Line Volume as 7,800
+   Verify Sell Line is Actualized with date
+   Scroll to Line Budget
+   Verify Line Budget stay same
+   Verify Line Rate as 52.6316
+   Verify Line Quantity as 3,800
+   Verify Total Gross Quantity as 7,800
+   Verify Opp Gross Budget stays the same
+   Verify Opp Total SellLine Volume as 7,800
+   Switch to SF tab
+   Open the SF URl
+   Verify Total Planned Gross Budget stayed the same
+   Verify Total Planned Net Cost stayed the same
+   Switch back to Manage tab
+   Verify Line Rate field is disabled on Planning mode
+**********!
+#|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|7,800|Total Gross Quantity|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_Budget_Effective_Rate_${PAGE_NAME}|Test05Can-Add a Sell Line With Effective Rate for Evenly Distribution|
+|$planningPageUrl =|getCurrentUrl;|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Add_Sell_Line}|Add Sell Line Button|
+|clickUsingMouseMovement;|${Manage_Actualization_Variance_Effected_Dropdown}|Variance Effected Drop Down|
+|clickUsingIndexMouseMovement;|${Manage_Planning_Variance_Eff_Budget_Dropdown}|0|Budget Variance Effected|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_PlacementName_Field_2}|3|Sell Line Placement Name Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field}|3|SL2|Sell Line Placement Name field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Billing_Platform_Dropdown}|3|Billing Platform dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Billing Platform dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Device_Dropdown}|3|Device dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Device dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Channel_Dropdown}|3|Channel dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}[text()="Display"]|0|Channel dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Media_Type_Dropdown}|3|Media Type dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}[text()="Standard"]|0|Media dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Product_Dropdown}|3|Product dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}[text()="Partner"]|0|Product dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_StartDate_Dropdown}|3|Start Date dropdown|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_StartDate_Dropdown}|3|01/10/2018|Start Date Input field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_EndDate_Dropdown}|3|End Date dropdown|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_EndDate_Dropdown}|3|31/12/2018|End Date Input field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|3|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|3|CPM|Rate Type dropdown Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Budget_Field}|3|Budget Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Budget_Field}|3|200|Budget Input Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Field}|3|Rate Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Field}|3|50|Rate Input Field|
+|scrollIntoViewByRow;|3|${Manage_Sell_Line_NetCost_Field}|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_NetCost_Field}|3|Net Cost Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_NetCost_Field}|3|50|Net Cost Input Field|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|400|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|100|Opportunity Net Cost|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|0|400.00|Total Gross Budget|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|8,000|Total Gross Quantity|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|0|100.00|Total Net|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|1|0|Total Net Quantity|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|switchToNewWindow;|2|
+|wait;|1000|
+|$sfPageUrl =|getCurrentUrl;|
+|wait;|1000|
+|open:|$sfPageUrl|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|USD 400.00|SF Total Planned Gross Budget Field|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|USD 100.00|SF Total Net Cost Field|
+|switchToNewWindow;|1|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|400|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|100|Opportunity Net Cost|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|0|400.00|Total Gross Budget|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|8,000|Total Gross Quantity|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|0|100.00|Total Net|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|1|0|Total Net Quantity|
+|scroll;|Horizontal|10000|
+|wait;|1200|
+|objectVerificationByRow;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|67.391304|October Budget Field|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Schedule_Budget_Field_Editable}|3|65.217391|November Budget Field|
+|objectVerificationByRow;|${Manage_Sell_Line_December_Schedule_Budget_Field_Editable}|3|67.391305|December Budget Field|
+|reloadPage;|$planningPageUrl|
+|wait;|2000|
+|elementVerificationByRow;|3|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|Yes|Sell Line Placement Indicating it is 'Synced'|
+|scroll;|Horizontal|2000|
+|clickUsingMouseMovement;|${Manage_Actualization_Variance_Effected_Dropdown}|Variance Effected Drop Down|
+|clickUsingIndexMouseMovement;|${Manage_Planning_Variance_Eff_Budget_Dropdown}|0|Budget Variance Effected|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_October_Schedule_Budget_Field}|3|October Budget Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_October_Schedule_Budget_Field}|3|70|October Budget Field|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|-2.609|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|3|-2.608696|Total Variance|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|October Budget Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Subtract_Evenly_Distribution}|Subtract Evenly Distribution|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|0|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|3|0.00|Total Variance|
+|scroll;|Horizontal|10000|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Schedule_Budget_Field_Editable}|3|63.934426|November Budget Field|
+|objectVerificationByRow;|${Manage_Sell_Line_December_Schedule_Budget_Field_Editable}|3|66.065574|December Budget Field|
+|clickUsingMouseMovement;|${Manage_Refresh_Bar}|Refresh Bar|
+|clickUsingMouseMovement;|${Manage_Leave_Button}|Leave Button|
+|wait;|3000|
+|clickUsingMouseMovement;|${Manage_Actualize_Button}|Actualize Button|
+|clickOnMonthlyTabUsingMouseMovement;|Oct|2018|1500|
+|wait;|1500|
+|clickUsingMouseMovement;|${Manage_Actualization_Variance_Effected_Dropdown}|Variance Effected Drop Down|
+|clickUsingIndexMouseMovement;|${Manage_Planning_Variance_Eff_Budget_Dropdown}|0|Budget Variance Effected|
+|wait;|1300|
+|clickByRowUsingMouseMovement;|${Manage_Actualization_SellLine_Actual_Method_DropDown}|3|Actual Method DropDown|
+|typeByRowUsingMouseMovement;|${Manage_Actualization_SellLine_Actual_Method_DropDown}|3|Effective Rate|Effective Rate Method|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|October Budget Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|75|October Budget Field|
+|clickByRowUsingMouseMovement;|${Manage_Actualization_SellLine_Planned_Quantity_Field}|3|October Quantity Field|
+|typeByRowUsingMouseMovement;|${Manage_Actualization_SellLine_Planned_Quantity_Field}|3|1300|October Quantity Field|
+|objectVerificationByRow;|${Manage_Actualization_SellLine_Actual_Rate_Field}|3|57.6923|Actual Rate Field|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|-7.609|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|3|-7.608696|Total Variance|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|October Budget Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Subtract_Evenly_Distribution}|Subtract Evenly Distribution|
+|objectVerificationByRow;|${Manage_Actualization_SellLine_Actual_Rate_Field}|3|57.6923|Actual Rate Field|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|0|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|3|0.00|Total Variance|
+|objectVerificationByRowAndIndex;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|1|75.00|October Planned Budget Field|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_SellLine_Planned_Quantity_Field}|3|1|1,300|October Planned Quantity Field|
+|scroll;|Horizontal|10000|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Schedule_Budget_Field_Editable}|3|61.475409|November Budget Field|
+|objectVerificationByRow;|${Manage_Sell_Line_December_Schedule_Budget_Field_Editable}|3|63.524591|December Budget Field|
+|scroll;|Horizontal|-10000|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|3|52.6316|Line Rate Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|3|3,800|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|7,800|Total Gross Quantity|
+|objectVerification;|${Manage_Opp_Details_TotalQuantity_Text}|7,800|Total Opp Sell Volume/Quantity|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|scroll;|Horizontal|2500|
+|wait;|1000|
+|waitForElementToLoadByRowAndIndex;|//*[@title="Last Actualized Date: $canadaSellLineStartDate"]|3|0|Second Month Buy Placement Last Actualized Date Verification|
+|scroll;|Horizontal|10000|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Sell_Line_October_Schedule_Budget_Field_Editable}|3|75.00|October Budget Field|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Schedule_Budget_Field_Editable}|3|61.475409|November Budget Field|
+|objectVerificationByRow;|${Manage_Sell_Line_December_Schedule_Budget_Field_Editable}|3|63.524591|December Budget Field|
+|scroll;|Horizontal|-10000|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Sell_Line_Budget_Field}|3|200.00|Line Budget Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|3|52.6316|Line Rate Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|3|3,800|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|7,800|Total Gross Quantity|
+|objectVerification;|${Manage_Opp_Details_TotalQuantity_Text}|7,800|Total Opp Sell Volume/Quantity|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|400|Opportunity Gross Budget|
+|switchToNewWindow;|2|
+|wait;|1000|
+|$sfPageUrl =|getCurrentUrl;|
+|wait;|1000|
+|open:|$sfPageUrl|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|USD 400.00|SF Total Planned Gross Budget Field|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|USD 100.00|SF Total Net Cost Field|
+|switchToNewWindow;|1|
+|wait;|800|
+|clickUsingMouseMovement;|${Manage_Planning_Button}|Planning Button|
+|wait;|2000|
+|scroll;|Horizontal|-10000|
+|wait;|1000|
+|elementVerificationByRow;|3|${Manage_Line_Rate_Field_Disabled}|Yes|Disabled Rate Field|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

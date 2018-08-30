@@ -1,0 +1,2 @@
+!define Manage_ListOfOpp_Monthly_DropDown {//*[@id="select_actualizedLineCount_chosen"]}
+!define Manage_ListOfOpp_Actualized_Line_Text {//*[@id="select_month"]/div[2]}

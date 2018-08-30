@@ -1,0 +1,53 @@
+'''INTENT: ''' Add a Fee Buy Placement
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Click on Planning button
+   Reload planning page
+   Wait for Sell Line field to load/appear
+   Right click on Placement Name Field
+   Click on 'Add Fee Buy Placement Line'
+   Verify Third Party Cost defaults back to 0.00 on sell line level
+   Click on Vendor Dropdown
+   Select first value from Vendor Dropdown
+   Click on Billing Platform Dropdown
+   Select first value from Billing Platform Dropdown
+   Enter Budget as 50
+   Scroll Into Net Cost View
+   Enter Rate as 12.50
+   Verify Sell Line Third Party Cost value changed to 50
+   Click on Sync with SF button
+   Verify Media Buy Placement is synced
+   Verify Sell Line Third Party Cost value appears as 50
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|ItalySuite_${PAGE_NAME}|Test06 - Add a Media Buy Line for Italy and Sync|
+|clickUsingIndexMouseMovement;|${Manage_Planning_Button}|0|Planning Button|
+|$planningPageUrl =|getCurrentUrl;|
+|reloadPage;|$planningPageUrl|
+|waitForElementToLoadByRow;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name field|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name Field|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_RightClick_Fee_Buy_Placement_Link}|0|Fee Buy Placement Link|
+|objectVerificationByRow;|${Manage_Sell_Line_Third_Party_Cost_Field}|2|0.00|Sell Line Third Party Cost field|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Vendor_Dropdown}|4|Vendor Dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Vendor Dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Billing_Platform_Dropdown}|4|Billing Platform Dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Billing Platform Dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_BudgetCost_Field}|4|Budget Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_BudgetCost_Field}|4|50|Budget Input Field|
+|scrollIntoViewByRow;|2|${Manage_Sell_Line_Third_Party_Cost_Field}|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Rate_Field}|4|Rate Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_Rate_Field}|4|12.50|Rate Input Field|
+|objectVerificationByRow;|${Manage_Sell_Line_Third_Party_Cost_Field}|2|50.00|Sell Line Third Party Cost field for Fee Buy placement|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|reloadPage;|$planningPageUrl|
+|waitForElementToLoadByRow;|${Manage_Buy_Line_Placement_Field_Synced}|4|Fee Buy Placement Field Indicating it is 'Synced'|
+|objectVerificationByRow;|${Manage_Sell_Line_Third_Party_Cost_Field}|2|50.00|Sell Line Third Party Cost field for Fee Buy placement|
+|stopExtentReport;|
+**********!

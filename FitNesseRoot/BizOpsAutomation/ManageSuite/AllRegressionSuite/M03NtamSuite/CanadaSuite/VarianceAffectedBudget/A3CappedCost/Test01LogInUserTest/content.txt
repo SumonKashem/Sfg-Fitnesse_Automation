@@ -1,0 +1,44 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.OpenBrowser
+*!
+
+'''INTENT: ''' Log In as an SF admin
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to 'https://10.90.100.118:8443'
+   Wait for 'Log In with SF' button to load/appear
+   Click on 'Log In With 'SalesForce'
+   Enter Admin email on email field
+   Enter Admin password on password field
+   Click on 'Login To Sandbox' button
+   Verify user name displays after logging in
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|Manage_Automation_Report|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_Budget_Capped_Cost_${PAGE_NAME}|Test01Can-Login as an SF admin ${SalesForce_Admin_Name}|
+|open;|https://10.90.100.118:8443|
+|elementVerification;|${Manage_SF_LogIn_Button}|Yes|Log In with SF button|
+|click;|${Manage_SF_LogIn_Button}|Log In With SF Button|
+|type;| ${SalesForce_UserName_Field}|${canada_User_Name_With_Email}|UserName Field|
+|type;| ${SalesForce_Password_Field}|${canada_User_Password}|Password Field|
+|click;|${SalesForce_LogIn_Button}|LogIn Button|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

@@ -1,0 +1,8 @@
+Task related variables defined here...
+
+!define SalesForce_Task_Subject_Field {//*[@id="tsk5"]}
+!define SalesForce_Task_Request_Type_Dropdown {//*[@id="00N3100000FvGuY"]}
+!define SalesForce_Task_Request_Detail_Picklist {//*[@title="Request Detail - Available"]}
+!define SalesForce_Task_Request_Detail_Right_Arrow {//*[@id="00N3100000FvGuX_right_arrow"]}
+!define SalesForce_Task_Save_Button {//*[@name="save"]}
+

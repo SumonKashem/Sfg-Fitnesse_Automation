@@ -1,0 +1,34 @@
+'''Scenario Name: ''' Create a Light Reaction Buy Placement
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Search for 'Sell Line'
+   Navigate to LR Sell Line Url
+   Scroll Into New Buy Placement Button
+   Click on 'New Buy Placement' button
+   Enter Buy Placement Name
+   Select 'Package Type' as 'DSP'
+   Click on 'Save' button
+   Capture placement auto number and store it in to a variable for reusability
+   Verify Record Type is 'Non Radia'
+   Verify Accurate Sell Number appears on Buy Placement page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test09Bel-Create a Light Reaction Buy Placement|
+|open;|$emeaLRSellLineUrl|
+|scrollIntoView;|${SalesForce_BuyPlacement_New_Buy_Placement_Button}|
+|clickByJavaScript;|${SalesForce_BuyPlacement_New_Buy_Placement_Button}|New Buy Placement Button|
+|type;|${SalesForce_BuyPlacement_Name_Field}|$emeaBPName_LR|Buy Placement Name Field|
+|selectDropDownByText;|${SalesForce_BuyPlacement_PackageType_DropDown}|DSP|Package Type Dropdown|
+|click;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|$buyPlacementNumber=|getValue;|${SalesForce_BuyPlacement_AutoNumber}|Buy Placement Number|
+|objectVerification;|${SalesForce_BuyPlacement_RecordType_Text}|Non Radia [Change]|Record Type Text|
+|objectVerification;|${SalesForce_BuyPlacement_SellLineNumber_Text}|$emeaSellLineLRNo|Sell Line Number Text on Sell Line page|
+|$belLRBuyPlacementPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

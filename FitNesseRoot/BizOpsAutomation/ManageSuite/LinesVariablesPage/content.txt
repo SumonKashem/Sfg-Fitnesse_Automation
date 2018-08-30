@@ -1,0 +1,112 @@
+!define Manage_Sell_Line_Row_Header_1_Field {//*[@class="rowHeader" and text()="1"]}
+!define Manage_Sell_Line_PlacementName_Field_2 {[@data-api="Buy_Name_txt__c"]}
+!define Manage_Sell_Line_PlacementId_Field {//*[@data-api="Name" and contains(text(),"CP-")]}
+!define Manage_Sell_Line_Default_PlacementName_Field {//*[@data-api="Buy_Name_txt__c"]/div[@title="Needs to be Synced"]}
+!define Manage_Sell_Line_PlacementName_Field {//*[contains(@class,"isSellLine") and @data-api="Buy_Name_txt__c"]}
+!define Manage_Sell_Line_Billing_Platform_Dropdown {[@data-api="Agency_Billing_Platform__c"]/div}
+!define Manage_Sell_Line_Device_Dropdown {[@data-api="Device__c"]/div}
+!define Manage_Sell_Line_Channel_Dropdown {[@data-api="Media_Code__c"]/div}
+!define Manage_Sell_Line_Media_Type_Dropdown {[@data-api="Media_Type__c"]/div}
+!define Manage_Sell_Line_Bookunit_Field {[@data-api="Booking_Unit__c"]}
+!define Manage_Sell_Line_Bookunit_Dropdown {[@data-api="Booking_Unit__c"]/div}
+!define Manage_Sell_Line_Adformat_Field {[@data-api="Adformat__c"]}
+!define Manage_Sell_Line_Adformat_Dropdown {[@data-api="Adformat__c"]/div}
+!define Manage_Sell_Line_Product_Dropdown {[@data-api="Special_Product__c"]/div}
+!define Manage_Sell_Line_APAC_Product_Dropdown {[@data-api="APAC_Product__c"]/div}
+!define Manage_Sell_Line_StartDate_Dropdown {[@data-api="Start_Date__c"]/div}
+!define Manage_Sell_Line_EndDate_Dropdown {[@data-api="End_Date__c"]/div}
+!define Manage_Sell_Line_Rate_Type_Dropdown {[@data-api="Buy_Type__c"]}
+!define Manage_Sell_Line_Budget_Field {[@data-api="Gross_Cost__c"]}
+!define Manage_Sell_Line_Rate_Field {[@data-api="Rate__c"]/div}
+!define Manage_Sell_Line_Quantity_Field {[@data-api="Buy_Volume__c"]}
+!define Manage_Sell_Line_NetCost_Field {//*[@data-api="Media_Net_Cost__c"]}
+!define Manage_Sell_Line_Third_Party_Cost_Field {//*[@data-api="Third_Party_Cost_Rollup__c"]}
+!define Manage_Sell_Line_Margin_Field {[@data-api="Media_Net_Cost__c"]/td}
+!define Manage_Sell_Line_Default_PlacementName_Field_Synced {//*[@data-api="Buy_Name_txt__c"]/div[@title="Synced with SF"]}
+!define Manage_Sell_Line_Input_Field {//*[@class="handsontableInputHolder"]}
+!define Manage_Sell_Line_NetCost_Read_Only_Field {[@data-api="Media_Net_Cost__c" and contains(@class,"read-only")]}
+!define Manage_Sell_Line_SubProduct_Dropdown {//*[@data-api="APAC_Sub_Product__c"]/div}
+
+!define Manage_Buy_Line_Rate_Type_Field_Disabled {//*[@data-api="Cost_Method__c" and contains(@title,"This field is non editable")]}
+!define Manage_Line_Budget_Field_Editable {//*[contains(@class,"unlock")]//*[@data-prop="budget"]}
+!define Manage_Line_Budget_Field_locked {//*[contains(@class,"lock read-only")]//*[@data-prop="budget"]}
+!define Manage_Line_Budget_Field_Disabled {//*[contains(@class,"unlock read-only")]//*[@data-prop="budget"]}
+!define Manage_Line_Rate_Field_Editable {//*[contains(@class,"unlock")]//*[@data-prop="rate"]}
+!define Manage_Line_Rate_Field_locked {//*[contains(@class,"lock read-only")]//*[@data-prop="rate"]}
+!define Manage_Line_Rate_Field_Disabled {//*[contains(@class,"unlock read-only")]//*[@data-prop="rate"]}
+!define Manage_Line_Quantity_Field_Editable {//*[contains(@class,"unlock")]//*[@data-prop="quantity"]}
+!define Manage_Line_Quantity_Field_locked {//*[contains(@class,"lock read-only")]//*[@data-prop="quantity"]}
+!define Manage_Line_Quantity_Field_Disabled {//*[contains(@class,"unlock read-only")]//*[@data-prop="quantity"]}
+
+!define Manage_Line_Context_Menu_Copy {//*[@class="htItemWrapper" and text()="Copy"]}
+!define Manage_Line_Context_Menu_Paste {//*[@class="htItemWrapper" and text()="Paste"]}
+!define Manage_Line_Context_Menu_Add_Sell_Line {//*[@class="htItemWrapper" and text()="Add Sell Line"]}
+!define Manage_Line_Context_Menu_Add_Media_Buy_Placement_Line {//*[@class="htItemWrapper" and text()="Add Media Buy Placement Line"]}
+!define Manage_Line_Context_Menu_Add_Fee_Buy_Placement_Line {//*[@class="htItemWrapper" and text()="Add Fee Buy Placement Line"]}
+!define Manage_Line_Context_Menu_Clone {//*[@class="htItemWrapper" and text()="Clone"]}
+!define Manage_Line_Context_Menu_Delete {//*[@class="htItemWrapper" and text()="Delete"]}
+!define Manage_Line_Context_Menu_Distribute_Variance_Evenly {//*[@class="htItemWrapper" and text()="Distribute variance evenly"]}
+!define Manage_Line_Context_Menu_Distribute_Variance_Next_Month {//*[@class="htItemWrapper" and text()="Distribute variance Next Month"]}
+!define Manage_Line_Context_Menu_Add_Variance_To_Line_Budget {//*[@class="htItemWrapper" and text()="Add variance to line budget"]}
+!define Manage_Line_Context_Menu_Add_Variance_To_Line_Quantity {//*[@class="htItemWrapper" and text()="Add variance to line quantity"]}
+!define Manage_Line_Context_Menu_Add_Variance_To_Months_Evenly {//*[@class="htItemWrapper" and text()="Add variance to future months evenly"]}
+
+
+!define Manage_Buy_Line_Buy_Placement_Name_Field {[@data-api="Name"]/div[@title="Needs to be Synced"]}
+!define Manage_Buy_Line_Media_Buy_Placement_Field {[@data-api="Name"]/div[@title="Needs to be Synced"]/div[@title="Media Buy Placement Line"]}
+!define Manage_Buy_Line_Media_Buy_Placement_Field_Synced {[@data-api="Name"]/div[@title="Synced with SF"]/div[@title="Media Buy Placement Line"]}
+!define Manage_Buy_Line_Fee_Buy_Placement_Field {[@data-api="Name"]/div[@title="Needs to be Synced"]/div[@title="Fee Buy Placement Line"]}
+!define Manage_Buy_Line_Fee_Buy_Placement_Field_Synced {[@data-api="Name"]/div[@title="Synced with SF"]/div[@title="Fee Buy Placement Line"]}
+!define Manage_Buy_Line_Placement_Field_Synced {[@data-api="Name"]/div[@title="Synced with SF"]}
+!define Manage_Buy_Line_Vendor_Dropdown {//*[@data-api="Partnership_Engagement__c"]/div}
+!define Manage_Buy_Line_Billing_Platform_Dropdown {//*[@data-api="Network_Billing_Platform__c"]/div}
+!define Manage_Buy_Line_StartDate_Dropdown {[@data-api="Start_Date__c"]/div}
+!define Manage_Buy_Line_EndDate_Dropdown {[@data-api="End_Date__c"]/div}
+!define Manage_Buy_Line_RateType_Dropdown {[@data-api="Cost_Method__c"]/div}
+!define Manage_Buy_Line_RateType_Field {[@data-api="Cost_Method__c"]}
+!define Manage_Buy_Line_BudgetCost_Field {[@data-api="Planned_Cost__c"]}
+!define Manage_Buy_Line_Rate_Field {[@data-api="Rate__c"]}
+!define Manage_Buy_Line_Quantity_Field {[@data-api="Planned_Units__c"]}
+!define Manage_Sell_Line_DropDown_Value_1 {//td[@class="listbox htDimmed"]}
+!define Manage_Sell_Line_DropDown_Value_2 {//td[@class="listbox htDimmed"]//following::tr}
+!define Manage_Sell_Line_RightClick_Media_Buy_Placement_Link {//*[@class="htItemWrapper" and text()="Add Media Buy Placement Line"]}
+!define Manage_Sell_Line_RightClick_Fee_Buy_Placement_Link {//*[@class="htItemWrapper" and text()="Add Fee Buy Placement Line"]}
+!define Manage_Buy_Line_Confirmed_Yes_Button {//*[@id="btn-addBuyLineConfirm-yes"]}
+
+!define Manage_Sell_Line_November_Net_Cost_Monthly_Schedule_Field {//*[@data-api="Net_Budget_Editable__c" and @data-monthly-schedule="nov_2018" and contains(@title,"Planned Net Cost")]}
+!define Manage_Sell_Line_October_Schedule_Budget_Field {//*[@data-api="Gross_Budget_Editable__c" and @data-monthly-schedule="oct_2018" and text()="67.391304"]}
+!define Manage_Sell_Line_November_Schedule_Budget_Field {//*[@data-api="Gross_Budget_Editable__c" and @data-monthly-schedule="nov_2018" and text()="65.217391"]}
+!define Manage_Sell_Line_December_Schedule_Budget_Field {//*[@data-api="Gross_Budget_Editable__c" and @data-monthly-schedule="dec_2018" and text()="67.391305"]}
+!define Manage_Sell_Line_October_Schedule_Budget_Field_Editable {//*[@data-api="Gross_Budget_Editable__c" and @data-monthly-schedule="oct_2018"]}
+!define Manage_Sell_Line_November_Schedule_Budget_Field_Editable {//*[@data-api="Gross_Budget_Editable__c" and @data-monthly-schedule="nov_2018"]}
+!define Manage_Sell_Line_December_Schedule_Budget_Field_Editable {//*[@data-api="Gross_Budget_Editable__c" and @data-monthly-schedule="dec_2018"]}
+
+!define Manage_Sell_Line_October_Schedule_Quantity_Field_Editable {//*[@data-api="Planned_Billable_Units__c" and @data-monthly-schedule="oct_2018"]}
+!define Manage_Sell_Line_November_Schedule_Quantity_Field_Editable {//*[@data-api="Planned_Billable_Units__c" and @data-monthly-schedule="nov_2018"]}
+!define Manage_Sell_Line_December_Schedule_Quantity_Field_Editable {//*[@data-api="Planned_Billable_Units__c" and @data-monthly-schedule="dec_2018"]}
+
+!define Manage_Buy_Line_October_Schedule_Budget_Field {//*[@data-api="Radia_Planned_Payable_Cost__c" and @data-monthly-schedule="oct_2018"]}
+!define Manage_Buy_Line_November_Schedule_Budget_Field {//*[@data-api="Radia_Planned_Payable_Cost__c" and @data-monthly-schedule="nov_2018"]}
+!define Manage_Buy_Line_December_Schedule_Budget_Field {//*[@data-api="Radia_Planned_Payable_Cost__c" and @data-monthly-schedule="dec_2018"]}
+
+!define Manage_Buy_Line_October_Schedule_Quantity_Field_Editable {//*[@data-api="Radia_Planned_Units__c" and @data-monthly-schedule="oct_2018"]}
+!define Manage_Buy_Line_November_Schedule_Quantity_Field_Editable {//*[@data-api="Radia_Planned_Units__c" and @data-monthly-schedule="nov_2018"]}
+!define Manage_Buy_Line_December_Schedule_Quantity_Field_Editable {//*[@data-api="Radia_Planned_Units__c" and @data-monthly-schedule="dec_2018"]}
+
+!define Manage_Sell_Line_Variance_Field {//*[contains(@class,"variance-column")]}
+!define Manage_Line_Budget_Field {//*[@data-prop="budget"]}
+!define Manage_Line_Budget_Quantity {//*[@data-prop="quantity"]}
+!define Manage_Line_Budget_Rate {//*[@data-prop="rate"]}
+
+!define Manage_Sell_Line_Target_Gender_Dropdown {[@data-api="Target_Gender__c"]}
+!define Manage_Sell_Line_Target_Age_Dropdown {[@data-api="Target_Age__c"]}
+!define Manage_Sell_Line_Target_SEC_Dropdown {[@data-api="Target_SEC__c"]}
+!define Manage_Sell_Line_Primary_KPI_Dropdown {[@data-api="Primary_KPI__c"]/div}
+!define Manage_Sell_Line_Primary_KPI_Field {[@data-api="Primary_KPI__c"]}
+!define Manage_Sell_Line_Video_Duration_Dropdown {[@data-api="Video_Duration__c"]/div}
+!define Manage_Sell_Line_Picklist_Search_Field {//*[@class="search-field"]}
+
+!define Manage_Line_Budget_Quantity_Calculator {//*[@data-prop="quantity"]/following::after}
+
+
+

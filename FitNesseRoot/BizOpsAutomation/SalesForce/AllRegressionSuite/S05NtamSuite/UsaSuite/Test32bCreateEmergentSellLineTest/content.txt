@@ -1,0 +1,63 @@
+'''Scenario Name: ''' Create a US Emergent Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Emergent opportunity url
+   Click on 'New Sell Line' button
+   Enter Sell Name
+   Enter Sell Line Start Date
+   Enter Sell Line End Date
+   Select Delivery Platform as 'EMEA'
+   Select Audience Tier as 'Brand'
+   Select input gross as 'Rate / Gross Cost'
+   Select Rate Type as 'CPM'
+   Enter Planned Gross Budget as '100'
+   Enter Gross Rate as '22'
+   Select Input Net As 'Margin (Calc Net Cost)'
+   Enter Margin as '8' percent
+   Select Channel as 'Display'
+   Select Device as 'Desktop'
+   Select Media Type as 'Standard'
+   Select Product as 'External'
+   Click on 'Save' button
+   Verify Sell Line Business Unit on SL Detail page
+   Verify Sell Name appears on Sell Line Detail page
+   Verify Sell Volume = Gross Budget/Gross Rate*1000
+   Verify Sell Line Record Type as 'EMGT-NTAM-United States'
+   Capture Sell Number and store in a variable for reusability
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test32bUS-Create a US Emergent Sell Line|
+|open;|$ntamEmgtOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_SellLine_New_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_New_Sell_Line_Button}|New Sell Line Button|
+|type;|${SalesForce_SellLine_Sell_Name_Field}|$ntamUsSellName_EMGT|Sell Line Name Field|
+|type;|${SalesForce_SellLine_Start_Date_Field}|${emgtSellLineStartDate}|Start Date Field|
+|type;|${SalesForce_SellLine_End_Date_Field}|${emgtSellLineEndDate}|End Date Field|
+|selectDropDownByText;|${SalesForce_SellLine_NTAM_Delivery_Platform}|EMEA|Delivery Platform Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_NTAM_Audience_Tier}|Brand|Audience Tier Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Rate / Gross Cost|Input Gross As Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Rate_Type_DropDown}|CPM|Rate Type Dropdown|
+|type;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|100|Gross Budget Field|
+|type;|${SalesForce_SellLine_Gross_Rate_Field}|22|Gross Rate Field|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Net_As_DropDown}|Margin (Calc Net Cost)|Input Net Field|
+|type;|${SalesForce_SellLine_Margin_Field}|8|NTAMSuite_${PAGE_NAME}|
+|selectDropDownByText;|${SalesForce_SellLine_Channel_DropDown}|Display|Channel Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Device_DropDown}|Desktop|Device Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Media_DropDown}|Standard|Media Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Product_DropDown}|1|Product Dropdown|
+|clickByJavaScript;|${SalesForce_SellLine_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_SellLine_Business_Unit_Text}|Emergent|Business Unit on Sell Line Detail Page|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Name_Field}|$ntamUsSellName_EMGT|Sell Line Detail Page|
+|$volumeRateCalc=|getCalculatedValue;|CPM|Volume Calculation|100|22|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Volume_Text}|$volumeRateCalc|Volume Calculation|
+|objectVerification;|${SalesForce_SellLine_Record_Type_Field}|EMGT-NTAM-United States|Record Type|
+|$sellLineUsEmgtNo=|getValue;|${SalesForce_SellLine_PageDescription_Text}|Sell No Description Text|
+|$usaEmgtSellLineUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

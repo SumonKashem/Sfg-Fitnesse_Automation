@@ -1,0 +1,38 @@
+'''Scenario Name: ''' Create an 'BC Campaign Setup' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to existing Opportunity
+   Click on Analytics button
+   Select Hub as 'Pan Regional'
+   Select Market as 'Belgium'
+   Select Request Type as 'New Campaign'
+   Select Status as 'New'
+   Click on 'Save' button
+   Verify Case Hub as 'Pan Regional' on Case Detail page
+   Verify Case Record Owner as 'Campaign Management - Pan Regional' on Case Detail page
+   Verify Case Record Type as 'Campaign Management' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test15Bel-Create a BC Campaign Setup Case|
+|open;|$belEmeaOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_BC_Campaign_Setup_Button}|
+|click;|${SalesForce_Cases_BC_Campaign_Setup_Button}|BC Campaign Setup Button|
+|selectDropDownByText;|${SalesForce_Cases_Hub_Dropdown}|Pan Regional|Hub Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Request_Type_Dropdown}|New Campaign|Request Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Belgium|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|type;|${SalesForce_Cases_BC_Subject_Field}|Auto Test|Subject Field|
+|type;|${SalesForce_Cases_BC_Description_Field}|Auto Test|Description Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Hub_Field_Detail_Page}|Pan Regional|Hub Field on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|Campaign Management - Pan Regional [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|Campaign Management [Change]|Record Type on Case Detail Page|
+|$bcCampaignSetupPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite
+*!
+
+!***** Test Cases
+M01LogInSuite.Test01LogInUserTest
+**********!

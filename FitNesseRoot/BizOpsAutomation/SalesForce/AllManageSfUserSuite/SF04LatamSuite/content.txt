@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** MARKETS
+[[Miami][SF04LatamSuite.MiamiSuite]]
+**********!

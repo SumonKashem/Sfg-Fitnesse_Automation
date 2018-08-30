@@ -1,0 +1,48 @@
+'''Scenario Name: ''' Verify all fields available for LR Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity URL
+   Switch to SL I-Frame
+   Scroll Into 'New Sell Line' Button
+   Click on 'New Sell Line' button
+   Verify all section labels and fields exist on LR sell line Edit Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_UK_Suite_${PAGE_NAME}|Test06aUK-Verify All Fields Available for LR Sell Line|
+|open;|$ukOpportunityPageUrl|
+|switchToFrame;|${SalesForce_Opportunities_SL_IFrame_Window}|SL Frame|
+|scrollIntoView;|${SalesForce_SellLine_Create_New_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_Create_New_Sell_Line_Button}|Create New Sell Line Button|
+|elementVerification;|${SalesForce_UK_Buisness_Unit_Dropdown}|Yes|Business Unit Dropdown|
+|elementVerification;|${SalesForce_UK_Sell_Name_Field}|Yes|Sell Name Field|
+|elementVerification;|${SalesForce_UK_Device_Dropdown}|Yes|Device Dropdown|
+|elementVerification;|${SalesForce_UK_Channel_Dropdown}|Yes|Channel Dropdown|
+|elementVerification;|${SalesForce_UK_Media_Type_Dropdown}|Yes|Media Type Dropdown|
+|elementVerification;|${SalesForce_UK_Product_Dropdown}|Yes|Product Dropdown|
+|elementVerification;|${SalesForce_UK_Start_Date_Field}|Yes|Start Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|0|Yes|Start Date Link|
+|elementVerification;|${SalesForce_UK_End_Date_Field}|Yes|End Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|1|Yes|End Date Link|
+|elementVerification;|${SalesForce_UK_Input_Gross_As_Dropdown}|Yes|Input Gross as Dropdown|
+|elementVerification;|${SalesForce_UK_Rate_Type_Dropdown}|Yes|Rate Type Dropdown|
+|elementVerification;|${SalesForce_UK_Sell_Volume_Field}|Yes|Sell Volume Field|
+|elementVerification;|${SalesForce_UK_Gross_Rate_Field}|Yes|Gross Rate Field|
+|elementVerification;|${SalesForce_UK_Planned_Gross_Budget_Field}|Yes|Planned Gross Budget Field|
+|elementVerification;|${SalesForce_UK_Discount_Field}|Yes|Discount Field|
+|elementVerification;|${SalesForce_UK_Request_Media_Team_Checkbox}|Yes|Request Media Team Checkbox|
+|elementVerification;|${SalesForce_UK_Note_For_Media_Team_Field}|Yes|Note For Media Team Field|
+|elementVerification;|${SalesForce_UK_Request_Optimisation_Team_Checkbox}|Yes|Request Optimisation Team Checkbox|
+|elementVerification;|${SalesForce_UK_Note_For_Optimisation_Team_Field}|Yes|Note For Optimisation Team Field|
+|elementVerification;|${SalesForce_UK_Sell_Line_Description_Field}|Yes|Sell Line Description Field|
+|elementVerification;|${SalesForce_UK_LR_Partner_Dropdown}|Yes|Sell LR Partner Dropdown|
+|elementVerification;|${SalesForce_UK_Save_And_Add_Button}|Yes|Save & Add Button|
+|elementVerification;|${SalesForce_UK_Save_And_Complete_Button}|Yes|Save & complete Button|
+|elementVerification;|${SalesForce_UK_Cancel_Link}|Yes|Cancel Button|
+|stopExtentReport;|
+**********!

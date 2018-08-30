@@ -1,0 +1,14 @@
+Securities related variables defined here...
+
+!define SalesForce_Securities_First_Account_Link {//*[contains(@class,"dataRow even first")]/th[contains(@class,"dataCell")]}
+!define SalesForce_Securities_First_Opp_Frame {//*[@id="066i0000004QWn0"]}
+!define SalesForce_Securities_First_Opp_Link {//*[@id="j_id0:j_id2_body"]/table/tbody/tr[2]/th/a}
+!define SalesForce_Securities_First_SL_Link {//*[@class=" dataCell  "]/a[//*[contains(text(),"CP-")]]}
+!define SalesForce_Securities_User_Detail_Edit_Button {//*[@title="Edit"]}
+!define SalesForce_Securities_User_Role_Dropdown {//*[@id="role"]}
+!define SalesForce_Securities_User_Save_Button {//*[@title="Save"]}
+
+
+
+!define SalesForce_Securities_Impersonator {Amr Hamad}
+

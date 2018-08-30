@@ -1,0 +1,31 @@
+'''Scenario Name: ''' Create an 'AdOps' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity Url
+   Scroll Into Ad Ops button
+   Click on Ad Ops Case button
+   Select Market as 'Canada'
+   Select Request Type as 'QA'
+   Select Mookie'd Campaign as 'Yes'
+   Click on 'Save' button
+   Verify Case Record Type as 'NTAM Demand Ad Ops' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test08Can-Create an AdOps Case}|
+|open;|$ntamOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_Ad_Ops_Button}|
+|click;|${SalesForce_Cases_Ad_Ops_Button}|AdOps Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Canada|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Request_Type_Dropdown}|QA|Request Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Mookied_Campaign_Dropdown}|Yes|Mookie'd Campaign Dropdown|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Record_Type_Text}|NTAM Demand Ad Ops [Change]|Record Type on Case page|
+|$adOpsPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

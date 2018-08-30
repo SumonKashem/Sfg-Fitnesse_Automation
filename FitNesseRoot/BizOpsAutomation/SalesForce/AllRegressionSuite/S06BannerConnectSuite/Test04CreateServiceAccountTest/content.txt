@@ -1,0 +1,43 @@
+'''Scenario Name: ''' Create a BC Service Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on 'Accounts' tab
+   Click on 'New' Button
+   Select Record Type as 'Service'
+   Click on 'Continue' button
+   Enter new Service Account name
+   Select Currenty as 'Euro'
+   Enter Billing Company
+   Enter Agency Name
+   Enter Advertiser Name
+   Select Account Market as 'EMEA_MARKET'
+   Click on Save Button
+   Verify Service Account name appears on account detail page
+   Verify Record Type appears as 'Service' on account detail page
+   Store Service account url in to a variable for reusability
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test04BC-Create a BC Service Account|
+|clickByJavaScript;|${SalesForce_BC_Accounts_Tab}|Accounts Tab|
+|clickByJavaScript;|${SalesForce_Accounts_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Accounts_Record_Type_DropDown}|Service|Record Type Dropdown|
+|clickByJavaScript;|${SalesForce_Accounts_Continue_Button}|Continue Button|
+|wait;|1800|
+|type;|${SalesForce_Accounts_BC_Account_Name_Field}|$serviceAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Account_BC_Currency_Dropdown}|EUR - Euro|Currency Code Dropdown|
+|type;|${SalesForce_Account_BC_Billing_Company_Field}|$bcAgencyName|Service Name Field|
+|type;|${SalesForce_Accounts_BC_Agency_Field}|$bcAgencyName|Agency Name Field|
+|type;|${SalesForce_Accounts_BC_Advertiser_Field}|$bcAdvertiserName|Advertiser Name Field|
+|selectDropDownByText;|${SalesForce_Accounts_BC_Market_Dropdown}|EMEA_MARKET|Account Market Dropdown|
+|clickByJavaScript;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Account_Name_Description}|$serviceAccountName|Account Detail Page|
+|objectVerification;|${SalesForce_Accounts_Record_Type_Text}|Service [Change]|Record Type on Detail Page|
+|$serviceAccountUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

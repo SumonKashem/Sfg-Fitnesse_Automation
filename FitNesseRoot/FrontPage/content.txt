@@ -1,0 +1,7 @@
+#!c !img https://upload.wikimedia.org/wikipedia/en/thumb/1/19/Xaxis_logo.jpg/100px-Xaxis_logo.jpg 
+!c !img files/Xaxis_logo.jpg
+!2 !c Welcome to Xaxis!
+----
+!3 !c [[GLOBAL BUSINESS OPERATIONS][BizOpsAutomation]]
+
+!c !img files/GlobalBusiness.png

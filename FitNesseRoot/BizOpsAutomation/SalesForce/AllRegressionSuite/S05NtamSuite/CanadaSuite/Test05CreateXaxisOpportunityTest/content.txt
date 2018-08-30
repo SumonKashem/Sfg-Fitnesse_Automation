@@ -1,0 +1,48 @@
+'''Scenario Name: ''' Create an Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   navitage to Account URL
+   Scroll Into View for opportunities
+   Click on 'New RFI' opportunity button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select stage as 'Information Requested'
+   Clear Close Date field
+   Enter Close Date
+   Enter Proposal Request
+   Select Client Goal as 'CPA'
+   Enter Client Goal Details
+   Clear Due Date to Client field
+   Enter Due Date to Client as current day
+   Select Time Due as '9am'
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Capture opportunity page url for resuable purpose
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test05Can-Create a NTAM Opportunity|
+|open;|$ntamCanAccountUrl|
+|switchToFrame;|${SalesForce_Opportunities_IFrame_Id}|Opportunity Frame|
+|clickByJavaScript;|${SalesForce_Opportunities_New_RFI_Button}|New Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|wait;|800|
+|type;|${SalesForce_Opportunities_Name_Field}|$ntamOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Information Requested|Stage Dropdown|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$ntamCanCloseDate|Close Date Field|
+|type;|${SalesForce_Opportunities_NTAM_Proposal_Request_Field}|test|Proposal Request Field|
+|selectDropDownByText;|${SalesForce_Opportunities_NTAM_Client_Goal_Dropdown}|CPA|Client Goal Dropdown|
+|type;|${SalesForce_Opportunities_NTAM_Client_Goal_Details_Field}|test|Client Goal Details Field|
+|clear;|${SalesForce_Opportunities_NTAM_Due_Date_Field}|Due Date to Client Field|
+|type;|${SalesForce_Opportunities_NTAM_Due_Date_Field}|$ntamCanCloseDate|Due Date to Client Field|
+|selectDropDownByText;|${SalesForce_Opportunities_NTAM_Time_Due_Dropdown}|9am|Time Due Dropdown|
+|clickByJavaScript;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|$ntamOppName|Opportunity Detail Page|
+|$ntamOpportunityPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

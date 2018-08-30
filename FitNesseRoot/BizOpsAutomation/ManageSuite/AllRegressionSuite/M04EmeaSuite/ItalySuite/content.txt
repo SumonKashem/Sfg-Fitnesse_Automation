@@ -1,0 +1,10 @@
+!***** Test Cases
+ItalySuite.Test01LogInUserTest
+ItalySuite.Test02SelectMarketTest
+ItalySuite.Test03SelectAccOppTest
+ItalySuite.Test04AddSellLineTest
+ItalySuite.Test05ActualizeSellLinePlannedValueTest
+ItalySuite.Test06AddMediaBuyPlacementTest
+ItalySuite.Test07ActualizeBuyLineEffectiveRateTest
+ItalySuite.Test08AddFeeBuyPlacementTest
+**********!

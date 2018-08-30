@@ -1,0 +1,8 @@
+!***** Test Scenarios
+[[1-User Login][A3CappedCost.Test01LogInUserTest]]
+[[2-Select A Market][A3CappedCost.Test02SelectMarketTest]]
+[[3-Select An Account & Opportunity][A3CappedCost.Test03SelectAccOppTes]]
+[[4-Add A Sell Line][A3CappedCost.Test04AddSellLineTest]]
+[[5-Add A Media Buy Placement][A3CappedCost.Test05AddMediaBuyPlacementTest]]
+[[6-Miscellaneous Testing][A3CappedCost.Test06MiscellaneousTest]]
+**********!

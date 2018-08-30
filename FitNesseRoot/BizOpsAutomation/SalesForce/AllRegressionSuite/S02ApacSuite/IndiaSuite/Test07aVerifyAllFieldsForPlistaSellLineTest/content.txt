@@ -1,0 +1,83 @@
+'''Scenario Name: ''' Verify all fields available for Plista Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity URL
+   Scroll Into 'New Plista Sell Line' Button
+   Click on 'New Plista Sell Line' button
+   Verify Context 'Sell Line Edit' appears on upper left corner on Edit Page
+   Verify all section labels and fields exist on Plista sell line Edit Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_India_Suite_${PAGE_NAME}|Test07aInd-Verify All Fields Available for Plista Sell Line|
+|open;|$indOpportunityPageUrl |
+|scrollIntoView;|${SalesForce_SellLine_New_Plista_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_New_Plista_Sell_Line_Button}|New Plista Sell Line Button|
+|objectVerification;|${SalesForce_SellLine_Edit_Context_Label}|Sell Line Edit|Sell Line Edit Context Label|
+|elementVerification;|${SalesForce_SellLine_Information_Label_Text}|Yes|Information Label|
+|elementVerification;|${SalesForce_SellLine_Business_Unit_Dropdown}|Yes|Business Unit Dropdown|
+|elementVerification;|${SalesForce_SellLine_Sell_Name_Field}|Yes|Sell Name Field|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Field}|Yes|Opportunity Field|
+|elementVerification;|${SalesForce_SellLine_Brand_Dropdown}|Yes|Brand Dropdown|
+|elementVerification;|${SalesForce_SellLine_Fee_Line_Only_Checkbox}|Yes|Fee Line Only Checkbox|
+|elementVerification;|${SalesForce_SellLine_Start_Date_Field}|Yes|Start Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|0|Yes|Start Date Link|
+|elementVerification;|${SalesForce_SellLine_End_Date_Field}|Yes|End Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|1|Yes|End Date Link|
+|elementVerification;|${SalesForce_SellLine_Delivery_Market_Dropdown}|Yes|Delivery Market Dropdown|
+|elementVerification;|${SalesForce_SellLine_Market_Dropdown}|Yes|Market Dropdown|
+|elementVerification;|${SalesForce_SellLine_External_Id_Field}|Yes|External Id Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Budget_Details_Label_Text}|Yes|Gross Budget Details Label|
+|elementVerification;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Yes|Input Gross as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Rate_Type_DropDown}|Yes|Rate Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|Yes|Planned Gross Budget Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Rate_Field}|Yes|Gross Rate Field|
+|elementVerification;|${SalesForce_SellLine_Sell_Volume_Field}|Yes|Sell Volume Field|
+|elementVerification;|${SalesForce_SellLine_Information_Net_Cost_Breakout_Text}|Yes|Net Cost Breakout Label|
+|elementVerification;|${SalesForce_SellLine_Input_Net_As_DropDown}|Yes|Input Net as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Third_Party_Cost_Field}|Yes|Third Party Cost Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost_Field}|Yes|Planned Media Net Cost Field|
+|elementVerification;|${SalesForce_SellLine_Margin_Field}|Yes|Margin % Field|
+|elementVerification;|${SalesForce_SellLine_zCurrent_Margin_Explanation_Field}|Yes|Current Margin Explanation Field|
+|elementVerification;|${SalesForce_SellLine_Product_Platform_Data_Label_Text}|Yes|Product Platform & Data Label|
+|elementVerification;|${SalesForce_SellLine_Channel_DropDown}|Yes|Channel Dropdown|
+|elementVerification;|${SalesForce_SellLine_Video_Duration_DropDown}|Yes|Video Duration Dropdown|
+|elementVerification;|${SalesForce_SellLine_Device_DropDown}|Yes|Device Dropdown|
+|elementVerification;|${SalesForce_SellLine_Media_DropDown}|Yes|Media Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Apac_Product_Dropdown}|Yes|APAC Product Dropdown|
+|elementVerification;|${SalesForce_SellLine_Product_Deals_Field}|Yes|Product Deals Field|
+|elementVerification;|${SalesForce_SellLine_Apac_SubProduct_Dropdown}|Yes|APAC Sub-Product Dropdown|
+|elementVerification;|${SalesForce_SellLine_SubProduct_Deals_Field}|Yes|Sub-Product Deals Field|
+|elementVerification;|${SalesForce_Network_Billing_Platform_Dropdown}|Yes|Network Billing Platform Dropdown|
+|elementVerification;|${SalesForce_Network_Billing_Platform_Deals_Field}|Yes|Network Billing Platform Deals Field|
+|elementVerification;|${SalesForce_SellLine_Billing_Vendors_Picklist}|Yes|Billing Vendors Picklist|
+|elementVerification;|${SalesForce_SellLine_Billing_Vendors_Chosen_Picklist}|Yes|Billing Vendors Chosen Picklist|
+|elementVerification;|${SalesForce_Network_Vendor_Details_Field}|Yes|Vendor Details Field|
+|elementVerification;|${SalesForce_SellLine_Capabilities_PickList}|Yes|Capabilities Picklist|
+|elementVerification;|${SalesForce_SellLine_Capabilities_Chosen_Picklist}|Yes|Capabilities Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Trading_Operations_Label_Text}|Yes|Trading Operations Label|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Description_Field}|Yes|Sell Line Description Field|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Confirmed_Live_CheckBox}|Yes|Sell Line Confirmed Live Checkbox|
+|elementVerification;|${SalesForce_SellLine_Additonal_SellLine_Details_Field}|Yes|Additional Sell Line Details Field|
+|elementVerification;|${SalesForce_SellLine_Geography_Targeting_Field}|Yes|Geography Targeting Field|
+|elementVerification;|${SalesForce_SellLine_Genre_Targeting_Field}|Yes|Genre Targeting Field|
+|elementVerification;|${SalesForce_SellLine_Creative_Link_Field}|Yes|Creative Link Field|
+|elementVerification;|${SalesForce_SellLine_LP_URL_Field}|Yes|LP URL Field|
+|elementVerification;|${SalesForce_SellLine_KPI_Information_Label_Text}|Yes|KPI Information Label|
+|elementVerification;|${SalesForce_SellLine_Primary_KPI_DropDown}|Yes|Primary KPI Dropdown|
+|elementVerification;|${SalesForce_SellLine_KPI_Type_DropDown}|Yes|KPI Type Dropdown|
+|elementVerification;|${SalesForce_KPI_Type_Value_Field}|Yes|KPI Type Value Field|
+|elementVerification;|${SalesForce_SellLine_Primary_KPI_Details_Field}|Yes|Primary KPI Details Field|
+|elementVerification;|${SalesForce_SellLine_Secondary_KPI_DropDown}|Yes|Secondary KPI Dropdown|
+|elementVerification;|${SalesForce_SellLine_Secondary_KPI_Details_Field}|Yes|Secondary KPI Details Field|
+|elementVerification;|${SalesForce_SellLine_Strategy_Field}|Yes|Sell Line Strategy Field|
+|elementVerification;|${SalesForce_SellLine_System_Information_Label_Text}|Yes|System Information Label|
+|elementVerification;|${SalesForce_SellLine_Created_By_Manage_Field_2}|Yes|Created By Manage Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|2|Yes|Created By Manage Date Link|
+|stopExtentReport;|
+**********!

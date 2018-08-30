@@ -1,0 +1,54 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Close 'LR Germany PO' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to LR Germany PO Page Url
+   Click on 'Edit' Button
+   Select Status as 'Open'
+   Click on 'Save' button
+   Verify Error Message Appears
+   Click on 'Cancel' button
+   Click on 'Close Case' button
+   Select Status as 'Closed'
+   Click on 'Save' button
+   Verify error message appears
+   Click on 'Cancel' button
+   Click on case owner 'Change' link
+   Enter New Owner
+   Click on 'Save' button
+   Click on 'Close Case' button
+   Select status as 'Closed'
+   Click on 'Save' button
+   Verify Case Status as 'Closed' on Case details page
+**********!
+#$lrGermanyPoPageUrl
+#https://cs77.salesforce.com/5000t000002ShsK
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test30bGer-Close 'LR Germany PO' Case|
+|open;|$lrGermanyPoPageUrl|
+|click;|${SalesForce_Cases_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Open|Status Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Error_Message}|Error: Please assign the case to an LR Germany PO member before changing the case status.|Error Message|
+|click;|${SalesForce_Cases_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Close_Case_Button}|Close Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Closed|Status Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Error_Message}|Error: Please assign the case to an LR Germany PO member before changing the case status.|Error Message|
+|click;|${SalesForce_Cases_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Details_Page_Case_Owner_Change_Link}|Case Owner Change Link|
+|type;|${SalesForce_Cases_New_Owner_Field}|${SalesForce_Germany_User_Name}|New Owner Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|click;|${SalesForce_Cases_Close_Case_Button}|Close Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Closed|Status Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Text_Field}|Closed|Status Text Field|
+|stopExtentReport;|
+**********!

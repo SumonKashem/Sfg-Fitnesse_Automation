@@ -1,0 +1,53 @@
+'''INTENT: ''' Add a Media Buy Placement
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Click on Planning button
+   Reload planning page
+   Wait for Sell Line field to load/appear
+   Right click on Placement Name Field
+   Click on 'Add Media Buy Placement Line'
+   Confirm 'Yes' for buy line
+   Verify Net Cost defaults back to 0.00 on sell line level
+   Click on Vendor Dropdown
+   Select first value from Vendor Dropdown
+   Click on Billing Platform Dropdown
+   Select first value from Billing Platform Dropdown
+   Enter Budget as 100
+   Scroll Into Net Cost View
+   Enter Rate as 25
+   Verify Sell Line Net Cost value changed to 100
+   Click on Sync with SF button
+   Verify Media Buy Placement is synced
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|ItalySuite_${PAGE_NAME}|Test06 - Add a Media Buy Line for Italy and Sync|
+|clickUsingIndexMouseMovement;|${Manage_Planning_Button}|0|Planning Button|
+|$planningPageUrl =|getCurrentUrl;|
+|reloadPage;|$planningPageUrl|
+|waitForElementToLoadByRow;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name field|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name Field|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_RightClick_Media_Buy_Placement_Link}|0|Media Buy Placement Link|
+|clickUsingIndexMouseMovement;|${Manage_Buy_Line_Confirmed_Yes_Button}|0|Buy Placement Confirmed 'yes' button|
+|objectVerificationByRow;|${Manage_Sell_Line_NetCost_Field}|2|0.00|Sell Line Net Cost field|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Vendor_Dropdown}|3|Vendor Dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Vendor Dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Billing_Platform_Dropdown}|3|Billing Platform Dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Billing Platform Dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_BudgetCost_Field}|3|Budget Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_BudgetCost_Field}|3|100|Budget Input Field|
+|scrollIntoViewByRow;|2|${Manage_Sell_Line_NetCost_Field}|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Rate_Field}|3|Rate Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_Rate_Field}|3|25|Rate Input Field|
+|objectVerificationByRow;|${Manage_Sell_Line_NetCost_Field}|2|100.00|Sell Line Net Cost field for Media Buy placement|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|reloadPage;|$planningPageUrl|
+|waitForElementToLoadByRow;|${Manage_Buy_Line_Placement_Field_Synced}|3|Media Buy Placement Field Indicating it is 'Synced'|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,13 @@
+!***** Test Scenarios
+[[1-User Login][G1FixedRate.Test01LogInUserTest]]
+[[2-Select A Market][G1FixedRate.Test02SelectMarketTest]]
+[[3-Create and Edit an Opportunity][G1FixedRate.Test03aCreateAndEditOppTest]]
+[[4-Select An Account & Opportunity][G1FixedRate.Test03bSelectAccOppTest]]
+[[5-Add A Sell Line][G1FixedRate.Test04AddSellLineTest]]
+[[6-Add A Sell Line For Even Distribution][G1FixedRate.Test05AddSellLineEvenDistributionTest]]
+[[7-Add A Sell Line For Next Month Distribution][G1FixedRate.Test06AddSellLineNextMonthDistributionTest]]
+[[8-Add A Sell Line For Line Distribution][G1FixedRate.Test07AddSellLineBudgetDistributionTest]]
+[[9-Add A Buy Placement For Even Distribution][G1FixedRate.Test08AddMediaBuyLineEvenDistributionTest]]
+[[10-Add A Buy Placement For Next Month Distribution][G1FixedRate.Test09AddFeeBuyLineNextMonthDistributionTest]]
+[[11-Add A Buy Placement For Line Distribution][G1FixedRate.Test10AddMediaBuyLineBudgetDistributionTest]]
+**********!

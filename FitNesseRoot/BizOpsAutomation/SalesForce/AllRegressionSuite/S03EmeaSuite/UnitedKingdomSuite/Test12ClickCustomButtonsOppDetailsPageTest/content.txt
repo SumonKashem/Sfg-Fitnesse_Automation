@@ -1,0 +1,41 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Verify by clicking on all custom buttons in Opp detail page
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navitage to LR Opp URL
+   Click on 'Edit' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'Delete' button
+   Dismiss Pop up Alert
+   Click on 'Clone' button
+   Verify Opp Name appears with Clone content
+   Navigate back to previous opp detail page
+   Click on 'Rebooking' button
+   Accept/Dismiis Alert pop up 
+**********!
+#$ukXaxOpportunityPageUrl
+#https://c.cs77.visual.force.com/apex/OppDetail?id=0060t000009OfGE&sfdc.override=1
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_UK_Suite_${PAGE_NAME}|Test12UK-Verify by clicking on all custom buttons in Opp detail page|
+|open;|$ukXaxOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|cancelAlert;|
+|click;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Detail_Page}|XAX $ukOppName - Clone $emeaOppCloneDate|Clone Opp Name|
+|wait;|800|
+|open;|$ukXaxOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Rebooking_Button}|Rebooking Button|
+|wait;|1000|
+|cancelAlert;|
+|stopExtentReport;|
+**********!

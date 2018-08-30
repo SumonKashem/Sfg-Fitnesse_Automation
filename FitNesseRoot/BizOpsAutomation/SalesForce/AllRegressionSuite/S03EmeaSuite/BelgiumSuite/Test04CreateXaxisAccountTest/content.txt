@@ -1,0 +1,47 @@
+'''Scenario Name: ''' Create an EMEA Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on 'Accounts' tab
+   Click on 'New' Button
+   Select Record Type as 'Xaxis Media Buying - EMEA'
+   Click on 'Continue' button
+   Enter Agency Name
+   Enter Advertiser Name
+   Select Business Unit as ${SalesForce_EMEA_Business_Unit_Value}
+   Click on 'Create Account' button
+   Clear predefined Account name
+   Enter new Account name
+   Select Account Opt In Progress as 'Work In Progress
+   Click on Save Button
+   Verify Account name appears on account detail page
+   Verify Account Record Type appears on account detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test04Bel-Create an EMEA Account|
+|click;|${SalesForce_Accounts_Tab}|Accounts Tab|
+|click;|${SalesForce_Accounts_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Accounts_Record_Type_DropDown}|Xaxis Media Buying - EMEA|Record Type Dropdown|
+|click;|${SalesForce_Accounts_Continue_Button}|Continue Button|
+|wait;|2000|
+|type;|${SalesForce_Accounts_Agency_Field}|$belgiumEmeaAgencyName|Agency Field|
+|wait;|1500|
+|type;|${SalesForce_Accounts_Advertiser_Field}|$belgiumEmeaAdvertiserName|Advertiser Field|
+|wait;|800|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|${SalesForce_APAC_Business_Unit_Value}|Business Unit Dropdown|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|wait;|1000|
+|clear;|${SalesForce_Accounts_Name_Field}|Account Name Field|
+|type;|${SalesForce_Accounts_Name_Field}|Xax $belgiumEmeaAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Account_Opt_In_Status_DropDown}|Work In Progress|Opt In Status Dropdown|
+|click;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Account_Name_Description}|Xax $belgiumEmeaAccountName|Account Detail Page|
+|objectVerification;|${SalesForce_Accounts_Record_Type_Field}|${SalesForce_EMEA_BU_Acc_Record_Type_Xaxis}|Account Record Type|
+|$belXaxEmeaAccountPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

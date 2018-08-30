@@ -1,0 +1,28 @@
+All Sales Force Companies Page Variables Are Defined Here....
+
+!define SalesForce_Companies_Tab {//*[contains(@title,"Companies")]}
+!define SalesForce_New_Button {//*[@title="New"]}
+!define SalesForce_Select_Company_DropDown {//*[@id="p3"]}
+!define SalesForce_Continue_Button {//*[@title="Continue"]}
+!define SalesForce_Market_DropDown {//*[@id="00Ni000000COiXM"]}
+!define SalesForce_AssignedToTeam_DropDown {//*[@id="00Ni000000EGu3y"]}
+!define SalesForce_Save_Button {//*[@title="Save"]}
+!define SalesForce_Company_Name {//*[@id="Name_ileinner"]}
+!define SalesForce_Company_Name_Field {//*[@id="Name"]}
+!define SalesForce_Company_Type_DropDown {//*[@id="00Ni0000004xIbk"]}
+!define SalesForce_Company_VAT_Number_Field {//*[@id="00Ni000000FHiuR"]}
+!define SalesForce_Companies_Assign_To_Team_Content {//*[@id="00Ni000000EGu3y_ileinner"]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

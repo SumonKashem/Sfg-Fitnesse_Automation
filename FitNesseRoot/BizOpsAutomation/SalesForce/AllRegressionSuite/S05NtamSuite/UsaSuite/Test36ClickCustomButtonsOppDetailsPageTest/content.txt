@@ -1,0 +1,77 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test01LogInUsUserTest
+*!
+
+'''Scenario Name: ''' Verify by clicking on all custom buttons in Opp detail page
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navitage to LR Opp URL
+   Click on 'Edit' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'Delete' button
+   Dismiss Pop up Alert
+   Click on 'Clone' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'Rebooking' button
+   Accept/Dismiis Alert pop up
+   Click on 'Action X' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'AdOps Case' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'DSP Cutovers' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'NTAM Ad Labs' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'Radia Campaign Setup Case' button
+   Accept/Dismiss pop up Alert
+   Click on 'Client IO' button
+   Accept/Dismiss pop up Alert
+   Click on 'Monthly Delivery Wizard' button
+   Click on 'Back to Opportunity' button to go back to Opp detail page
+   Click on 'Radia Delivery Push' button
+   Click on 'Back to Opportunity' button to go back to Opp detail page
+   Click on 'Vendor IO' button
+   Click on 'Back to Opportunity' button to go back to Opp detail page
+   Click on 'Edit Radia Custom Columns' button
+   Click on 'Back to Opportunity' button to go back to Opp detail page
+**********!
+#$ntamUsOpportunityPageUrl 
+#https://cs77.salesforce.com/0060t000009OhNCAA0?nooverride=1
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test36US-Verify by clicking on all custom buttons in Opp detail page|
+|open;|$ntamUsOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|cancelAlert;|
+|click;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_ActionX_Button}|Action X Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Ad_Ops_Button}|AdOps Case Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_DSP_Cutovers_Button}|DSP Cutovers Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_NTAM_Ad_Labs_Button}|NTAM Ad Labs Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Radia_Campaign_Setup_Case_Button}|Radia Campaign Setup Case Button|
+|cancelAlert;|
+|click;|${SalesForce_Cases_US_Analystics_Button}|US Analytics Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Client_IO_Button}|Client IO Button|
+|cancelAlert;|
+|click;|${SalesForce_Opportunities_Monthly_Delivery_Wizard_Button}|Monthly Delivery Wizard Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opp Button|
+|click;|${SalesForce_Opportunities_Radia_Delivery_Push_Button}|Radia Delivery Push Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opp Button|
+|click;|${SalesForce_Opportunities_Vendor_IO_Button}|Vendor IO Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opp Button|
+|click;|${SalesForce_Opportunities_Edit_Radia_Custom_Columns_Button}|Edit Radia Custom Columns Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opp Button|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,8 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite
+*!
+
+!***** MARKETS
+[[Canada][M03NtamSuite.CanadaSuite]]
+[[USA][M03NtamSuite.UsaSuite]]
+**********!

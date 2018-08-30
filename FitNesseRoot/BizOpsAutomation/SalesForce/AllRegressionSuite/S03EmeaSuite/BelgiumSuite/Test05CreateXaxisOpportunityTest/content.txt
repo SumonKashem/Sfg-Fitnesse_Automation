@@ -1,0 +1,40 @@
+'''Scenario Name: ''' Create an Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Account page
+   Switch to IFrame for Opportunity
+   Click on 'New Opportunity' button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select stage as 'Contacted / Prospecting'
+   Clear Close Date field
+   Enter Close Date
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Verify Record Type appears on opportunity detail page
+   Capture opportunity page url for resuable purpose
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test05Bel-Create an EMEA Opportunity|
+|open;|$belXaxEmeaAccountPageUrl|
+|switchToFrame;|${SalesForce_Opportunities_IFrame_Id}|Opportunity Frame|
+|clickByJavaScript;|${SalesForce_Opportunities_New_Opp_Button}|New Button|
+|wait;|2000|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|type;|${SalesForce_Opportunities_Name_Field}|Xax $belgiumEmeaOppName|Opportunity Name Field|
+|wait;|1200|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Contacted / Prospecting|Stage Dropdown|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$closeDateForEMEAOpp|Close Date Field|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|Xax $belgiumEmeaOppName|Opportunity Detail Page|
+|objectVerification;|${SalesForce_Opportunities_Record_Type_Field}|Belgium|Record Type|
+|$belEmeaOpportunityPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,5 @@
+!***** script below allows you to store a method 'getUniqueName' for reusability
+!|script|DriverClass|
+|$germanyOppName=|getUniqueName;|Germany Opportunity|
+|$closeDateForGerOpp=|getDesiredDateInFormat;|0|-|yyyy|
+

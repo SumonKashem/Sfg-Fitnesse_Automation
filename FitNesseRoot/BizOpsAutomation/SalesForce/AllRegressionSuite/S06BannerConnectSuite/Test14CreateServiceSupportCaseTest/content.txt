@@ -1,0 +1,41 @@
+'''Scenario Name: ''' Create a 'Bannerconnect Supports' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on '+' Icon tab
+   Click on Cases Link
+   Click on 'New' button
+   Select Record Type as 'Bannerconnect Support'
+   Click on 'Continue' button
+   Enter Service Account Name $serviceAccountName
+   Enter Service Opportunity Name $serviceOppName
+   Select Case Currency as 'Euro'
+   Select Status as 'New'
+   Select Case Origin as 'Email'
+   Click on 'Save' button
+   Click on Details tab
+   Verify Case Record Type as 'Bannerconnect Support' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test14BC-Create a 'Bannerconnect Supports' case|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Cases_Link}|Cases Link|
+|click;|${SalesForce_Cases_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Cases_Record_Type_Dropdown}|Bannerconnect Support|Record Type Dropdown|
+|click;|${SalesForce_Cases_Continue_Button}|Continue Button|
+|type;|${SalesForce_Cases_BC_Account_Field}|$serviceAccountName|Account Name Field|
+|type;|${SalesForce_Cases_BC_Opp_Field}|$serviceOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Cases_BC_Currency_Dropdown}|EUR - Euro|Currency Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_BC_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_BC_Case_Origin_Dropdown}|Email|Case Origin Dropdown|
+|type;|${SalesForce_Cases_BC_Subject_Field}|Testing Support Case for Service|Subject Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|click;|${SalesForce_Cases_BC_Detail_Tab}|Details Tab|
+|objectVerification;|${SalesForce_Cases_Record_Type_Text}|Bannerconnect Support [Change]|Record Type on Case page|
+|stopExtentReport;|
+**********!

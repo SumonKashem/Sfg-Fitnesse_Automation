@@ -1,0 +1,77 @@
+'''Scenario Name: ''' Verify all fields available for LR Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity URL
+   Scroll Into 'New LR Sell Line' Button
+   Click on 'New LR Sell Line' button
+   Verify Context 'Sell Line Edit' appears on upper left corner on Edit Page
+   Verify all section labels and fields exist on LR sell line Edit Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test08aAus-Verify All Fields Available for LR Sell Line|
+|open;|$ausOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_SellLine_New_LR_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_New_LR_Sell_Line_Button}|New LR Sell Line Button|
+|objectVerification;|${SalesForce_SellLine_Edit_Context_Label}|Sell Line Edit|Sell Line Edit Context Label|
+|elementVerification;|${SalesForce_SellLine_Information_Label_Text}|Yes|Information Label|
+|elementVerification;|${SalesForce_SellLine_Business_Unit_Dropdown}|Yes|Business Unit Dropdown|
+|elementVerification;|${SalesForce_SellLine_Sell_Name_Field}|Yes|Sell Name Field|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Field}|Yes|Opportunity Field|
+|elementVerification;|${SalesForce_SellLine_Fee_Line_Only_Checkbox}|Yes|Fee Line Only Checkbox|
+|elementVerification;|${SalesForce_Network_Billing_Platform_Dropdown}|Yes|Network Billing Platform Dropdown|
+|elementVerification;|${SalesForce_SellLine_Billing_Vendors_Picklist}|Yes|Billing Vendors Picklist|
+|elementVerification;|${SalesForce_SellLine_Billing_Vendors_Chosen_Picklist}|Yes|Billing Vendors Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Start_Date_Field}|Yes|Start Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|0|Yes|Start Date Link|
+|elementVerification;|${SalesForce_SellLine_End_Date_Field}|Yes|End Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|1|Yes|End Date Link|
+|elementVerification;|${SalesForce_SellLine_Delivery_Market_Dropdown}|Yes|Delivery Market Dropdown|
+|elementVerification;|${SalesForce_SellLine_External_Id_Field}|Yes|External Id Field|
+|elementVerification;|${SalesForce_SellLine_LR_Partner_Dropdown}|Yes|LR Partner Dropdown|
+|elementVerification;|${SalesForce_SellLine_Local_Partner_Field}|Yes|Local Partner Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Budget_Details_Label_Text}|Yes|Gross Budget Details Label|
+|elementVerification;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Yes|Input Gross as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Rate_Type_DropDown}|Yes|Rate Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Rate_Detail_Field}|Yes|Rate Detail Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|Yes|Planned Gross Budget Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Rate_Field}|Yes|Gross Rate Field|
+|elementVerification;|${SalesForce_SellLine_Sell_Volume_Field}|Yes|Sell Volume Field|
+|elementVerification;|${SalesForce_SellLine_Information_Net_Cost_Breakout_Text}|Yes|Net Cost Breakout Label|
+|elementVerification;|${SalesForce_SellLine_Input_Net_As_DropDown}|Yes|Input Net as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Third_Party_Cost_Field}|Yes|Third Party Cost Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost_Field}|Yes|Planned Media Net Cost Field|
+|elementVerification;|${SalesForce_SellLine_Margin_Field}|Yes|Margin % Field|
+|elementVerification;|${SalesForce_SellLine_zCurrent_Margin_Explanation_Field}|Yes|Current Margin Explanation Field|
+|elementVerification;|${SalesForce_SellLine_Product_Media_Label_Text}|Yes|Product and Media Label|
+|elementVerification;|${SalesForce_SellLine_Channel_DropDown}|Yes|Channel Dropdown|
+|elementVerification;|${SalesForce_SellLine_Device_DropDown}|Yes|Device Dropdown|
+|elementVerification;|${SalesForce_SellLine_Media_DropDown}|Yes|Media Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Product_DropDown}|Yes|Product Dropdown|
+|elementVerification;|${SalesForce_SellLine_Product_Detail_Field}|Yes|Product Detail Field|
+|elementVerification;|${SalesForce_SellLine_Details_Label_Text}|Yes|Sell Line Details Label|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Description_Field}|Yes|Sell Line Description Field|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Status_Dropdown}|Yes|Sell Line Status Dropdown|
+|elementVerification;|${SalesForce_SellLine_Turbine_Checkbox}|Yes|Turbine Checkbox|
+|elementVerification;|${SalesForce_SellLine_Turbine_Segments_PickList}|Yes|Turbine Segments Picklist|
+|elementVerification;|${SalesForce_SellLine_Turbine_Segments_Chosen_PickList}|Yes|Turbine Segements Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Analytics_Dropdown}|Yes|Analytics Dropdown|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Confirmed_Live_CheckBox}|Yes|Sell Line Confirmed Live Checkbox|
+|elementVerification;|${SalesForce_Performance_Alert_Reason_DropDown}|Yes|Performance Alert Reason Dropdown|
+|elementVerification;|${SalesForce_Performance_Alert_Checkbox}|Yes|Performance Alert Checkbox|
+|elementVerification;|${SalesForce_SellLine_Original_Targets_Label_Text}|Yes|Original Targets Label|
+|elementVerification;|${SalesForce_SellLine_KPI_Information_Label_Text}|Yes|KPI Information Label|
+|elementVerification;|${SalesForce_SellLine_Primary_KPI_DropDown}|Yes|Primary KPI Dropdown|
+|elementVerification;|${SalesForce_SellLine_KPI_Type_DropDown}|Yes|KPI Type Dropdown|
+|elementVerification;|${SalesForce_KPI_Type_Value_Field}|Yes|KPI Type Value Field|
+|elementVerification;|${SalesForce_SellLine_Strategy_Field}|Yes|Sell Line Strategy Field|
+|elementVerification;|${SalesForce_SellLine_System_Information_Label_Text}|Yes|System Information Label|
+|elementVerification;|${SalesForce_SellLine_Created_By_Manage_Field_2}|Yes|Created By Manage Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|2|Yes|Created By Manage Date Format Link|
+|stopExtentReport;|
+**********!

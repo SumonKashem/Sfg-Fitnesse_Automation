@@ -1,0 +1,29 @@
+'''Scenario Name: ''' Verify User Has Manage Companies permission set
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   *APAC user
+   Search for APAC user to impersonate
+   Click on 'Search' Button
+   Click on 'Display Name' link
+   Click on 'User Action' drop down menu
+   Click on 'User Detail' link
+   Verify User has 'Manage Companies' permission by calling the manageCompaniesForUser() method
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test02GerUser-Verify User ${SalesForce_Germany_User_Name} has Manage Companies|
+|type;| ${SalesForce_Search_Field}|${SalesForce_Germany_User_Name}|Search Field|
+|click;|${SalesForce_Search_Button}|Search Button|
+|click;|${SalesForce_DisplayName_Link}|Display Name Link|
+|click;|${SalesForce_UserDetail_DropDown_Arrow}|User Action Dropdown|
+|click;|${SalesForce_UserDetail_DropDown_Link}|User Detail Link|
+|manageCompaniesForUser;|
+|stopExtentReport;|
+**********!
+
+

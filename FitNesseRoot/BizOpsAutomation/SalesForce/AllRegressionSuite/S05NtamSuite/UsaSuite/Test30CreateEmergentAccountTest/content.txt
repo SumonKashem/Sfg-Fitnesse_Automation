@@ -1,0 +1,67 @@
+'''Scenario Name: ''' Create an Emergent Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on Plus Icon tab
+   Click on 'Accounts' tab
+   Click on 'New' Button
+   Verify By default Account Record Type is 'Media Buying'
+   Click on 'Continue' button
+   Enter Agency Name with assigned to team as Xaxis
+   Enter Advertiser Name
+   Select Business Unit as 'Emergent'
+   Click on 'Create Account' button
+   Verify Only Agency assiocated with Assigned to Team as Emergent can create Emergent BU account
+   Now Enter Agency name with assigned to team as 'Emergent'
+   Click on 'Create Account' button
+   Clear predefined Account name
+   Enter new Account name
+   Select Account Opt In Progress as 'Work In Progress
+   Se;lect Emergent Revenue Stream as 'Emergent Direct'
+   Select Account Currency as USD - U.S. Dollar
+   #Select SLA classification as A
+   Click on Save Button
+   Verify Account name appears on account detail page
+   Verify Account Record type on Account detail page
+**********!
+#|selectDropDownByText;|${SalesForce_Account_SLA_Classification_DropDown}|A|SLA Classification Dropdown|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|NTAM30US-Create an Emergent Account|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Accounts_Button}|Accounts Button|
+|click;|${SalesForce_Accounts_New_Button}|New Button|
+|objectVerification;|${SalesForce_Accounts_Record_Type_DropDown}|Media Buying|Default Account Record Type|
+|click;|${SalesForce_Accounts_Continue_Button}|Continue Button|
+|wait;|1900|
+|type;|${SalesForce_Accounts_Agency_Field}|$ntamUsAgencyName|Agency Field|
+|wait;|1900|
+|type;|${SalesForce_Accounts_Advertiser_Field}|$ntamUsAdvertiserName|Advertiser Field|
+|wait;|1900|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|Emergent|Business Unit Dropdown|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|objectVerification;|${SalesForce_Accounts_BU_EMGT_Err_MSG}|users are not allowed to select Emergent as the Business Unit on Accounts where record type isXaxis_Media_Buying_NTAM|Err message verification for Emergent|
+|$accountPageUrl=|getCurrentUrl;|
+|open;|$accountPageUrl|
+|wait;|1900|
+|type;|${SalesForce_Accounts_Agency_Field}|EMGT $ntamUsAgencyName|Agency Field|
+|wait;|1900|
+|type;|${SalesForce_Accounts_Advertiser_Field}|$ntamUsAdvertiserName|Advertiser Field|
+|wait;|1900|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|Emergent|Business Unit Dropdown|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|clear;|${SalesForce_Accounts_Name_Field}|Account Name Field|
+|wait;|1900|
+|type;|${SalesForce_Accounts_Name_Field}|EMGT $ntamUsAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Account_Opt_In_Status_DropDown}|Work In Progress|Opt In Status Dropdown|
+|selectDropDownByText;|${SalesForce_Accounts_Emergent_Revenue_Stream_Dropdown}|Emergent Direct|Emergent Revenue Stream Dropdown|
+|selectDropDownByText;|${SalesForce_Accounts_NTAM_Currency_Dropdown}|USD - U.S. Dollar|Currency Dropdown|
+|clickByJavaScript;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Account_Name_Description}|EMGT $ntamUsAccountName|Account Detail Page|
+|objectVerification;|${SalesForce_Accounts_Record_Type_Field}|EMGT Media Buying - NTAM [Change]|Account Record Type|
+|$ntamEmgtAccountPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

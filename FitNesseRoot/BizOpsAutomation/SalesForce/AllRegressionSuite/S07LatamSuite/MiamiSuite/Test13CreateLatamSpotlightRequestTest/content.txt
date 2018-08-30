@@ -1,0 +1,38 @@
+'''Scenario Name: ''' Create an 'LATAM Spotlight Request' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Account Url
+   Scroll Into LATAM Spotlight Request button
+   Click on LATAM Spotlight Request  button
+   Select Picklist value as DBM
+   Click on Picklist Right arrow
+   click on Start Date as current day
+   Click on Due Date as current day
+   Select Request Type as 'Agency Reporting'
+   Enter Subject as test
+   Enter Description as test
+   Click on 'Save' button
+   Verify Case Record Type as 'LATAM Spotlight' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test13Mia-Create an 'LATAM Spotlight Request' Case}|
+|open;|$miaLatamAccountPageUrl|
+|scrollIntoView;|${SalesForce_Cases_LATAM_Spotlight_Request_Button}|
+|click;|${SalesForce_Cases_LATAM_Spotlight_Request_Button}|LATAM Spotlight Request Button|
+|selectDropDownByText;|${SalesForce_Cases_Data_Sources_Picklist}|DBM|Data Sources Picklist|
+|clickByJavaScript;|${SalesForce_Cases_Data_Sources_Right_Arrow}|Data Sources Right Arrow|
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|0|Start Date Link|
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|1|Due Date Link|
+|selectDropDownByText;|${SalesForce_Cases_Request_Type_Dropdown}|Agency Reporting|Request Type Dropdown|
+|type;|${SalesForce_Cases_BC_Subject_Field}|test|Subject Field|
+|type;|${SalesForce_Cases_BC_Description_Field}|test|Description Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Record_Type_Text}|LATAM Spotlight [Change]|Record Type on Case page|
+|stopExtentReport;                                                                                                 |
+**********!

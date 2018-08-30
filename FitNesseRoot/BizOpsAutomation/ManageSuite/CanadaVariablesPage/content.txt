@@ -1,0 +1,18 @@
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'sellLineStartDate' for reusability
+!|script|DriverClass|
+|$canadaSellLineStartDate=|getDesiredDateInFormat;|0|/|
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'sellLineEndDate' for reusability
+!|script|DriverClass|
+|$canadaSellLineEndDate=|getDesiredDateInFormat;|60|/|
+**********!
+
+!***** variable below allows you work with a user with role as 'Canada'
+!define canada_User_Name {Vanda Absolonova}
+!define canada_User_Name_With_Email {vanda.absolonova@groupm.com.glstaging}
+!define canada_User_Password {xaxisAuto#14}
+#!define canada_User_Name {Sumon Kashem}
+#!define canada_User_Name_With_Email {sumon.kashem@xaxis.com}
+#!define canada_User_Password {xaxisAuto#13}
+**********!

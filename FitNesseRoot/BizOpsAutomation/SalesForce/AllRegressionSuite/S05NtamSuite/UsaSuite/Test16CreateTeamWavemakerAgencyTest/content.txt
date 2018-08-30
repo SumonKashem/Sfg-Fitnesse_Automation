@@ -1,0 +1,44 @@
+'''Scenario Name: ''' Create an US Wavemaker Team agency
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   First Log in back as US User
+   Click on Plus Icon Tab
+   Click on 'Companies' tab
+   Click on 'New' Button
+   Select Record Type as 'Agency Company'
+   Click on 'Continue' button
+   Enter Agency Name
+   Verify Agency is selected on drop down
+   Select Market as '${SalesForce_NTAM_US_Agency_Market_Value}'
+   Select Assigned to team as 'Wavemaker'
+   Click on 'Save' button
+   Verify company name appears on company detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test16US-Create an NTAM US Wavemaker agency|
+|type;| ${SalesForce_Search_Field}|${SalesForce_NTAM_US_User_Name}|Search Field|
+|click;|${SalesForce_Search_Button}|Search Button|
+|scrollIntoView;|${SalesForce_DisplayName_Link}|
+|click;|${SalesForce_DisplayName_Link}|Display Name Link|
+|click;|${SalesForce_UserDetail_DropDown_Arrow}|User Action Dropdown|
+|click;|${SalesForce_UserDetail_DropDown_Link}|User Detail Link|
+|click;|${SalesForce_User_LogIn_Button}|LogIn Button|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Companies_Tab}|Companies Tab|
+|click;|${SalesForce_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Select_Company_DropDown}|Agency Company|Company Dropdown|
+|click;|${SalesForce_Continue_Button}|Continue Button|
+|wait;|1400|
+|type;|${SalesForce_Company_Name_Field}|$usMaxusAgencyName|Company Name Field|
+|selectDropDownByText;|${SalesForce_Market_DropDown}|${SalesForce_NTAM_US_Agency_Market_Value}|Market Dropdown|
+|selectDropDownByText;|${SalesForce_AssignedToTeam_DropDown}|Wavemaker|Assigned To Team Dropdown|
+|click;|${SalesForce_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Company_Name}|$usMaxusAgencyName|Company Detail page|
+|stopExtentReport;|
+**********!

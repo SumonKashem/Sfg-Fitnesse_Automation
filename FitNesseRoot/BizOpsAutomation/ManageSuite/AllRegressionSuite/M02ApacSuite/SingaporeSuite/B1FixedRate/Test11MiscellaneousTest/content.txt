@@ -1,0 +1,113 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B1FixedRate.Test01LogInUserTest
+!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B1FixedRate.Test02SelectMarketTest
+!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B1FixedRate.Test03SelectAccOppTest
+*!
+
+'''INTENT: ''' Test Miscellaneous Functionality
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Change to Rate Type from 'CPM' to 'CPC'
+   Verify the quanity gets updated before sync
+   Verify Total Net Quantity is updated before sync
+   Sync with SF
+   Wait for manage UI to load
+   Verify quantity is updated after sync
+   Verify Total Net Quantity is updated after sync
+   Scroll to Quantity field
+   wait
+   Select Rate Type as CPC
+   Verify BP Rate Quantity
+   Sync with SF
+   Verify BP Rate Quantity
+   Clone a Sell Line with a BP
+   Verify clones SL & BP exist 
+   Sync with SF
+   Clone a BP
+   Verify new cloned BP Name Field
+   Sync with SF
+   Verify new cloned BP Name Field
+   Delete BP
+   Sync with SF
+   Verify it doesn't exist
+   Delete the cloned SL
+   Sync with SF
+   Verify it doesn't exist
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|SingaporeSuite_Budget_${PAGE_NAME}|Test11Sin-Test Miscellaneous Functionality|
+|clickUsingMouseMovement;|${Manage_Planning_Button}|Planning Button|
+|scroll;|Horizontal|-10000|
+|scroll;|Horizontal|1000|
+|wait;|1000|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|CPC|SL Rate Type dropdown Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|CPC|SL Rate Type dropdown Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|2|4|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|4|Total Gross Quantity|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|2|4|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|4|Total Gross Quantity|
+|scroll;|Horizontal|-10000|
+|scroll;|Horizontal|1000|
+|scroll;|Vertical|1000|
+|wait;|1300|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_RateType_Field}|3|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_RateType_Field}|3|CPC|BP Rate Type dropdown Field|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_RateType_Field}|3|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_RateType_Field}|3|CPC|BP Rate Type dropdown Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|3|0.0105|BP Line Rate Field|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|3|0.0105|BP Line Rate Field|
+|scroll;|Horizontal|-10000|
+|wait;|1000|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Clone}|Clone Button|
+|scroll;|Vertical|2200|
+|wait;|1000|
+|elementVerificationByRow;|6|${Manage_Sell_Line_PlacementName_Field_2}|Yes|Cloned Sell LIne Placement Name Field|
+|elementVerificationByRow;|7|${Manage_Buy_Line_Buy_Placement_Name_Field}|Yes|Cloned Buy LIne Placement Name Field|
+|elementVerificationByRow;|8|${Manage_Buy_Line_Buy_Placement_Name_Field}|Yes|Cloned Buy LIne Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|scroll;|Vertical|2200|
+|wait;|1000|
+|rightClickByRowUsingMouseMovement;|${Manage_Buy_Line_Placement_Field_Synced}|8|Buy Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Clone}|Clone Button|
+|elementVerificationByRow;|9|${Manage_Buy_Line_Buy_Placement_Name_Field}|Yes|Cloned Buy Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|elementVerificationByRow;|9|${Manage_Buy_Line_Placement_Field_Synced}|Yes|Cloned Buy Placement Name Field|
+|rightClickByRowUsingMouseMovement;|${Manage_Buy_Line_Placement_Field_Synced}|9|Cloned Buy Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Delete}|Delete Button|
+|clickUsingMouseMovement;|${Manage_Delete_Confirm_Button}|Delete Confirm Button|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|scroll;|Vertical|2200|
+|wait;|1000|
+|elementVerificationByRow;|9|${Manage_Buy_Line_Placement_Field_Synced}|No|Cloned Buy Placement Name Field|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|6|Cloned SL Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Delete}|Delete Button|
+|clickUsingMouseMovement;|${Manage_Delete_Confirm_Button}|Delete Confirm Button|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|scroll;|Vertical|2200|
+|wait;|1000|
+|elementVerificationByRow;|6|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|No|Cloned SL Placement Name Field|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

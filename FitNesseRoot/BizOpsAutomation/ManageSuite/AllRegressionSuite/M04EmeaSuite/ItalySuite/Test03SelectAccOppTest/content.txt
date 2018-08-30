@@ -1,0 +1,39 @@
+'''INTENT: ''' Select An account & opportunity for Italy
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Wait for Manage Button to load/appear
+   Click on 'Manage Plan' Button
+   Wait for Opportunity page to load
+   Click on 'Choose Account' dropdown
+   Type Account as 'Italy_Acc_Automation_Test'
+   Click on account name link
+   Click on 'Choose Opportunity' dropdown
+   Click on Opportunity name link
+   Verify Opportunity Status appears as 'Information Requested'
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|ItalySuite_${PAGE_NAME}|Test03 - Select Account & Opportunity for Italy|
+|waitForElementToLoad;|${Manage_Plan_Button}|Manage Button|
+|click;|${Manage_Plan_Button}|Manage Plan Button|
+|waitForElementToLoad;|${Manage_PlanView_Account_Dropdown}|Choose Account Dropdown|
+|clickUsingMouseMovement;|${Manage_PlanView_Account_Dropdown}|Choose Account Dropdown|
+|type;| ${Manage_PlanView_Account_Search_Field}|Italy_Acc_Automation_Test|Choose Account Search Field|
+|click;|${Manage_PlanView_Account_Name_Link}|Account Name Text Link|
+|clickUsingMouseMovement;|${Manage_PlanView_Opp_Dropdown}|Choose Opportunity Dropdown|
+|click;|${Manage_PlanView_Opp_Name_Second_Link}|Opportunity Name Text Link|
+|objectVerification;|${Manage_Opp_Details_OppStatus_Text}| - Contacted / Prospecting|Opportunity Status Text|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

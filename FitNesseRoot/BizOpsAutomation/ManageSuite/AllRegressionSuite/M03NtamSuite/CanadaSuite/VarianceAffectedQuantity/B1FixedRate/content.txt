@@ -1,0 +1,12 @@
+!***** Test Scenarios
+[[1-User Login][B1FixedRate.Test01LogInUserTest]]
+[[2-Select A Market][B1FixedRate.Test02SelectMarketTest]]
+[[3-Select An Account & Opportunity][B1FixedRate.Test03SelectAccOppTest]]
+[[4-Add A Sell Line][B1FixedRate.Test04AddSellLineTest]]
+[[5-Add A Sell Line For Even Distribution][B1FixedRate.Test05AddSellLineEvenDistributionTest]]
+[[6-Add A Sell Line For Next Month Distribution][B1FixedRate.Test06AddSellLineNextMonthDistributionTest]]
+[[7-Add A Sell Line For Line Quantity Distribution][B1FixedRate.Test07AddSellLineQuantityDistributionTest]]
+[[8-Add A Buy Placement For Even Distribution][B1FixedRate.Test08AddMediaBuyLineEvenDistributionTest]]
+[[9-Add A Buy Placement For Next Month Distribution][B1FixedRate.Test09AddFeeBuyLineNextMonthDistributionTest]]
+[[10-Add A Buy Placement For Line Quantity Distribution][B1FixedRate.Test10AddMediaBuyLineQuantityDistributionTest]]
+**********!

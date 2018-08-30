@@ -1,0 +1,33 @@
+'''Scenario Name: ''' Create a Xaxis Buy Placement
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Search for 'Sell Line'
+   Navigate to Xaxis Sell Line Url
+   Scroll Into New Buy Line Button
+   Click on 'New Buy Line' button
+   Enter Partner on Lookup field
+   Enter Est volume as 20
+   Enter Gross Buy Rate as 2
+   Click on 'Save & Complete' button
+   Verify Sell Name Appears as it redirects user to Sell Line Detail Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_UK_Suite_${PAGE_NAME}|Test10UK-Create a UK Xaxis Buy Placement|
+|open;|$ukXaxSellLineUrl|
+|scrollIntoView;|${SalesForce_BuyPlacement_UK_New_Buy_Line_Button}|
+|clickByJavaScript;|${SalesForce_BuyPlacement_UK_New_Buy_Line_Button}|New Buy Line Button|
+|wait;|1000|
+|type;|${SalesForce_BuyPlacement_UK_Partner_Lookup_Field}|Xaxis Audio: Buy Media - Audio product|Partner Lookup Field|
+|type;|${SalesForce_BuyPlacement_UK_Estimated_Impressions_Field}|22|Est Volume Field|
+|type;|${SalesForce_BuyPlacement_UK_Gross_Buy_Rate_Field}|2|Gross Buy Rate Field|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_And_Complete_Button}|Save & Complete Button|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Name_Field}|$emeaSLName_Xax|Sell Line Name on SL Page|
+|$ukXaxBuyPlacementPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

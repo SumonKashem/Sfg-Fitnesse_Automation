@@ -1,0 +1,45 @@
+!define Manage_Actualization_Monthly_Schedule_Tab {//*[contains(@class,"schedule-group-button")]}
+!define Manage_Actualization_SellLine_Actualized_CheckBox {[@data-api="Actualized__c"]}
+!define Manage_Actualization_BuyLine_Actualized_CheckBox {[@data-api="Reconciled__c"]}
+
+!define Manage_Actualization_BuyLine_Actual_Method_Dropdown {[@data-api="Payable_Cost_capped_at_Planned__c"]}
+!define Manage_Actualization_BuyLine_Actual_Budget_Field {[@data-api="Radia_Planned_Payable_Cost__c"]}
+!define Manage_Actualization_BuyLine_Actual_Quantity_Field {[@data-api="Radia_Planned_Units__c"]}
+!define Manage_Actualization_BuyLine_Planned_Quantity_Field {[@data-api="Radia_Planned_Units__c"]}
+!define Manage_Actualization_DropDown_Input_Field {//*[@class="handsontableInput"]}
+!define Manage_Actualization_Distribution_Next_Month_Option {//*[@class="htItemWrapper" and text()="Subtract variance from next month"]}
+!define Manage_Actualization_Distribution_Line_Budget_Option {//*[@class="htItemWrapper" and text()="Add variance to line budget"]}
+!define Manage_Actualization_SellLine_Planned_Budget_Field {[@data-api="Gross_Budget_Editable__c"]}
+!define Manage_Actualization_SellLine_Planned_Quantity_Field {[@data-api="Planned_Billable_Units__c"]}
+!define Manage_Actualization_SellLine_NetCost_Field {//*[@data-api="Net_Budget_Editable__c"]}
+!define Manage_Actualization_BuyLine_ActualRate_Field {[@data-api="Effective_Payable_Rate__c"]}
+!define Manage_Actualization_SellLine_Actual_Rate_Field {//*[@data-api="Effective_Billable_Rate__c"]}
+
+!define Manage_Actualization_Line_Budget_Field {[@data-prop="budget"]}
+!define Manage_Actualization_Line_Rate_Field {[@data-prop="rate"]}
+!define Manage_Actualization_Line_Quantity_Field {[@data-prop="quantity"]}
+!define Manage_Actualization_Line_Variance_Field {//*[contains(@class,"variance-column")]}
+!define Manage_Actualization_Variance_Effected_Dropdown {//*[@id="varianceEffected_chosen"]/a/div/b}
+!define Manage_Actualization_Variance_Effected_Budget {//*[text()="Budget"]}
+!define Manage_Actualization_Variance_Effected_Drop_Down {//*[@id="varianceEffected"]}
+!define Manage_Actualization_Variance_Effected_Dropdown_Value {//li[contains(@class,"active-result")]}
+!define Manage_Actualization_SellLine_Actual_Method_DropDown {//*[@data-api="Billable_Cost_capped_at_Planned__c"]}
+!define Manage_Actualization_BuyLine_Actual_Method_DropDown {//*[@data-api="Payable_Cost_capped_at_Planned__c"]}
+!define Manage_Actualization_Variance_Affected_Budget_Link {//*[@class="active-result" and text()="Budget"]}
+
+!define Manage_Actualization_Err_Message {//*[@class="toast-message"]}
+!define Manage_Actualization_Validation_Err_Message {//*[@id="managePlanFooter"]/div/p}
+!define Manage_Actualization_Check_Box {//*[@data-api="Actualized__c"]/input}
+!define Manage_Buy_Placement_Actualization_Check_Box {//*[@data-api="Reconciled__c"]/input}
+
+
+
+
+
+
+
+
+
+
+
+

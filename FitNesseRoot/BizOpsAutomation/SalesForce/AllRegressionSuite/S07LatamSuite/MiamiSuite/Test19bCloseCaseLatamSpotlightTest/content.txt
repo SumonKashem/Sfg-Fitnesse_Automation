@@ -1,0 +1,32 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S07LatamSuite.MiamiSuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Close 'LATAM Spotlight' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to 'LATAM Spotlight' Case page Url
+   Click on 'Close Case' button
+   Select Status as 'Closed'
+   Select Case Reason
+   Enter Time Spent
+   Click on 'Save' button
+   Verify Case Status as 'Closed' on Case details page
+**********!
+#$latamSpotlightPageUrl
+#https://cs77.salesforce.com/5000t000002Sj5K
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test19bMia-Close 'LATAM Spotlight' case|
+|open;|$latamSpotlightPageUrl|
+|click;|${SalesForce_Cases_Close_Case_Button}|Close Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Closed|Status Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Reason_Dropdown}|1|Case Reason Dropdown|
+|type;|${SalesForce_Cases_Time_Spent_Field}|1|Time Spent Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Text_Field}|Closed|Status Text Field|
+|stopExtentReport;|
+**********!

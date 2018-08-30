@@ -1,0 +1,50 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Create an 'LR Germany PO' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to existing Opportunity
+   Click on Analytics button
+   Select second value from Request Type
+   Select Market as 'Belgium'
+   Select second value for Last Quarter 
+   Click on Desire deadline link
+   Select first value for Type of Report
+   Click on Right arrow to choose the selection
+   Enter an user name for Internal contact number
+   Click on Default date for Analysis Start Date
+   Click on Default date for Analysis End Date
+   Select Status as 'New'
+   Enter Subject
+   Select first value for Requested Info
+   Click on right arrow
+   Enter DSP/DMP
+   Enter Activity Name
+   Choose first value from Requested Info picklist 
+   Click on Right Arrow
+   Click on 'Save' button
+   Verify Case Record Owner as 'EMEA Analytics' on Case Detail page
+   Verify Case Record Type as 'Analytics' on Case Detail page
+**********!
+#$gerEmeaOpportunityPageUrl
+#https://cs77.salesforce.com/0060t00000AKFliAAH?nooverride=1
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test30aGer-Create an 'LR Germany PO' Case|
+|open;|$gerEmeaOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_LR_Germany_PO_Button}|
+|click;|${SalesForce_Cases_LR_Germany_PO_Button}|LR Germany PO Button|
+|selectDropDownByIndex;|${SalesForce_Cases_Request_Type_Dropdown}|1|Request Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Priority_Dropdown}|Medium|Priority Dropdown|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|LR Germany PO [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|LR Germany PO [Change]|Record Type on Case Detail Page|
+|$lrGermanyPoPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

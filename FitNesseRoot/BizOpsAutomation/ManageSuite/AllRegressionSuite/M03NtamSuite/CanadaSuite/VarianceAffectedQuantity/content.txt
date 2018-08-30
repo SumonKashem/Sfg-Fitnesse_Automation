@@ -1,0 +1,5 @@
+!***** Actual Methods
+[[Fixed Rate][VarianceAffectedQuantity.B1FixedRate]]
+[[Effective Rate][VarianceAffectedQuantity.B2EffectiveRate]]
+[[Capped Cost][VarianceAffectedQuantity.B3CappedCost]]
+**********!

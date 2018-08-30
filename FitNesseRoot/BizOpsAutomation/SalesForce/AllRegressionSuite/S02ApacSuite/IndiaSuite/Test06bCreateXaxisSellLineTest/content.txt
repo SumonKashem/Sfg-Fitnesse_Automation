@@ -1,0 +1,74 @@
+'''Scenario Name: ''' Create a Xaxis Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Enter Sell Name
+   Enter Sell Line Start Date
+   Enter Sell Line End Date
+   Select Billing Vendors as 'Appnexus (Video)'
+   Click on Billing Vendors Right arrow
+   Select input gross as 'Rate / Gross Cost'
+   Select Rate Type as 'CPM'
+   Enter Planned Gross Budget as '200'
+   Enter Gross Rate as '25'
+   Select Input Net As 'Margin (Calc Net Cost)'
+   Enter Margin as '10' percent
+   Select Channel as 'Display'
+   Select Device as 'Desktop'
+   Select first APAC Product
+   Select first APAC Sub-Product
+   Select Network Billing Platform
+   Click on Vendor RO Created checkbox
+   Select Client RO Received as 'Yes'
+   Enter comment on Geography Targeting field
+   Enter comment on Genre Targeting field
+   Enter comment on Creative Link field
+   Enter comment on LP URL field
+   Select Primary KPI as 'CPV'
+   Click on 'Save' button
+   Verify Sell Line Business Unit on SL Detail page
+   Verify Sell Name appears on Sell Line Detail page
+   Verify Sell Volume = Gross Budget/Gross Rate*1000
+   Capture Sell Number and store in a variable for reusability
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_India_Suite_${PAGE_NAME}|Test06bInd-Create a Xaxis Sell Line|
+|type;|${SalesForce_SellLine_Sell_Name_Field}|$apacSellName_Xax|Sell Line Name Field|
+|type;|${SalesForce_SellLine_Start_Date_Field}|${apacSellLineStartDate}|Start Date Field|
+|type;|${SalesForce_SellLine_End_Date_Field}|${apacSellLineEndDate}|End Date Field|
+|selectDropDownByText;|${SalesForce_SellLine_Billing_Vendors_PickList}|Appnexus (Video)|Billing Vendors Picklist|
+|click;|${SalesForce_SellLine_Billing_Vendors_Right_Arrow}|Billing Vendors Right Arrow|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Rate / Gross Cost|Input Gross As Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Rate_Type_DropDown}|CPM|Rate Type Dropdown|
+|type;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|200|Gross Budget Field|
+|type;|${SalesForce_SellLine_Gross_Rate_Field}|25|Gross Rate Field|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Net_As_DropDown}|Margin (Calc Net Cost)|Input Net Field|
+|type;|${SalesForce_SellLine_Margin_Field}|102|Margin Field|
+|selectDropDownByText;|${SalesForce_SellLine_Channel_DropDown}|Display|Channel Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Device_DropDown}|Desktop|Device Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Apac_Product_Dropdown}|1|APAC Product Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Apac_SubProduct_Dropdown}|1|APAC Sub-Product Dropdown|
+|selectDropDownByIndex;|${SalesForce_Network_Billing_Platform_Dropdown}|1|Network Billing Platform Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Billing_Vendors_PickList}|1|Billing Vendors Dropdown|
+|click;|${SalesForce_SellLine_Billing_Vendors_Right_Arrow}|Billing Vendors Right Arrow|
+|clickByJavaScript;|${SalesForce_SellLine_Vendor_RO_Created_Checkbox}|Vendor RO Created Checkbox|
+|selectDropDownByText;|${SalesForce_SellLine_Client_RO_Received_Dropdown}|Yes|Client RO Received Dropdown|
+|type;|${SalesForce_SellLine_Geography_Targeting_Field}|Auto Test|Geography Targeting Field|
+|type;|${SalesForce_SellLine_Genre_Targeting_Field}|Auto Test|Genre Targeting Field|
+|type;|${SalesForce_SellLine_Creative_Link_Field}|Auto Test|Creative Link Field|
+|type;|${SalesForce_SellLine_LP_URL_Field}|Auto Test|LP URL Field|
+|selectDropDownByText;|${SalesForce_SellLine_Primary_KPI_DropDown}|CPV|Primary KPI Dropdown|
+|clickByJavaScript;|${SalesForce_SellLine_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_SellLine_Business_Unit_Text}|${SalesForce_APAC_SL_Business_Unit_Value}|Business Unit on Sell Line Detail Page|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Name_Field}|$apacSellName_Xax|Sell Line Detail Page|
+|$volumeRateCalc=|getCalculatedValue;|CPM|Volume Calculation|200|25|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Volume_Text}|$volumeRateCalc|Volume Calculation|
+|$sellLineXaxisNo=|getValue;|${SalesForce_SellLine_Detail_Sell_No_Field}|Sell No Detail Field|
+|$xaxisSellLineUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

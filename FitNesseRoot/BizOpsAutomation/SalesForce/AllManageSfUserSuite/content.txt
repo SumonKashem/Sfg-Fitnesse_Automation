@@ -1,0 +1,6 @@
+!***** Test Suites By Region
+[[APAC Suite][AllManageSfUserSuite.SF01ApacSuite]] 
+[[EMEA Suite][AllManageSfUserSuite.SF02EmeaSuite]] 
+[[NTAM Suite][AllManageSfUserSuite.SF03NtamSuite]] 
+[[LATAM Suite][AllManageSfUserSuite.SF04LatamSuite]] 
+**********!

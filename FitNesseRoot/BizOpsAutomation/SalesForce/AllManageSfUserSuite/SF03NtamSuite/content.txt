@@ -1,0 +1,8 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** MARKETS
+[[Canada][SF03NtamSuite.CanadaSuite]]
+[[USA][SF03NtamSuite.UsaSuite]]
+**********!

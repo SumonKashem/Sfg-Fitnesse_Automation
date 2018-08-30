@@ -1,0 +1,9 @@
+!***** Test Suites By Functional Area
+[[Log In Suite][AllRegressionSuite.S01LogInSuite]]
+[[APAC Suite][AllRegressionSuite.S02ApacSuite]] 
+[[EMEA Suite][AllRegressionSuite.S03EmeaSuite]] 
+[[Partnership Suite][AllRegressionSuite.S04PartnershipSuite]] 
+[[NTAM Suite][AllRegressionSuite.S05NtamSuite]] 
+[[Banner Connect Suite][AllRegressionSuite.S06BannerConnectSuite]] 
+[[LATAM Suite][AllRegressionSuite.S07LatamSuite]] 
+**********!

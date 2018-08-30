@@ -1,0 +1,81 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Actualize with Distribution to Next Month for Xaxis Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Xaxis SL url
+   Scroll to Monthly Schedule section
+   Click on November Schedule Link
+   Switch to ms tab
+   Click on Edit
+   Enter 70 as Planned Gross Budget
+   Enter 2600 as Planned Billable Units
+   Select Distribute to next month option
+   Click on Save button
+   Verify State of the Reconciled Checkbox is selected 
+   Verify Planned Gross Budget 
+   Verify Planned Billable Units 
+   Close ms tab
+   Switch to Sell Line Tab
+   Click on December Link
+   Switch to December ms tab
+   Verify Planned Gross Budget 
+   Verify Planned Billable Units 
+   Close ms tab
+   Switch to Sell Line tab
+   Click on October Link
+   Switch to October tab
+   Verify Planned Gross Budget 
+   Verify Planned Billable Units 
+   Close October Tab
+   Switch to Sell Line tab
+   Navigate to Sell Line URL
+   Verify Sell Line Planned Gross Budget
+**********!
+#$xaxisSellLineUrl
+#SGD 75.00(USD 56.26)
+#SGD 61.48 (USD 46.12
+#SGD 63.52 (USD 47.66)
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test16Can-Actualize with Distribution to next month for Xaxis Sell Line|
+|open;|$canadaSellLineUrl|
+|wait;|2000|
+|scroll;|vertical|10000|
+|click;|${SalesForce_SellLine_Monthly_Schedule_November_Link}|November MS Link|
+|switchToNewWindow;|2|
+|click;|${SalesForce_BuyPlacment_Edit_Button}|Edit Button|
+|clear;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget_Field}|Planned Gross Budget Field|
+|type;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget_Field}|70|Planned Gross Budget Field|
+|clear;|${SalesForce_SellLine_Monthly_Schedule_Planned_Planned_Billable_Units_Field}|Planned Billable Units Field|
+|type;|${SalesForce_SellLine_Monthly_Schedule_Planned_Planned_Billable_Units_Field}|2600|Planned Billable Units Field|
+|selectDropDownByIndex;|${SalesForce_SellLine_Monthly_Schedule_Planned_Budget_Reconciliation_Method_Dropdown}|3|Next Month Distribution|
+|click;|${SalesForce_SellLine_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Monthly_Schedule_Reconciled_Column}|Yes|Reconciled Checkbox Checked|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget}|CAD 70.00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units}|2,600|Planned Billable Units|
+|closeTab;|
+|switchToNewWindow;|1|
+|click;|${SalesForce_SellLine_Monthly_Schedule_December_Link}|November MS Link|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget}|CAD 55.00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units}|2,600|Planned Billable Units|
+|closeTab;|
+|switchToNewWindow;|1|
+|click;|${SalesForce_SellLine_Monthly_Schedule_October_Link}|December MS Link|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget}|CAD 75.00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units}|2,800|Planned Billable Units|
+|closeTab;|
+|switchToNewWindow;|1|
+|wait;|3800|
+|open;|$canadaSellLineUrl|
+|objectVerification;|${SalesForce_SellLine_Details_Planned_Gross_Budget_Content}|CAD 200.00|Planned Gross Budget|
+|stopExtentReport;|
+**********!

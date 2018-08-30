@@ -1,0 +1,5 @@
+!define Manage_Planning_Total_Variance_Value {//*[@id="varianceTotal"]}
+!define Manage_Line_Context_Menu_Subtract_Evenly_Distribution {//*[@class="htItemWrapper" and text()="Subtract variance from future months evenly"]}
+!define Manage_Line_Context_Menu_Subtract_Next_Month_Distribution {//*[@class="htItemWrapper" and text()="Subtract variance from next month"]}
+!define Manage_Planning_Variance_Eff_Budget_Dropdown {//li[contains(@class,"active-result") and @data-option-array-index="0" and text()="Budget"]}
+!define Manage_Planning_Variance_Eff_Quantity_Dropdown {//li[contains(@class,"active-result") and @data-option-array-index="1" and text()="Quantity"]}

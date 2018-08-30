@@ -1,0 +1,53 @@
+'''Scenario Name: ''' Verify Delivery Data for Buy Placement Monthly Schedule Rollup
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Emergent Buy placement URL
+   Scroll Into Placement Monthly Schedule label section
+   Click on First Monthly Schedule link
+   Click on 'Edit' button
+   Select 'Agency Ad Server' for Delivery Final Billable Source
+   Select 'Agency Ad Server' for Delivery Final Payable Source 
+   Enter Agency Ad Server Source Payable Name
+   Enter Agency Ad Server Source Payable Units
+   Enter Agency Ad Server Source Billable Name
+   Enter Agency Ad Server Source Billable Units
+   Click on 'Save' button
+   Verify Delivery Final Payable Cost on BPMS
+   Verify Delivery Final Payable Units on BPMS
+   Verify Delivery Final Billable Units on BPMS
+   Navigate to EMGT sell line url 
+   Verify Delivery Final Payable Cost on SL details page
+   Verify Delivery Final Billable Units on SL details page
+   Verify Delivery Final Payable Impressions on SL details page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test38US-Verify Buy Placement Monthly Schedule Delivery Data Rollup|
+|open;|$usaEmgtBPUrl|
+|scrollIntoView;|${SalesForce_BuyPlacment_Monthly_Schedule_Label}|
+|click;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|First Monthly BP Schedule Link|
+|click;|${SalesForce_BuyPlacment_Edit_Button}|First Monthly BP Schedule Edit Button|
+|selectDropDownByText;|${SalesForce_BuyPlacement_Delivery_Final_Billable_Source_Dropdown}|Agency Ad Server|Deilivery Final Billable Source Dropdown|
+|selectDropDownByText;|${SalesForce_BuyPlacement_Delivery_Final_Payable_Source_Dropdown}|Agency Ad Server|Deilivery Final Payable Source Dropdown|
+|type;|${SalesForce_BuyPlacement_Agency_Adserver_Source_Payable_Name_Field}|Test|Ad Server Payable Name Field|
+|type;|${SalesForce_BuyPlacement_Agency_Adserver_Source_Payable_Units_Field}|1,600|Ad Server Payable Units Field|
+|type;|${SalesForce_BuyPlacement_Agency_Adserver_Source_Billable_Name_Field}|Test|Ad Server Billable Name Field|
+|type;|${SalesForce_BuyPlacement_Agency_Adserver_Source_Billable_Units_Field}|1,500|Ad Server Billable Units Field|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_BuyPlacement_Delivery_Final_Billable_Cost_Text}|USD 33.00|Delivery Final Billable Cost|
+|objectVerification;|${SalesForce_BuyPlacement_Delivery_Final_Billable_Units_Text}|1,500|Delivery Final Billable Units|
+|objectVerification;|${SalesForce_BuyPlacement_Delivery_Final_Payable_Units_Text}|1,600|Delivery Final Payable Units|
+|wait;|60000|
+|open;|$usaEmgtSellLineUrl|
+|wait;|1000|
+|open;|$usaEmgtSellLineUrl|
+|objectVerification;|${SalesForce_SellLine_Delivery_Final_Billable_Cost_Text}|USD 33.00|SL details Delivery Final Billable Cost|
+|objectVerification;|${SalesForce_SellLine_Delivery_Final_Billable_Units_Text}|1,500|SL details Delivery Final Billable Units|
+|objectVerification;|${SalesForce_SellLine_Delivery_Final_Payable_Impressions_Text}|1,600|SL details Delivery Final Payable Impressions|
+|stopExtentReport;|
+**********!

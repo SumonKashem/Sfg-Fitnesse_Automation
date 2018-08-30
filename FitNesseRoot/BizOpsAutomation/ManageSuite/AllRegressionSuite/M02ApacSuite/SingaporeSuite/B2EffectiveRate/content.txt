@@ -1,0 +1,12 @@
+!***** Test Scenarios
+[[1-User Login][B2EffectiveRate.Test01LogInUserTest]]
+[[2-Select A Market][B2EffectiveRate.Test02SelectMarketTest]]
+[[3-Select An Account & Opportunity][B2EffectiveRate.Test03SelectAccOppTest]]
+[[4-Add A Sell Line][B2EffectiveRate.Test04AddSellLineTest]]
+[[5-Add A Sell Line For Even Distribution][B2EffectiveRate.Test05AddSellLineEvenDistributionTest]]
+[[6-Add A Sell Line For Next Month Distribution][B2EffectiveRate.Test06AddSellLineNextMonthDistributionTest]]
+[[7-Add A Sell Line For Line Distribution][B2EffectiveRate.Test07AddSellLineBudgetDistributionTest]]
+[[8-Add A Buy Placement For Even Distribution][B2EffectiveRate.Test08AddMediaBuyLineEvenDistributionTest]]
+[[9-Add A Buy Placement For Next Month Distribution][B2EffectiveRate.Test09AddFeeBuyLineNextMonthDistributionTest]]
+[[10-Add A Buy Placement For Line Distribution][B2EffectiveRate.Test10AddMediaBuyLineBudgetDistributionTest]]
+**********!

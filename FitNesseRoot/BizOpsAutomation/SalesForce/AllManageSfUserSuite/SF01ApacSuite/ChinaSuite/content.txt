@@ -1,0 +1,4 @@
+!***** Test Cases
+ChinaSuite.Test01SfUserActivationTest
+ChinaSuite.Test02SfUserManageCompTest
+**********!

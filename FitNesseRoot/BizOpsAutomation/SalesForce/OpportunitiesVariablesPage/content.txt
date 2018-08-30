@@ -1,0 +1,116 @@
+All Sales Force Opportunities Page Variables Are Defined Here....
+
+!define SalesForce_Opportunities_Custom_Send_Email_Button {//*[@title="Custom Send Email"]}
+!define SalesFroce_Opportunities_Probablity_Percentage_Field {//*[@id="opp12"]}
+!define SalesForce_Opportunities_New_Opp_Button {//*[@value="New Opportunity" and @class="btn"]}
+!define SalesForce_Opportunities_Edit_Button {//*[@title="Edit"]}
+!define SalesForce_Opportunities_Rebooking_Button {//*[@title="Rebooking"]}
+!define SalesForce_Opportunities_Monthly_Delivery_Wizard_Button {//*[@title="Monthly Delivery Wizard"]}
+!define SalesForce_Opportunities_Radia_Delivery_Push_Button {//*[@title="Radia Delivery Push"]}
+!define SalesForce_Opportunities_Vendor_IO_Button {//*[@title="Vendor IO"]}
+!define SalesForce_Opportunities_Edit_Radia_Custom_Columns_Button {//*[@title="Edit Radia Custom Columns"]}
+!define SalesForce_Opportunities_Cancel_Button {//*[@class="btn" and @value="Cancel"]}
+!define SalesForce_Opportunities_Delete_Button {//*[@value="Delete"]}
+!define SalesForce_Opportunities_Change_Currency_Code_Button {//*[@title="Change Currency Code"]}
+!define SalesForce_Opportunities_Enhanced_Clone_Button {//*[@title="Enhanced Clone"]}
+!define SalesForce_Opportunities_Create_Documents_Button {//*[@title="Create Documents"]}
+!define SalesForce_Opportunities_Back_To_Opp_Button {//*[@value="Back to Opportunity"]}
+!define SalesForce_Opportunities_Send_Email_To_Opportunity {//*[@title="Send Email to Opportunity"]}
+!define SalesForce_Opportunities_Delete_Opp_Button {//*[@value="Delete Opportunity"]}
+!define SalesForce_Opportunities_New_RFP_Button {//*[@value="New RFP" and @class="btn"]}
+!define SalesForce_Opportunities_New_RFI_Button {//*[@value="New RFI" and @class="btn"]}
+!define SalesForce_Opportunities_IFrame_Id {066i0000004QWn0}
+!define SalesForce_Opportunities_Name_Field {//*[@id="opp3"]}
+!define SalesForce_Opportunities_Stage_DropDown {//*[@id="opp11"]}
+!define SalesForce_Opportunities_IO_Number_Field {//*[@id="00Ni000000EG5hD"]}
+!define SalesForce_Opportunities_Account_Name_Field {//*[@id="opp4"]}
+!define SalesForce_Opportunities_Save_Button {//*[@name="save"]}
+!define SalesForce_Opportunities_Clone_Button {//*[@name="clone"]}
+!define SalesForce_Opportunities_Sharing_Button {//*[@title="Sharing"]}
+!define SalesForce_Opportunities_Sharing_Opp_Link {//*[@class="ptBreadcrumb"]/a}
+!define SalesForce_Opportunities_Close_Date_Field {//*[@id="opp9"]}
+!define SalesForce_Opportunities_Stage_label_Content {//*[@id="opp11_ileinner"]}
+!define SalesForce_Opportunities_Name_Text {//*[@id="opp3_ileinner"]}
+!define SalesForce_Opportunities_LATAM_Currency_Dropdown {//*[@id="opp16"]}
+!define SalesForce_Opportunities_LATAM_Opp_Name_Text {//*[@id="opp3_ilecell"]}
+!define SalesForce_Opportunities_BC_Media_Opportunity_Button {//*[@value="New Media Opportunity"]}
+!define SalesForce_Opportunities_BC_Service_Opportunity_Button {//*[@value="New Service Opportunity"]}
+!define SalesForce_Opportunities_BC_Technology_Opportunity_Button {//*[@value="New Tech Opportunity"]}
+!define SalesForce_Opportunities_BC_Stage_Dropdown {//*[@id="00Ni000000FGu2D"]}
+!define SalesForce_Opportunities_BC_Reason_Lost_Dropdown {//*[@id="00Ni000000FGzjS"]}
+!define SalesForce_Opportunities_BC_Currency_Dropdown {//*[@id="CurrencyIsoCode"]}
+!define SalesForce_Opportunities_BC_Close_Date_Field {//*[@id="00N3100000GmhSq"]}
+!define SalesForce_Opportunities_BC_Record_Type_Text {//*[@id="RecordType_ileinner"]}
+!define SalesForce_Opportunities_BC_Opp_Name_Field {//*[@id="Name"]}
+!define SalesForce_Opportunities_BC_Opp_Name_Text {//*[@id="Name_ileinner"]}
+!define SalesForce_Opportunities_Campaing_KPI_Field {//*[@id="00Ni000000COiXU"]}
+!define SalesForce_Opportunities_Network_Drive_Loc_Field {//*[@id="00N3100000Gbejy"]}
+!define SalesForce_Opportunities_Proposal_Open_Button {//*[@alt="Proposal Open"]}
+!define SalesForce_Opportunities_Contract_Pending_Open_Button {//*[contains(@alt,"Contract Pending Open")]}
+!define SalesForce_Opportunities_Contract_Pending_Disabled_Button {//*[@alt="Contract Pending Disabled"]}
+!define SalesForce_Opportunities_Contract_Pending_Button {//*[@alt="Contract Pending"]}
+!define SalesForce_Opportunities_Closed_Lost_Disabled_Button {//*[@alt="Closed Lost Disabled"]}
+!define SalesForce_Opportunities_Closed_Lost_Button {//*[@alt="Closed Lost"]}
+!define SalesForce_Opportunities_Closed_Lost_Reason_Dropdown {//*[@id="00Ni000000EGAic"]}
+!define SalesForce_Opportunities_Closed_Won_Disabled_Button {//*[@alt="Closed Won Disabled"]}
+!define SalesForce_Opportunities_Closed_Won_Button {//*[contains(@alt,"Closed Won")]}
+!define SalesForce_Opportunities_Message_Field {//*[@class="messageCell"]}
+!define SalesForce_Opportunities_Information_Sent_Button {//*[@alt="Information Sent"]}
+!define SalesForce_Opportunities_Proposal_Requested_Button {//*[@alt="Proposal Requested"]}
+!define SalesForce_Opportunities_Proposal_Sent_Disabled_Button {//*[@alt="Proposal Sent Disabled"]}
+!define SalesForce_Opportunities_Proposal_Sent_Button {//*[@alt="Proposal Sent"]}
+
+!define SalesForce_Opportunities_Planned_Start_Date_Field {//*[@id="00Ni000000CPXSa"]}
+!define SalesForce_Opportunities_Planned_End_Date_Field {//*[@id="00Ni000000CPXSf"]}
+!define SalesForce_Opportunities_Planned_Gross_Budget_Field {//*[@id="00Ni000000CPXSu"]}
+!define SalesForce_Opportunities_Planned_Margin_Percentage_Field {//*[@id="00N3100000GbCkj"]}
+
+!define SalesForce_Opportunities_Submit_For_Approval_Button {//*[@value="Submit for Approval"]}
+!define SalesForce_Opportunities_Approve_Reject_Link {//*[@class="actionLink" and contains(@title,"Approve / Reject")]}
+!define SalesForce_Opportunities_Approve_Reject_Comment_Field {//*[@id="Comments"]}
+!define SalesForce_Opportunities_Approve_Button {//*[@value="Approve"]}
+
+!define SalesForce_Opportunities_Ok_Button {//*[@value="OK"]}
+!define SalesForce_Planned_Total_Gross_Budget_Field {//*[@id="00Ni0000004xKuq_ileinner"]}
+!define SalesForce_Planned_Total_Net_Cost_Field {//*[@id="00Ni0000004xKuL_ileinner"]}
+!define SalesForce_Planned_Margin_Percentage_Field {//*[@id="00Ni000000EG2ro_ileinner"]}
+!define SalesForce_Planned_Margin_Value_Field {//*[@id="00N3100000Gbejz_ileinner"]}
+!define SalesForce_Planned_Total_Third_Party_Cost_Field {//*[@id="00N3100000H14tR_ileinner"]}
+
+!define SalesForce_Opportunities_NTAM_Proposal_Request_Field {//*[@id="00N3100000Gbek3"]}
+!define SalesForce_Opportunities_NTAM_Client_Goal_Dropdown {//*[@id="00N3100000Gbejo"]}
+!define SalesForce_Opportunities_NTAM_Client_Goal_Details_Field {//*[@id="00N3100000Gbejn"]}
+!define SalesForce_Opportunities_NTAM_Due_Date_Field {//*[@id="00N3100000Gbejp"]}
+!define SalesForce_Opportunities_NTAM_Time_Due_Dropdown {//*[@id="00N3100000GbekA"]}
+
+!define SalesForce_Opportunities_Invoice_To_Dropdown {//*[@id="00N3100000Gbejv"]}
+!define SalesForce_Opportunities_Liability_To_Dropdown {//*[@id="00Ni000000Fu0pj"]}
+!define SalesForce_Opportunities_Reallocation_Parameters_Dropdown {//*[@id="00N3100000Gbek4"]}
+!define SalesForce_Opportunities_Assigned_Account_Manager_Field {//*[@id="CF00N3100000Gbejk"]}
+!define SalesForce_Opportunities_Record_Type_Field {//*[@id="00Ni000000DOWJs_ileinner"]}
+!define SalesForce_Opportunities_SL_Alert_Message {//*[@id="j_id0:j_id4:j_id73"]}
+!define SalesForce_Opportunities_Name_Detail_Page {//*[@id="opp3j_id0_j_id3_ileinner"]}
+!define SalesForce_Opportunities_SL_IFrame_Window {066i0000004QWmz}
+!define SalesForce_Opportunities_Total_Planned_Net_Media_Cost {//*[@id="00N3100000H14tQ_ileinner"]}
+!define SalesForce_Opportunities_Details_Uk_Opp_Name {//*[contains(@id,"opp3j")]}
+!define SalesForce_Opportunities_New_Task_Button {//*[@value="New Task"]}
+!define SalesForce_Opportunities_Total_Number_Of_Sell_Lines_Text_Field {//*[@id="00Ni000000EFl4A_ileinner"]}
+!define SalesForce_Opportunities_SL_Name {//*[contains(@class,"dataCell")]}
+!define SalesForce_Opportunities_SL_Link {//*[contains(@class,"dataCell")]/a[contains(text(),"CP-")]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

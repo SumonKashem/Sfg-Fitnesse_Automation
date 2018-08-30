@@ -1,0 +1,33 @@
+'''INTENT: ''' Actualize a sell line for one month
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Click on Actualize button
+   Scroll Into First Month Schedule Tab
+   Wait for Monthly schedule to appear
+   Click on monthly schedule tab
+   click on sync with sf
+   Verify check box is checked & actualized for that month
+   Verify last actualized date appears as today in dd/mm/yyyy format
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_${PAGE_NAME}|Test05 - Actualize a Sell Line's monthly schedule|
+|clickUsingMouseMovement;|${Manage_Actualize_Button}|Actualize Button|
+|clickOnMonthlyTabUsingMouseMovement;|Oct|2017|8500|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync with SF Button|
+|waitForElementToLoadByRowAndIndex;|${Manage_Actualization_SellLine_Actualized_CheckBox}|2|0|First Month Check Box indicating it's 'Actualized'|
+|waitForElementToLoadByRowAndIndex;|[@title="Last Actualized Date: $canadaSellLineStartDate"]|2|0|First Month Last Actualized Date Verification|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

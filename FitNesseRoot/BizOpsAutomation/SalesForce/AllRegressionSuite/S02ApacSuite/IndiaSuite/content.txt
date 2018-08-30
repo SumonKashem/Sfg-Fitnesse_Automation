@@ -1,0 +1,20 @@
+!***** Test Cases
+IndiaSuite.Test01LogInUserTest
+IndiaSuite.Test02CreateAgencyTest
+IndiaSuite.Test03CreateAdvertiserTest
+IndiaSuite.Test04CreateAccountTest
+IndiaSuite.Test05CreateOpportunityTest
+IndiaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest
+IndiaSuite.Test06bCreateXaxisSellLineTest
+IndiaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest
+IndiaSuite.Test07bCreatePlistaSellLineTest
+IndiaSuite.Test08aVerifyAllFieldsForLightReactionSellLineTest
+IndiaSuite.Test08bCreateLightReactionSellLineTest
+IndiaSuite.Test09CreateXaxisBuyPlacementTest
+IndiaSuite.Test10EditOpportunityTest
+IndiaSuite.Test11EditXaxisBuyPlacementTest
+IndiaSuite.Test12CloneOpportunityTest
+IndiaSuite.Test13DistributeFutureMonthsXaxSellLineTest
+IndiaSuite.Test14DistributeNextMonthsXaxSellLineTest
+IndiaSuite.Test15DistributeBudgetXaxSellLineTest
+**********!

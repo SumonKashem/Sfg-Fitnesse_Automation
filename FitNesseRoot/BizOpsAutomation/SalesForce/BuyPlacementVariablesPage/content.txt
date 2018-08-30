@@ -1,0 +1,71 @@
+All Sales Force Buy Placement Page Variables Are Defined Here....
+
+!define SalesForce_BuyPlacement_New_Buy_Placement_Button {//*[@value="New Buy Placement"]}
+!define SalesForce_BuyPlacement_Name_Field {//*[@id="Name"]}
+!define SalesForce_BuyPlacement_PackageType_DropDown {//*[@id="00N3100000GbCmn"]}
+!define SalesForce_BuyPlacement_Save_Button {//*[@name="save"]}
+!define SalesForce_BuyPlacement_Save_And_Complete_Button {//*[@value="Save & Complete"]}
+!define SalesForce_BuyPlacement_RecordType_Text {//*[@id="RecordType_ileinner"]}
+!define SalesForce_BuyPlacement_SellLineNumber_Text {//*[@id="CF00N3100000GbCmN_ilecell"]}
+!define SalesForce_BuyPlacement_AutoNumber {//*[@id="00N3100000GbfSA_ileinner"]}
+!define SalesForce_BuyPlacement_Planned_Payable_Units_Field {//*[@id="00N3100000GbCmq"]}
+!define SalesForce_BuyPlacement_Planned_Payable_Cost_Field {//*[@id="00N3100000GbCmp"]}
+!define SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Units_Field {//*[@id="00N3100000GbCmq_ileinner"]}
+!define SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Cost_Field {//*[@id="00N3100000GbCmp_ileinner"]}
+!define SalesForce_BuyPlacement_Record_Type_Dropdown {//*[@id="p3"]}
+!define SalesForce_BuyPlacement_Continue_Button {//*[@title="Continue"]}
+!define SalesForce_BuyPlacement_StartDate_Field {//*[@id="00N3100000GbCmx"]}
+!define SalesForce_BuyPlacement_EndDate_Field {//*[@id="00N3100000GbCmY"]}
+!define SalesForce_BuyPlacement_Partnership_Engagement_Field {//*[@id="CF00N3100000GbYHZ"]}
+!define SalesForce_BuyPlacement_Inventory_Type_Dropdown {//*[@id="00N3100000GvgLd"]}
+
+!define SalesForce_BuyPlacement_UK_New_Buy_Line_Button {//*[@value="New Buy Line"]}
+!define SalesForce_BuyPlacement_UK_Partner_Lookup_Field {//*[@class="Partner__c"]}
+!define SalesForce_BuyPlacement_UK_Estimated_Impressions_Field {//*[@class="Estimated_Impressions__c"]}
+!define SalesForce_BuyPlacement_UK_Gross_Buy_Rate_Field {//*[@class="Gross_CPM__c"]}
+!define SalesForce_BuyPlacement_UK_Net_Buy_Rate_Field {//*[@class="Net_CPM__c inlineEditLock"]}
+!define SalesForce_BuyPlacement_UK_Rate_Type_Field {//*[@class="Rate_Type__c inlineEditLock"]}
+
+!define SalesForce_BuyPlacement_Detail_Page_Cost_method {//*[@id="00N3100000GbCmW_ileinner"]}
+!define SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Units {//*[@id="00N3100000GbCmq_ileinner"]}
+!define SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Cost {//*[@id="00N3100000GbCmp_ileinner"]}
+!define SalesForce_BuyPlacement_Detail_Page_Planned_Sell_Side_Budget {//*[@id="00N5A00000HEP7b_ileinner"]}
+!define SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link {//th[contains(@class,"dataCell")]/a}
+!define SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Cost_Field {//*[@id="00N3100000GbYGg"]}
+!define SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Units_Field {//*[@id="00N3100000GbFg6"]}
+!define SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox {//*[@id="00N3100000Gxa7t"]}
+
+
+!define SalesForce_BuyPlacment_Edit_Button {//*[@title="Edit" and @type="button"]}
+
+!define SalesForce_BuyPlacment_Monthly_Schedule_Label {//h3[text()="Placement Monthly Schedules"]}
+!define SalesForce_BuyPlacment_Monthly_Schedule_First_Edit_Link {//*[@class="actionLink" and contains(@title,"Record 1 - BP")]}
+
+!define SalesForce_BuyPlacement_Delivery_Final_Billable_Source_Dropdown {//*[@id="00N3100000GbFfq"]}
+!define SalesForce_BuyPlacement_Delivery_Final_Payable_Source_Dropdown {//*[@id="00N3100000GbFfu"]}
+!define SalesForce_BuyPlacement_Agency_Adserver_Source_Payable_Name_Field {//*[@id="00N3100000GxZXB"]}
+!define SalesForce_BuyPlacement_Agency_Adserver_Source_Payable_Units_Field {//*[@id="00N3100000GxZXA"]}
+!define SalesForce_BuyPlacement_Agency_Adserver_Source_Billable_Name_Field {//*[@id="00N3100000GxZWv"]}
+!define SalesForce_BuyPlacement_Agency_Adserver_Source_Billable_Units_Field {//*[@id="00N3100000GxZWu"]}
+!define SalesForce_BuyPlacement_Delivery_Final_Billable_Cost_Text {//*[@id="00N3100000GbFfo_ileinner"]}
+!define SalesForce_BuyPlacement_Delivery_Final_Billable_Units_Text {//*[@id="00N3100000GbFfr_ileinner"]}
+!define SalesForce_BuyPlacement_Delivery_Final_Payable_Units_Text {//*[@id="00N3100000GbFfv_ileinner"]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

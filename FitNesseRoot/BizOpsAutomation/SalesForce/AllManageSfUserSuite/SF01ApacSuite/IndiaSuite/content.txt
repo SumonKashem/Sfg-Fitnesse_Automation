@@ -1,0 +1,4 @@
+!***** Test Cases
+IndiaSuite.Test01SfUserActivationTest
+IndiaSuite.Test02SfUserManageCompTest
+**********!

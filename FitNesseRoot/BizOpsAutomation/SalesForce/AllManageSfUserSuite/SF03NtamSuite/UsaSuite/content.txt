@@ -1,0 +1,4 @@
+!***** Test Cases
+UsaSuite.Test01SfUserActivationTest
+UsaSuite.Test02SfUserManageCompTest
+**********!

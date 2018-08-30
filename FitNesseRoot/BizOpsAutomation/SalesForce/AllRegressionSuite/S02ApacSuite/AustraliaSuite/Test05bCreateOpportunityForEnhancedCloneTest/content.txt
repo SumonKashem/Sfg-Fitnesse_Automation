@@ -1,0 +1,43 @@
+'''Scenario Name: ''' Create an Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to account page
+   Switch to frame for opportunity
+   Click on 'New Opportunity' button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Clear probability field
+   Enter probablity as 25
+   Select stage as 'Contacted / Prospecting'
+   Enter an APAC IO Number
+   Clear Close Date field
+   Enter Close Date
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Capture opportunity page url for resuable purpose
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test05bAus-Create an APAC Opportunity|
+|open;|$ausAccountPageUrl|
+|scrollIntoView;|${SalesForce_Accounts_System_Info_Text}|
+|switchToFrame;|${SalesForce_Opportunities_IFrame_Id}|Opportunity Frame|
+|click;|${SalesForce_Opportunities_New_Opp_Button}|New Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|type;|${SalesForce_Opportunities_Name_Field}|$ausOpportunityName|Opportunity Name Field|
+|clear;|${SalesFroce_Opportunities_Probablity_Percentage_Field}|Probability Field|
+|type;|${SalesFroce_Opportunities_Probablity_Percentage_Field}|25|Probability Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Contacted / Prospecting|Stage Dropdown|
+|type;|${SalesForce_Opportunities_IO_Number_Field}|IO11|IO Number Field|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$closeDateForAPACOpp|Close Date Field|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|$ausOpportunityName|Opportunity Detail Page|
+|$ausEnhancedOpportunityPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

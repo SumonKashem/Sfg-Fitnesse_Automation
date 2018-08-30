@@ -1,0 +1,74 @@
+'''INTENT: ''' Add a Sell Line
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Delete an Existing Sell Line if exist then 'Sync'
+   Wait for Sell Line field to load/appear
+   Click on Placement Name Field
+   Enter New Sell Line Name on Placement Name Field
+   Click on Device dropdown
+   Select first value from the dropdown
+   Click on Channel dropdown
+   Select first value from the dropdown
+   Click on Media Type dropdown
+   Select first value from the dropdown
+   Click on Product dropdown
+   Select first value from the dropdown
+   Click on Start Date dropdown
+   Enter Start Date as current day
+   Click on End Date dropdown
+   Enter End Date as current day + 60
+   Click on Rate Type dropdown
+   Enter value as CPM
+   Click on Budget Field
+   Enter Budget as $200 
+   Click on Rate Field
+   Enter Rate as $50
+   Click on Net Cost
+   Enter Net Cost as 50
+   Click on Sync With SF button
+   Verify Sell line is synced by observing flag icon is not yellow
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|ItalySuite_${PAGE_NAME}|Test04 - Add a Sell Line for Italy and Sync|
+|deleteLineByRow;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForElementToLoadByRow;|${Manage_Sell_Line_Default_PlacementName_Field}|2|Placement Name Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field}|2|Sell Line Placement Name field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field}|2|SL1|Sell Line Placement Name field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Device_Dropdown}|2|Device dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Device dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Channel_Dropdown}|2|Channel dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Channel dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Media_Type_Dropdown}|2|Media Type dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Media Type dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Product_Dropdown}|2|Product dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Product dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_StartDate_Dropdown}|2|Start Date dropdown|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_StartDate_Dropdown}|2|01/10/2017|Start Date Input field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_EndDate_Dropdown}|2|End Date dropdown|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_EndDate_Dropdown}|2|31/12/2017|End Date Input field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|CPM|Rate Type dropdown Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Budget_Field}|2|Budget Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Budget_Field}|2|200|Budget Input Field|
+|scrollIntoViewByRow;|2|${Manage_Sell_Line_NetCost_Field}|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Field}|2|Rate Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Field}|2|50|Rate Input Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_NetCost_Field}|2|Net Cost Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_NetCost_Field}|2|50|Net Cost Input Field|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForElementToLoadByRow;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Placement Name Field Indicating it is 'Synced'|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

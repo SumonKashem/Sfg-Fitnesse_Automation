@@ -1,0 +1,185 @@
+'''Scenario Name: ''' Create a Wavemaker Closed Won USA Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Account url
+   Scroll Into View for opportunities
+   Click on 'New RFI' opportunity button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select stage as 'Information Requested'
+   Clear Close Date field
+   Enter Close Date
+   Enter Proposal Request
+   Select Client Goal as 'CPA'
+   Enter Client Goal Details
+   Clear Due Date to Client field
+   Enter Due Date to Client as current day
+   Select Time Due as '9am'
+   Enter Network Drive Location
+   Click on 'Save' button
+   Verify Stage Appears as Information Requested on opportunity detail page
+   Scroll into Information Sent Button
+   Click on Information Sent Button
+   Scroll into Proposal Requested Button
+   Click on Proposal Requested Button
+   Verify Stage Appears as Proposal Requested on opportunity detail page
+   Scroll Into Proposal Sent Button
+   Click on Proposal Sent Button
+   Switch to tab 2
+   Verify the message appears is correct on required elements needed for Proposal Sent
+   Click on Ok button
+   Switch back to tab 1
+   Scroll Into Proposal Sent button
+   click on Proposal Sent button
+    Scroll Into Contract Pending button
+   Click on Contract Pending button
+   Scroll Into Closed Won button
+   Click on Closed Won button
+   Switch to tab 2
+   Verify Closed Won required message
+   Switch back to tab 1
+   Scroll Into Edit button
+   Click on Edit button
+   Enter Planned Start Date
+   Enter Planned End Date
+   Enter Planned Gross Budget
+   Enter Planned Margin %
+   Click on 'Save' button
+   Scroll into Closed Won disabled button
+   Click on Closed Won disabled button
+   Switch to tab 2
+   Verify Required message
+   Switch to tab 1
+   Scroll into Submit for Approval button
+   Click on Submit for Approval button
+   Accept the Alert 
+   Store page url into a variable
+   Click on User Nav dropdown
+   Log out as US user
+   Navigate to closed won opp page
+   Scroll Into Approve/Reject link
+   Click on Approve/Reject link
+   Enter comments on Comment field
+   Click on 'Approve' button
+   Scroll Into Approve/Reject link
+   Click on Approve/Reject link
+   Enter comments on Comment field
+   Click on 'Approve' button
+   Verify Stage workflow as 'Closed Won'  
+  
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test19US-Create a Wavemaker Close Won US Opportunity|
+|open;|$ntamUsMaxAccountPageUrl|
+|switchToFrame;|${SalesForce_Opportunities_IFrame_Id}|Opportunity Frame|
+|clickByJavaScript;|${SalesForce_Opportunities_New_RFI_Button}|New Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|type;|${SalesForce_Opportunities_Name_Field}|$ntamUsMaxClosedWonOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Information Requested|Stage Dropdown|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Assigned_Account_Manager_Field}|Sumon Kashem|Account Manager Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$ntamCloseDate|Close Date Field|
+|type;|${SalesForce_Opportunities_NTAM_Proposal_Request_Field}|test|Proposal Request Field|
+|selectDropDownByText;|${SalesForce_Opportunities_NTAM_Client_Goal_Dropdown}|CPA|Client Goal Dropdown|
+|type;|${SalesForce_Opportunities_NTAM_Client_Goal_Details_Field}|test|Client Goal Details Field|
+|clear;|${SalesForce_Opportunities_NTAM_Due_Date_Field}|Due Date to Client Field|
+|type;|${SalesForce_Opportunities_NTAM_Due_Date_Field}|$ntamCloseDate|Due Date to Client Field|
+|selectDropDownByText;|${SalesForce_Opportunities_NTAM_Time_Due_Dropdown}|9am|Time Due Dropdown|
+|type;|${SalesForce_Opportunities_Network_Drive_Loc_Field}|Test|Network Drive Location Field|
+|clickByJavaScript;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Information Requested|Opportunity Stage Label|
+|scrollIntoView;|${SalesForce_Opportunities_Information_Sent_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Information_Sent_Button}|Information Sent Button|
+|scrollIntoView;|${SalesForce_Opportunities_Proposal_Requested_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Proposal_Requested_Button}|Proposal Requested Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Proposal Requested|Opportunity Stage Label|
+|scrollIntoView;|${SalesForce_Opportunities_Proposal_Sent_Disabled_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Proposal_Sent_Disabled_Button}|Proposal Sent Button|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_Opportunities_Message_Field}|At least 1 sell line(s) required for Proposal Sent.|Required Fields Message for Proposal Sent|
+|click;|${SalesForce_Opportunities_Ok_Button}|Ok button|
+|switchToNewWindow;|1|
+|$ntamUsOpportunityMaxusClosedWonPageUrl =|getCurrentUrl;|
+|scrollIntoView;|${SalesForce_SellLine_New_Xaxis_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_New_Xaxis_Sell_Line_Button}|New Xaxis Sell Line Button|
+|type;|${SalesForce_SellLine_Sell_Name_Field}|$ntamUsSellName_Xax|Sell Line Name Field|
+|type;|${SalesForce_SellLine_Start_Date_Field}|$ntamSellLineStartDate|Start Date Field|
+|type;|${SalesForce_SellLine_End_Date_Field}|$ntamSellLineEndDate|End Date Field|
+|selectDropDownByText;|${SalesForce_SellLine_NTAM_Delivery_Platform}|EMEA|Delivery Platform Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_NTAM_Audience_Tier}|Brand|Audience Tier Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Rate / Gross Cost|Input Gross As Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Rate_Type_DropDown}|CPM|Rate Type Dropdown|
+|type;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|21000|Gross Budget Field|
+|type;|${SalesForce_SellLine_Gross_Rate_Field}|500|Gross Rate Field|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Net_As_DropDown}|Margin (Calc Net Cost)|Input Net Field|
+|type;|${SalesForce_SellLine_Margin_Field}|5.5|NTAMSuite_${PAGE_NAME}|
+|selectDropDownByText;|${SalesForce_SellLine_Channel_DropDown}|Display|Channel Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Device_DropDown}|Desktop|Device Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Media_DropDown}|Standard|Media Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Product_DropDown}|External|Product Dropdown|
+|clickByJavaScript;|${SalesForce_SellLine_Save_Button}|Save Button|
+|open;|$ntamUsOpportunityMaxusClosedWonPageUrl|
+|scrollIntoView;|${SalesForce_Opportunities_Proposal_Sent_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Proposal_Sent_Button}|Proposal Sent Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Proposal Sent|Opportunity Stage Label|
+|scrollIntoView;|${SalesForce_Opportunities_Contract_Pending_Disabled_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Contract_Pending_Disabled_Button}|Contract Pending Disabled Button|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_Opportunities_Message_Field}|${contractPendingMessage}|Required Fields Message for Contract Pending|
+|click;|${SalesForce_Opportunities_Ok_Button}|Ok button|
+|switchToNewWindow;|1|
+|scrollIntoView;|${SalesForce_Opportunities_Edit_Button}|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Invoice_To_Dropdown}|Agency|Invoice To Dropdown|
+|selectDropDownByText;|${SalesForce_Opportunities_Liability_To_Dropdown}|Advertiser|Liability To Dropdown|
+|selectDropDownByText;|${SalesForce_Opportunities_Reallocation_Parameters_Dropdown}|Reallocate Freely|Reallocation Parameters Dropdown|
+|clickByJavaScript;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|scrollIntoView;|${SalesForce_Opportunities_Contract_Pending_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Contract_Pending_Button}|Contract Pending Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Contract Pending|Opportunity Stage Label|
+|scrollIntoView;|${SalesForce_Opportunities_Closed_Won_Disabled_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Closed_Won_Disabled_Button}|Closed Won Disabled Button|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_Opportunities_Message_Field}|${closedWonMessage}|Required Fields Message for Closed Won|
+|click;|${SalesForce_Opportunities_Ok_Button}|Ok button|
+|switchToNewWindow;|1|
+|scrollIntoView;|${SalesForce_Opportunities_Edit_Button}|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|type;|${SalesForce_Opportunities_Planned_Start_Date_Field}|$plannedStartDate|Planned Start Date Field|
+|type;|${SalesForce_Opportunities_Planned_End_Date_Field}|$plannedEndDate|Planned End Date Field|
+|type;|${SalesForce_Opportunities_Planned_Gross_Budget_Field}|100|Planned Gross Budget Field|
+|type;|${SalesForce_Opportunities_Planned_Margin_Percentage_Field}|5|Planned Margin % Field|
+|clickByJavaScript;|${SalesForce_SellLine_Save_Button}|Save Button|
+|scrollIntoView;|${SalesForce_Opportunities_Closed_Won_Disabled_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Closed_Won_Disabled_Button}|Closed Won Disabled Button|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_Opportunities_Message_Field}|Please use the Approval Process.|Required Fields Message for Closed Won|
+|click;|${SalesForce_Opportunities_Ok_Button}|Ok button|
+|switchToNewWindow;|1|
+|$closedWonPageUrl =|getCurrentUrl;|
+|click;|${SalesForce_User_Nav_Dropdown}|User Nav Dropdown button|
+|click;|${SalesForce_User_Logout_Button}|SF Logout button|
+|wait;|1500|
+|open;|$closedWonPageUrl|
+|wait;|1000|
+|scrollIntoView;|${SalesForce_Opportunities_Submit_For_Approval_Button}|
+|clickByJavaScript;|${SalesForce_Opportunities_Submit_For_Approval_Button}|Submit for Approval Button|
+|alert;|
+|handlingLogOutSession;|${SalesForce_Admin_Name}|${SalesForce_Admin_Pass}|$closedWonPageUrl|
+|wait;|800|
+|scrollIntoView;|${SalesForce_Opportunities_Approve_Reject_Link}|
+|clickByJavaScript;|${SalesForce_Opportunities_Approve_Reject_Link}|Approve/Reject Link|
+|type;|${SalesForce_Opportunities_Approve_Reject_Comment_Field}|test|Comment Field|
+|clickByJavaScript;|${SalesForce_Opportunities_Approve_Button}|Approve Button|
+|scrollIntoView;|${SalesForce_Opportunities_Approve_Reject_Link}|
+|clickByJavaScript;|${SalesForce_Opportunities_Approve_Reject_Link}|Approve/Reject Link|
+|type;|${SalesForce_Opportunities_Approve_Reject_Comment_Field}|test|Comment Field|
+|clickByJavaScript;|${SalesForce_Opportunities_Approve_Button}|Approve Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Closed Won|Opportunity Stage Labe|
+|stopExtentReport;|
+**********!

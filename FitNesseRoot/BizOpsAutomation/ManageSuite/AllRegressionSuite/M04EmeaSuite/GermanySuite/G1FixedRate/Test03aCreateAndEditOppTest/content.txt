@@ -1,0 +1,55 @@
+'''INTENT: ''' Create and Edit an Opportunity
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+  
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|GermanySuite_Budget_Fixed_Rate_${PAGE_NAME}|Test03aGer-Create And Edit an Opportunity|
+|wait;|1500|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Button}|Create Opportunity Button|
+|wait;|3000|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Account_Dropdown_Arrow}|Account Dropdown|
+|typeUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Account_Search_Field}|PVT_Automation_Germany_Account|Account Search Field|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Account_Search_Result_Link}|Account Search Result Link|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Dropdown_Arrow}|Stage Dropdown|
+|typeUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Search_Field}|Contract Pending|Stage Search Field|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|Stage Search Result Link|
+|typeUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Name_Field}|PVT $germanyOppName|Opportunity Name Field|
+|enableTextField;|${Manage_Opportunity_Create_Opp_Close_Date_Field}|$closeDateForGerOpp|Close Date Field|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Currency_Dropdown_Arrow}|Currency Dropdown|
+|typeUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Currency_Dropdown_Field}|USD|Currency Search Field|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Currency_Search_Result_Link}|Currency Search Result Link|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Save_Button}|Create Opportunity Button|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Opportunity_Opportunities_Tab}|Opportunities Tab|
+|waitForManageUiToLoad;|
+|clickUsingIndexMouseMovement;|${Manage_Opportunity_Edit_Opportunity_Button}|0|Edit Opportunity Button|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Dropdown_Arrow}|Stage Dropdown|
+|typeUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Search_Field}|Contacted / Prospecting|Stage Search Field|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|Stage Search Result Link|
+|clickUsingMouseMovement;|${Manage_Opportunity_Edit_Save_Button}|Edit Opportunity Save Dropdown|
+|waitForManageUiToLoad;|
+|elementVerificationByIndex;|${Manage_Opportunity_Stage_Contact_Pros_Text}|0|Yes|Contract / Prospecting Text|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

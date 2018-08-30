@@ -1,0 +1,22 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+!include .BizOpsAutomation.SalesForce.LogInVariablesPage
+!include .BizOpsAutomation.SalesForce.CompaniesVariablesPage
+!include .BizOpsAutomation.SalesForce.AccountsVariablesPage
+!include .BizOpsAutomation.SalesForce.OpportunitiesVariablesPage
+!include .BizOpsAutomation.SalesForce.SellLineVariablesPage
+!include .BizOpsAutomation.SalesForce.BuyPlacementVariablesPage
+!include .BizOpsAutomation.SalesForce.GlobalVariablesPage
+!include .BizOpsAutomation.SalesForce.ApacVariablesPage
+!include .BizOpsAutomation.SalesForce.EmeaVariablespage
+!include .BizOpsAutomation.SalesForce.LatamVariablespage
+!include .BizOpsAutomation.SalesForce.CaseVariablesPage
+!include .BizOpsAutomation.SalesForce.BannerConnectVariablesPage
+!include .BizOpsAutomation.SalesForce.NtamVariablesPage
+!include .BizOpsAutomation.SalesForce.AustraliaNewZealandVariablesPage
+!include .BizOpsAutomation.SalesForce.TasksVariablesPage
+!include .BizOpsAutomation.SalesForce.SecuritiesVariablesPage
+
+
+

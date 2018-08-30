@@ -1,0 +1,40 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.OpenBrowser
+*!
+
+'''INTENT: ''' Log In as an admin
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to test.salesforce.com
+   Enter Admin email on email field
+   Enter Admin password on password field
+   Click on 'Login To Sandbox' button
+   Verify user name displays after logging in
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LogInSuite_${PAGE_NAME}|Login as an admin ${SalesForce_Admin_Name}|
+|open;|https://test.salesforce.com|
+|type;| ${SalesForce_UserName_Field}|${SalesForce_Admin_Name}|UserName Field|
+|type;| ${SalesForce_Password_Field}|${SalesForce_Admin_Pass}|Password Field|
+|click;|${SalesForce_LogIn_Button}|LogIn Button|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

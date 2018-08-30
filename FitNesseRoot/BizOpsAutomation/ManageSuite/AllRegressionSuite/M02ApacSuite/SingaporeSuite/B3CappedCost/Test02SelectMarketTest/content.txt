@@ -1,0 +1,43 @@
+'''INTENT: ''' Select Market as 'Canada'
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Wait for Choose Your Market Dropdown to load/appear
+   Click on 'Choose Your Market' dropdown
+   Type Market as 'Singapore'
+   Click on Modal Window to select the value
+   Click on 'Save' button
+   Verify User Name as Admin 'Sumon Kashem'
+   Verify accurate actualized Month appears on monthly drop down on List Of All Opp page
+   Verify accurate actualized contents appears on List Of All Opp page
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+#|verifyActualizedMonthOnListOfOpp;|${Manage_ListOfOpp_Monthly_DropDown}|Monthly Dropdown on Opportunities List Page|
+#|objectVerification;|${Manage_ListOfOpp_Actualized_Line_Text}|lines have been Actualized|Actualized Text On Opp Page|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|SingaporeSuite_Budget_Capped_Cost_${PAGE_NAME}|Test02Sin-Select Market as 'Canada'|
+|waitForElementToLoad;|${Manage_Market_ChooseMarket_Dropdown}|Choose Market Dropdown|
+|click;|${Manage_Market_ChooseMarket_Dropdown}|Choose Market Dropdown|
+|type;| ${Manage_Market_ChooseMarket_Input_Field}|Singapore|Choose Market Input Field|
+|click;|${Manage_Market_ChooseMarket_Text_Link}|Market Value Text Link|
+|click;|${Manage_Market_Save_Button}|Market Save Button|
+|waitForManageUiToLoad;|
+|objectVerification;|${Manage_UserName_Text_Label}|Sumon Kashem|Opportunities List page|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Germany Security read acess only 
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+!***** Manual Test Steps
+  Impersonate as an Germany user who created an account
+  Click on 'Accounts' tab
+  Click on First account from the list
+  Wait few seconds
+  Capture the Account URL
+  Scroll to Opp Link section
+  Click on first Opp link
+  Wait few seconds
+  Capture Opp url
+  Scroll to SL section
+  Click on First SL link
+  Wait few seconds 
+  Capture SL url
+  Log Out as Impersonator
+  Now Choose Different Germany User 
+  Change Role as 'DEU - MP - Management'
+  Click on Save button
+  Log in as the new impersonator
+  go to account url
+  click on Edit button
+  Verify insufficient privialge message appears
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|GermanySecuritiesReport|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Securities_Suite_${PAGE_NAME}|Test01GerSecur-Read access only|
+|click;|${SalesForce_Accounts_Tab}|Accounts Tab|
+|click;|${SalesForce_Securities_First_Account_Link}|First Account Link|
+|wait;|3000|
+|$gerSecurAccountPageUrl=|getCurrentUrl;|
+|scroll;|vertical|700|
+|wait;|1500|
+|clickByJavaScript;|${SalesForce_Securities_First_Opp_Link}|First Opp Link|
+|wait;|3300|
+|$gerSecurOppPageUrl=|getCurrentUrl;|
+|scroll;|Vertical|7000|
+|click;|${SalesForce_Securities_First_SL_Link}|First SL Link|
+|wait;|3000|
+|$gerSecurSellLinePageUrl=|getCurrentUrl;|
+|click;|${SalesForce_User_Logout_Button}|Log Out Button|
+|type;| ${SalesForce_Search_Field}|${SalesForce_Securities_Impersonator}|Search Field|
+|click;|${SalesForce_Search_Button}|Search Button|
+|scrollIntoView;|${SalesForce_DisplayName_Link}|
+|click;|${SalesForce_DisplayName_Link}|Display Name Link|
+|click;|${SalesForce_UserDetail_DropDown_Arrow}|User Action Dropdown|
+|click;|${SalesForce_UserDetail_DropDown_Link}|User Detail Link|
+|click;|${SalesForce_Securities_User_Detail_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Securities_User_Role_Dropdown}|DEU - MP - Management|User Role Dropdown|
+|click;|${SalesForce_Securities_User_Save_Button}|Save Button|
+|opne;|$gerSecurAccountPageUrl|
+|click;|${SalesForce_Accounts_Edit_Button}|Edit Button|
+|elementVerification;|//*[text()="Insufficient Privileges"]|Yes|Insufficient Warning Message|
+|stopExtentReport;|
+**********!

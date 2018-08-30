@@ -1,0 +1,46 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S07LatamSuite.MiamiSuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Create a 'LATAM Ad Operations' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + icon
+   Click on 'Cases' tab
+   Click on 'New' button
+   Select Case Record Type as 'LATAM Ad Opreations'
+   Click on 'Continue' button
+   Enter Account Name
+   Select Status as 'New'
+   Select Market as 'Miami'
+   Select first value for Request Type
+   Select Yes for Mookie'd Campaign?
+   Click on 'Save' button
+   Verify Case Owner
+   Verify Case Record Type as 'LATAM Ad Operations' on Case Detail page
+**********!
+#$miaLatamAccountPageUrl
+#LATAM Miami Account-180608-1044
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test18aMia-Create a 'LATAM Ad Operations' case|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Cases_Link}|Cases Link|
+|click;|${SalesForce_Cases_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Cases_Record_Type_Dropdown}|LATAM Ad Operations|Record Type Dropdown|
+|click;|${SalesForce_Cases_Continue_Button}|Continue Button|
+|wait;|2000|
+|type;|${SalesForce_Cases_Account_Name_Field}|$miamiLatamAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Miami|Market Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Request_Type_Dropdown}|1|Request Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Mookied_Campaign_Dropdown}|Yes|Mookie Dropdown|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|Xaxis LATAM Queue [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|LATAM Ad Operations [Change]|Record Type on Case Detail Page|
+|$latamAdOperationsPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

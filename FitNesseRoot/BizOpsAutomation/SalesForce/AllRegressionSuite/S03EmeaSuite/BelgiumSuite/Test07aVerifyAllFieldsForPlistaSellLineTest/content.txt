@@ -1,0 +1,123 @@
+'''Scenario Name: ''' Verify all fields available for Plista Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity URL
+   Scroll Into 'New Xaxis Sell Line' Button
+   Click on 'New Xaxis Sell Line' button
+   Verify all section labels and fields exist on Plista sell line Edit Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test07aBel-Verify All Fields Available for Plista Sell Line|
+|open;|$belEmeaOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_SellLine_New_Plista_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_New_Plista_Sell_Line_Button}|New Plista Sell Line Button|
+|elementVerification;|${SalesForce_SellLine_Information_Label_Text}|Yes|Information Label|
+|elementVerification;|${SalesForce_SellLine_Business_Unit_Dropdown}|Yes|Business Unit Dropdown|
+|elementVerification;|${SalesForce_SellLine_Sell_Name_Field}|Yes|Sell Name Field|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Field}|Yes|Opportunity Field|
+|elementVerification;|${SalesForce_SellLine_Start_Date_Field}|Yes|Start Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|0|Yes|Start Date Link|
+|elementVerification;|${SalesForce_SellLine_End_Date_Field}|Yes|End Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|1|Yes|End Date Link|
+|elementVerification;|${SalesForce_SellLine_Delivery_Market_Dropdown}|Yes|Delivery Market Dropdown|
+|elementVerification;|${SalesForce_SellLine_AppNexusID_Field}|Yes|AppNexus ID Field|
+|elementVerification;|${SalesForce_SellLine_Max_Availability_Field}|Yes|Max Availability Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Budget_And_Discount_Label_Text}|Yes|Gross Budget & Discounts Label|
+|elementVerification;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Yes|Input Gross as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Rate_Type_DropDown}|Yes|Rate Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|Yes|Planned Gross Budget Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Rate_Field}|Yes|Gross Rate Field|
+|elementVerification;|${SalesForce_SellLine_Sell_Volume_Field}|Yes|Sell Volume Field|
+|elementVerification;|${SalesForce_SellLine_Information_Net_Cost_Breakout_Text}|Yes|Net Cost Breakout Label|
+|elementVerification;|${SalesForce_SellLine_Input_Net_As_DropDown}|Yes|Input Net as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Third_Party_Cost_Field}|Yes|Third Party Cost Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost_Field}|Yes|Planned Media Net Cost Field|
+|elementVerification;|${SalesForce_SellLine_Margin_Field}|Yes|Margin % Field|
+|elementVerification;|${SalesForce_SellLine_Product_Channel_Label_Text}|Yes|Product and Channel Label|
+|elementVerification;|${SalesForce_SellLine_Channel_DropDown}|Yes|Channel Dropdown|
+|elementVerification;|${SalesForce_SellLine_Device_DropDown}|Yes|Device Dropdown|
+|elementVerification;|${SalesForce_SellLine_Media_DropDown}|Yes|Media Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Product_DropDown}|Yes|Product Dropdown|
+|elementVerification;|${SalesForce_SellLine_Advertiser_Product_Field}|Yes|Advertiser Product Field|
+|elementVerification;|${SalesForce_SellLine_Details_Label_Text}|Yes|Sell Line Details Label|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Description_Field}|Yes|Sell Line Description Field|
+|elementVerification;|${SalesForce_SellLine_Frequency_Cap_Dropdown}|Yes|Frequency Cap Dropdown|
+|elementVerification;|${SalesForce_SellLine_Frequency_Capping_Comments_Field}|Yes|Frequency Capping Comments Field|
+|elementVerification;|${SalesForce_SellLine_Frequency_Scope_Dropdown}|Yes|Frequency Scope Dropdown|
+|elementVerification;|${SalesForce_SellLine_EMEA_Audience_Tier}|Yes|Audience Tier Dropdown|
+|elementVerification;|${SalesForce_SellLine_Target_Age_Freeform_Field}|Yes|Target Age Freeform Field|
+|elementVerification;|${SalesForce_SellLine_Audience_Target_Field}|Yes|Audience Target Field|
+|elementVerification;|${SalesForce_SellLine_Public_IO_Comment_Field}|Yes|Public IO Comment Field|
+|elementVerification;|${SalesForce_SellLine_Reporting_Frequency_Dropdown}|Yes|Reporting Frequency Dropdown|
+|elementVerification;|${SalesForce_SellLine_Budget_Shifts_Allowed_Dropdown}|Yes|Budget Shifts Allowed Dropdown|
+|elementVerification;|${SalesForce_SellLine_Sell_Line_Confirmed_Live_CheckBox}|Yes|Sell Line Confirmed Live Checkbox|
+|elementVerification;|${SalesForce_SellLine_Bannerconnect_20_Checkbox}|Yes|Bannerconnect 20/20 Checkbox|
+|elementVerification;|${SalesForce_SellLine_Turbine_Checkbox}|Yes|Turbine Checkbox|
+|elementVerification;|${SalesForce_SellLine_Turbine_Segments_PickList}|Yes|Turbine segments Picklist|
+|elementVerification;|${SalesForce_SellLine_Turbine_Segments_Chosen_PickList}|Yes|Turbine segments Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Turbine_Sub_Segments_PickList}|Yes|Turbine Sub-segments Picklist|
+|elementVerification;|${SalesForce_SellLine_Turbine_Sub_Segments_Chosen_PickList}|Yes|Turbine Sub-segments Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Turbine_Segments_Intensity}|Yes|Turbine Segment Intensity Dropdown|
+|elementVerification;|${SalesForce_SellLine_Formats_PickList}|Yes|Formats Picklist|
+|elementVerification;|${SalesForce_SellLine_Formats_Chosen_PickList}|Yes|Formats Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Third_Party_Partner_Dropdown}|Yes|3rd Party Partner Dropdown|
+|elementVerification;|${SalesForce_SellLine_Original_Targets_Label_Text}|Yes|Original Targets Label|
+|elementVerification;|${SalesForce_SellLine_Targeting_Details_Label_Text}|Yes|Targeting Details Label|
+|elementVerification;|${SalesForce_SellLine_Plus_Surcharge_Field}|Yes|Plus Surcharge Field|
+|elementVerification;|${SalesForce_SellLine_Premium_Surcharge_Field}|Yes|Premium Surcharge Field|
+|elementVerification;|${SalesForce_SellLine_Third_Party_Surcharge_Field}|Yes|3rd Party Surcharge Field|
+|elementVerification;|${SalesForce_SellLine_Viewability_Surcharge_Field}|Yes|Viewability Surcharge Field|
+|elementVerification;|${SalesForce_SellLine_Freq_App_Plus_Surcharge_Field}|Yes|Freq of APP (Plus S/C) Field|
+|elementVerification;|${SalesForce_SellLine_Freq_App_Premium_Surcharge_Field}|Yes|Freq of APP (Premium S/C)	Field|
+|elementVerification;|${SalesForce_SellLine_Freq_App_Third_Party_Surcharge_Field}|Yes|Freq of APP (3rd Party S/C) Field|
+|elementVerification;|${SalesForce_SellLine_Target_Education_Background_Picklist}|Yes|Target Educational Background Picklist|
+|elementVerification;|${SalesForce_SellLine_Target_Education_Background_Chosen_Picklist}|Yes|Target Educational Background Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Target_Occupation_Dropdown}|Yes|Target Occupation Dropdown|
+|elementVerification;|${SalesForce_SellLine_Target_Region_Field}|Yes|Target Region Field|
+|elementVerification;|${SalesForce_SellLine_Targeting_Comment_Field}|Yes|Targeting Comment Field|
+|elementVerification;|${SalesForce_SellLine_Targeting_Net_Income_Field}|Yes|Target Net Household Income Dropdown|
+|elementVerification;|${SalesForce_SellLine_Target_Gender_PickList}|Yes|Target Gender Picklist|
+|elementVerification;|${SalesForce_SellLine_Target_Gender_Chosen_PickList}|Yes|Target Gender Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Target_Region_Type_Dropdown}|Yes|Target Region Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Affinity_Segments_Picklist}|Yes|Affinity Segments Picklist|
+|elementVerification;|${SalesForce_SellLine_Affinity_Segments_Chosen_Picklist}|Yes|Affinity Segments Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Lifestyle_Segments_Picklist}|Yes|Lifestyle Segments Picklist|
+|elementVerification;|${SalesForce_SellLine_Lifestyle_Segments_Chosen_Picklist}|Yes|Lifestyle Segments Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Retargeting_Type_Picklist}|Yes|Retargeting Type	Picklist|
+|elementVerification;|${SalesForce_SellLine_Retargeting_Type_Chosen_Picklist}|Yes|Retargeting Type Picklist|
+|elementVerification;|${SalesForce_SellLine_Retargeting_Source_Field}|Yes|Retargeting Source Field|
+|elementVerification;|${SalesForce_SellLine_Inventory_Details_Label_Text}|Yes|Inventory Details Label|
+|elementVerification;|${SalesForce_SellLine_Inventory_Dropdown}|Yes|Inventory Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Affinity_Channel_Picklist}|Yes|Inventory Affinity Channel Picklist|
+|elementVerification;|${SalesForce_SellLine_Affinity_Channel_Chosen_Picklist}|Yes|Inventory Affinity Channel Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Priority_Dropdown}|Yes|Priority Dropdown|
+|elementVerification;|${SalesForce_SellLine_Delivery_Strategy_Dropdown}|Yes|Delivery Strategy Dropdown|
+|elementVerification;|${SalesForce_SellLine_Adserving_Dropdown}|Yes|Adserving Dropdown|
+|elementVerification;|${SalesForce_SellLine_KPI_Information_Label_Text}|Yes|KPI Information Label|
+|elementVerification;|${SalesForce_SellLine_PL_EMEA_Goal_Dropdown}|Yes|Goal Dropdown|
+|elementVerification;|${SalesForce_SellLine_Lead_Types_Picklist}|Yes|Lead Types Picklist|
+|elementVerification;|${SalesForce_SellLine_Lead_Types_Chosen_Picklist}|Yes|Lead Types Chosen Picklist|
+|elementVerification;|${SalesForce_SellLine_Ford_Objective_Dropdown}|Yes|Ford Objective Picklist|
+|elementVerification;|${SalesForce_SellLine_Goal_Details_Field}|Yes|Goal Details Field|
+|elementVerification;|${SalesForce_SellLine_Goal_Viewability_Benchmark_Field}|Yes|Viewability Benchmark Field|
+|elementVerification;|${SalesForce_SellLine_Team_Member1_Dropdown}|Yes|Team Member 1 Dropdown|
+|elementVerification;|${SalesForce_SellLine_Team_Member2_Dropdown}|Yes|Team Member 2 Dropdown|
+|elementVerification;|${SalesForce_SellLine_Team_Member3_Dropdown}|Yes|Team Member 3 Dropdown|
+|elementVerification;|${SalesForce_SellLine_Team_Member1_Input_Field}|Yes|Team Member 1 Input Field|
+|elementVerification;|${SalesForce_SellLine_Team_Member2_Input_Field}|Yes|Team Member 2 Input Field|
+|elementVerification;|${SalesForce_SellLine_Team_Member3_Input_Field}|Yes|Team Member 3 Input Field|
+|elementVerification;|${SalesForce_SellLine_Team_Role1_Dropdown}|Yes|Team Role 1 Dropdown|
+|elementVerification;|${SalesForce_SellLine_Team_Member2_Dropdown}|Yes|Team Role 2 Dropdown|
+|elementVerification;|${SalesForce_SellLine_Team_Member3_Dropdown}|Yes|Team Role 3 Dropdown|
+|elementVerification;|${SalesForce_SellLine_System_Information_Label_Text}|Yes|System Information Label|
+|elementVerification;|${SalesForce_SellLine_Created_By_Manage_Field_2}|Yes|Created By Manage Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|2|Yes|Created By Manage Date Link|
+|elementVerification;|${SalesForce_SellLine_External_Id_Field}|Yes|External ID Field|
+|stopExtentReport;|
+**********!

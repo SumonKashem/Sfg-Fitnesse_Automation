@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** Test Cases
+GermanySecuritiesSuite.Test01ReadAccess
+**********!

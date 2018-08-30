@@ -1,0 +1,40 @@
+'''INTENT: ''' Select Market as 'Singapore'
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Wait for Choose Your Market Dropdown to load/appear
+   Click on 'Choose Your Market' dropdown
+   Type Market as 'Singapore'
+   Click on Modal Window to select the value
+   Click on 'Save' button
+   Verify User Name as Admin 'Sumon Kashem'
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+#|click;|${Manage_Market_Save_Button}|Market Save Button|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|SingaporeSuite_Budget_Fixed_Rate_${PAGE_NAME}|Test02Sin-Select Market as 'Singapore'|
+|waitForElementToLoad;|${Manage_Market_ChooseMarket_Dropdown}|Choose Market Dropdown|
+|click;|${Manage_Market_ChooseMarket_Dropdown}|Choose Market Dropdown|
+|type;| ${Manage_Market_ChooseMarket_Input_Field}|Singapore|Choose Market Input Field|
+|click;|${Manage_Market_ChooseMarket_Text_Link}|Market Value Text Link|
+|click;|${Manage_Market_Save_Button}|Market Save Button|
+|waitForManageUiToLoad;|
+|objectVerification;|${Manage_UserName_Text_Label}|Vanda Absolonova|Opportunities List page|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.OpenBrowser
+*!
+
+'''Scenario Name: ''' Verify Australia User is Active
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   *Admin user
+   Navigate to test.salesforce.com
+   Enter Admin email on email field
+   Enter Admin password on password field
+   Click on 'Login To Sandbox' button
+   ------------------------------------------
+   *APAC user
+   Search for APAC user to impersonate
+   Click on 'Search' Button
+   Click on 'Display Name' link
+   Click on 'User Action' drop down menu
+   Click on 'User Detail' link
+   click on Edit Button
+   Verify User Is Active by calling the verifyUserIsActive() method
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test01AusUser-Verify User ${SalesForce_Australia_User_Name} is Active|
+|open;|https://test.salesforce.com|
+|type;| ${SalesForce_UserName_Field}|${SalesForce_Admin_Name}|UserName Field|
+|type;| ${SalesForce_Password_Field}|${SalesForce_Admin_Pass}|Password Field|
+|click;|${SalesForce_LogIn_Button}|LogIn Button|
+|type;| ${SalesForce_Search_Field}|${SalesForce_Australia_User_Name}|Search Field|
+|click;|${SalesForce_Search_Button}|Search Button|
+|click;|${SalesForce_DisplayName_Link}|Display Name Link|
+|click;|${SalesForce_UserDetail_DropDown_Arrow}|User Action Dropdown|
+|click;|${SalesForce_UserDetail_DropDown_Link}|User Detail Link|
+|click;|${SalesForce_User_Details_Edit_Button}|Edit Button|
+|VerifyUserIsActive;|${SalesForce_User_Details_Active_Checkbox}|
+|stopExtentReport;|
+**********!
+
+

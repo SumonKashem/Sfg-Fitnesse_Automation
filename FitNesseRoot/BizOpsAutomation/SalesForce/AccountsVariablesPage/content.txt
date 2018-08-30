@@ -1,0 +1,94 @@
+All Sales Force Accounts Page Variables Are Defined Here....
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'numberOfDays' for reusability on new task 
+!|script|DriverClass|
+|$newTaskServiceDueDate=|getDesiredDateInFormat;|0|/|
+|$newTaskTechDueDate=|getDesiredDateInFormat;|20|/|
+|$newTaskMediaDueDate=|getDesiredDateInFormat;|21|/|
+|$newEventServiceStartDate=|getDesiredDateInFormat;|0|/|
+|$newEventServiceEndDate=|getDesiredDateInFormat;|1|/|
+**********!
+
+!define SalesForce_Accounts_Opportunity_Title_Text {//*[@id="j_id0:j_id2_title"]}
+!define SalesForce_Accounts_System_Info_Text {//*[text()="System Information"]}
+!define SalesForce_Accounts_Tab {//*[contains(@title,"Accounts Tab")]}
+!define SalesForce_Accounts_Button {//*[contains(@title,"Accounts")]}
+!define SalesForce_Accounts_Edit_Button {//*[@title="Edit"]}
+!define SalesForce_Accounts_New_Button {//*[contains(@value,"New")]}
+!define SalesForce_Accounts_Record_Type_DropDown {//*[@id="p3"]}
+!define SalesForce_Accounts_Continue_Button {//*[@value="Continue"]}
+!define SalesForce_Accounts_Agency_Field {//*[@id="j_id0:j_id1:j_id3:j_id5"]}
+#!define SalesForce_Accounts_Advertiser_Field {//*[@id="j_id0:j_id1:j_id3:j_id7"]}
+!define SalesForce_Accounts_Advertiser_Field {//*[@id="j_id0:j_id1:j_id3:j_id8"]}
+#!define SalesForce_Accounts_Business_Unit_DropDown {//*[@id="j_id0:j_id1:j_id3:j_id9"]}
+!define SalesForce_Accounts_Business_Unit_DropDown {//*[@id="j_id0:j_id1:j_id3:SelBusinessUnit"]}
+!define SalesForce_Accounts_Creat_Account_Button {//*[@value="Create Account"]}
+!define SalesForce_Accounts_Cancel_Button {//*[@value="Cancel"]}
+!define SalesForce_Accounts_Name_Field {//*[@id="acc2"]}
+!define SalesForce_Account_Business_Unit_Account_Page_DropDown {//*[@id="00Ni0000004xLEq"]}
+!define SalesForce_Account_Opt_In_Status_DropDown {//*[@id="00Ni000000CPXQP"]}
+!define SalesForce_Account_SLA_Classification_DropDown {//*[@name="00Ni0000004xKWl"]}
+!define SalesForce_Account_Save_Button {//*[@name="save"]}
+!define SalesForce_Account_Name_Text {//*[@id="acc2j_id0_j_id2_ileinner"]}
+!define SalesForce_Account_Name_Description {//*[@class="pageDescription"]}
+!define SalesForce_Account_Search_Field {//*[@id="phSearchInput"]}
+!define SalesForce_Account_Search_Button {//*[@id="phSearchButton"]}
+!define SalesForce_Account_Pillar_Dropdown {//*[@id="00N3100000GvdPm"]}
+!define SalesForce_Account_Name_Link {//*[@data-seclke="Account" and @data-seclkr="1"]}
+!define SalesForce_Account_BC_Currency_Dropdown {//*[@id="CurrencyIsoCode"]}
+!define SalesForce_Account_BC_Billing_Company_Field {//*[@id="CF00N3100000GmkLK"]}
+!define SalesForce_Accounts_BC_Agency_Field {//*[@id="CF00Ni000000EIZSr"]}
+!define SalesForce_Accounts_BC_Advertiser_Field {//*[@id="CF00Ni000000EIZSw"]}
+!define SalesForce_Accounts_BC_Account_Name_Field {//*[@id="Name"]}
+!define SalesForce_Accounts_Record_Type_Text {//*[@id="RecordType_ileinner"]}
+!define SalesForce_Accounts_BC_Market_Dropdown {//*[@id="00Ni000000EHp2C"]}
+
+!define SalesForce_Accounts_NewTask_Button {//*[@value="New Task"]}
+!define SalesForce_Accounts_NewTask_Subject_Field {//*[@id="tsk5"]}
+!define SalesForce_Accounts_NewTask_Due_Date_Field {//*[@id="tsk4"]}
+!define SalesForce_Accounts_NewTask_Currency_Dropdown {//*[@id="tsk9"]}
+!define SalesForce_Accounts_NewTask_Status_Dropdown {//*[@id="tsk12"]}
+!define SalesForce_Accounts_NewTask_Priority_Dropdown {//*[@id="tsk13"]}
+
+
+!define SalesForce_Accounts_NewEvent_Button {//*[@value="New Event"]}
+!define SalesForce_Accounts_NewEvent_Subject_Field {//*[@id="evt5"]}
+!define SalesForce_Accounts_NewEvent_Start_Date_Field {//*[@id="StartDateTime"]}
+!define SalesForce_Accounts_NewEvent_End_Date_Field {//*[@id="EndDateTime"]}
+!define SalesForce_Accounts_NewEvent_Description_Field {//*[@id="evt6"]}
+!define SalesForce_Accounts_NTAM_Currency_Dropdown {//*[@id="acc24"]}
+!define SalesForce_Accounts_NTAM_Account_Manager_Field {//*[@id="CF00N3100000Fv5KY"]}
+!define SalesForce_Accounts_NTAM_Assigned_Account_Manager_Field {//*[@id="CF00N3100000Fv5KZ"]}
+!define SalesForce_Accounts_NTAM_Automated_Trader_Field {//*[@id="CF00N3100000Fv5Ka"]}
+!define SalesForce_Accounts_NTAM_Business_Analyst_Field {//*[@id="CF00N3100000Fv5Kb"]}
+!define SalesForce_Accounts_NTAM_SIM_Analyst_Field {//*[@id="CF00N3100000Fv5Kc"]}
+!define SalesForce_Accounts_Record_Type_Field {//*[@id="RecordTypej_id0_j_id2_ileinner"]}
+!define SalesForce_Accounts_Business_Unit_Field {//*[@id="00Ni0000004xLEqj_id0_j_id2_ileinner"]}
+!define SalesForce_Accounts_BU_Err_MSG {//*[@class="messageText"]}
+!define SalesForce_Accounts_Emergent_Revenue_Stream_Dropdown {//*[@id="00N5A00000H7C71"]}
+!define SalesForce_Accounts_BU_EMGT_Err_MSG {//*[contains(text(),"users are not allowed to select Emergent as the Business Unit")]}
+
+!define SalesForce_Accounts_Agency_Lookup_Icon {//*[@title="Agency Lookup (New Window)"]}
+!define SalesForce_Accounts_Agency_Lookup_Search_Frame {//*[@id="searchFrame"]}
+!define SalesForce_Accounts_Agency_Lookup_Search_Field {//*[@id="lksrch"]}
+!define SalesForce_Accounts_Agency_Lookup_Go_Button {//*[@name="go"]}
+!define SalesForce_Accounts_Agency_Lookup_Result_Frame {//*[@id="resultsFrame"]}
+!define SalesForce_Accounts_Agency_Lookup_Result_Link {//*[@class="dataRow even last first"]/th}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

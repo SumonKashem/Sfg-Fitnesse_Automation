@@ -1,0 +1,19 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+!***** Test Cases
+S06BannerConnectSuite.Test01LogInUserTest
+S06BannerConnectSuite.Test02CreateAgencyTest
+S06BannerConnectSuite.Test03CreateAdvertiserTest
+S06BannerConnectSuite.Test04CreateServiceAccountTest
+S06BannerConnectSuite.Test05CreateTechAccountTest
+S06BannerConnectSuite.Test06CreateMediaAccountTest
+S06BannerConnectSuite.Test07CreateServiceOppTest
+S06BannerConnectSuite.Test08CreateTechnologyOppTest
+S06BannerConnectSuite.Test09CreateMediaOppTest
+S06BannerConnectSuite.Test10NewServiceTaskCreationTest
+S06BannerConnectSuite.Test11NewTechTaskCreationTest
+S06BannerConnectSuite.Test12NewMediaTaskCreationTest
+S06BannerConnectSuite.Test13NewServiceEventCreationTest
+S06BannerConnectSuite.Test14CreateServiceSupportCaseTest
+*****!

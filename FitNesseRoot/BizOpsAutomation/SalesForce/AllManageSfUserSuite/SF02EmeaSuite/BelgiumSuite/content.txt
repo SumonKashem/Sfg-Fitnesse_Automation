@@ -1,0 +1,4 @@
+!***** Test Cases
+BelgiumSuite.Test01SfUserActivationTest
+BelgiumSuite.Test02SfUserManageCompTest
+**********!

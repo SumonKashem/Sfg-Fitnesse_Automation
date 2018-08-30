@@ -1,0 +1,80 @@
+'''INTENT: ''' Actualize a buy line for second month with effective rate
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Click on Actualize button
+   Scroll Into second month Schedule Tab
+   Wait for Monthly schedule to appear
+   Click on second monthly schedule tab
+   Click on Actual method dropdown
+   Enter value as Effective Rate
+   Click on Actual budget field
+   Enter Actual budget as 35
+   Click on Actual Rate Field
+   Enter Actual Rate as 1400
+   Click on Planned Quantity Field
+   verify planned quantity updated to 1,400
+   right click and choose distribue to next month
+   Verify Actual Rate updated to 25.00
+   Verify Planned Budget updated to 35.00
+   Verify Next month planned budget updated to 31.304348
+   Verify Next month Sell line Net Cost updated to 31.304348
+   Verify Next month Buy line Planned Qunatity updated to 1,252
+   Verify Line Budget stay as same 100
+   Verify Line Rate stayed as same 25.00
+   Verify Line Quantity stayed as same 4,000
+   click on sync with sf
+   Scroll To Second Month Tab
+   Verify last actualized date appears as today in dd/mm/yyyy format
+   Verify last actualized date appears for sell line as today in dd/mm/yyyy format
+   Verify Line Budget stay as same 100
+   Verify Line Rate stayed as same 25.00
+   Verify Line Quantity stayed as same 4,000
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|ItalySuite_${PAGE_NAME}|Test07 - Actualize a Buy Line's Second monthly schedule|
+|clickUsingMouseMovement;|${Manage_Actualize_Button}|Actualize Button|
+|clickOnMonthlyTabUsingMouseMovement;|Nov|2017|10000|
+|clickByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Method_Dropdown}|3|0|Actual Method DropDown|
+|typeByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Method_Dropdown}|3|0|Effective Rate|Actual Method Value|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|1|Actual Method DropDown Value|
+|clickByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Budget_Field}|3|1|Actual Budget Field|
+|typeByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Budget_Field}|3|1|35|Actual Budget Value|
+|clickByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Quantity_Field}|3|1|Actual Quantity Field|
+|typeByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Quantity_Field}|3|1|1400|Actual Quantity Value|
+|rightClickByRowAndIndexUsingMouseMovement;|${Manage_Actualization_BuyLine_Actual_Quantity_Field}|3|1|Actual Quantity Value|
+|clickUsingMouseMovement;|${Manage_Actualization_Distribution_Next_Month_Option}|Next Month Distribution Option|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_SellLine_NetCost_Field}|2|1|35.00|SL Netcost Value Field|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_BuyLine_ActualRate_Field}|3|0|25.00|Actual Rate Value Field|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_BuyLine_Actual_Budget_Field}|3|1|35.00|Planned Budget Value Field|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_BuyLine_Planned_Quantity_Field}|3|2|1,400|Planned Quantity Value|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_BuyLine_Actual_Budget_Field}|3|3|31.304348|Planned Budget Value Field For Next Month|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_SellLine_NetCost_Field}|2|2|31.304348|SL Netcost Value Field For Next Month|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_BuyLine_Planned_Quantity_Field}|3|3|1,252|BP Planned Quantity Value Field For Next Month|
+|scroll;|Horizontal|-10000|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_Line_Budget_Field}|3|0|100.00|BP Line Budget Field Value|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_Line_Rate_Field}|3|0|25.00|BP Line Rate Field Value|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_Line_Quantity_Field}|3|0|4,000|BP Line Quantity Field Value|
+|scroll;|Horizontal|10000|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync with SF Button|
+|waitForBarToLoad;|//div[@class="blockUI"]|
+|waitForElementToLoadByRowAndIndex;|[@title="Last Actualized Date: $canadaSellLineStartDate"]|3|0|Second Month Buy Placement Last Actualized Date Verification|
+|waitForElementToLoadByRowAndIndex;|[@title="Last Actualized Date: $canadaSellLineStartDate"]|2|0|Second Month Sell Line Last Actualized Date Verification|
+|scroll;|Horizontal|-10000|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_Line_Budget_Field}|3|0|100.00|BP Line Budget Field Value|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_Line_Rate_Field}|3|0|25.00|BP Line Rate Field Value|
+|objectVerificationByRowAndIndex;|${Manage_Actualization_Line_Quantity_Field}|3|0|4,000|BP Line Quantity Field Value|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

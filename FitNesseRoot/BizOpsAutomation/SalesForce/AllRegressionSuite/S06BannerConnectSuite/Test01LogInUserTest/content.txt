@@ -1,0 +1,52 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.OpenBrowser
+*!
+
+'''Scenario Name: ''' Log In as an Banner Connect user
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   *Admin user
+   Navigate to test.salesforce.com
+   Enter Admin email on email field
+   Enter Admin password on password field
+   Click on 'Login To Sandbox' button
+   ------------------------------------------
+   *Banner Connect user
+   Search for BC user to impersonate
+   Click on 'Search' Button
+   Click on 'Display Name' link
+   Click on 'User Action' drop down menu
+   Click on 'User Detail' link
+   Click on 'Login' button
+   Verify user name displays after logging in
+   Verify Business unit
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test01BC-Log In as an BC user ${BC_User_Name}|
+|open;|https://test.salesforce.com|
+|type;| ${SalesForce_UserName_Field}|${SalesForce_Admin_Name}|UserName Field|
+|type;| ${SalesForce_Password_Field}|${SalesForce_Admin_Pass}|Password Field|
+|click;|${SalesForce_LogIn_Button}|LogIn Button|
+|type;| ${SalesForce_Search_Field}|${BC_User_Name}|Search Field|
+|click;|${SalesForce_Search_Button}|Search Button|
+|scrollIntoView;|${SalesForce_DisplayName_Link}|
+|click;|${SalesForce_DisplayName_Link}|Display Name Link|
+|click;|${SalesForce_UserDetail_DropDown_Arrow}|User Action Dropdown|
+|click;|${SalesForce_UserDetail_DropDown_Link}|User Detail Link|
+|click;|${SalesForce_User_LogIn_Button}|LogIn Button|
+|objectVerification;|${SalesForce_User_Name_Verification}|Logged in as ${BC_User_Name} (ramon.hansen@bannerconnect.net.glstaging)|Home Page|
+|stopExtentReport;|
+**********!
+
+

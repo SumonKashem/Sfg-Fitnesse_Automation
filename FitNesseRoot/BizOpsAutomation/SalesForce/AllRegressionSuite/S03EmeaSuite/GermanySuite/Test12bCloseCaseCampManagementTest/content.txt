@@ -1,0 +1,25 @@
+'''Scenario Name: ''' Close an 'Campaign Management' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to 'Campaign Management' Page Url
+   Click on 'Close Case' button
+   Select Status as 'Closed'
+   Select Case Reason
+   Click on 'Save' button
+   Verify Case Status as 'Closed' on Case details page
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test12bGer-Close 'Campaign Management' case|
+|open;|$campManagementPageUrl|
+|click;|${SalesForce_Cases_Close_Case_Button}|Close Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Closed|Status Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Reason_Dropdown}|2|Case Reason Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Text_Field}|Closed|Status Text Field|
+|stopExtentReport;|
+**********!

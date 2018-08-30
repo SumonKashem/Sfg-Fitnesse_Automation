@@ -1,0 +1,56 @@
+'''Scenario Name: ''' Create a Xaxis Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Enter Sell Name
+   Enter Sell Line Start Date
+   Enter Sell Line End Date
+   Select input gross as 'Rate / Gross Cost'
+   Select Rate Type as 'CPM'
+   Enter Planned Gross Budget as '200'
+   Enter Gross Rate as '25'
+   Select Input Net As 'Margin (Calc Net Cost)'
+   Enter Margin as '10' percent
+   Select Channel as 'Display'
+   Select Device as 'Desktop'
+   Select Media Type as 'Standard'
+   Select first value for Product Drop Down
+   Select first value for Wasmuth Drop Down
+   Click on 'Save' button
+   Verify Sell Line Business Unit on SL Detail page
+   Verify Sell Name appears on Sell Line Detail page
+   Verify Sell Line Record Type appears on Sell Line Detail page
+   Verify Sell Volume = Gross Budget/Gross Rate*1000
+   Capture Sell Number and store in a variable for reusability
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test24Ger-Create a Xaxis Sell Line|
+|type;|${SalesForce_SellLine_Sell_Name_Field}|$emeaSLName_Xax|Sell Line Name Field|
+|type;|${SalesForce_SellLine_Start_Date_Field}|${gerSellLineStartDate}|Start Date Field|
+|type;|${SalesForce_SellLine_End_Date_Field}|${gerSellLineEndDate}|End Date Field|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Rate / Gross Cost|Input Gross As Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Rate_Type_DropDown}|CPM|Rate Type Dropdown|
+|type;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|200|Gross Budget Field|
+|type;|${SalesForce_SellLine_Gross_Rate_Field}|25|Gross Rate Field|
+|selectDropDownByText;|${SalesForce_SellLine_Input_Net_As_DropDown}|Margin (Calc Net Cost)|Input Net Field|
+|type;|${SalesForce_SellLine_Margin_Field}|10|EMEASuite_${PAGE_NAME}|
+|selectDropDownByText;|${SalesForce_SellLine_Channel_DropDown}|Display|Channel Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Device_DropDown}|Desktop|Device Dropdown|
+|selectDropDownByText;|${SalesForce_SellLine_Media_DropDown}|Standard|Media Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Product_DropDown}|1|Product Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Wasmuth_Werbetreager_Dropdown}|1|Wasmuth Dropdown|
+|clickByJavaScript;|${SalesForce_SellLine_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_SellLine_Business_Unit_Text}|Xaxis|Business Unit on Sell Line Detail Page|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Name_Field}|$emeaSLName_Xax|Sell Line Detail Page|
+|objectVerification;|${SalesForce_SellLine_Record_Type_Field}|Germany|Record Type|
+|$volumeRateCalc=|getCalculatedValue;|CPM|Volume Calculation|200|25|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Volume_Text}|8.000|Volume Calculation|
+|$emeaSellLineXaxisNo2=|getValue;|${SalesForce_SellLine_Detail_Sell_No_Field}|Sell No Detail Field|
+|$emeaGerXaxSellLineUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

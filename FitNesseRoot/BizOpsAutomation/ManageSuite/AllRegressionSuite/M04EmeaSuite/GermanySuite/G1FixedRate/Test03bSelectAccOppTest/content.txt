@@ -1,0 +1,43 @@
+'''INTENT: ''' Select An account & opportunity for Germany
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Wait for Manage Button to load/appear
+   Click on 'Opp link'
+   Wait for Opportunity page to load
+   Verify Opportunity Status appears as 'Contacted / Prospecting'
+   Verify View In SF button apppears
+   Verify Add Line button appears
+   Verify Clone Line button appears
+   Verify Planning button appears
+   Verify Sync with SF buton appears
+   Verify Actualize button appears
+   Verify Search Field appears
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|GermanySuite_Budget_Fixed_Rate_${PAGE_NAME}|Test03bGer-Select Account & Opportunity for Germany|
+|click;|${Manage_Opportunity_Opp_Link}|Opp Link|
+|waitForManageUiToLoad;|
+|objectVerification;|${Manage_Opp_Details_OppStatus_Text}|Contacted / Prospecting|Opportunity Status Text|
+|elementVerification;|${Manage_View_In_SF_Button}|Yes|View Sf Button|
+|elementVerification;|${Manage_Add_Line_Button}|Yes|Add Line Button|
+|elementVerification;|${Manage_Delete_Line_Button}|Yes|Delete Line Button|
+|elementVerification;|${Manage_Clone_Line_Button}|Yes|Clone Line Button|
+|elementVerification;|${Manage_Planning_Button}|Yes|Planning Button|
+|elementVerification;|${Manage_Sync_Line_Button}|Yes|Sync Line Button|
+|elementVerification;|${Manage_Actualize_Button}|Yes|Actualize Button|
+|elementVerification;|${Manage_Search_Field}|Yes|Search Field|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

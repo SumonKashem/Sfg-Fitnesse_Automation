@@ -1,0 +1,41 @@
+'''INTENT: ''' Select Market as 'Canada'
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Wait for Choose Your Market Dropdown to load/appear
+   Click on 'Choose Your Market' dropdown
+   Type Market as 'Canada'
+   Click on Modal Window to select the value
+   Click on 'Save' button
+   Verify User Name as Admin 'Sumon Kashem'
+   Verify accurate actualized Month appears on monthly drop down on List Of All Opp page
+   Verify accurate actualized contents appears on List Of All Opp page
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_Budget_Effective_Rate_${PAGE_NAME}|Test02Can-Select Market as 'Canada'|
+|waitForElementToLoad;|${Manage_Market_ChooseMarket_Dropdown}|Choose Market Dropdown|
+|click;|${Manage_Market_ChooseMarket_Dropdown}|Choose Market Dropdown|
+|type;| ${Manage_Market_ChooseMarket_Input_Field}|Canada|Choose Market Input Field|
+|click;|${Manage_Market_ChooseMarket_Text_Link}|Market Value Text Link|
+|click;|${Manage_Market_Save_Button}|Market Save Button|
+|closePopUp;|${Manage_DownTime_Popup}|
+|objectVerification;|${Manage_UserName_Text_Label}|${canada_User_Name}|Manage User Name Text|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+!define Manage_User_Name {vanda.absolonova@groupm.com.glstaging}
+!define Manage_User_Password {xaxisAuto#14}
+
+!define Manage_SF_LogIn_Button {//*[@id="login-sf-link"]}
+!define Manage_Market_ChooseMarket_Dropdown {//*[contains(@id,"market_chosen")]/a}
+!define Manage_Market_ChooseMarket_Input_Field {//*[@id="market_chosen"]/div/div/input}
+!define Manage_Market_ChooseMarket_Text_Link {//*[contains(@id,"market_chosen")]/div/ul/li}
+!define Manage_Market_Save_Button {//*[@id="btn_manageMarketSave"]}
+!define Manage_UserName_Text_Label {//*[@id="userName"]}
+!define Manage_PlanView_Account_Dropdown {//*[@id="account_chosen"]/a/div/b}
+!define Manage_PlanView_Account_Search_Field {//*[@id="account_chosen"]/div/div/input}
+!define Manage_PlanView_Account_Name_Link {//*[@id="account_chosen"]/div/ul/li}
+!define Manage_PlanView_Opp_Dropdown {//*[@id="opportunity_chosen"]/a}
+!define Manage_PlanView_Opp_Search_Field {//*[@id="opportunity_chosen"]/div/div/input}
+!define Manage_PlanView_Opp_Name_Link {//*[@id="opportunity_chosen"]/div/ul/li}
+!define Manage_PlanView_Opp_Name_Second_Link {//*[@id="opportunity_chosen"]/div/ul/li[2]}
+!define Manage_PlanView_Opp_Name_Third_Link {//*[@id="opportunity_chosen"]/div/ul/li[3]}
+!define Manage_PlanView_Opp_Name_Fourth_Link {//*[@id="opportunity_chosen"]/div/ul/li[4]}
+!define Manage_Plan_Button {//*[@id="managePlan"]}
+!define Manage_View_In_SF_Button {//*[@id="group_viewsf"]/a/img}
+!define Manage_Add_Line_Button {//*[@id="addLine"]/span}
+!define Manage_Delete_Line_Button {//*[@id="deleteLine"]}
+!define Manage_Clone_Line_Button {//*[@id="cloneLine"]}
+!define Manage_Planning_Button {//*[@id="btn_managePlanningMode"]}
+!define Manage_Sync_Line_Button {//*[@id="btn_managePlanSave"]/span}
+!define Manage_Actualize_Button {//*[@id="actualizeButton"]/span}
+!define Manage_Refresh_Button {//*[@alt="refresh"]}
+!define Manage_Search_Field {//*[@id="search_field"]}
+!define Manage_Required_Fields_Error_Message {//*[@id="managePlanFooter"]/div/p}
+!define Manage_Variance_Total_Field {//*[@id="varianceTotal"]}
+!define Manage_Load_Bar {//div[contains(@class,"blockUI")]}
+!define Manage_Refresh_Bar {//*[@alt="refresh"]}
+!define Manage_Leave_Button {//*[@id="btn-navigate-leave"]}
+!define Manage_Yes_Confirm_Button {//*[@id="btn-addBuyLineConfirm-yes"]}
+!define Manage_Total_Gross_Field {//*[contains(@class,"read-only firstRow htRight htNumeric")]}
+!define Manage_Total_Net_Field {//*[contains(@class,"read-only secondRow htRight htNumeric")]}
+!define Manage_Log_Hidden_Accessible {//*[@role="log" and contains(@class,"hidden-accessible")]}
+!define Manage_Opportunities_Tab {//*[@id="opportunities"]}
+!define Manage_DownTime_Popup {//*[@id="maintenance-notification"]/div/div/div[1]}
+!define Manage_Delete_Confirm_Button {//*[@id="btn-delete-confirm"]}
+
+
+
+
+
+
+
+
+
+
+

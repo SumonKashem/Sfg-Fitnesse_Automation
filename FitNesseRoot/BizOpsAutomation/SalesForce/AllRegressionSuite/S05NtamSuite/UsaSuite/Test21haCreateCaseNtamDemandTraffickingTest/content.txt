@@ -1,0 +1,49 @@
+'''Scenario Name: ''' Create an 'NTAM Demand Ad Ops' case with Request Type as 'Trafficking'
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + Icon
+   Click on 'Cases' button
+   Click on 'New' button
+   Select Case Record Type as 'NTAM Demand Ad Ops'
+   Click on 'Continue' button
+   Enter Existing Account name
+   Enter Existing Opp name
+   Select status as 'New'
+   Select market as 'US'
+   Select 'Request Type' as 'Trafficking'
+   Select DSP value
+   Select value from Upload Type
+   Choose a picklist value for Viewability
+   Enter secondary user
+   Click on 'Save' button
+   Verify Record Type as 'NTAm Demand Ad Ops'
+   Capture Case URL
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test21haUS-Create an 'NTAM Demand Ad Ops' Case with Request Type as 'Trafficking'|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Cases_Link}|Cases Link|
+|click;|${SalesForce_Cases_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Cases_Record_Type_Dropdown}|NTAM Demand Ad Ops|Case Record Type Dropdown|
+|click;|${SalesForce_Cases_Continue_Button}|Continue Button|
+|type;|${SalesForce_Cases_Account_Name_Field}|$ntamUsAccountName|Account Name Field|
+|type;|${SalesForce_Cases_Opp_Name_Field}|$ntamUsOppName|Opportunity Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|United States|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Request_Type_Dropdown}|Trafficking|Request Type Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_DSP_Dropdown}|1|DSP Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Upload_Type_Dropdown}|Connected TV|Upload Type Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Viewability_Picklist}|1|Viewability Picklist|
+|click;|${SalesForce_Cases_Viewability_Right_Arrow}|Viewability Right Arrow|
+|type;|${SalesForce_Cases_Secondary_User_Input_Field}|Sumon Kashem|Secondary User Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Record_Type_Text}|NTAM Demand Ad Ops [Change]|Record Type on Case page|
+|$ntamDemandTrafUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,15 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite
+!include .BizOpsAutomation.SalesForce.SetUp
+*!
+!include .BizOpsAutomation.ManageSuite.GlobalVariablesPage
+!include .BizOpsAutomation.ManageSuite.OpportunityVariablesPage
+!include .BizOpsAutomation.ManageSuite.OpportunityDetailsVariablesPage
+!include .BizOpsAutomation.ManageSuite.LinesVariablesPage 
+!include .BizOpsAutomation.ManageSuite.CanadaVariablesPage 
+!include .BizOpsAutomation.ManageSuite.ApacVariablesPage 
+!include .BizOpsAutomation.ManageSuite.EmeaVariablesPage 
+!include .BizOpsAutomation.ManageSuite.ActualizationVariablesPage 
+!include .BizOpsAutomation.ManageSuite.PlanningVariablesPage 
+!include .BizOpsAutomation.ManageSuite.ListOfOppPage 
+ 

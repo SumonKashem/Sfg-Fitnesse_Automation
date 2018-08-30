@@ -1,0 +1,19 @@
+!c !img files/BizOps.png
+
+!c !2 ''' Welcome to the Xaxis Global Operations !'''
+
+!c '''Our Mission'''
+!c To facilitate constant evaluation, improvement and, ultimately, evolution of the business and operating unit that is Xaxis.
+!c We achieve this through consulting, building, project managing, and analyzing with the goals of efficiency, accountability and profitability.
+
+!3 ----
+!c !1 '''Business Operations Products for Automation Testing'''
+!c !1 [[SALESFORCE][BizOpsAutomation.SalesForce]]
+#!c !1 !img https://xaxistech.atlassian.net/wiki/download/thumbnails/986917/imgres.png?version=1&modificationDate=1495116834339&cacheVersion=1&api=v2?width=120&height=75 
+!c !1 !img files/salesforcelogo.png
+----
+!c !1 [[MANAGE][BizOpsAutomation.ManageSuite]]
+#!c !img https://xaxistech.atlassian.net/wiki/download/thumbnails/986917/image2017-5-18_10-13-9.png?version=1&modificationDate=1495116792342&cacheVersion=1&api=v2?width=100&height=91 
+#!c !1 !img files/Manage.png
+!c !1 !img files/xaxis_manage.png
+----

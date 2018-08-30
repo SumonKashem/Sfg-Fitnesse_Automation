@@ -1,0 +1,61 @@
+'''Scenario Name: ''' Create an 'Australia Reporting' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp Url
+   Scroll Into 'Australia Reporting' Button
+   Click on 'Australia Reporting' Button
+   Enter Opportunity Name $ausOpportunityName
+   Select DAX Assignee Dropdown as 'User'
+   Enter DAX Assignee User Name
+   Select Optimiser Dropdown as 'User'
+   Enter Optimiser User Name
+   Select Status as 'New'
+   Enter a Subject
+   Select Report Owner as User
+   Clear Existing Report Owner
+   Enter a Report Owner
+   Select Report Audience as 'Client'
+   Select Report Type as 'Audience Insights - Trigger Report'
+   Enter Report Request Due Date as 'current day'
+   Enter comment on KPI field
+   Enter comment on Client Overall Goals field
+   Enter comment on Report Goals field
+   Enter comment on DAX Assignee Comments field
+   Click on 'Save' button
+   Verify Case Owner as 'Australia Reporting' on Case Detail page
+   Verify Case Record Type as 'Australia Reporting' on Case Detail page
+**********!
+#|type;|${SalesForce_Cases_Opp_Name_Field}|$ausOpportunityName|Opportunity Name Field|
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test18Aus-Create a Australia Reporting Case|
+|open;|$ausOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_Australia_Reporting_Button}|
+|click;|${SalesForce_Cases_Australia_Reporting_Button}|Australia Reporting Button|
+|selectDropDownByText;|${SalesForce_Cases_DAX_Assignee_Dropdown}|User|DAX Assignee Dropdown|
+|type;|${SalesForce_Cases_DAX_Assignee_Input_Field}|${SalesForce_Australia_User_Name}|DAX Assignee User Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Optimiser_Dropdown}|User|Optimiser Dropdown|
+|type;|${SalesForce_Cases_Optimiser_Input_Field}|${SalesForce_Australia_User_Name}|Optimiser User Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|type;|${SalesForce_Cases_BC_Subject_Field}|Auto Test|Subject Field|
+|selectDropDownByText;|${SalesForce_Cases_Report_Owner_Dropdown}|User|Report Owner Dropdown|
+|clear;|${SalesForce_Cases_Report_Owner_Input_Field}|Report Owner Input Field|
+|type;|${SalesForce_Cases_Report_Owner_Input_Field}|${SalesForce_Australia_User_Name}|Report Owner Input Field|
+|selectDropDownByText;|${SalesForce_Cases_Report_Audience_Dropdown}|Client|Report Audience Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Report_Type_Dropdown}|Audience Insights - Trigger Report|Report Type Dropdown|
+|type;|${SalesForce_Cases_Report_Request_Due_Date_Field}|$ausReportingDueDate|Report Request Due Date Field|
+|type;|${SalesForce_Cases_KPI_Field}|Auto Test|KPI Field|
+|type;|${SalesForce_Cases_Client_Overall_Goals_Field}|Auto Test|Client Overall Goals Field|
+|type;|${SalesForce_Cases_Report_Goals_Field}|Auto Test|Report Goals Field|
+|type;|${SalesForce_Cases_DAX_Assignee_Comments_Field}|Auto Test|DAX Assignee Comments Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|Australia Reporting [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|Australia Reporting [Change]|Record Type on Case Detail Page|
+|$ausReportingPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

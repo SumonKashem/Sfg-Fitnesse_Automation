@@ -1,0 +1,31 @@
+'''Scenario Name: ''' Edit a LR Buy Placement
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Search for an existing LR 'Buy Placement'
+   Navigate to Xaxis Buy Placement URL
+   Click on 'Edit' Button
+   Update Planned Payable Units to 44,000
+   Update Planned Payable Cost to 20,000
+   Click on 'Save' button
+   Verify Planned Payable Units appears on Detail Page
+   Verify Planned Payabale Cost appears on Detail Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test12Bel-Edit a LR Buy Placement|
+|open;|$belLRBuyPlacementPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|clear;|${SalesForce_BuyPlacement_Planned_Payable_Units_Field}|Planed Payable Units Field|
+|type;|${SalesForce_BuyPlacement_Planned_Payable_Units_Field}|44000|Planned Payable Units Field|
+|clear;|${SalesForce_BuyPlacement_Planned_Payable_Cost_Field}|Planed Payable Cost Field|
+|type;|${SalesForce_BuyPlacement_Planned_Payable_Cost_Field}|20000|Planned Payable Cost Field|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Units_Field}|44,000|Planned Payable Units on Detail Page|
+|objectVerification;|${SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Cost_Field}|USD 20,000.00|Planned Payable Cost on Detail Page|
+|stopExtentReport;|
+**********!

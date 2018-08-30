@@ -1,0 +1,84 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Actualize with Distribution to Budget for Xaxis Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Xaxis SL url
+   Scroll to Monthly Schedule section
+   Click on December Schedule Link
+   Switch to ms tab
+   Click on Edit
+   Enter 60 as Planned Gross Budget
+   Select Distribute to budget option
+   Click on Save button
+   Verify Reconciled checkbox is not checked
+   Verify Planned Gross Budget 
+   Verify Planned Billable Units 
+   Close ms tab
+   Switch to Sell Line Tab
+   Click on November Link
+   Switch to November ms tab
+   Verify Planned Gross Budget 
+   Verify Planned Billable Units 
+   Close ms tab
+   Switch to Sell Line tab
+   Click on October Link
+   Switch to October tab
+   Verify Planned Gross Budget 
+   Verify Planned Billable Units 
+   Close October Tab
+   Switch to Sell Line tab
+   Navigate to Sell Line URL
+   Verify Sell Line Planned Gross Budget
+   Verify Sell Line Sell Volume
+   Navigate to Opportunity URL
+   Verify Opportunity Level Planned Gross Budget
+**********!
+#$xaxisSellLineUrl
+#SGD 75.00(USD 56.26)
+#SGD 61.48 (USD 46.12
+#SGD 63.52 (USD 47.66)
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test28Ger-Actualize with Distribution to budget for Xaxis Sell Line|
+|open;|$emeaGerXaxSellLineUrl|
+|wait;|2000|
+|scroll;|vertical|10000|
+|click;|${SalesForce_SellLine_Monthly_Schedule_December_Link}|December MS Link|
+|switchToNewWindow;|2|
+|click;|${SalesForce_BuyPlacment_Edit_Button}|Edit Button|
+|clear;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget_Field}|Planned Gross Budget Field|
+|type;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget_Field}|60|Planned Gross Budget Field|
+|selectDropDownByIndex;|${SalesForce_SellLine_Monthly_Schedule_Planned_Budget_Reconciliation_Method_Dropdown}|1|Budget Distribution|
+|click;|${SalesForce_SellLine_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Monthly_Schedule_Reconciled_Checkbox_Not_Checked}|Yes|Reconciled Checkbox Not Checked|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget}|EUR 60,00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units}|2.400|Planned Billable Units|
+|closeTab;|
+|switchToNewWindow;|1|
+|click;|${SalesForce_SellLine_Monthly_Schedule_November_Link}|November MS Link|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget}|EUR 70,00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units}|2.600|Planned Billable Units|
+|closeTab;|
+|switchToNewWindow;|1|
+|click;|${SalesForce_SellLine_Monthly_Schedule_October_Link}|December MS Link|
+|switchToNewWindow;|2|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget}|EUR 75,00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units}|2.800|Planned Billable Units|
+|closeTab;|
+|switchToNewWindow;|1|
+|wait;|15000|
+|open;|$emeaGerXaxSellLineUrl|
+|objectVerification;|${SalesForce_SellLine_Details_Planned_Gross_Budget_Content}|EUR 205,00|Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Volume_Text}|7.800|Planned Gross Budget|
+|open;|$gerEmeaXaxOppPageUrl|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|EUR 205,00|Opp Planned Gross Budget|
+|stopExtentReport;|
+**********!

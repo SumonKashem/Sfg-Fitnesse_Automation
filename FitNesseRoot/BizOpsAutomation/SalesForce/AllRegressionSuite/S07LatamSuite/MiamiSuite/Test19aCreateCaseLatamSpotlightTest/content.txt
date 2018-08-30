@@ -1,0 +1,48 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S07LatamSuite.MiamiSuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Create a 'LATAM Spotlight' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + icon
+   Click on 'Cases' tab
+   Click on 'New' button
+   Select Case Record Type as 'LATAM Spotlight'
+   Click on 'Continue' button
+   Select Status as 'New'
+   Select First value from Ad Servers/Data Sources picklist
+   Click on Start Date link
+   Click on Due Date link
+   Select first value for Request Type
+   Enter Subject
+   Enter Description
+   Click on 'Save' button
+   Verify Case Record Type as 'LATAM Spotlight' on Case Detail page
+**********!
+#$miaLatamAccountPageUrl
+#LATAM Miami Account-180608-1044
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test19aMia-Create a 'LATAM Spotlight' case|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Cases_Link}|Cases Link|
+|click;|${SalesForce_Cases_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Cases_Record_Type_Dropdown}|LATAM Spotlight|Record Type Dropdown|
+|click;|${SalesForce_Cases_Continue_Button}|Continue Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Data_Sources_Picklist}|1|Data Sources/Ad Servers Dropdown|
+|click;|${SalesForce_Cases_Data_Sources_Right_Arrow}|Data Sources/Ad Servers Right Arrow|
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|0|Start Date Link|
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|1|Due Date Link|
+|selectDropDownByIndex;|${SalesForce_Cases_Request_Type_Dropdown}|1|Request Type Dropdown|
+|type;|${SalesForce_Cases_BC_Subject_Field}|Test|Subject Field|
+|type;|${SalesForce_Cases_BC_Description_Field}|Test|Description Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|LATAM Spotlight [Change]|Record Type on Case Detail Page|
+|$latamSpotlightPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

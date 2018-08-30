@@ -1,0 +1,35 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Create an 'RTA Campaign Briefing' Amendment type case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to existing LR Buy Placement URL
+   Scroll into 'RTA Campaign Briefing' button
+   Click on RTA Campaign Briefing button
+   Select 'Amendment' as value from Type dropdown 
+   Select 'Status' as 'New'
+   Enter Amendment Details
+   Verify Case Record Type as 'RTA Campaign Briefing' on Case Detail page
+**********!
+#$gerLRBuyPlacementPageUrl
+#https://cs77.salesforce.com/a1J0t000000c1x0
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test09aaGer-Create an 'RTA Campaign Briefing' Amendment type case|
+|open;|$gerLRBuyPlacementPageUrl|
+|scrollIntoView;|${SalesForce_Cases_RTA_Campaign_Briefing_Button}|
+|click;|${SalesForce_Cases_RTA_Campaign_Briefing_Button}|RTA Campaign Briefing Button|
+|selectDropDownByText;|${SalesForce_Cases_Type_Dropdown}|Amendment|Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|type;|${SalesForce_Cases_Amendment_Details_Field}|Test|Amendment Details Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|RTA Campaign Briefing [Change]|Record Type on Case Detail Page|
+|$rtaCampAmendmentPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

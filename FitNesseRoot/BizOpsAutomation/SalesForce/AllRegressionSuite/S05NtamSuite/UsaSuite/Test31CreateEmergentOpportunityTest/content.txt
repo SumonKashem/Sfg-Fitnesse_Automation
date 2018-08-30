@@ -1,0 +1,52 @@
+'''Scenario Name: ''' Create an Emergent Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Account url
+   Scroll Into View for opportunities
+   Click on 'New RFI' opportunity button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select stage as 'Contacted/Prospecting Open'
+   Clear Close Date field
+   Enter Close Date
+   Enter Proposal Request
+   Select Client Goal as 'CPA'
+   Enter Client Goal Details
+   Clear Due Date to Client field
+   Enter Due Date to Client as current day
+   Select Time Due as '9am'
+   Enter Network Drive Location
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Verify Record type appears on opportunity detail page
+   Capture opportunity page url for resuable purpose
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test31US-Create an Emergent Opportunity|
+|open;|$ntamEmgtAccountPageUrl|
+|switchToFrame;|${SalesForce_Opportunities_IFrame_Id}|Opportunity Frame|
+|clickByJavaScript;|${SalesForce_Opportunities_New_RFI_Button}|New Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|wait;|1500|
+|type;|${SalesForce_Opportunities_Name_Field}|EMGT $ntamUsOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Contacted/Prospecting Open|Stage Dropdown|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$ntamCloseDate|Close Date Field|
+|type;|${SalesForce_Opportunities_NTAM_Proposal_Request_Field}|test|Proposal Request Field|
+|selectDropDownByText;|${SalesForce_Opportunities_NTAM_Client_Goal_Dropdown}|CPA|Client Goal Dropdown|
+|type;|${SalesForce_Opportunities_NTAM_Client_Goal_Details_Field}|test|Client Goal Details Field|
+|clear;|${SalesForce_Opportunities_NTAM_Due_Date_Field}|Due Date to Client Field|
+|type;|${SalesForce_Opportunities_NTAM_Due_Date_Field}|$ntamCloseDate|Due Date to Client Field|
+|selectDropDownByText;|${SalesForce_Opportunities_NTAM_Time_Due_Dropdown}|9am|Time Due Dropdown|
+|type;|${SalesForce_Opportunities_Network_Drive_Loc_Field}|Test|Network Drive Location Field|
+|clickByJavaScript;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|EMGT $ntamUsOppName|Opportunity Detail Page|
+|objectVerification;|${SalesForce_Opportunities_Record_Type_Field}|EMGT-NTAM-United States|Record Type|
+|$ntamEmgtOpportunityPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

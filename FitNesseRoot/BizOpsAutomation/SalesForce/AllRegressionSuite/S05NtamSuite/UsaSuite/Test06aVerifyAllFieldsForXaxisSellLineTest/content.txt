@@ -1,0 +1,97 @@
+'''Scenario Name: ''' Verify all fields available for Xaxis Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Xaxis Opportunity URL
+   Scroll Into 'New Xaxis Sell Line' Button
+   Click on 'New Sell Line' button
+   Verify all section labels and fields exist on Xaxis sell line Edit Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test06aUs-Verify All Fields Available for Xaxis Sell Line|
+|open;|$ntamUsOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_SellLine_New_Xaxis_Sell_Line_Button}|
+|click;|${SalesForce_SellLine_New_Xaxis_Sell_Line_Button}|New Xaxis Line Button|
+|elementVerification;|${SalesForce_SellLine_Information_Label_Text}|Yes|Information Label|
+|elementVerification;|${SalesForce_SellLine_Sell_Name_Field}|Yes|Sell Name Field|
+|elementVerification;|${SalesForce_SellLine_Business_Unit_Dropdown}|Yes|Business Unit Dropdown|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Field}|Yes|Opportunity Field|
+|elementVerification;|${SalesForce_SellLine_Placement_Id_Field}|Yes|PlacementId Field|
+|elementVerification;|${SalesForce_SellLine_Start_Date_Field}|Yes|Start Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|0|Yes|Start Date Link|
+|elementVerification;|${SalesForce_SellLine_End_Date_Field}|Yes|End Date Field|
+|elementVerificationByIndex;|${SalesForce_SellLine_Date_Format_Link}|1|Yes|End Date Link|
+|elementVerification;|${SalesForce_SellLine_Delivery_Market_Dropdown}|Yes|Delivery Market Dropdown|
+|elementVerification;|${SalesForce_SellLine_Creative_Type_Size_Field}|Yes|Creative Type/Size Field|
+|elementVerification;|${SalesForce_SellLine_Buy_Category_Dropdown}|Yes|Buy Category Dropdown|
+|wait;|800|
+|elementVerification;|${SalesForce_SellLine_Inventory_Type_Field}|Yes|Inventory Type Field|
+|elementVerification;|${SalesForce_SellLine_Audience_Target_Field}|Yes|Audience Target Field|
+|elementVerification;|${SalesForce_SellLine_Fee_Line_Only_Checkbox}|Yes|Fee Line Only Checkbox|
+|elementVerification;|${SalesForce_SellLine_Gross_Budget_Details_Label_Text}|Yes|Gross Budget Details Label|
+|elementVerification;|${SalesForce_SellLine_Input_Gross_As_DropDown}|Yes|Input Gross as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Rate_Type_DropDown}|Yes|Rate Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Gross_Budget_Field}|Yes|Planned Gross Budget Field|
+|elementVerification;|${SalesForce_SellLine_Gross_Rate_Field}|Yes|Gross Rate Field|
+|elementVerification;|${SalesForce_SellLine_Sell_Volume_Field}|Yes|Sell Volume Field|
+|elementVerification;|${SalesForce_SellLine_Information_Net_Cost_Breakout_Text}|Yes|Net Cost Breakout Label|
+|elementVerification;|${SalesForce_SellLine_Input_Net_As_DropDown}|Yes|Input Net as Dropdown|
+|elementVerification;|${SalesForce_SellLine_Net_Rate_Type_Dropdown}|Yes|Input Net Rate Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Planned_Third_Party_Cost_Field}|Yes|Third Party Cost Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost_Field}|Yes|Planned Media Net Cost Field|
+|elementVerification;|${SalesForce_SellLine_Margin_Field}|Yes|Margin % Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Payable_Impressions_Field}|Yes|Planned Payable Impressions Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Payable_Clicks_Field}|Yes|Planned Payable Clicks Field|
+|elementVerification;|${SalesForce_SellLine_Planned_Payable_Actions_Field}|Yes|Planned Payable Actions Field|
+|elementVerification;|${SalesForce_SellLine_Product_Media_Label_Text}|Yes|Product and Media Label|
+|elementVerification;|${SalesForce_SellLine_Channel_DropDown}|Yes|Channel Dropdown|
+|elementVerification;|${SalesForce_SellLine_Device_DropDown}|Yes|Device Dropdown|
+|elementVerification;|${SalesForce_SellLine_Media_DropDown}|Yes|Media Type Dropdown|
+|elementVerification;|${SalesForce_SellLine_Product_DropDown}|Yes|Product Dropdown|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Radia_Summaries_Label_Text}|Yes|Radia Summaries Label|
+|elementVerification;|${SalesForce_Delivery_Final_Billable_Cost_Field}|Yes|Delivery Final Billable Cost Field|
+|elementVerification;|${SalesForce_Delivery_Final_Billable_Units_Field}|Yes|Delivery Final Billable Units Field|
+|elementVerification;|${SalesForce_Delivery_Final_Payable_Cost_Field}|Yes|Delivery Final Payable Cost Field|
+|elementVerification;|${SalesForce_Delivery_Final_Payable_Impressions_Field}|Yes|Delivery Final Payable Impressions Field|
+|elementVerification;|${SalesForce_Delivery_Final_Payable_Clicks_Field}|Yes|Delivery Final Payable Clicks Field|
+|elementVerification;|${SalesForce_Delivery_Final_Payable_Actions_Field}|Yes|Delivery Final Payable Actions Field|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Radia_Data_Label_Text}|Yes|Radia Data Label|
+|elementVerification;|${SalesForce_SellLine_Radia_Id_Field}|Yes|Radia Id Field|
+|elementVerification;|${SalesForce_SellLine_Budget_Line_Id_Field}|Yes|Budget Line Id Field|
+|elementVerification;|${SalesForce_SellLine_Last_Changed_In_Radia_Field}|Yes|Last Changed In Radia Field|
+|elementVerification;|${SalesForce_SellLine_Line_Item_Type_Field}|Yes|Line Item Type Field|
+|elementVerification;|${SalesForce_SellLine_Line_Type_Field}|Yes|Line Type Field|
+|elementVerification;|${SalesForce_SellLine_Media_Name_Field}|Yes|Media Name Field|
+|elementVerification;|${SalesForce_SellLine_MO_Estimate_Code_Field}|Yes|MO Estimate Code Field|
+|elementVerification;|${SalesForce_SellLine_MO_Estimate_Name_Field}|Yes|MO Estimate Name Field|
+|elementVerification;|${SalesForce_SellLine_MO_Product_Code_Field}|Yes|MO Product Code Field|
+|elementVerification;|${SalesForce_SellLine_MO_Product_Name_Field}|Yes|MO Product Name Field|
+|elementVerification;|${SalesForce_SellLine_Vendor_IO_Number_Field}|Yes|Vendor IO Number Field|
+|elementVerification;|${SalesForce_SellLine_Special_Product_Name_Field}|Yes|Special Product Name Field|
+|elementVerification;|${SalesForce_SellLine_Supplier_Code_Field}|Yes|Supplier Code Field|
+|elementVerification;|${SalesForce_SellLine_Served_By_Dropdown}|Yes|Served By Dropdown|
+|elementVerification;|${SalesForce_SellLine_Site_Field}|Yes|Site Field|
+|elementVerification;|${SalesForce_SellLine_Radia_Buyline_Name_Field}|Yes|Radia Buyline Name Field|
+|elementVerification;|${SalesForce_SellLine_Partner_Field}|Yes|Partner Field|
+|elementVerification;|${SalesForce_SellLine_Package_Type_Field}|Yes|Package Type Field|
+|elementVerification;|${SalesForce_SellLine_Package_ID_Field}|Yes|Package ID Field|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Radia_Custom_Columns_Label_Text}|Yes|Radia Cutom Columns Label|
+|elementVerification;|${SalesForce_SellLine_AD_Labs_Dropdown}|Yes|AD Labs Dropdown|
+|elementVerification;|${SalesForce_SellLine_Creative_Detail_Dropdown}|Yes|Creative Details Dropdown|
+|elementVerification;|${SalesForce_SellLine_Data_Tactic_Dropdown}|Yes|Data/Tactic Dropdown|
+|elementVerification;|${SalesForce_SellLine_Primary_KPI_DropDown}|Yes|Primary KPI Dropdown|
+|elementVerification;|${SalesForce_SellLine_Primary_KPI_Value_Field}|Yes|Primary KPI Value Field|
+|elementVerification;|${SalesForce_SellLine_Programmatic_Creative_Dropdown}|Yes|Programmatic Creative Dropdown|
+|elementVerification;|${SalesForce_SellLine_Product_Code_Dropdown}|Yes|Product Code Dropdown|
+|elementVerification;|${SalesForce_Network_Billing_Platform_Dropdown}|Yes|Network Billling Platform Dropdown|
+|elementVerification;|${SalesForce_SellLine_Agency_Billing_Platform_Dropdown}|Yes|Agency Billling Platform Dropdown|
+|elementVerification;|${SalesForce_SellLine_Special_Whitelist_PMP_Dropdown}|Yes|Whitelist PMP Dropdown|
+|elementVerification;|${SalesForce_SellLine_Opportunity_Buy_Details_Label_Text}|Yes|Opportunity Buy Details Label|
+|elementVerification;|${SalesForce_SellLine_Frequency_Cap_Dropdown}|Yes|Frequency Cap Dropdown|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,32 @@
+'''Scenario Name: ''' Create an 'APAC Ad Ops' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp Url
+   Scroll Into 'Apac Ad Ops' Button
+   Click on 'Apac Ad Ops' Button
+   Enter Opportunity Name $ausOpportunityName
+   Select Status as 'New'
+   Select Market as China
+   Click on 'Save' button
+   Verify Case Owner as 'APAC Ad Ops' on Case Detail page
+   Verify Case Record Type as 'APAC Ad Ops' on Case Detail page
+**********!
+#|type;|${SalesForce_Cases_Opp_Name_Field}|$ausOpportunityName|Opportunity Name Field|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test14Aus-Create an APAC Ad Ops Case|
+|open;|$ausOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_APac_Ad_Ops_Button}|
+|click;|${SalesForce_Cases_APac_Ad_Ops_Button}|APAC Ad Ops Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Australia|Market Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|APAC Ad Ops [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|APAC Ad Ops [Change]|Record Type on Case Detail Page|
+|$apacAdOpsPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

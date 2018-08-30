@@ -1,0 +1,21 @@
+!***** Test Cases
+CanadaSuite.Test01LogInUserTest
+CanadaSuite.Test02CreateAgencyTest
+CanadaSuite.Test03CreateAdvertiserTest
+CanadaSuite.Test04CreateXaxisAccountTest
+CanadaSuite.Test05CreateXaxisOpportunityTest
+CanadaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest
+CanadaSuite.Test06bCreateXaxisSellLineTest
+CanadaSuite.Test07CreateXaxisBuyPlacementTest
+CanadaSuite.Test08CreateCaseAdOpsTest
+CanadaSuite.Test09EditCaseAdOpsTest
+CanadaSuite.Test10CreateCaseActionxTest
+CanadaSuite.Test11EditCaseActionxTest
+CanadaSuite.Test12aCreateCaseNtamAdLabsTest
+CanadaSuite.Test12bCloseCaseNtamAdLabsTest
+CanadaSuite.Test13EditXaxisBuyPlacementTest
+CanadaSuite.Test14CloneXaxisOpportunityTest
+CanadaSuite.Test15DistributeFutureMonthsXaxSellLineTest
+CanadaSuite.Test16DistributeNextMonthsXaxSellLineTest
+CanadaSuite.Test17DistributeBudgetXaxSellLineTest
+**********!

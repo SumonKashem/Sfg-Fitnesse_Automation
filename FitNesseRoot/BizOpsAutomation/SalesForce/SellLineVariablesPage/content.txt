@@ -1,0 +1,376 @@
+All Sales Force Sell Line Page Variables Are Defined Here....
+
+!define SalesForce_SellLine_Billing_Vendors_Picklist {//*[@id="00N3100000HADX1_unselected"]}
+!define SalesForce_SellLine_Billing_Vendors_Chosen_Picklist {//*[@id="00N3100000HADX1_selected"]}
+!define SalesForce_SellLine_Capabilities_Chosen_Picklist {//*[@title="Capabilities - Chosen"]}
+!define SalesForce_SellLine_Delivery_Market_Dropdown {//*[@id="00Ni000000DOWJw"]}
+!define SalesForce_SellLine_Sell_Line_Description_Field {//*[@id="00Ni000000DOWK0"]}
+!define SalesForce_SellLine_Sell_Line_Status_Dropdown {//*[@id="00N3100000H5LLh"]}
+!define SalesForce_SellLine_Market_Dropdown {//*[@id="00Ni000000FsbgD"]}
+!define SalesForce_SellLine_Frequency_Cap_Dropdown {//*[@id="00Ni000000DOWJy"]}
+!define SalesForce_Network_Billing_Platform_Dropdown {//*[@id="00N3100000GMwpO"]}
+!define SalesForce_Network_Billing_Platform_Deals_Field {//*[@id="00N0t000000Tx8r"]}
+!define SalesForce_Network_Vendor_Details_Field {//*[@id="00N0t000000Tx8m"]}
+
+!define SalesForce_SellLine_External_Id_Field {//*[@id="00N3100000GbCdE"]}
+!define SalesForce_SellLine_Create_New_Sell_Line_Button {//input[@value="Create New Sell Line"]}
+!define SalesForce_SellLine_New_Sell_Line_Button {//*[@value="New Sell Line"]}
+!define SalesForce_SellLine_New_Xaxis_Sell_Line_Button {//*[@value="New Xaxis Sell Line"]}
+!define SalesForce_SellLine_New_LR_Sell_Line_Button {//*[@value="New LR Sell Line"]}
+!define SalesForce_SellLine_New_Plista_Sell_Line_Button {//*[@value="New plista Sell Line"]}
+!define SalesForce_SellLine_Sell_Name_Field {//*[@id="00Ni000000COiXc"]}
+!define SalesForce_SellLine_Start_Date_Field {//*[@id="00Ni0000004xKpY"]}
+!define SalesForce_SellLine_End_Date_Field {//*[@id="00Ni0000004xKpP"]}
+!define SalesForce_SellLine_Opportunity_Field {//*[@id="CF00Ni0000004xKpI"]}
+!define SalesForce_SellLine_Input_Gross_As_DropDown {//*[@id="00Ni0000004xco6"]}
+!define SalesForce_SellLine_Planned_Gross_Budget_Field {//*[@id="00Ni0000004xKpQ"]}
+!define SalesForce_SellLine_Planned_Payable_Impressions_Field {//*[@id="00N3100000H15Ch"]}
+!define SalesForce_SellLine_Planned_Payable_Clicks_Field {//*[@id="00N3100000Fv7RR"]}
+!define SalesForce_SellLine_Planned_Payable_Actions_Field {//*[@id="00N3100000Fv7RQ"]}
+!define SalesForce_SellLine_Rate_Type_DropDown {//*[@id="00Ni0000004xKpM"]}
+!define SalesForce_SellLine_Gross_Rate_Field {//*[@id="00Ni0000004xKpX"]}
+!define SalesForce_SellLine_Sell_Volume_Field {//*[@id="00Ni0000004xKpN"]}
+!define SalesForce_SellLine_Input_Net_As_DropDown {//*[@id="00Ni000000COiXd"]}
+!define SalesForce_SellLine_Margin_Field {//*[@id="00Ni000000COiXf"]}
+!define SalesForce_SellLine_zCurrent_Margin_Explanation_Field {//*[@id="00N3100000GbiZt"]}
+!define SalesForce_SellLine_Channel_DropDown {//*[@id="00Ni0000004xKpR"]}
+!define SalesForce_SellLine_Video_Duration_DropDown {//*[@id="00N5A00000H7C5o"]}
+!define SalesForce_SellLine_Device_DropDown {//*[@id="00N3100000GMwpM"]}
+!define SalesForce_SellLine_Media_DropDown {//*[@id="00N3100000GvyHE"]}
+!define SalesForce_SellLine_Product_DropDown {//*[@id="00Ni000000DOWK3"]}
+!define SalesForce_SellLine_Apac_Product_Dropdown {//*[@id="00N0t000000U4dS"]}
+!define SalesForce_SellLine_Product_Deals_Field {//*[@id="00N3100000Fv7yV"]}
+!define SalesForce_SellLine_Apac_SubProduct_Dropdown {//*[@id="00N0t000000U4mj"]}
+!define SalesForce_SellLine_SubProduct_Deals_Field {//*[@id="00N0t000000Tx8c"]}
+!define SalesForce_SellLine_Target_Gender_PickList {//*[@title="Target Gender - Available"]}
+!define SalesForce_SellLine_Target_Gender_Arrow {//*[@id="00Ni000000EG2p9_right_arrow"]}
+!define SalesForce_SellLine_Target_Gender_Chosen_PickList {//*[@title="Target Gender - Chosen"]}
+!define SalesForce_SellLine_Target_Age_PickList {//*[@title="Target Age - Available"]}
+!define SalesForce_SellLine_Target_Age_Arrow {//*[@id="00Ni000000EG2q8_right_arrow"]}
+!define SalesForce_SellLine_Target_Age_Chosen_PickList {//*[@title="Target Age - Chosen"]}
+!define SalesForce_SellLine_Target_SEC_PickList {//*[@title="Target SEC - Available"]}
+!define SalesForce_SellLine_Target_SEC_Arrow {//*[@id="00Ni000000EG4RJ_right_arrow"]}
+!define SalesForce_SellLine_Target_SEC_Chosen_PickList {//*[@title="Target SEC - Chosen"]}
+!define SalesForce_SellLine_Primary_KPI_DropDown {//*[@id="00N3100000GMwpP"]}
+!define SalesForce_SellLine_Primary_KPI_Value_Field {//*[@id="00N5A00000GUJFE"]}
+!define SalesForce_SellLine_Primary_KPI_Details_Field {//*[@id="00N0t000000Tx91"]}
+!define SalesForce_SellLine_Secondary_KPI_DropDown {//*[@id="00N5A00000GbwK1"]}
+!define SalesForce_SellLine_Secondary_KPI_Details_Field {//*[@id="00N0t000000Tx96"]}
+!define SalesForce_SellLine_KPI_Type_DropDown {//*[@id="00N3100000GvdFh"]}
+!define SalesForce_SellLine_Save_Button {//*[@title="Save"]}
+!define SalesForce_SellLine_Edit_Button {//*[@title="Edit"]}
+!define SalesForce_SellLine_Detail_Sell_Name_Field {//*[@id="00Ni000000COiXc_ileinner"]}
+!define SalesForce_SellLine_Sell_No {//*[starts-with(text(),"CP-")]}
+!define SalesForce_SellLine_Detail_Sell_No_Field {//*[@id="Name_ileinner"]}
+!define SalesForce_SellLine_Detail_Sell_Volume_Text {//*[@id="00Ni0000004xKpN_ileinner"]}
+!define SalesForce_SellLine_Business_Unit_Dropdown {//*[@id="00N5A00000GbwJX"]}
+!define SalesForce_SellLine_Business_Unit_Text {//*[@id="00N5A00000GbwJX_ileinner"]}
+!define SalesForce_SellLine_Change_BU_Pl_Button {//*[@id="00Ne0000001gzJ6_ileinner"]}
+!define SalesForce_SellLine_Net_Rate_Type_Dropdown {//*[@id="00Ni000000COiXg"]}
+!define SalesForce_SellLine_Change_BU_Xaxis_Button {//*[@alt="Xaxis"]}
+!define SalesForce_SellLine_Invalid_Data_Error {//*[@id="errorDiv_ep"]}
+!define SalesForce_SellLine_Detail_label {//*[@class="mainTitle" and text()="Sell line Detail"]}
+
+
+!define SalesForce_SellLine_Analytics_Dropdown {//*[@id="00Ni000000EFdMp"]}
+!define SalesForce_SellLine_Planned_Media_Net_Cost_Field {//*[@id="00Ni000000COieX"]}
+!define SalesForce_SellLine_Planned_Third_Party_Cost_Field {//*[@id="00N3100000H5LoR"]}
+!define SalesForce_SellLine_Fee_Line_Only_Checkbox {//*[@id="00N3100000H1n5P"]}
+!define SalesForce_SellLine_Brand_Dropdown {//*[@id="00Ni000000Fsbfo"]}
+!define SalesForce_SellLine_EMEA_Product_Dropdown {//*[@id="00Ni000000DOWK3"]}
+!define SalesForce_SellLine_LATAM_Product_Field {//*[@id="CF00Ni0000004xKpW"]}
+!define SalesForce_SellLine_EMEA_Audience_Tier {//*[@id="00Ni000000DOWJu"]}
+!define SalesForce_SellLine_EMEA_Delivery_Platform {//*[@id="00Ni000000DOWJx"]}
+!define SalesForce_SellLine_NTAM_Delivery_Platform {//*[@id="00Ni000000DOWJx"]}
+!define SalesForce_SellLine_NTAM_Audience_Tier {//*[@id="00Ni000000DOWJu"]}
+!define SalesForce_SellLine_PageDescription_Text {//*[@class="pageDescription"]}
+!define SalesForce_SellLine_Billing_Vendors_PickList {//*[@title="Billing Vendors - Available"]}
+!define SalesForce_SellLine_Billing_Vendors_Right_Arrow {//*[@id="00N3100000HADX1_right_arrow"]}
+!define SalesForce_SellLine_Capabilities_PickList {//*[@title="Capabilities - Available"]}
+!define SalesForce_SellLine_Capabilities_Right_Arrow {//*[@id="00N0t000000Tx8h_right_arrow"]}
+
+!define SalesForce_SellLine_Geography_Targeting_Field {//*[@id="00N5A00000GbwJy"]}
+!define SalesForce_SellLine_Genre_Targeting_Field {//*[@id="00N5A00000GbwJz"]}
+!define SalesForce_SellLine_Creative_Link_Field {//*[@id="00N5A00000GbwJw"]}
+
+!define SalesForce_SellLine_Booking_Unit_DropDown {//*[@id="00N3100000GvgKl"]}
+!define SalesForce_SellLine_Adformat_PickList {//*[@title="Adformat - Available"]}
+!define SalesForce_SellLine_Adformat_Right_Arrow {//*[@id="00N3100000GvgKk_right_arrow"]}
+!define SalesForce_SellLine_Adformat_Chosen_PickList {//*[@title="Adformat - Chosen"]}
+!define SalesForce_SellLine_Formats_PickList {//*[@title="Formats - Available"]}
+!define SalesForce_SellLine_Formats_Right_Arrow {//*[@id="00N3100000FvIIB_right_arrow"]}
+!define SalesForce_SellLine_Formats_Chosen_PickList {//*[@title="Formats - Chosen"]}
+!define SalesForce_SellLine_Sell_Line_Confirmed_Live_CheckBox {//*[@id="00Ni000000EFeOo"]}
+!define SalesForce_Performance_Alert_Reason_DropDown {//*[@id="00N3100000Gb5xs"]}
+!define SalesForce_Performance_Alert_Checkbox {//*[@id="00N3100000Gb5xt"]}
+!define SalesForce_KPI_Type_Value_Field {//*[@id="00N3100000GvdJZ"]}
+!define SalesForce_SellLine_Strategy_Field {//*[@id="00N3100000GvdJe"]}
+!define SalesForce_SellLine_Created_By_Manage_Field {//*[@id="00N0q000000oNNm"]}
+!define SalesForce_SellLine_Created_By_Manage_Field_2 {//*[@id="00N5A00000HEPBO"]}
+!define SalesForce_SellLine_Edit_Context_Label {//*[text()="Sell Line Edit"]}
+!define SalesForce_SellLine_Edit_Context_Label {//*[text()="Sell Line Edit"]}
+!define SalesForce_SellLine_LR_Partner_Dropdown {//*[@id="00N3100000GmmUs"]}
+!define SalesForce_SellLine_Local_Partner_Field {//*[@id="00N3100000Fv7yf"]}
+!define SalesForce_SellLine_Rate_Detail_Field {//*[@id="00N3100000Fv7z9"]}
+!define SalesForce_SellLine_Product_Detail_Field {//*[@id="00N3100000Fv7yV"]}
+!define SalesForce_SellLine_Turbine_Checkbox {//*[@id="00N3100000Fv09q"]}
+!define SalesForce_SellLine_Turbine_Segments_PickList {//*[@title="Turbine segments - Available"]}
+!define SalesForce_SellLine_Taurbine_Segments_Arrow {//*[@id="00N3100000Fv09p_right_arrow"]}
+!define SalesForce_SellLine_Turbine_Segments_Chosen_PickList {//*[@title="Turbine segments - Chosen"]}
+!define SalesForce_SellLine_Turbine_Sub_Segments_PickList {//*[@title="Turbine Sub-segments - Available"]}
+!define SalesForce_SellLine_Taurbine_Sub_Segments_Arrow {//*[@id="00N3100000FvIIC_right_arrow"]}
+!define SalesForce_SellLine_Turbine_Sub_Segments_Chosen_PickList {//*[@title="Turbine Sub-segments - Chosen"]}
+!define SalesForce_SellLine_Date_Format_Link {//*[@class="dateFormat"]}
+!define SalesForce_SellLine_Special_Line_Type_Dropdown {//*[@id="00N3100000H1qS2"]}
+
+!define SalesForce_SellLine_Vendor_RO_Created_Checkbox {//*[@id="00N5A00000HEP99"]}
+!define SalesForce_SellLine_Client_RO_Received_Dropdown {//*[@id="00N5A00000HEP98"]}
+!define SalesForce_SellLine_Budget_Consumed_Till_Date_Field {//*[@id="00N5A00000HEPF6"]}
+!define SalesForce_SellLine_Geography_Targeting_Field {//*[@id="00N5A00000GbwJy"]}
+!define SalesForce_SellLine_Genre_Targeting_Field {//*[@id="00N5A00000GbwJz"]}
+!define SalesForce_SellLine_Creative_Link_Field {//*[@id="00N5A00000GbwJw"]}
+!define SalesForce_SellLine_LP_URL_Field {//*[@id="00N5A00000GbwK0"]}
+!define SalesForce_SellLine_YT_Channel_Link_Field {//*[@id="00N5A00000GbwK2"]}
+!define SalesForce_SellLine_Implementation_Details_Picklist {//*[@title="Implementation Details - Available"]}
+!define SalesForce_SellLine_Implementation_Details_Chosen_Picklist {//*[@title="Implementation Details - Chosen"]}
+!define SalesForce_SellLine_Activity_Pixel_Sent_Checkbox {//*[@id="00N5A00000GbwK6"]}
+!define SalesForce_SellLine_AppNexusID_Field {//*[@id="00N3100000Gbjms"]}
+!define SalesForce_SellLine_Advertiser_Product_Field {//*[@id="00N3100000GvhVU"]}
+!define SalesForce_SellLine_Frequency_Scope_Dropdown {//*[@id="00N3100000H1nIn"]}
+!define SalesForce_SellLine_Additonal_SellLine_Details_Field {//*[@id="00N0t000000Tx8w"]}
+!define SalesForce_SellLine_Information_Label_Text {//h3[text()="Information"]}
+!define SalesForce_SellLine_Trading_Operations_Label_Text {//h3[text()="Trading Operations"]}
+!define SalesForce_SellLine_Gross_Budget_Details_Label_Text {//h3[text()="Gross Budget Details"]}
+!define SalesForce_SellLine_Gross_Budget_And_Discount_Label_Text {//h3[text()="Gross Budget & Discounts"]}
+!define SalesForce_SellLine_Gross_Budget_Discount_Label_Text {//h3[text()="Gross Budget and Discounts"]}
+!define SalesForce_SellLine_Information_Net_Cost_Breakout_Text {//h3[text()="Net Cost Breakout"]}
+!define SalesForce_SellLine_Product_Media_Label_Text {//h3[text()="Product and Media"]}
+!define SalesForce_SellLine_Product_Platform_Data_Label_Text {//h3[text()="Product, Platform and Data"]}
+!define SalesForce_SellLine_Product_Channel_Label_Text {//h3[text()="Product and Channel"]}
+!define SalesForce_SellLine_Details_Label_Text {//h3[text()="Sell Line Details"]}
+!define SalesForce_SellLine_Original_Targets_Label_Text {//h3[text()="Original Targets"]}
+!define SalesForce_SellLine_Original_Targets_Gross_Budget_Field {//*[@id="00N3100000GMwsX"]}
+!define SalesForce_SellLine_Original_Targets_Margin_Field {//*[@id="00N3100000GMwsY"]}
+!define SalesForce_SellLine_Original_Targets_Total_Net_Cost_Field {//*[@id="00N3100000GMwsZ"]}
+
+!define SalesForce_SellLine_KPI_Information_Label_Text {//h3[text()="KPI Information"]}
+!define SalesForce_SellLine_System_Information_Label_Text {//h3[text()="System Information"]}
+!define SalesForce_SellLine_Record_Type_Field {//*[@id="00Ni000000DOWK2_ileinner"]}
+!define SalesForce_SellLine_Target_Age_Freeform_Field {//*[@id="00N3100000Guyyg"]}
+!define SalesForce_SellLine_Audience_Target_Field {//*[@id="00N3100000H14ur"]}
+!define SalesForce_SellLine_Turbine_Segments_Intensity {//*[@id="00N3100000H1peM"]}
+!define SalesForce_SellLine_Third_Party_Partner_Dropdown {//*[@id="00N3100000Fv4LL"]}
+
+!define SalesForce_SellLine_Goal_Dropdown {//*[@id="00N3100000Fv4LL"]}
+!define SalesForce_SellLine_PL_EMEA_Goal_Dropdown {//*[@id="00N3100000GvjJL"]}
+!define SalesForce_SellLine_EMEA_LR_Goal_Dropdown {//*[@id="00N3100000GvjJL"]}
+!define SalesForce_SellLine_Lead_Types_Picklist {//*[@title="Lead Types - Available"]}
+!define SalesForce_SellLine_Lead_Types_Right_Arrow {//*[@id="00N3100000GvjJV_right_arrow"]}
+!define SalesForce_SellLine_Lead_Types_Chosen_Picklist {//*[@title="Lead Types - Chosen"]}
+!define SalesForce_SellLine_Ford_Objective_Dropdown {//*[@id="00N5A00000HEPE3"]}
+!define SalesForce_SellLine_Goal_Details_Field {//*[@id="00N3100000GvjJQ"]}
+!define SalesForce_SellLine_Goal_Details_Freeform_Field {//*[@id="00N5A00000HEP7M"]}
+!define SalesForce_SellLine_Goal_Viewability_Benchmark_Field {//*[@id="00N5A00000GbwJ4"]}
+
+!define SalesForce_SellLine_Team_Member1_Dropdown {//*[@id="CF00N5A00000HEPBJ_mlktp"]}
+!define SalesForce_SellLine_Team_Member2_Dropdown {//*[@id="CF00N5A00000HEPBK_mlktp"]}
+!define SalesForce_SellLine_Team_Member3_Dropdown {//*[@id="CF00N5A00000HEPBL_mlktp"]}
+!define SalesForce_SellLine_Team_Member1_Input_Field {//*[@id="CF00N5A00000HEPBJ"]}
+!define SalesForce_SellLine_Team_Member2_Input_Field {//*[@id="CF00N5A00000HEPBK"]}
+!define SalesForce_SellLine_Team_Member3_Input_Field {//*[@id="CF00N5A00000HEPBL"]}
+!define SalesForce_SellLine_Team_Role1_Dropdown {//*[@id="00N5A00000HEPB4"]}
+!define SalesForce_SellLine_Team_Role2_Input_Dropdown {//*[@id="00N5A00000HEPB5"]}
+!define SalesForce_SellLine_Team_Role3_Input_Dropdown {//*[@id="00N5A00000HEPB9"]}
+
+!define SalesForce_SellLine_Bannerconnect_20_Checkbox {//*[@id="00N3100000H1peW"]}
+!define SalesForce_SellLine_Max_Availability_Field {//*[@id="00N3100000Gvfla"]}
+!define SalesForce_SellLine_Frequency_Capping_Comments_Field {//*[@id="00N3100000GvflZ"]}
+!define SalesForce_SellLine_Public_IO_Comment_Field {//*[@id="00N3100000H1peH"]}
+!define SalesForce_SellLine_Reporting_Frequency_Dropdown {//*[@id="00N5A00000HEP9n"]}
+!define SalesForce_SellLine_Budget_Shifts_Allowed_Dropdown {//*[@id="00N5A00000HEP9e"]}
+
+!define SalesForce_SellLine_Targeting_Details_Label_Text {//h3[text()="Targeting Details"]}
+!define SalesForce_SellLine_Plus_Surcharge_Field {//*[@id="00N3100000GvflY"]}
+!define SalesForce_SellLine_Premium_Surcharge_Field {//*[@id="00N5A00000HEP9q"]}
+!define SalesForce_SellLine_Third_Party_Surcharge_Field {//*[@id="00N5A00000HEP9j"]}
+!define SalesForce_SellLine_Viewability_Surcharge_Field {//*[@id="00N5A00000HEPDF"]}
+!define SalesForce_SellLine_Freq_App_Plus_Surcharge_Field {//*[@id="00N5A00000HEP9g"]}
+!define SalesForce_SellLine_Freq_App_Premium_Surcharge_Field {//*[@id="00N5A00000HEP9i"]}
+!define SalesForce_SellLine_Freq_App_Third_Party_Surcharge_Field {//*[@id="00N5A00000HEP9h"]}
+!define SalesForce_SellLine_Target_Education_Background_Picklist {//*[@title="Target Educational Background - Available"]}
+!define SalesForce_SellLine_Target_Education_Background_Chosen_Picklist {//*[@title="Target Educational Background - Chosen"]}
+!define SalesForce_SellLine_Target_Occupation_Dropdown {//*[@id="00N5A00000HEP9t"]}
+!define SalesForce_SellLine_Target_Region_Field {//*[@id="00N5A00000HEP9v"]}
+!define SalesForce_SellLine_Targeting_Comment_Field {//*[@id="00N5A00000HEP9w"]}
+!define SalesForce_SellLine_Targeting_Net_Income_Field {//*[@id="00N5A00000HEP9s"]}
+!define SalesForce_SellLine_Target_Region_Type_Dropdown {//*[@id="00N5A00000HEP9u"]}
+!define SalesForce_SellLine_Affinity_Segments_Picklist {//*[@title="Affinity Segments - Available"]}
+!define SalesForce_SellLine_Affinity_Segments_Chosen_Picklist {//*[@title="Affinity Segments - Chosen"]}
+!define SalesForce_SellLine_Lifestyle_Segments_Picklist {//*[@title="Lifestyle Segments - Available"]}
+!define SalesForce_SellLine_Lifestyle_Segments_Chosen_Picklist {//*[@title="Lifestyle Segments - Chosen"]}
+!define SalesForce_SellLine_Retargeting_Type_Picklist {//*[@title="Retargeting Type - Available"]}
+!define SalesForce_SellLine_Retargeting_Type_Chosen_Picklist {//*[@title="Retargeting Type - Chosen"]}
+!define SalesForce_SellLine_Retargeting_Source_Field {//*[@id="00N5A00000HEP9o"]}
+
+!define SalesForce_SellLine_Inventory_Details_Label_Text {//h3[text()="Inventory Details"]}
+!define SalesForce_SellLine_Inventory_Dropdown {//*[@id="00N3100000GMwpN"]}
+!define SalesForce_SellLine_Inventory_Type_Field {//*[@id="00N3100000H14um"]}
+!define SalesForce_SellLine_Affinity_Channel_Picklist {//*[@title="Inventory Affinity Channel - Available"]}
+!define SalesForce_SellLine_Affinity_Channel_Chosen_Picklist {//*[@title="Inventory Affinity Channel - Chosen"]}
+!define SalesForce_SellLine_Priority_Dropdown {//*[@id="00N5A00000HEP9m"]}
+!define SalesForce_SellLine_Delivery_Strategy_Dropdown {//*[@id="00N5A00000HEP9f"]}
+!define SalesForce_SellLine_Adserving_Dropdown {//*[@id="00N5A00000HEP9c"]}
+
+!define SalesForce_SellLine_GroupM_Discount_Field {//*[@id="00N3100000GvgKu"]}
+!define SalesForce_SellLine_AE_Discount_Field {//*[@id="00N3100000GvgKp"]}
+!define SalesForce_SellLine_Special_Discount_Field {//*[@id="00N3100000GvgKz"]}
+!define SalesForce_SellLine_Creative_Type_Size_Field {//*[@id="00Ni000000DOWJv"]}
+!define SalesForce_SellLine_AD_Labs_Dropdown {//*[@id="00N3100000GMwpH"]}
+!define SalesForce_SellLine_Agency_Billing_Platform_Dropdown {//*[@id="00N3100000GMwpI"]}
+!define SalesForce_SellLine_Creative_Detail_Dropdown {//*[@id="00N3100000GMwpJ"]}
+!define SalesForce_SellLine_Creative_Format_Dropdown {//*[@id="00N3100000GMwpK"]}
+!define SalesForce_SellLine_Placement_Id_Field {//*[@id="00N3100000GbYHF"]}
+!define SalesForce_SellLine_Supplier_Name_Field {//*[@id="00N3100000GbYHP"]}
+!define SalesForce_SellLine_Buy_Category_Dropdown {//*[@id="00N3100000H14uS"]}
+!define SalesForce_SellLine_Inventory_Type_Field {//*[@id="00N3100000GbYHP"]}
+!define SalesForce_SellLine_Data_Tactic_Dropdown {//*[@id="00N3100000GMwpL"]}
+!define SalesForce_SellLine_Flight_Field {//*[@id="00N3100000Fv5Nr"]}
+!define SalesForce_SellLine_Programmatic_Creative_Dropdown {//*[@id="00N5A00000GbwLs"]}
+!define SalesForce_SellLine_Margin_Value_Field {//*[@id="00N3100000GbCdQ"]}
+!define SalesForce_SellLine_Product_Code_Dropdown {//*[@id="00N3100000GMwpQ"]}
+!define SalesForce_SellLine_Opportunity_Buy_Details_Label_Text {//h3[text()="Opportunity Buy Details"]}
+!define SalesForce_SellLine_Opportunity_Radia_Summaries_Label_Text {//h3[text()="Radia Summaries"]}
+!define SalesForce_SellLine_Opportunity_Radia_Data_Label_Text {//h3[text()="Radia Data"]}
+!define SalesForce_SellLine_Opportunity_Radia_Custom_Columns_Label_Text {//h3[text()="Radia Custom Columns"]}
+!define SalesForce_SellLine_Radia_Id_Field {//*[@id="00N3100000GbCdV"]}
+!define SalesForce_SellLine_Budget_Line_Id_Field {//*[@id="00N3100000GbCdC"]}
+!define SalesForce_SellLine_Last_Changed_In_Radia_Field {//*[@id="00N3100000GbCdG"]}
+!define SalesForce_SellLine_Line_Item_Type_Field {//*[@id="00N3100000GbCdI"]}
+!define SalesForce_SellLine_Line_Type_Field {//*[@id="00N3100000GbCdJ"]}
+!define SalesForce_SellLine_Media_Name_Field {//*[@id="00N3100000GbCdR"]}
+!define SalesForce_SellLine_MO_Estimate_Code_Field {//*[@id="00N3100000GbCdM"]}	
+!define SalesForce_SellLine_MO_Estimate_Name_Field {//*[@id="00N3100000GbCdN"]}	
+!define SalesForce_SellLine_MO_Product_Code_Field {//*[@id="00N3100000GbCdO"]}	
+!define SalesForce_SellLine_MO_Product_Name_Field {//*[@id="00N3100000GbCdP"]}
+!define SalesForce_SellLine_Vendor_IO_Number_Field {//*[@id="00N3100000GbCdd"]}	
+!define SalesForce_SellLine_Special_Product_Name_Field {//*[@id="00N3100000GbCdb"]}	
+!define SalesForce_SellLine_Supplier_Code_Field {//*[@id="00N3100000GbCda"]}	
+!define SalesForce_SellLine_Served_By_Dropdown {//*[@id="00N3100000GbCdY"]}	
+!define SalesForce_SellLine_Site_Field {//*[@id="00N3100000GbCdZ"]}	
+!define SalesForce_SellLine_Radia_Buyline_Name_Field {//*[@id="00N3100000GbCdU"]}	
+!define SalesForce_SellLine_Partner_Field {//*[@id="00Ni000000EIUsu"]}	
+!define SalesForce_SellLine_Package_Type_Field {//*[@id="00N3100000GbCdT"]}	
+!define SalesForce_SellLine_Package_ID_Field {//*[@id="00N3100000GbCdS"]}	
+!define SalesForce_SellLine_Special_Whitelist_PMP_Dropdown {//*[@id="00N5A00000GUJFF"]}	
+!define SalesForce_SellLine_Custom_Field1 {//*[@id="00N3100000Fv3Va"]}
+!define SalesForce_SellLine_Custom_Field2 {//*[@id="00N3100000Fv3Vb"]}
+!define SalesForce_SellLine_Delivery_Information_Label_Text {//h3[text()="Delivery Information"]}
+!define SalesForce_Delivery_Final_Billable_Cost_Field {//*[@id="00N3100000H15Cb"]}
+!define SalesForce_Delivery_Final_Billable_Units_Field {//*[@id="00N3100000H15Cc"]}
+!define SalesForce_Delivery_Final_Payable_Cost_Field {//*[@id="00N3100000H15Cd"]}
+!define SalesForce_Delivery_Final_Payable_Impressions_Field {//*[@id="00N3100000H15Ce"]}
+!define SalesForce_Delivery_Final_Payable_Clicks_Field {//*[@id="00N3100000Fv7RM"]}
+!define SalesForce_Delivery_Final_Payable_Actions_Field {//*[@id="00N3100000Fv7RL"]}
+!define SalesForce_SellLine_Sync_Data_Label_Text {//h3[text()="Sync Data"]}
+!define SalesForce_Delivery_SFL_Id_Field {//*[@id="00Ni000000Fu0qT"]}
+!define SalesForce_Delivery_SFL_Media_Campaign_Id_Field {//*[@id="00N3100000FuAfA"]}
+
+
+!define SalesForce_UK_Buisness_Unit_Dropdown {//*[@class="SL_Business_Unit__c"]}
+!define SalesForce_UK_Sell_Name_Field {//*[@class="Buy_Name_txt__c"]}
+!define SalesForce_UK_Device_Dropdown {//*[@class="Device__c"]}
+!define SalesForce_UK_Channel_Dropdown {//*[@class="Media_Code__c"]}
+!define SalesForce_UK_Media_Type_Dropdown {//*[@class="Media_Type__c"]}
+!define SalesForce_UK_Product_Dropdown {//*[contains(@class,"Special_Product__c")]}
+!define SalesForce_UK_Start_Date_Field {//*[@class="Start_Date__c"]}
+!define SalesForce_UK_End_Date_Field {//*[@class="End_Date__c"]}
+!define SalesForce_UK_Input_Gross_As_Dropdown {//*[@class="Input_Mode__c"]}
+!define SalesForce_UK_Rate_Type_Dropdown {//*[@class="Buy_Type__c"]}
+!define SalesForce_UK_Sell_Volume_Field {//*[@class="Buy_Volume__c"]}
+!define SalesForce_UK_Gross_Rate_Field {//*[@class="Rate__c"]}
+!define SalesForce_UK_Planned_Gross_Budget_Field {//*[@class="Gross_Cost__c"]}
+!define SalesForce_UK_Discount_Field {//*[@class="UK_Discount__c"]}
+!define SalesForce_UK_Request_Media_Team_Checkbox {//*[@class="Request_Media_Team_Review__c"]}
+!define SalesForce_UK_Note_For_Media_Team_Field {//*[@class="Note_for_Media_Team__c"]}
+!define SalesForce_UK_Request_Optimisation_Team_Checkbox {//*[@class="Narrow_Targeting__c"]}
+!define SalesForce_UK_Note_For_Optimisation_Team_Field {//*[@class="Note_for_Optimisation_Team__c"]}
+!define SalesForce_UK_Sell_Line_Description_Field {//*[@class="Opp_Buy_Description__c"]}
+!define SalesForce_UK_LR_Partner_Dropdown {//*[@class="LR_Vendor__c"]}
+!define SalesForce_UK_Save_And_Add_Button {//*[@value="Save & Add Another"]}
+!define SalesForce_UK_Save_And_Complete_Button {//*[@value="Save & Complete"]}
+!define SalesForce_UK_Cancel_Link {//button[text()="Cancel"]}
+
+!define SalesForce_SellLine_Error_Message {//*[@class="errorMsg"]}
+!define SalesForce_SellLine_Sell_Number_HyperLink {//*[@id="j_id0:j_id4:j_id57:0:j_id64"]/a}
+!define SalesForce_SellLine_Planned_Media_Net_Cost {//*[@id="00Ni000000COieX_ileinner"]}
+!define SalesForce_SellLine_Planned_Net_Cost {//*[@id="00Ni0000004xKpS_ileinner"]}
+!define SalesForce_SellLine_Wasmuth_Werbetreager_Dropdown {//*[@id="00N5A00000H7C7a"]}
+
+!define SalesForce_SellLine_Monthly_Schedule_First_Edit_Link {//*[@class="actionLink" and contains(@title,"Record 1 - CP")]}
+!define SalesForce_SellLine_Monthly_Schedule_Reconciled_Checkbox {//*[@id="00N3100000Gb6rR"]}
+!define SalesForce_SellLine_Monthly_Schedule_Reconciled_Column {//*[@id="00N3100000Gb6rR_ileinner"]/img[@title="Checked"]}
+!define SalesForce_SellLine_Monthly_Schedule_Reconciled_Checkbox_Not_Checked {//*[@id="00N3100000GxZWn_ileinner"]/img[@title="Not Checked"]}
+
+!define SalesForce_SellLine_Monthly_Schedule_October_Link {//*[contains(@class,"dataCell")]/a[text()="2018-10"]}
+!define SalesForce_SellLine_Monthly_Schedule_November_Link {//*[contains(@class,"dataCell")]/a[text()="2018-11"]}
+!define SalesForce_SellLine_Monthly_Schedule_December_Link {//*[contains(@class,"dataCell")]/a[text()="2018-12"]}
+
+!define SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget {//*[@id="00N3100000Gb6rT_ileinner"]}
+!define SalesForce_SellLine_Monthly_Schedule_Planned_Billable_Units {//*[@id="00N3100000Fv554_ileinner"]}
+
+!define SalesForce_SellLine_Monthly_Schedule_Planned_Gross_Budget_Field {//*[@id="00N3100000Gb6rT"]}
+!define SalesForce_SellLine_Monthly_Schedule_Planned_Planned_Billable_Units_Field {//*[@id="00N3100000Fv554"]}
+!define SalesForce_SellLine_Monthly_Schedule_Planned_Budget_Reconciliation_Method_Dropdown {//*[@id="00N3100000Gb6rS"]}
+!define SalesForce_SellLine_Details_Planned_Gross_Budget_Content {//*[@id="00Ni0000004xKpQ_ileinner"]}
+
+!define SalesForce_SellLine_Delivery_Final_Billable_Cost_Text {//*[@id="00N3100000H15Cb_ileinner"]}
+!define SalesForce_SellLine_Delivery_Final_Billable_Units_Text {//*[@id="00N3100000H15Cc_ileinner"]}
+!define SalesForce_SellLine_Delivery_Final_Payable_Impressions_Text {//*[@id="00N3100000H15Ce_ileinner"]} 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+'''Scenario Name: ''' Create an APAC Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on 'Accounts' tab
+   Click on 'New' Button
+   Select Record Type as 'Xaxis Media Buying - APAC'
+   Click on 'Continue' button
+   Enter Agency Name
+   Enter Advertiser Name
+   Select Business Unit as plista non-GroupM
+   Click on Create Account button
+   Verify err message which prevent you to create non groupM account for an APAC user
+   Select Business Unit as Xaxis
+   Click on 'Create Account' button
+   Clear predefined Account name
+   Enter new Account name
+   Select Account Opt In Progress as 'Work In Progress
+   Click on Save Button
+   Verify Account name appears on account detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_India_Suite_${PAGE_NAME}|Test04Ind-Create an India Account|
+|click;|${SalesForce_Accounts_Tab}|Accounts Tab|
+|click;|${SalesForce_Accounts_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Accounts_Record_Type_DropDown}|Xaxis Media Buying - APAC|Record Type Dropdown|
+|click;|${SalesForce_Accounts_Continue_Button}|Continue Button|
+|wait;|2000|
+|type;|${SalesForce_Accounts_Agency_Field}|$indAgencyName|Agency Field|
+|wait;|1000|
+|type;|${SalesForce_Accounts_Advertiser_Field}|$indAdvertiserName|Advertiser Field|
+|wait;|800|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|plista non-GroupM|Business Unit Dropdown|
+|wait;|5800|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|objectVerification;|${SalesForce_Accounts_BU_Err_MSG}|"plista non-GroupM" business unit is only valid for non-UK EMEA agencies"|Err message verification for Non-GroupM|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|Xaxis|Business Unit Dropdown|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|clear;|${SalesForce_Accounts_Name_Field}|Account Name Field|
+|type;|${SalesForce_Accounts_Name_Field}|$indAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Account_Opt_In_Status_DropDown}|Work In Progress|Opt In Status Dropdown|
+|click;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Account_Name_Description}|$indAccountName|Account Detail Page|
+|$indAccountPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,8 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite
+*!
+
+!***** MARKETS
+[[Singapore][M02ApacSuite.SingaporeSuite]]
+[[India][M02ApacSuite.IndiaSuite]]
+**********!

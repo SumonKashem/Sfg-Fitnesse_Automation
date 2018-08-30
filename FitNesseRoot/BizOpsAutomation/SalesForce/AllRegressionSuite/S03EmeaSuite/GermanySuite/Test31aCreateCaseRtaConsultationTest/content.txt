@@ -1,0 +1,35 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest
+*!
+'''Scenario Name: ''' Create an 'RTA Consultation' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to existing Opportunity
+   Scroll to RTA Consultation button
+   Click on RTA Consultation button
+   Select Status as 'New'
+   Select Priority as 'High'
+   Click on 'Save' button
+   Verify Case Owner
+   Verify Case Record Type as 'RTA Consultation' on Case Detail page
+**********!
+#$gerEmeaOpportunityPageUrl
+#https://cs77.salesforce.com/0060t00000AKFliAAH?nooverride=1
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test31aGer-Create an 'RTA Consultation' Case|
+|open;|$gerEmeaOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_RTA_Consultation_Button}|
+|click;|${SalesForce_Cases_RTA_Consultation_Button}|RTA Consultation Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Priority_Dropdown}|High|Priority Dropdown|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|RTA Unit (Germany) [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|RTA Consultation [Change]|Record Type on Case Detail Page|
+|$rtaConsultationPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,8 @@
+!define Manage_Opp_Details_OppStatus_Text {//*[@id="oppStatus"]}
+!define Manage_Opp_Details_GrossBudget_Text {//*[@id="unallocatedBudget"]}
+!define Manage_Opp_Details_TotalCost_Text {//*[@id="totalCost"]}
+!define Manage_Opp_Details_TotalMedia_Text {//*[@id="totalMediaCost"]}
+!define Manage_Opp_Details_TotalQuantity_Text {//*[@id="totalQuantity"]}
+
+
+

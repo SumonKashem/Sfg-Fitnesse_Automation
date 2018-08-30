@@ -1,0 +1,27 @@
+'''Scenario Name: ''' Create a LATAM Analytics Request case 
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to LATAM Account url
+   Scroll into LATAM Analytics Request button
+   Click on LATAM Analytics Request Button
+   Select 'Market' as 'Miami'
+   Click on 'Save' button
+   Verify Case Record Type is 'LATAM Analytics [Change]'
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test11Mia-Create a LATAM Analytics Request case|
+|open;|$miaLatamAccountPageUrl|
+|scrollIntoView;|${SalesForce_Cases_LATAM_Analytics_Request_Button}|
+|clickByJavaScript;|${SalesForce_Cases_LATAM_Analytics_Request_Button}|LATAM Analytics Request Button|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Miami|Market Dropdown|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_BuyPlacement_RecordType_Text}|LATAM Analytics [Change]|Case Record Type Value|
+|$miaAnalyticsPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

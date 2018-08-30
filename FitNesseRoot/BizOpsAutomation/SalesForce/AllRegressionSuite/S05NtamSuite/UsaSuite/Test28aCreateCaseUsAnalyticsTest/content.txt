@@ -1,0 +1,47 @@
+'''Scenario Name: ''' Create an 'US Analytics' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity Url
+   Scroll Into US Analytics button
+   Click on US Analystics button
+   Select Picklist value as DBM
+   Click on Picklist Right arrow
+   click on Start Date as current day
+   Click on End Date as current day
+   Click on Due Date as current day
+   Enter User as Admin
+   Select Request Type as 'Agency Reporting'
+   Enter Subject as test
+   Enter Description as test
+   Enter Floodlights as test
+   Enter KPI Goal as test
+   Click on 'Save' button
+   Verify Case Record Type as 'US Analytics' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script              |DriverClass                                                                                 |
+|startExtentReport;   |NTAM_USA_Suite_${PAGE_NAME}                 |Test28US-Create an 'US Analytics Case}         |
+|open;                |$ntamUsOpportunityPageUrl                                                                   |
+|scrollIntoView;      |${SalesForce_Cases_US_Analystics_Button}                                                    |
+|click;               |${SalesForce_Cases_US_Analystics_Button}    |US Analytics Button                            |
+|selectDropDownByText;|${SalesForce_Cases_Data_Sources_Picklist}   |DBM                   |Data Sources Picklist   |
+|clickByJavaScript;   |${SalesForce_Cases_Data_Sources_Right_Arrow}|Data Sources Right Arrow                       |
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|0|Start Date Link           |
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|1|End Date Link             |
+|clickByIndexJavaScript;|${SalesForce_Cases_Date_Format_Link}|2|Due Date Link             |
+|type;                |${SalesForce_Cases_Assign_To_Field}         |Sumon Kashem          |Assign To Field         |
+|selectDropDownByText;|${SalesForce_Cases_Request_Type_Dropdown}   |Agency Reporting      |Request Type Dropdown   |
+|type;                |${SalesForce_Cases_BC_Subject_Field}        |test                  |Subject Field           |
+|type;                |${SalesForce_Cases_BC_Description_Field}    |test                  |Description Field       |
+|type;                |${SalesForce_Cases_Floodlights_Field}       |test                  |Floodlights Field       |
+|type;                |${SalesForce_Cases_KPI_Goal_Field}          |test                  |KPI Goal Field          |
+|clickByJavaScript;   |${SalesForce_Cases_Save_Button}             |Save Button                                    |
+|objectVerification;  |${SalesForce_Cases_Record_Type_Text}        |US Analytics [Change] |Record Type on Case page|
+|$usAnalyticsPageUrl= |getCurrentUrl;                                                                              |
+|stopExtentReport;                                                                                                 |
+**********!

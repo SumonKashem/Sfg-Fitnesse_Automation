@@ -1,0 +1,35 @@
+'''Scenario Name: ''' Create an 'Product Support' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to existing Opportunity
+   Click on 'Product Support' button
+   Select first value from Product drop down
+   Select first value from Request Type drop down
+   Enter Contact Name
+   Select Status as 'New'
+   Click on 'Save' button
+   Verify Case Record Owner as 'Campaign Management - Pan Regional' on Case Detail page
+   Verify Case Record Type as 'Campaign Management' on Case Detail page
+**********!
+#|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+#|selectDropDownByText;|${SalesForce_Cases_Contact_Name_Dropdown}|${SalesForce_EMEA_User_Name}|Contact Name Dropdown|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test17Bel-Create a Product Support Case|
+|open;|$belEmeaOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_Product_Support_Button}|
+|click;|${SalesForce_Cases_Product_Support_Button}|Product Support Button|
+|selectDropDownByIndex;|${SalesForce_Cases_Product_Dropdown}|1|Product Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Request_Type_Dropdown}|1|Request Type Dropdown|
+|type;|${SalesForce_Cases_Contact_Name_Field}|${SalesForce_EMEA_User_Name}|Contact Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|Great Plains Support [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|Product Support [Change]|Record Type on Case Detail Page|
+|$prodSupportPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

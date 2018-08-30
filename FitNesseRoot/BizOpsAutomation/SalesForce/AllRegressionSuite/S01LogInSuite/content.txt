@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** Test Cases
+S01LogInSuite.AdminUserTest
+**********!

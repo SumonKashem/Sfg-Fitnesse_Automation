@@ -1,0 +1,40 @@
+'''Scenario Name: ''' Create a BC Technology Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to service account url
+   Click on 'New Opportunity' button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select Stage as 'Proposal'
+   Select Reason Lost as '--None--'
+   Select currency as 'Euro'
+   clear close date
+   Select close date as today's date
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Verify Opportunity record type appears as 'Media' on opportunity detail page
+   Capture opportunity page url for resuable purpose
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test09BC-Create a Media Service Opportunity|
+|open;|$mediaAccountUrl|
+|clickByJavaScript;|${SalesForce_Opportunities_BC_Media_Opportunity_Button}|New Media Opp Button|
+|clear;|${SalesForce_Opportunities_BC_Opp_Name_Field}|Opportunity Name Field|
+|type;|${SalesForce_Opportunities_BC_Opp_Name_Field}|$mediaOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Opportunities_BC_Stage_Dropdown}|Proposal|Stage Dropdown|
+|selectDropDownByText;|${SalesForce_Opportunities_BC_Reason_Lost_Dropdown}|--None--|Reason Lost Dropdown|
+|selectDropDownByText;|${SalesForce_Opportunities_BC_Currency_Dropdown}|EUR - Euro|Currency Code Dropdown|
+|clear;|${SalesForce_Opportunities_BC_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_BC_Close_Date_Field}|$closeDateForBCOpp|Close Date Field|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_BC_Opp_Name_Text}|$mediaOppName|Opportunity Detail Page|
+|objectVerification;|${SalesForce_Opportunities_BC_Record_Type_Text}|Media|Record Type on Detail Page|
+|$oppMediaPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

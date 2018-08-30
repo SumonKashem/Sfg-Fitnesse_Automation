@@ -1,0 +1,35 @@
+'''Scenario Name: ''' Create an 'Action x' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opportunity Url
+   Scroll Into Action X button
+   Click on Action X Case button
+   Select Market as 'Canada'
+   Select Request Type as 'Campaign Setup'
+   Select Campaign Type as 'Light Reaction - Performance'
+   Select App SDK as 'Adjust'
+   Select Platform as 'The Trade Desk'
+   Click on 'Save' button
+   Verify Case Record Type as 'ActionX' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test10Can-Create an ActionX Case}|
+|open;|$ntamOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_ActionX_Button}|
+|click;|${SalesForce_Cases_ActionX_Button}|ActionX Button|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Canada|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Request_Type_Dropdown}|Campaign Setup|Request Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Campaign_Type_Dropdown}|Light Reaction - Performance|Campaign Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_App_Sdk_Dropdown}|Adjust|App SDK Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Platform_Dropdown}|The Trade Desk|Platform Dropdown|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Record_Type_Text}|ActionX [Change]|Record Type on Case page|
+|$actionXPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,5 @@
+!***** Actual Methods
+[[Fixed Rate][GermanySuite.G1FixedRate]]
+[[Effective Rate][GermanySuite.G2EffectiveRate]]
+[[Capped Cost][GermanySuite.G3CappedCost]]
+**********!

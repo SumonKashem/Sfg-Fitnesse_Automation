@@ -1,0 +1,4 @@
+!***** Variance Effected
+[[Budget][CanadaSuite.VarianceAffectedBudget]]
+[[Quantity][CanadaSuite.VarianceAffectedQuantity]]
+**********!

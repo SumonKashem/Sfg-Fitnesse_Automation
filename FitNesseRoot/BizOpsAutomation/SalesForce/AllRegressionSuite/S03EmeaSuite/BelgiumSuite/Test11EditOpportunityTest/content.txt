@@ -1,0 +1,24 @@
+'''Scenario Name: ''' Edit an Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Existing Opportunity page
+   Click on 'Edit' Button
+   Change Stage value to 'Closed Won'
+   Click on 'Save' Button
+   Verify Stage value appears as Closed Won on Opportunity Detail Page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test11Bel-Edit Existing Belgium Opportunity|
+|open;|$belEmeaOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Closed Won|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Closed Won|Stage Label Content on Opp Detail Page|
+|stopExtentReport;|
+**********!

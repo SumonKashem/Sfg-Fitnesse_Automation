@@ -1,0 +1,64 @@
+'''Scenario Name: ''' Create a Light Reaction Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Verify Buisness Unit value appear as 'Light Reaction' by default
+   Enter Sell Name
+   Select Device as 'Desktop'
+   Select Channel as 'Display'
+   Select Media Type as 'Standard'
+   Select Product as 'Audio'
+   Enter Sell Line Start Date
+   Enter Sell Line End Date
+   Select input gross as 'Rate / Gross Cost'
+   Select Rate Type as 'CPM'
+   Enter Gross Rate as '25'
+   Enter Planned Gross Budget as '200'
+   Verify Discount appear as 15.00 by default
+   Click on 'Save & Complete' button
+   Verify error message appear to change Product value
+   Select Product as 'Headlight
+   Click on 'Save & Complete' button agian
+   Switch to SL I-Frame
+   Click on Sell Number hyper link to go to SL detail page
+   Verify Sell Line Business Unit on SL Detail page
+   Verify Sell Name appears on Sell Line Detail page
+   Verify Sell Volume = Gross Budget/Gross Rate*1000
+   Verify Record Type as 'United Kingdom'
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_UK_Suite_${PAGE_NAME}|Test06bUK-Create a Light Reaction Sell Line|
+|objectVerification;|${SalesForce_UK_Buisness_Unit_Dropdown}|Light Reaction|Business Unit Dropdown|
+|type;|${SalesForce_UK_Sell_Name_Field}|$emeaSLName_LR|Sell Line Name Field|
+|selectDropDownByText;|${SalesForce_UK_Device_Dropdown}|Desktop|Device Dropdown|
+|selectDropDownByText;|${SalesForce_UK_Channel_Dropdown}|Display|Channel Dropdown|
+|selectDropDownByText;|${SalesForce_UK_Media_Type_Dropdown}|Standard|Media Dropdown|
+|selectDropDownByText;|${SalesForce_UK_Product_Dropdown}|Audio|Product Dropdown|
+|type;|${SalesForce_UK_Start_Date_Field}|${emeaSellLineStartDate}|Start Date Field|
+|type;|${SalesForce_UK_End_Date_Field}|${emeaSellLineEndDate}|End Date Field|
+|selectDropDownByText;|${SalesForce_UK_Input_Gross_As_Dropdown}|Rate / Gross Cost|Input Gross As Dropdown|
+|selectDropDownByText;|${SalesForce_UK_Rate_Type_Dropdown}|CPM|Rate Type Dropdown|
+|type;|${SalesForce_UK_Gross_Rate_Field}|25|Gross Rate Field|
+|type;|${SalesForce_UK_Planned_Gross_Budget_Field}|200|Gross Budget Field|
+|elementVerification;|//*[@value="15.00"]|Yes|Discount Field With Default Value|
+|clickByJavaScript;|${SalesForce_UK_Save_And_Complete_Button}|Save & Complete Button|
+|objectVerification;|${SalesForce_SellLine_Error_Message}|Error: Audio requires Business Unit: Xaxis selection|Error Message|
+|selectDropDownByText;|${SalesForce_UK_Product_Dropdown}|Headlight|Product Dropdown|
+|clickByJavaScript;|${SalesForce_UK_Save_And_Complete_Button}|Save & Complete Button|
+|wait;|3500|
+|scroll;|Vertical|900|
+|wait;|1000|
+|switchToFrame;|${SalesForce_Opportunities_SL_IFrame_Window}|Sell Line|
+|wait;|1000|
+|clickByJavaScript;|${SalesForce_SellLine_Sell_Number_HyperLink}|Sell Line number hyper link|
+|objectVerification;|${SalesForce_SellLine_Business_Unit_Text}|Light Reaction|Business Unit on Sell Line Detail Page|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Name_Field}|$emeaSLName_LR|Sell Line Detail Page|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Volume_Text}|8,000|Sell Volume Value|
+|objectVerification;|${SalesForce_SellLine_Record_Type_Field}|United Kingdom|Record Type|
+|$ukLRSellLineUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

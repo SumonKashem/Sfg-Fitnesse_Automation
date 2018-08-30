@@ -1,0 +1,9 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** MARKETS
+[[Belgium][S03EmeaSuite.BelgiumSuite]]
+[[Germany][S03EmeaSuite.GermanySuite]]
+[[UK][S03EmeaSuite.UnitedKingdomSuite]]
+**********!

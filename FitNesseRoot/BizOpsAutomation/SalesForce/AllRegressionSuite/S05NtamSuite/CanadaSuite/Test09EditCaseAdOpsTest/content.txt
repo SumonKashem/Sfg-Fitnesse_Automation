@@ -1,0 +1,67 @@
+'''Scenario Name: ''' Edit an 'Ad Ops' case to close
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to 'Ad Ops' Page Url
+   Click on 'Edit' Button
+   Select Status as 'Open'
+   Click on 'Save' button
+   Verify Error Message Appears
+   Click on 'Cancel' button
+   Click on 'Edit' Button
+   Select Status as 'Pended'
+   Click on 'Save' button
+   Verify Error Message Appears
+   Click on 'Cancel' button
+   Click on 'Close Case' button
+   Select Status as 'Closed'
+   Select Case Reason
+   Enter Case Time Spent(min) 
+   Click on 'Save' button
+   Verify error message appears
+   Click on 'Cancel' button
+   Click on case owner 'Change' link
+   Enter New Owner
+   Click on 'Save' button
+   Click on 'Close Case' button
+   Select status as 'Closed'
+   Select reason
+   Enter Case Time Spent(min) 
+   Click on 'Save' button
+   Verify Case Status as 'Closed' on Case details page
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test09Can-Edit an AdOps Case to 'Close'|
+|open;|$adOpsPageUrl|
+|click;|${SalesForce_Cases_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Open|Status Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Error_Message}|Error: Please assign the case to a Ad ops member before changing the case|Error Message|
+|click;|${SalesForce_Cases_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Pended|Status Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Error_Message}|Error: Please assign the case to a Ad ops member before changing the case|Error Message|
+|click;|${SalesForce_Cases_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Close_Case_Button}|Close Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Closed|Status Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Reason_Dropdown}|2|Case Reason Dropdown|
+|type;|${SalesForce_Cases_Time_Spent_Field}|1|Case Time Spend Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Error_Message}|Error: Please assign the case to a Ad ops member before changing the case|Error Message|
+|click;|${SalesForce_Cases_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Details_Page_Case_Owner_Change_Link}|Case Owner Change Link|
+|type;|${SalesForce_Cases_New_Owner_Field}|${SalesForce_NTAM_User_Name}|New Owner Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|click;|${SalesForce_Cases_Close_Case_Button}|Close Case Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Closed|Status Dropdown|
+|selectDropDownByIndex;|${SalesForce_Cases_Reason_Dropdown}|2|Case Reason Dropdown|
+|type;|${SalesForce_Cases_Time_Spent_Field}|1|Case Time Spend Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Text_Field}|Closed|Status Text Field|
+|stopExtentReport;|
+**********!

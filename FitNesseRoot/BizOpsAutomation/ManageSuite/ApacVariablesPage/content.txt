@@ -1,0 +1,4 @@
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'sellLineStartDate' for reusability
+!|script|DriverClass|
+|$apacCloseDate=|getDesiredDateInFormat;|0|-|yyyy|
+**********!

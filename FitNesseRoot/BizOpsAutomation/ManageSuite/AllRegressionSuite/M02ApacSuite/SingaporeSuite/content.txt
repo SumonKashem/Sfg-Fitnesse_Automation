@@ -1,0 +1,5 @@
+!***** Actual Methods
+[[Fixed Rate][SingaporeSuite.B1FixedRate]]
+[[Effective Rate][SingaporeSuite.B2EffectiveRate]]
+[[Capped Cost][SingaporeSuite.B3CappedCost]]
+**********!

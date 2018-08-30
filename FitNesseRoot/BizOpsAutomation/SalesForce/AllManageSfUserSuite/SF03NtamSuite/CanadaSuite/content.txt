@@ -1,0 +1,4 @@
+!***** Test Cases
+CanadaSuite.Test01SfUserActivationTest
+CanadaSuite.Test02SfUserManageCompTest
+**********!

@@ -1,0 +1,70 @@
+'''Scenario Name: ''' Create an NTAM Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + icon tab
+   Click on 'Accounts' tab
+   Click on 'New' Button
+   Verify by default Account Record Type is 'Media Buying'
+   Click on 'Continue' button
+   Enter Agency Name
+   Enter Advertiser Name
+   Select Business Unit as 'plista non-GroupM'
+   Select on 'Create Account' button
+   Verify error message appears stating only EMEA non-UK market can create non-GroupM Business Unit
+   Select Business Unit as ${SalesForce_NTAM_Business_Unit_Value}
+   Click on 'Create Account' button
+   Clear predefined Account name
+   Enter new Account name
+   Select Account Opt In Progress as 'Work In Progress
+   Select Account Currency as CAD - Canadian Dollar
+   Enter Account Manager Team Lead
+   Enter Assigned Account Manager
+   Enter Automated Trader
+   Enter Business Analyst
+   Enter SIM Analyst
+   Click on Save Button
+   Verify Account name appears on account detail page
+   Verify Account Record Type on Account detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_Canada_Suite_${PAGE_NAME}|Test04Can-Create an NTAM Account|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Accounts_Tab}|Accounts Tab|
+|click;|${SalesForce_Accounts_New_Button}|New Button|
+|objectVerification;|${SalesForce_Accounts_Record_Type_DropDown}|Media Buying|Default Account Record Type|
+|click;|${SalesForce_Accounts_Continue_Button}|Continue Button|
+|wait;|1800|
+|type;|${SalesForce_Accounts_Agency_Field}|$ntamAgencyName|Agency Field|
+|wait;|800|
+|type;|${SalesForce_Accounts_Advertiser_Field}|$ntamAdvertiserName|Advertiser Field|
+|wait;|800|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|plista non-GroupM|Business Unit Dropdown|
+|wait;|7000|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|wait;|1000|
+|objectVerification;|${SalesForce_Accounts_BU_Err_MSG}|"plista non-GroupM" business unit is only valid for non-UK EMEA agencies"|Err message verification for Non-GroupM|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|${SalesForce_NTAM_Business_Unit_Value}|Business Unit Dropdown|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|clear;|${SalesForce_Accounts_Name_Field}|Account Name Field|
+|wait;|1200|
+|type;|${SalesForce_Accounts_Name_Field}|Xax $ntamAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Account_Opt_In_Status_DropDown}|Work In Progress|Opt In Status Dropdown|
+|selectDropDownByText;|${SalesForce_Accounts_NTAM_Currency_Dropdown}|CAD - Canadian Dollar|Currency Dropdown|
+|type;|${SalesForce_Accounts_NTAM_Account_Manager_Field}|${SalesForce_NTAM_User_Name}|Account Manager Team Lead Field|
+|type;|${SalesForce_Accounts_NTAM_Assigned_Account_Manager_Field}|${SalesForce_NTAM_User_Name}|Assigned Account Manager Field|
+|type;|${SalesForce_Accounts_NTAM_Automated_Trader_Field}|${SalesForce_NTAM_User_Name}|Automated Trader Field|
+|type;|${SalesForce_Accounts_NTAM_Business_Analyst_Field}|${SalesForce_NTAM_User_Name}|Business Analyst Field|
+|type;|${SalesForce_Accounts_NTAM_SIM_Analyst_Field}|${SalesForce_NTAM_User_Name}|SIM Analyst Field|
+|clickByJavaScript;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Account_Name_Description}|Xax $ntamAccountName|Account Detail Page|
+|objectVerification;|${SalesForce_Accounts_Record_Type_Field}|Xaxis Media Buying - NTAM [Change]|Account Record Type|
+|$ntamCanAccountUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

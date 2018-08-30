@@ -1,0 +1,14 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** MARKETS
+[[Australia][S02ApacSuite.AustraliaSuite]]
+[[China][S02ApacSuite.ChinaSuite]]
+[[India][S02ApacSuite.IndiaSuite]]
+**********!
+
+
+
+
+

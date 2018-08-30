@@ -1,0 +1,9 @@
+!***** Test Scenarios
+[[1-User Login][B3CappedCost.Test01LogInUserTest]]
+[[2-Select A Market][B3CappedCost.Test02SelectMarketTest]]
+[[3A-Create An Opportunity][B3CappedCost.Test03ACreateOppTest]]
+[[3B-Select An Account & Opportunity][B3CappedCost.Test03BSelectAccOppTest]]
+[[4-Add A Sell Line][B3CappedCost.Test04AddSellLineTest]]
+[[5-Add A Media Buy Placement][B3CappedCost.Test05AddMediaBuyPlacementTest]]
+[[6-Miscellaneous Testing][B3CappedCost.Test06MiscellaneousTest]]
+**********!

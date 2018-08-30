@@ -1,0 +1,34 @@
+'''Scenario Name: ''' Create a New Media Task on Account level
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Media account url
+   Scroll Into New Task button
+   Click on 'New Task' button
+   Enter Subject
+   Enter Due Date as current day + 21
+   Select Currency as 'EUR - Euro'
+   Select Status as 'New'
+   Select Priority as 'High'
+   Click on 'Save' button
+   Verify account record type appears as 'Technology' on detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test12BC-Create a New Media Task on Account level|
+|open;|$mediaAccountUrl|
+|scrollIntoView;|${SalesForce_Accounts_NewTask_Button}|
+|click;|${SalesForce_Accounts_NewTask_Button}|New Task Button|
+|type;|${SalesForce_Accounts_NewTask_Subject_Field}|Testing Task Creation for Media|Subject Field|
+|type;|${SalesForce_Accounts_NewTask_Due_Date_Field}|$newTaskMediaDueDate|Due Date Field|
+|selectDropDownByText;|${SalesForce_Accounts_NewTask_Currency_Dropdown}|EUR - Euro|Currency Code Dropdown|
+|selectDropDownByText;|${SalesForce_Accounts_NewTask_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Accounts_NewTask_Priority_Dropdown}|High|Priority Dropdown|
+|click;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Accounts_Record_Type_Text}|Media [Change]|Record Type on Detail Page|
+|stopExtentReport;|
+**********!

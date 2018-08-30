@@ -1,0 +1,8 @@
+!define SalesForce_Search_Field {//*[@id="phSearchInput"]}
+!define SalesForce_Search_Button {//*[@id="phSearchButton"]}
+!define SalesForce_Search_Again_Field {//*[@id="secondSearchText"]}
+!define SalesForce_Search_Again_Button {//*[@id="secondSearchButton"]}
+!define SalesForce_SuiteName {AllRegressionSuite}
+!define SalesForce_Plus_Icon_Tab {//*[@id="AllTab_Tab"]/a/img}
+!define SalesForce_User_Nav_Dropdown {//*[@id="userNavLabel"]}
+!define SalesForce_User_Logout_Button {//*[@title="Logout"]}

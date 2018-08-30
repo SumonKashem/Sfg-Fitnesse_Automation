@@ -1,0 +1,77 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** script below allows you to store a method 'getUniqueName' for reusability
+!|script|DriverClass|
+|wait;|1000|
+|$belgiumEmeaAgencyName=|getUniqueName;|EMEA Belgium Agency|
+|$belgiumEmeaAdvertiserName=|getUniqueName;|EMEA Belgium Advertiser|
+|$belgiumEmeaAccountName=|getUniqueName;|EMEA Belgium Account|
+|$belgiumEmeaOppName=|getUniqueName;|EMEA Belgium Opportunity|
+|$germanyEmeaAgencyName=|getUniqueName;|EMEA Germany Agency|
+|$germanyEmeaAdvertiserName=|getUniqueName;|EMEA Germany Advertiser|
+|$germanyEmeaAccountName=|getUniqueName;|EMEA Germany Account|
+|$germanyEmeaOppName=|getUniqueName;|EMEA Germany Opportunity|
+|$ukAgencyName=|getUniqueName;|EMEA UK Agency|
+|$ukAdvertiserName=|getUniqueName;|EMEA UK Advertiser|
+|$ukAccountName=|getUniqueName;|EMEA UK Account|
+|$ukOppName=|getUniqueName;|EMEA UK Opportunity|
+|$emeaSLName_Xax=|getUniqueName;|EMEA Xax SL|
+|$emeaSLName_Pl=|getUniqueName;|EMEA Pl SL|
+|$emeaSLName_LR=|getUniqueName;|EMEA LR SL|
+|$emeaBPName_LR=|getUniqueName;|EMEA LR BP|
+|$emeaBPName_XAX=|getUniqueName;|EMEA Xaxis BP|
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable for reusability
+!|script|DriverClass|
+|$emeaOppCloneDate=|getDesiredDateInFormat;|0|-|yyyy|
+**********!
+
+!***** script below allows you to store a value into variables for Start & End data for reusability
+!define emeaSellLineStartDate {01/10/2018}
+!define emeaSellLineEndDate {31/12/2018}
+!define gerSellLineStartDate {01.10.2018}
+!define gerSellLineEndDate {31.12.2018}
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'numberOfDays' for reusability
+!|script|DriverClass|
+|$closeDateForEMEAOpp=|getDesiredDateInFormat;|31|/|
+|$closeDateForGerOpp=|getDesiredDateInFormat;|31|.|
+**********!
+
+!***** variable below allows you to store an EMEA user name
+!define SalesForce_EMEA_User_Name {Simon Paradine}
+!define SalesForce_Belgium_User_Email_Message {Simon Paradine (simon.paradine@xaxis.com.glstaging)}
+!define SalesForce_Germany_User_Name {Frank Adams}
+!define SalesForce_Germany_User_Email_Message {Logged in as Frank Adams (frank.adams@groupm.com.glstaging)}
+!define SalesForce_UK_User_Name {Natasa Tintor}
+!define SalesForce_UK_User_Email_Message {Logged in as Natasa Tintor (natasa.tintor@xaxis.com.glstaging)}
+**********!
+
+!***** variable below allows you to store an EMEA Agency Market Value
+!define SalesForce_EMEA_Agency_Market_Value {Netherlands}
+**********!
+
+!***** variable below allows you to store an EMEA Business Unit Value
+!define SalesForce_EMEA_Business_Unit_Value {Xaxis}
+!define SalesForce_EMEA_PL_Business_Unit_Value {plista}
+!define SalesForce_EMEA_PL_NonGroupM_Business_Unit_Value {plista - nonGroupM}
+!define SalesForce_EMEA_LR_Business_Unit_Value {Light Reaction}
+**********!
+
+!***** variable below allows you to store an EMEA Business Unit opp/sell line Record Type Value
+!define SalesForce_EMEA_BU_Record_Type_Plista {PL-EMEA}
+!define SalesForce_EMEA_BU_Record_Type_LR {LR-EMEA}
+!define SalesForce_EMEA_BU_Record_Type_LR_Belgium {LR-EMEA-Belgium}
+!define SalesForce_EMEA_BU_Record_Type_LR_Germany {LR-EMEA-Germany}
+!define SalesForce_EMEA_BU_Record_Type_Plista_NonGM {PL-NonGM-EMEA}
+**********!
+
+!***** variable below allows you to store an EMEA Business Unit Account Record Type Value
+!define SalesForce_EMEA_BU_Acc_Record_Type_Plista {plista Media Buying - EMEA [Change]}
+!define SalesForce_EMEA_BU_Acc_Record_Type_Xaxis {Xaxis Media Buying - EMEA [Change]}
+**********!
+

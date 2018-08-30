@@ -1,0 +1,65 @@
+!*< [configurations]
+#!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B3CappedCost.Test01LogInUserTest
+#!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B3CappedCost.Test02SelectMarketTest
+*!
+
+'''INTENT: ''' Test Miscellaneous Functionality
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Click on Create an opportunity
+   Select an account from dropdown
+   Verify all opportunity stage values
+   Select Opportunity Stage as 'Contacted / Prospecting'
+   Enter Opportunity Name
+   Enter IO Number Enter close Date as today
+   Enabled Closed Date field to enter value
+   Enter value as current day for Close Date field
+   Select Currency as USD
+   Click on Create Opportunity
+   Click on Opportunities tab
+   Verify on All Opportunitiies the Opp appears 
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|SingaporeSuite_Budget_Capped_Cost_${PAGE_NAME}|Test03ASin-Create an Opportunity|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Button}|Create Opportunity Button|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Account_Dropdown_Arrow}|Choose Account Dropdown|
+|type;| ${Manage_Opportunity_Create_Opp_Account_Search_Field}|Automation_Xax_Singapore_Account|Choose Account Search Field|
+|click;|${Manage_Opportunity_Create_Opp_Account_Search_Result_Link}|Account Name Text Link|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Stage_Dropdown_Arrow}|Opportunity Stage Dropdown Arrow|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|1|Contacted / Prospecting|Stage Dropdown for Contacted/Prospecting|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|2|Proposal|Stage Dropdown for Proposal|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|3|Contract Pending|Stage Dropdown for Contract Pending|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|4|Creative Pending|Stage Dropdown for Creative Pending|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|5|Closed Won|Stage Dropdown for Closed Won|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|6|Closed Lost|Stage Dropdown for Closed Lost|
+|objectVerificationByIndex;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|7|Completed|Stage Dropdown for Completed|
+|type;|${Manage_Opportunity_Create_Opp_Stage_Search_Field}|Contacted / Prospecting|Opp Stage Search Field|
+|click;|${Manage_Opportunity_Create_Opp_Stage_Search_Result_Link}|Opp Stage Text Link|
+|type;|${Manage_Opportunity_Create_Opp_Name_Field}|Automation_Singapore_Xax_Opportunity_CappedCost|Opp Stage Search Field|
+|type;|${Manage_Opportunity_Create_Opp_IO_Number_Field}|Automation11|IO Number Search Field|
+|enableTextField;|${Manage_Opportunity_Create_Opp_Close_Date_Field}|$apacCloseDate|Close Date Field|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Currency_Dropdown_Arrow}|Currency Dropdown|
+|type;|${Manage_Opportunity_Create_Opp_Currency_Dropdown_Field}|USD|Currency Search Field|
+|click;|${Manage_Opportunity_Create_Opp_Currency_Search_Result_Link}|Currency Text Link|
+|clickUsingMouseMovement;|${Manage_Opportunity_Create_Opp_Save_Button}|Create Opportunity Save Button|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Opportunities_Tab}|Opportunities Tab|
+|waitForManageUiToLoad;|
+|elementVerification;|//a[text()="Automation_Singapore_Xax_Opportunity_CappedCost"]|Yes|Opp On All Opportunities|
+|oppTableVerification;|Contacted / Prospecting|Automation_Singapore_Xax_Opportunity_CappedCost|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

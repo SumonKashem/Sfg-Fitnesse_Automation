@@ -1,0 +1,37 @@
+'''Scenario Name: ''' Create a New Service Event on Account level
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to service account url
+   Click on 'New Event' button
+   Enter Subject
+   Leave check box as unchecked for all day event
+   Leave check box as unchecked for private
+   Clear Start Date Field
+   Enter Start Date as today
+   Clear End Date Field
+   Enter End date as today
+   Enter Description
+   Click on 'Save' button
+   Verify account record type appears as 'Service' on Account detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test13BC-Create a New Service Event on Account level|
+|open;|$serviceAccountUrl|
+|scrollIntoView;|${SalesForce_Accounts_NewEvent_Button}|
+|click;|${SalesForce_Accounts_NewEvent_Button}|New Event Button|
+|type;|${SalesForce_Accounts_NewEvent_Subject_Field}|Testing Event Creation for Service Account|Subject Field|
+|clear;|${SalesForce_Accounts_NewEvent_Start_Date_Field}|Start Date Field|
+|type;|${SalesForce_Accounts_NewEvent_Start_Date_Field}|$newEventServiceStartDate|Start Field Field|
+|clear;|${SalesForce_Accounts_NewEvent_End_Date_Field}|Start Date Field|
+|type;|${SalesForce_Accounts_NewEvent_End_Date_Field}|$newEventServiceEndDate|End Field Field|
+|type;|${SalesForce_Accounts_NewEvent_Description_Field}|Event Description|Description Field|
+|click;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Accounts_Record_Type_Text}|Service [Change]|Record Type on Detail Page|
+|stopExtentReport;|
+**********!

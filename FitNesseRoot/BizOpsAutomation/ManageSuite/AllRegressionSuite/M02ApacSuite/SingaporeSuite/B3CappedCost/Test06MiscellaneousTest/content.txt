@@ -1,0 +1,99 @@
+!*< [configurations]
+#!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B3CappedCost.Test01LogInUserTest
+#!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B3CappedCost.Test02SelectMarketTest
+#!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M02ApacSuite.SingaporeSuite.B3CappedCost.Test03SelectAccOppTesT
+*!
+
+'''INTENT: ''' Test Miscellaneous Functionality
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Go to actualize mode
+   Unactualize a sell line
+   Sync with SF
+   Wait for Manage UI to load
+   Go to planning mode
+   Change to Rate Type from 'CPM' to 'CPC'
+   Verify the quanity gets updated before sync
+   Verify Total Net Quantity is updated before sync
+   Sync with SF
+   Wait for manage UI to load
+   Verify quantity is updated after sync
+   Verify Total Net Quantity is updated after sync
+   Go to actualize mode
+   Unactualize a buy placement
+   Sync with SF
+   Wait for Manage UI to load
+   Go to planning mode
+   Scroll to Quantity field
+   wait
+   Select Rate Type as CPC
+   Verify BP Rate Quantity
+   Sync with SF
+   Verify BP Rate Quantity
+   Click on View in SF
+   Switch to SF tab
+   Delete the opp
+   Switch back to Manage tab
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|SingaporeSuite_Budget_Capped_Cost_${PAGE_NAME}|Test06Sin-Test Miscellaneous Functionality|
+|clickUsingMouseMovement;|${Manage_Actualize_Button}|Actualize Button|
+|wait;|1800|
+|clickOnMonthlyTabUsingMouseMovement;|Oct|2018|7500|
+|wait;|1300|
+|clickUsingMouseMovement;|${Manage_Actualization_Check_Box}|SL Actualize Check Box|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Planning_Button}|Planning Button|
+|wait;|2200|
+|scroll;|Horizontal|-1000|
+|scroll;|Horizontal|500|
+|wait;|1000|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|CPC|SL Rate Type dropdown Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|2|4|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|4|Total Gross Quantity|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|2|4|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|4|Total Gross Quantity|
+|clickUsingMouseMovement;|${Manage_Actualize_Button}|Actualize Button|
+|wait;|1800|
+|clickOnMonthlyTabUsingMouseMovement;|Oct|2018|7500|
+|wait;|1300|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Placement_Actualization_Check_Box}|3|BP Actualize Check Box|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|clickUsingMouseMovement;|${Manage_Planning_Button}|Planning Button|
+|wait;|2200|
+|scroll;|Horizontal|-1000|
+|scroll;|Horizontal|1000|
+|scroll;|Vertical|1000|
+|wait;|1300|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_RateType_Field}|3|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_RateType_Field}|3|CPC|BP Rate Type dropdown Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|3|0.0105|BP Line Rate Field|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|3|0.0105|BP Line Rate Field|
+|clickUsingMouseMovement;|${Manage_View_In_SF_Button}|View In SF Button|
+|switchToNewWindow;|2|
+|wait;|800|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|acceptAlert;|
+|click;|${SalesForce_Opportunities_Delete_Opp_Button}|Delete Opp Button|
+|switchToNewWindow;|1|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

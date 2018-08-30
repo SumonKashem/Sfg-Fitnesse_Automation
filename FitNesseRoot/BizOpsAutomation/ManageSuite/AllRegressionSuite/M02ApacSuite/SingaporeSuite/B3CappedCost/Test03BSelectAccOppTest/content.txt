@@ -1,0 +1,56 @@
+'''INTENT: ''' Select An account & opportunity for Canada
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Wait for Manage Button to load/appear
+   Click on 'Manage Plan' Button
+   Wait for Opportunity page to load
+   Click on 'Choose Account' dropdown
+   Type Account as 'Automation_Canada_Account'
+   Click on account name link
+   Click on 'Choose Opportunity' dropdown
+   Click on Opportunity name link
+   Verify Opportunity Status appears as 'Information Requested'
+   Verify View In SF button apppears
+   Verify Add Line button appears
+   Verify Clone Line button appears
+   Verify Planning button appears
+   Verify Sync with SF buton appears
+   Verify Actualize button appears
+   Verify Search Field appears
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|SingaporeSuite_Budget_Capped_Cost_${PAGE_NAME}|Test03BSin-Select Account & Opportunity for Canada|
+|waitForElementToLoad;|${Manage_Plan_Button}|Manage Plan Button|
+|click;|${Manage_Plan_Button}|Manage Plan Button|
+|wait;|3400|
+|waitForElementToLoad;|${Manage_PlanView_Account_Dropdown}|Choose Account Dropdown|
+|clickUsingMouseMovement;|${Manage_PlanView_Account_Dropdown}|Choose Account Dropdown|
+|type;| ${Manage_PlanView_Account_Search_Field}|PVT_Automation_Xax_Singapore_Account|Choose Account Search Field|
+|click;|${Manage_PlanView_Account_Name_Link}|Account Name Text Link|
+|clickUsingMouseMovement;|${Manage_PlanView_Opp_Dropdown}|Choose Opportunity Dropdown|
+|click;|${Manage_PlanView_Opp_Name_Second_Link}|Opportunity Name Text Link|
+|waitForManageUiToLoad;|
+|objectVerification;|${Manage_Opp_Details_OppStatus_Text}| - Contacted / Prospecting|Opportunity Status Text|
+|elementVerification;|${Manage_View_In_SF_Button}|Yes|View Sf Button|
+|elementVerification;|${Manage_Add_Line_Button}|Yes|Add Line Button|
+|elementVerification;|${Manage_Delete_Line_Button}|Yes|Delete Line Button|
+|elementVerification;|${Manage_Clone_Line_Button}|Yes|Clone Line Button|
+|elementVerification;|${Manage_Planning_Button}|Yes|Planning Button|
+|elementVerification;|${Manage_Sync_Line_Button}|Yes|Sync Line Button|
+|elementVerification;|${Manage_Actualize_Button}|Yes|Actualize Button|
+|elementVerification;|${Manage_Search_Field}|Yes|Search Field|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

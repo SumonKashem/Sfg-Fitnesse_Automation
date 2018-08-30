@@ -1,0 +1,8 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite
+*!
+
+!***** MARKETS
+[[Italy][M04EmeaSuite.ItalySuite]]
+[[Germany][M04EmeaSuite.GermanySuite]]
+**********!

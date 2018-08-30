@@ -1,0 +1,44 @@
+'''Scenario Name: ''' Create an APAC Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on 'Accounts' tab
+   Click on 'New' Button
+   Select Record Type as 'Xaxis Media Buying - APAC'
+   Click on 'Continue' button
+   Enter Agency Name
+   Enter Advertiser Name
+   Select Business Unit as ${SalesForce_APAC_Business_Unit_Value}
+   Click on 'Create Account' button
+   Clear predefined Account name
+   Enter new Account name
+   Select Account Opt In Progress as 'Work In Progress
+   Click on Save Button
+   Verify Account name appears on account detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test04Aus-Create an APAC Account|
+|click;|${SalesForce_Accounts_Tab}|Accounts Tab|
+|click;|${SalesForce_Accounts_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Accounts_Record_Type_DropDown}|Xaxis Media Buying - APAC|Record Type Dropdown|
+|click;|${SalesForce_Accounts_Continue_Button}|Continue Button|
+|wait;|1900|
+|type;|${SalesForce_Accounts_Agency_Field}|$ausAgencyName|Agency Field|
+|wait;|1000|
+|type;|${SalesForce_Accounts_Advertiser_Field}|$ausAdvertiserName|Advertiser Field|
+|wait;|800|
+|selectDropDownByText;|${SalesForce_Accounts_Business_Unit_DropDown}|${SalesForce_APAC_Business_Unit_Value}|Business Unit Dropdown|
+|click;|${SalesForce_Accounts_Creat_Account_Button}|Create Account Button|
+|clear;|${SalesForce_Accounts_Name_Field}|Account Name Field|
+|type;|${SalesForce_Accounts_Name_Field}|$ausAccountName|Account Name Field|
+|selectDropDownByText;|${SalesForce_Account_Opt_In_Status_DropDown}|Work In Progress|Opt In Status Dropdown|
+|click;|${SalesForce_Account_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Account_Name_Description}|$ausAccountName|Account Detail Page|
+|$ausAccountPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

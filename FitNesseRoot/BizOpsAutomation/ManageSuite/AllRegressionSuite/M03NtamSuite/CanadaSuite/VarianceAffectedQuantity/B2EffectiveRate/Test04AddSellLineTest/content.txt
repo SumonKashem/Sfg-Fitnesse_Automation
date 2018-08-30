@@ -1,0 +1,138 @@
+'''INTENT: ''' Add a Sell Line
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Delete an Existing Sell Line if exist then 'Sync'
+   Wait for a new Sell Line to load and the flag icon indicates it needs to be sync
+   Verify error message appears for all required field on the new sell line
+   Wait for Sell Line field to load/appear by row
+   Click on Placement Name Field
+   Enter New Sell Line Name on Placement Name Field
+   Click on Billing Platform dropdown
+   Select first value from the dropdown
+   Click on Device dropdown
+   Select first value from the dropdown
+   Click on Channel dropdown
+   Select first value from the dropdown
+   Click on Media Type dropdown
+   Select first value from the dropdown
+   Click on Product dropdown
+   Select first value from the dropdown
+   Click on Start Date dropdown
+   Enter Start Date as current day
+   Click on End Date dropdown
+   Enter End Date as current day + 60
+   Click on Rate Type dropdown
+   Enter value as CPM
+   Click on Budget Field
+   Enter Budget as $200 
+   Click on Rate Field
+   Enter Rate as $50
+   Click on Net Cost
+   Enter Net Cost as 50
+   Verify Planned Total Gross Budget is 200 in opp detail section
+   Verify Opportunity Net Cost is 50 in opp detail section
+   Click on Sync With SF button
+   Click on View In SF button
+   Switch to second window tab
+   Verify Total Planned Gross Budget as USD 200.00
+   Verify Total Planned Net Cost as USD 50.00
+   Verify Margin Percentage as 75.0000%
+   Verify Margin Value as USD 150.00
+   Switch back to previou window tab
+   Verify Planned Total Gross Budget is 200 in opp detail section
+   Verify Opportunity Net Cost is 50 in opp detail section
+   Verify Line Budget displays 200.00
+   Verify Line Net Cost displays 50.00
+   Verify Line Budget is editable
+   Verify Line Rate is editable
+   Verify Line Quantity is locked
+   Scroll into Placement Id
+   Verify Sell Line Placement Id is not empty
+   Reload Page
+   Wait For Placement Name to load and indicate it is synced
+   scroll to monthly schedule
+   verify all monthly schedules plan budget
+   scroll to Placement Name field
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_Quantity_Effectie_Rate_${PAGE_NAME}|Test04Can-Add a Sell Line for Canada and Sync|
+|clickUsingMouseMovement;|${Manage_View_In_SF_Button}|View In SF Button|
+|switchToNewWindow;|1|
+|deleteLineByRow;|${Manage_Sell_Line_PlacementName_Field_2}|2|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|elementVerificationByRow;|2|${Manage_Sell_Line_Default_PlacementName_Field}|Yes|Sell Line Flag Sync Icon|
+|objectVerification;|${Manage_Required_Fields_Error_Message}|There are validation errors for the following field: BILLING PLATFORM, DEVICE, CHANNEL, MEDIA TYPE, PRODUCT, START DATE, END DATE.|Required Fields Error Message|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_PlacementName_Field_2}|2|Sell Line Placement Name Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field}|2|SL1|Sell Line Placement Name field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Billing_Platform_Dropdown}|2|Billing Platform dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Billing Platform dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Device_Dropdown}|2|Device dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Device dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Channel_Dropdown}|2|Channel dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}[text()="Display"]|0|Channel dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Media_Type_Dropdown}|2|Media Type dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}[text()="Standard"]|0|Media dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Product_Dropdown}|2|Product dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}[text()="Partner"]|0|Product dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_StartDate_Dropdown}|2|Start Date dropdown|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_StartDate_Dropdown}|2|01/10/2018|Start Date Input field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_EndDate_Dropdown}|2|End Date dropdown|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_EndDate_Dropdown}|2|31/12/2018|End Date Input field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|Rate Type dropdown value|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Type_Dropdown}|2|CPM|Rate Type dropdown Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Budget_Field}|2|Budget Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Budget_Field}|2|200|Budget Input Field|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Field}|2|Rate Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_Rate_Field}|2|50|Rate Input Field|
+|scrollIntoViewByRow;|2|${Manage_Sell_Line_NetCost_Field}|
+|clickByRowUsingMouseMovement;|${Manage_Sell_Line_NetCost_Field}|2|Net Cost Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Sell_Line_NetCost_Field}|2|50|Net Cost Input Field|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|200|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|50|Opportunity Net Cost|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|wait;|1000|
+|switchToNewWindow;|2|
+|$SfPageUrl=|getCurrentUrl;|
+|reloadPage;|$SfPageUrl|
+|wait;|2200|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|USD 200.00|SF Total Planned Gross Budget Field|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|USD 50.00|SF Total Net Cost Field|
+|objectVerification;|${SalesForce_Planned_Margin_Percentage_Field}|75.0000%|SF Margin Percentage Field|
+|objectVerification;|${SalesForce_Planned_Margin_Value_Field}|USD 150.00|SF Margin Value Field|
+|switchToNewWindow;|1|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|200|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|50|Opportunity Net Cost|
+|objectVerificationByRow;|${Manage_Sell_Line_Budget_Field}|2|200.00|Line Budget Field|
+|scrollIntoViewByRow;|2|${Manage_Sell_Line_NetCost_Field}|
+|objectVerificationByRow;|${Manage_Sell_Line_NetCost_Field}|2|50.00|Line Net Cost Field|
+|elementVerificationByRow;|2|${Manage_Line_Budget_Field_Editable}|Yes|Line Budget Editable|
+|elementVerificationByRow;|2|${Manage_Line_Rate_Field_Editable}|Yes|Line Rate Editable|
+|elementVerificationByRow;|2|${Manage_Line_Quantity_Field_locked}|Yes|Line Quantity Locked|
+|scroll;|Horizontal|1200|
+|elementVerificationByRow;|2|${Manage_Sell_Line_PlacementId_Field}|Yes|Placement Id Field|
+|scroll;|Horizontal|-10000|
+|$planningPageUrl =|getCurrentUrl;|
+|reloadPage;|$planningPageUrl|
+|wait;|2000|
+|elementVerificationByRow;|2|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|Yes|Sell Line Placement Indicating it is 'Synced'|
+|scroll;|Horizontal|10000|
+|elementVerificationByRow;|2|${Manage_Sell_Line_October_Schedule_Budget_Field}|Yes|October Schedule Net Cost Field|
+|elementVerificationByRow;|2|${Manage_Sell_Line_November_Schedule_Budget_Field}|Yes|November Schedule Net Cost Field|
+|elementVerificationByRow;|2|${Manage_Sell_Line_December_Schedule_Budget_Field}|Yes|December Schedule Net Cost Field|
+|scroll;|Horizontal|-10000|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

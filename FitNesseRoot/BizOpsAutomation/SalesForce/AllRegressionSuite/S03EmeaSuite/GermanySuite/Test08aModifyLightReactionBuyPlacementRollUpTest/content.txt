@@ -1,0 +1,37 @@
+'''Scenario Name: ''' Modify Buy Placement for roll up
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Buy placement URL
+   Click on 'Edit' button
+   Clear Planned Payable Cost Field
+   Enter 30 for Planned Payable Cost 
+   Click on 'Save' button
+   Wait several Seconds
+   Navigate to Sell Line URL
+   Verify Planned Net Cost as 'EUR 30,00'
+   Verify Planned Media Net Cost as '30,00'
+   Navigate to Opportunity URL
+   Verify Total Planned Net Cost as '30,00'
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test08AGer-Modify Existing Buy Placement Monthly Schedule for roll up|
+|open;|$gerLRBuyPlacementPageUrl|
+|click;|${SalesForce_BuyPlacment_Edit_Button}|Edit Button|
+|clear;|${SalesForce_BuyPlacement_Planned_Payable_Cost_Field}|Planned Payable Cost Field|
+|type;|${SalesForce_BuyPlacement_Planned_Payable_Cost_Field}|30|Planned Payable Cost Field|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|wait;|180000|
+|open;|$emeaGerLRSellLineUrl|
+|objectVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost}|EUR 30,00|Planned Media Net Cost Field|
+|objectVerification;|${SalesForce_SellLine_Planned_Net_Cost}|EUR 30,00|Planned Net Cost Field|
+|wait;|3000|
+|open;|$gerEmeaOpportunityPageUrl|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|EUR 30,00|Planned Total Net Cost Field|
+|stopExtentReport;|
+**********!

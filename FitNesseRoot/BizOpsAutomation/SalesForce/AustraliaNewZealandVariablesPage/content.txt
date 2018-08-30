@@ -1,0 +1,69 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** variable below allows you to store an APAC Australia user name
+!define SalesForce_APAC_Aus_User_Name {Anushka Aghaian}
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' for Australia into a variable 'accountName' for reusability
+!|script|DriverClass|
+|$ausAccountName=|getUniqueName;|APAC Aus Account|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' for Newzeland into a variable 'accountName' for reusability
+!|script|DriverClass|
+|$newZeaAccountName=|getUniqueName;|APAC NZ Account|
+**********!
+
+!***** variable below allows you to store a business unit(Xaxis,Light Reaction & Plista)
+!define SalesForce_APAC_Business_Unit_Value {Xaxis}
+**********!
+
+!***** variable below allows you to store Australia Market for APAC agency
+!define SalesForce_APAC_Aus_Agency_Market_Value {Australia}
+**********!
+
+!***** variable below allows you to store Newzeland Market for APAC agency
+!define SalesForce_APAC_NZ_Agency_Market_Value {New Zealand}
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable Australia 'agencyName' for reusability
+!|script|DriverClass|
+|$ausAgencyName=|getUniqueName;|APAC Aus Agency|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable New Zealand 'agencyName' for reusability
+!|script|DriverClass|
+|$newZeaAgencyName=|getUniqueName;|APAC NZ Agency|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable Australia 'advertiserName' for reusability
+!|script|DriverClass|
+|$ausAdvertiserName=|getUniqueName;|APAC Aus Advertiser|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable New Zealand 'advertiserName' for reusability
+!|script|DriverClass|
+|$newZeaAdvertiserName=|getUniqueName;|APAC NZ Advertiser|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable Australia 'oppName' for reusability
+!|script|DriverClass|
+|$ausOppName=|getUniqueName;|APAC Aus Opportunity|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable New Zealand 'oppName' for reusability
+!|script|DriverClass|
+|$newZeaOppName=|getUniqueName;|APAC NZ Opportunity|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' for Australia into a variable 'slName' for reusability
+!|script|DriverClass|
+|$ausSLName=|getUniqueName;|APAC Aus Sell Line|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' for New Zealand into a variable 'slName' for reusability
+!|script|DriverClass|
+|$newZeaSLName=|getUniqueName;|APAC NZ Sell Line|
+**********!

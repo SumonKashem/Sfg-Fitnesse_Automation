@@ -1,0 +1,22 @@
+'''Scenario Name: ''' Clone an existing UK Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   navitage to Opp URL
+   Click on 'Clone' opportunity button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+**********!
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_UK_Suite_${PAGE_NAME}|Test11UK-Clone an existing 'UK' Opportunity|
+|open;|$ukXaxOpportunityPageUrl|
+|clickByJavaScript;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Uk_Opp_Name}|XAX $ukOppName - Clone $emeaOppCloneDate|Opportunity Detail Page|
+|stopExtentReport;|
+**********!

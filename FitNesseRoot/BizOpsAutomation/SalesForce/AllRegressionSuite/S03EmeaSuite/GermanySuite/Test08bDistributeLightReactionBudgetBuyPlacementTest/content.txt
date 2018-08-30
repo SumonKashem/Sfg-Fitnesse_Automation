@@ -1,0 +1,46 @@
+'''Scenario Name: ''' Modify Buy Placement for roll up
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Emergent Buy placement URL
+   Scroll Into Placement Monthly Schedule label section
+   Click on First Monthly Schedule link
+   Click on 'Edit' button
+   Clear Planned Payable Cost Field
+   Enter 15 for Planned Payable Cost 
+   Clear Planned Payable Units Field
+   Enter 2700 for Planned Payable Cost
+   Click on Reconciled checkbox
+   Click on 'Save' button
+   Wait several Seconds
+   Navigate to Sell Line URL
+   Verify Planned Net Cost as 'EUR 34,89'
+   Verify Planned Media Net Cost as 'EUR 34,89'
+   Navigate to Opportunity URL
+   Verify Total Planned Net Cost as 'EUR 34,89'
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test08bGer-Distribute Budget For Buy Placement Monthly Schedule|
+|open;|$gerLRBuyPlacementPageUrl |
+|scrollIntoView;|${SalesForce_BuyPlacment_Monthly_Schedule_Label}|
+|click;|${SalesForce_BuyPlacment_Monthly_Schedule_First_Edit_Link}|First Monthly BP Schedule Edit Link|
+|clear;|${SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Cost_Field}|Planned Payable Cost Field|
+|type;|${SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Cost_Field}|15|Planned Payable Cost Field|
+|clear;|${SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Units_Field}|Planned Payable Units Field|
+|type;|${SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Units_Field}|2700|Planned Payable Units Field|
+|click;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox}|Monthly Schedule Reconciled Checkbox|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|wait;|60000|
+|open;|$emeaGerLRSellLineUrl|
+|objectVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost}|EUR 34,89|Planned Media Net Cost Field|
+|objectVerification;|${SalesForce_SellLine_Planned_Net_Cost}|EUR 34,89|Planned Net Cost Field|
+|wait;|3000|
+|open;|$gerEmeaOpportunityPageUrl|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|EUR 34,89|Planned Total Net Cost Field|
+|stopExtentReport;|
+**********!

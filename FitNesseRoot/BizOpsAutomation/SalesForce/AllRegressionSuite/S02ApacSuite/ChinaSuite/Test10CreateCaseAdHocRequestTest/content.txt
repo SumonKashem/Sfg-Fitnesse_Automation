@@ -1,0 +1,43 @@
+'''Scenario Name: ''' Create an 'Ad Hoc Request' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp Url
+   Scroll Into 'Ad Hoc Request' Button
+   Click on 'Ad Hoc Request' Button
+   Enter Opportunity Name $apacOpportunityName
+   Select Status as 'New'
+   Select Market as China
+   Enter Text on Request Details Field
+   Enter Due Date on Due Date Field
+   Enter Text on KPIs Field
+   Enter Text on Client Overall Goals Field
+   Enter Text on Report Goals Field
+   Click on 'Save' button
+   Verify Case Owner as 'APAC Insights & Analytics' on Case Detail page
+   Verify Case Record Type as 'APAC Analytics - Ad Hoc Request' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_China_Suite_${PAGE_NAME}|Test10APAC-Create an Ad Hoc Request Case|
+|open;|$chinaOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_Ad_Hoc_Request_Button}|
+|click;|${SalesForce_Cases_Ad_Hoc_Request_Button}|Ad Hoc Request Button|
+|type;|${SalesForce_Cases_Opp_Name_Field}|$chinaOpportunityName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|China|Market Dropdown|
+|type;|${SalesForce_Cases_Request_Details_Field}|Test|Request Details Field|
+|type;|${SalesForce_Cases_Due_Date_Field}|${apacSellLineStartDate} 00:00|Due Date Field|
+|type;|${SalesForce_Cases_KPI_Field}|Test|KPIs Field|
+|type;|${SalesForce_Cases_Client_Overall_Goals_Field}|Test|Client OVerall Goals Field|
+|type;|${SalesForce_Cases_Report_Goals_Field}|Test|Report Goals Field|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field}|APAC Insights & Analytics|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|APAC Analytics - Ad Hoc Request [Change]|Record Type on Case Detail Page|
+|$adHocRequestPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

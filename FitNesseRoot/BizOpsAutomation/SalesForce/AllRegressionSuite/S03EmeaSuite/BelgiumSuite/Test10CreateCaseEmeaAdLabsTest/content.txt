@@ -1,0 +1,37 @@
+'''Scenario Name: ''' Create an 'EMEA Ad Labs' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on '+' Icon tab
+   Click on Cases Link
+   Click on 'New' button
+   Select Record Type as 'EMEA Ad Labs'
+   Click on 'Continue' button
+   Enter Account Name
+   Select Status as 'New'
+   Select Market as EMEA ECU
+   Click on 'Save' button
+   Verify Case Record Type as 'EMEA Ad Labs' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Belgium_Suite_${PAGE_NAME}|Test10Bel-Create an EMEA Ad Ops Case|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Cases_Link}|Cases Link|
+|click;|${SalesForce_Cases_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Cases_Record_Type_Dropdown}|EMEA Ad Labs|Record Type Dropdown|
+|click;|${SalesForce_Cases_Continue_Button}|Continue Button|
+|wait;|1000|
+|type;|${SalesForce_Cases_Account_Name_Field}|$belgiumEmeaAccountName|Account Name Field|
+|type;|${SalesForce_Cases_Opp_Name_Field}|$belgiumEmeaOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|EMEA ECU|Market Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Record_Type_Text}|EMEA Ad Labs [Change]|Record Type on Case page|
+|$emeaAdLabsPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

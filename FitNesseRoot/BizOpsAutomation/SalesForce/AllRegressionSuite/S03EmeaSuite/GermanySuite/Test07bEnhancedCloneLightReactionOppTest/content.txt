@@ -1,0 +1,44 @@
+'''Scenario Name: ''' Enhance Clone an Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to LR Opportunity page
+   Click on 'Enhanced Clone' Button
+   Wait several seconds
+   Verify Stage value appears as Closed Won on Opportunity Detail Page
+   Verify New Opp name has Clone on it
+   Verify Number of SL
+   Verify Planned Gross Budget
+   Verify Planned Net Cost
+   Scroll to sell line
+   verify Sell line name has clone on it
+   Click on SL link
+   Verify Planned Gross Budget
+   Verify Planned Media Net Cost
+   Scroll to BP
+   Verify BP Name
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test07bGer-Enhance Clone a Germany LR Opportunity|
+|open;|$gerEmeaOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Enhanced_Clone_Button}|Enhanced Clone Button|
+|wait;|5000|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Contacted / Prospecting|Stage Label Content on Opp Detail Page|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|LR $germanyEmeaOppName - Clone $emeaOppCloneDate|Cloned Opp Name|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|EUR 200,00|Cloned Opp Planned Gross Budget|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|EUR 180,00|Cloned Opp Planned Net Cost|
+|objectVerification;|${SalesForce_Opportunities_Total_Number_Of_Sell_Lines_Text_Field}|1|# Of Sell Lines Text Field|
+|scroll;|vertical|750|
+|objectVerification;|${SalesForce_Opportunities_SL_Name}|clone $emeaSLName_LR|Cloned Sell Line Name|
+|click;|${SalesForce_Opportunities_SL_Link}|SL Link|
+|objectVerification;|${SalesForce_SellLine_Details_Planned_Gross_Budget_Content}|EUR 200,00|Cloned SL Planned Gross Budget|
+|objectVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost}|EUR 180,00|Cloned SL Planned Media Net Cost|
+|scroll;|vertical|750|
+|objectVerification;|${SalesForce_Opportunities_SL_Name}|clone TBD|Cloned BP Name|
+|stopExtentReport;|
+**********!

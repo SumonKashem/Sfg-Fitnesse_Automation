@@ -1,0 +1,42 @@
+'''Scenario Name: ''' Create a UK Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Account page
+   Switch to IFrame for Opportunity
+   Click on 'New Opportunity' button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select stage as 'Contacted / Prospecting'
+   Clear Close Date field
+   Enter Close Date
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Switch to SL I-Frame
+   Verify alert messaging appears for no sell line
+   Capture opportunity page url for resuable purpose
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_UK_Suite_${PAGE_NAME}|Test08UK-Create a UK Xax Opportunity|
+|open;|$ukXaxAccountPageUrl|
+|switchToFrame;|${SalesForce_Opportunities_IFrame_Id}|Opportunity Frame|
+|clickByJavaScript;|${SalesForce_Opportunities_New_Opp_Button}|New Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|wait;|1800|
+|type;|${SalesForce_Opportunities_Name_Field}|XAX $ukOppName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Contacted / Prospecting|Stage Dropdown|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$closeDateForEMEAOpp|Close Date Field|
+|clickByJavaScript;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Detail_Page}|XAX $ukOppName|Opportunity Detail Page|
+|switchToFrame;|${SalesForce_Opportunities_SL_IFrame_Window}|SL Frame|
+|scroll;|Vertical|800|
+|objectVerification;|${SalesForce_Opportunities_SL_Alert_Message}|This Opportunity has no Sell Lines.|No SL alert message|
+|$ukXaxOpportunityPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

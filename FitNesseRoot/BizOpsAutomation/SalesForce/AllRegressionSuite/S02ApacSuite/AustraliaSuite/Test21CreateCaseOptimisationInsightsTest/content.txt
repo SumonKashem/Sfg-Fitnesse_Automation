@@ -1,0 +1,57 @@
+'''Scenario Name: ''' Create an 'Optimisation Insights' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp Url
+   Scroll Into 'Optimisation Insights' Button
+   Click on 'Optimisation Insights' Button
+   Enter Opportunity Name $chinaOpportunityName
+   Select Status as 'New'
+   Select Market as Australia
+   Select Analysis Type as 'A/B Testing'
+   Select Analysis Checklist as 'Multiple creatives provided for A/B test'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Select Analysis Checklist as 'Clear Campaign KPI'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Select Analysis Checklist as 'Custom campaign setup agreed before launch'
+   Click on Right Arrow for Analysis Checklist value to be selected
+   Enter Text on Additional Notes Field
+   Enter Due Date on Due Date Field
+   Enter Text on KPIs Field
+   Enter Text on Client Overall Goals Field
+   Enter Text on Report Goals Field
+   Click on 'Save' button
+   Verify Case Owner as 'APAC Insights & Analytics' on Case Detail page
+   Verify Case Record Type as 'APAC Analytics - Ad Hoc Request' on Case Detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test21Aus-Create a Optimisation Insights Case|
+|open;|$ausOpportunityPageUrl|
+|scrollIntoView;|${SalesForce_Cases_Optimisation_insights_Button}|
+|click;|${SalesForce_Cases_Optimisation_insights_Button}|Optimisation Insights Button|
+|type;|${SalesForce_Cases_Opp_Name_Field}|$ausOpportunityName|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Australia|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Type_Dropdown}|A/B Testing|Analysis Type Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Checklist_Picklist}|Multiple creatives provided for A/B test|Analysis Checklist Picklist|
+|click;|${SalesForce_Cases_Analysis_Checklist_Right_Arrow}|Analysis Checklist Right Arrow|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Checklist_Picklist}|Clear Campaign KPI|Analysis Checklist Picklist|
+|click;|${SalesForce_Cases_Analysis_Checklist_Right_Arrow}|Analysis Checklist Right Arrow|
+|selectDropDownByText;|${SalesForce_Cases_Analysis_Checklist_Picklist}|Custom campaign setup agreed before launch|Analysis Checklist Picklist|
+|click;|${SalesForce_Cases_Analysis_Checklist_Right_Arrow}|Analysis Checklist Right Arrow|
+|type;|${SalesForce_Cases_Additional_Notes_Field}|Test|Additional Notes Field|
+|type;|${SalesForce_Cases_Due_Date_Field}|$audInsightsDueDate 00:00|Due Date Field|
+|type;|${SalesForce_Cases_KPI_Field}|Test|KPIs Field|
+|type;|${SalesForce_Cases_Client_Overall_Goals_Field}|Test|Client OVerall Goals Field|
+|type;|${SalesForce_Cases_Report_Goals_Field}|Test|Report Goals Field|
+|clickByJavaScript;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field}|APAC Insights & Analytics|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|APAC Analytics - Optimisation Insights [Change]|Record Type on Case Detail Page|
+|$optimiseInsightsPageUrl =|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,36 @@
+'''Scenario Name: ''' Create a Germany agency
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + icon tab
+   Click on 'Companies' tab
+   Click on 'New' Button
+   Select Record Type as 'Agency Company'
+   Click on 'Continue' button
+   Enter Agency Name
+   Verify Agency is selected on drop down
+   Select Market as 'Germany'
+   Select Assigned to team as 'Xaxis'
+   Click on 'Save' button
+   Verify company name appears on company detail page
+**********!
+
+!***** Automated Test Steps
+!|script              |DriverClass                                                                           |
+|startExtentReport;   |EMEA_Germany_Suite_${PAGE_NAME}      |Test02Ger-Create a Germany agency               |
+|click;               |${SalesForce_Plus_Icon_Tab}          |+ icon Tab                                      |
+|click;               |${SalesForce_Companies_Tab}          |Companies Tab                                   |
+|click;               |${SalesForce_New_Button}             |New Button                                      |
+|selectDropDownByText;|${SalesForce_Select_Company_DropDown}|Agency Company        |Company Dropdown         |
+|click;               |${SalesForce_Continue_Button}        |Continue Button                                 |
+|wait;                |1300                                                                                  |
+|type;                |${SalesForce_Company_Name_Field}     |$germanyEmeaAgencyName|Company Name Field       |
+|selectDropDownByText;|${SalesForce_Market_DropDown}        |Germany               |Market Dropdown          |
+|selectDropDownByText;|${SalesForce_AssignedToTeam_DropDown}|Xaxis                 |Assigned To Team Dropdown|
+|click;               |${SalesForce_Save_Button}            |Save Button                                     |
+|objectVerification;  |${SalesForce_Company_Name}           |$germanyEmeaAgencyName|Company Detail page      |
+|stopExtentReport;                                                                                           |
+**********!

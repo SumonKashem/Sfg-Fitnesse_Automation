@@ -1,0 +1,33 @@
+'''Scenario Name: ''' Create a LATAM Advertiser
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on 'Companies' tab
+   Click on 'New' Button
+   Select Record Type as 'Advertiser Company'
+   Click on 'Continue' button
+   Enter Advertiser Name
+   Verify Advertiser is selected on drop down
+   Click on 'Save' button
+   Verify Advertiser name appears on company detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test03Mia-Create a LATAM Advertiser|
+|click;|${SalesForce_Plus_Icon_Tab}|+ icon Tab|
+|click;|${SalesForce_Companies_Tab}|Companies Tab|
+|click;|${SalesForce_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Select_Company_DropDown}|Advertiser Company|Company Dropdown|
+|click;|${SalesForce_Continue_Button}|Continue Button|
+|wait;|1300|
+|clear;|${SalesForce_Company_Name_Field}|Company Name Field|
+|type;|${SalesForce_Company_Name_Field}|$miamiLatamAdvertiserName|Company Name Field|
+|selectDropDownByText;|${SalesForce_Company_Type_DropDown}|Advertiser|Company Type Dropdown|
+|click;|${SalesForce_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Company_Name}|$miamiLatamAdvertiserName|Company Detail Page|
+|stopExtentReport;|
+**********!

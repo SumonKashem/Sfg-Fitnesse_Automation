@@ -1,0 +1,45 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable 'accountName' for reusability
+!|script|DriverClass|
+|$serviceAccountName=|getUniqueName;|Test_BC_Service|
+|$techAccountName=|getUniqueName;|Test_BC_Tech|
+|$mediaAccountName=|getUniqueName;|Test_BC_Media|
+|$serviceOppName=|getUniqueName;|Test_BC_Service_Opp|
+|$techOppName=|getUniqueName;|Test_BC_Tech_Opp|
+|$mediaOppName=|getUniqueName;|Test_BC_Media_Opp|
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' into a variable 'numberOfDays' for reusability
+!|script|DriverClass|
+|$closeDateForBCOpp=|getDesiredDateInFormat;|0|/|
+**********!
+
+!***** variable below allows you to store a business unit(Xaxis,Light Reaction & Plista)
+!define SalesForce_BC_Business_Unit_Value {Xaxis}
+**********!
+
+!***** variable below allows you to store an APAC Market for APAC agency
+!define BC_Agency_Market_Value {APAC_MARKET}
+**********!
+
+!***** variable below allows you to store an APAC user name
+!define BC_User_Name {Ramon Hansen}
+#!define BC_User_Name {Gergana Kirovska}
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable 'agencyName' for reusability
+!|script|DriverClass|
+|$bcAgencyName=|getUniqueName;|BC Agency|
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable 'advertiserName' for reusability
+!|script|DriverClass|
+|$bcAdvertiserName=|getUniqueName;|BC Advertiser|
+**********!
+
+!define SalesForce_BC_Accounts_Tab {//*[contains(@title,"Accounts Tab")]}
+!define SalesForce_BC_Opportunities_Tab {//*[contains(@title,"Opportunities Tab")]}
+!define SalesForce_BC_Companies_Tab {//*[@title="Companies Tab"]}

@@ -1,0 +1,34 @@
+'''Scenario Name: ''' Create an APAC agency
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on 'Companies' tab
+   Click on 'New' Button
+   Select Record Type as 'Agency Company'
+   Click on 'Continue' button
+   Enter Agency Name
+   Verify Agency is selected on drop down
+   Select Market as '${BC_Agency_Market_Value}'
+   Enter VAT number
+   Click on 'Save' button
+   Verify company name appears on company detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|BCSuite_${PAGE_NAME}|Test02BC-Create a BC agency|
+|click;|${SalesForce_Companies_Tab}|Companies Tab|
+|click;|${SalesForce_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Select_Company_DropDown}|Agency Company|Company Dropdown|
+|click;|${SalesForce_Continue_Button}|Continue Button|
+|wait;|1800|
+|type;|${SalesForce_Company_Name_Field}|$bcAgencyName|Company Name Field|
+|selectDropDownByText;|${SalesForce_Market_DropDown}|${BC_Agency_Market_Value}|Market Dropdown|
+|type;|${SalesForce_Company_VAT_Number_Field}|ABC123|VAT Number Field|
+|click;|${SalesForce_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Company_Name}|$bcAgencyName|Company Detail page|
+|stopExtentReport;|
+**********!

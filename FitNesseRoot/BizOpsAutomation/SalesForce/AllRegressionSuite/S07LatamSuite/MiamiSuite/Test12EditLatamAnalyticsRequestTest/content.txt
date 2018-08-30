@@ -1,0 +1,24 @@
+'''Scenario Name: ''' Edit an 'LATAM Analytics Request' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to LATAM Account url
+   Click on 'Edit' Button
+   Select Status as 'Open'
+   Click on 'Save' button
+   Verify Error Message Appears
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|LATAM_Miami_Suite_${PAGE_NAME}|Test12Mia-Edit a 'LATAM Analytics Request' Case|
+|open;|$miaAnalyticsPageUrl|
+|click;|${SalesForce_Cases_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|Open|Status Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Status_Error_Message}|Error: Please assign the case to a LATAM Analytics team member before changing the case status|Error Message|
+|stopExtentReport;|
+**********!

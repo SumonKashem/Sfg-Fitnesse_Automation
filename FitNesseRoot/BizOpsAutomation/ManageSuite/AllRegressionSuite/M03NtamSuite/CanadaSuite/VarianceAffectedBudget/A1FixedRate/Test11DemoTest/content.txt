@@ -1,0 +1,20 @@
+!*< [configurations]
+!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M03NtamSuite.CanadaSuite.VarianceAffectedBudget.A1FixedRate.Test01LogInUserTest
+!include .BizOpsAutomation.ManageSuite.AllRegressionSuite.M03NtamSuite.CanadaSuite.VarianceAffectedBudget.A1FixedRate.Test02SelectMarketTest
+*!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|Manage_Automation_Report|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_Budget_Fixed_Rate_${PAGE_NAME}|Test11Can-Demo Practice Test|
+|open;|https://10.90.100.118:8443/#plan/0060t0000096FlUAAU|
+|waitForManageUiToLoad;|
+|scroll;|Horizontal|7800|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Net_Cost_Monthly_Schedule_Field}|2|31.058446000000004|SLMS November Net Cost Field|
+|stopExtentReport;|
+**********!

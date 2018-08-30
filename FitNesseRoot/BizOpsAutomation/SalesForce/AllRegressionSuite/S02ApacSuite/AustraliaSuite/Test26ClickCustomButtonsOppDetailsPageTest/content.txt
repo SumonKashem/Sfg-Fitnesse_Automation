@@ -1,0 +1,50 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Verify by clicking on all custom buttons in Opp detail page
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navitage to Opp URL
+   Click on 'Edit' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'Delete' button
+   Dismiss Pop up Alert
+   Click on 'Clone' button
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on 'Sharing' button
+   Click on Opp Link to go back to Opp detail page
+   Click on 'APAC Ad Ops' button
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on 'Australia Reporting' button
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on 'Change Currency Code' button
+   Click on 'Back to Opportunity' button to go back to opp detail page
+**********!
+#$ausOpportunityPageUrl
+#https://cs77.salesforce.com/0060t000009MX7dAAG?nooverride=1
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test26Aus-Verify by clicking on all custom buttons in Opp detail page|
+|open;|$ausOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|wait;|2500|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|cancelAlert;|
+|click;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Sharing_Button}|Sharing Button|
+|click;|${SalesForce_Opportunities_Sharing_Opp_Link}|Opp Link|
+|click;|${SalesForce_Cases_APac_Ad_Ops_Button}|APAC Ad Ops Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_Australia_Reporting_Button}|Australia Reporting Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Change_Currency_Code_Button}|Change Currency Code Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opportunity Button|
+|stopExtentReport;|
+**********!

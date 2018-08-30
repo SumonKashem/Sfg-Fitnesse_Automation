@@ -1,0 +1,33 @@
+'''Scenario Name: ''' Create an APAC Advertiser
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + icon tab
+   Click on 'Companies' tab
+   Click on 'New' Button
+   Select Record Type as 'Advertiser Company'
+   Click on 'Continue' button
+   Enter Advertiser Name
+   Verify Advertiser is selected on drop down
+   Click on 'Save' button
+   Verify Advertiser name appears on company detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_China_Suite_${PAGE_NAME}|Test03APAC-Create an APAC Advertiser|
+|click;|${SalesForce_Plus_Icon_Tab}|+ icon Tab|
+|click;|${SalesForce_Companies_Tab}|Companies Tab|
+|click;|${SalesForce_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Select_Company_DropDown}|Advertiser Company|Company Dropdown|
+|click;|${SalesForce_Continue_Button}|Continue Button|
+|wait;|2000|
+|type;|${SalesForce_Company_Name_Field}|$chinaAdvertiserName|Company Name Field|
+|selectDropDownByText;|${SalesForce_Company_Type_DropDown}|Advertiser|Company Type Dropdown|
+|click;|${SalesForce_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Company_Name}|$chinaAdvertiserName|Company Detail Page|
+|stopExtentReport;|
+**********!

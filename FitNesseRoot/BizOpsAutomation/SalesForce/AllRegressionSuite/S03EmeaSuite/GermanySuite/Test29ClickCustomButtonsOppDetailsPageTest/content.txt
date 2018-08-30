@@ -1,0 +1,71 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Verify by clicking on all custom buttons in Opp detail page
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navitage to LR Opp URL
+   Click on 'Edit' button
+   Click on 'Cancel' button to go back to Opp detail page
+   Click on 'Delete' button
+   Dismiss Pop up Alert
+   Click on 'Clone' button
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on 'Enhanced Clone' button
+   Verify clone content is indicated on Opp Name in Opp detail page
+   Navigate back to LR Opp URL
+   Click on 'Create Documents' button
+   Click on 'Back to Opportunity' to go back to opp detail page
+   wait 2.5 seconds
+   Click on 'Send Email to Opportunity' button 
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on 'RTA Consultation'
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on RTA Proposal Briefing'
+   Click on 'Cancel' button to go back to Opp detail page 
+   Click on 'Custom Send Email' button
+   Switch to second window
+   Click on 'Cancel' button to go back to Opp detail page 
+   Wait 2.5 seconds
+   Close the tab
+   Switch back to initial Opp Detail Page tab
+**********!
+#$gerEmeaOpportunityPageUrl
+#https://cs77.salesforce.com/0060t000009iKZcAAM?nooverride=1
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|EMEA_Germany_Suite_${PAGE_NAME}|Test29Ger-Verify by clicking on all custom buttons in Opp detail page|
+|open;|$gerEmeaOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|cancelAlert;|
+|click;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Enhanced_Clone_Button}|Enhanced Clone Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|LR $germanyEmeaOppName - Clone $emeaOppCloneDate|Clone Opp Name|
+|open;|$gerEmeaOpportunityPageUrl|
+|click;|${SalesForce_Opportunities_Create_Documents_Button}|Create Documents Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opp Button|
+|wait;|2500|
+|click;|${SalesForce_Opportunities_Send_Email_To_Opportunity}|Send Email to Opp Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_RTA_Consultation_Button}|RTA Consultation Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_RTA_Proposal_Briefing_Button}|RTA Proposal Briefing Button|
+|wait;|3500|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Custom_Send_Email_Button}|Custom Send Email Button|
+|wait;|1200|
+|switchToNewWindow;|2|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|wait;|1000|
+|closeTab;|
+|switchToNewWindow;|1|
+|stopExtentReport;|
+**********!

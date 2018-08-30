@@ -1,0 +1,44 @@
+'''Scenario Name: ''' Modify Buy Placement for roll up
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Emergent Buy placement URL
+   Scroll Into Placement Monthly Schedule label section
+   Click on First Monthly Schedule link
+   Click on 'Edit' button
+   Clear Planned Payable Cost Field
+   Enter 40 for Planned Payable Cost 
+   Click on 'Save' button
+   Wait 3 Seconds
+   Navigate to Buy Placement URL again
+   Verify Planned Payable Cost as 'USD 106.30'
+   Navigate to Sell Line URL
+   Verify Planned Media Net Cost as 'USD 106.30'
+   Navigate to Opportunity URL
+   Verify Total Planned Net Cost as 'USD 106.30'
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test34US-Modify Existing Buy Placement Monthly Schedule for roll up|
+|open;|$usaEmgtBPUrl|
+|scrollIntoView;|${SalesForce_BuyPlacment_Monthly_Schedule_Label}|
+|click;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|First Monthly BP Schedule Link|
+|click;|${SalesForce_BuyPlacment_Edit_Button}|First Monthly BP Schedule Edit Button|
+|clear;|${SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Cost_Field}|Planned Payable Cost Field|
+|type;|${SalesForce_BuyPlacment_Monthlly_Schedule_Planned_Payable_Cost_Field}|40|Planned Payable Cost Field|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|wait;|180000|
+|open;|$usaEmgtBPUrl|
+|objectVerification;|${SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Cost}|USD 106.30|Planned Payable Cost Field|
+|wait;|3000|
+|open;|$usaEmgtSellLineUrl|
+|objectVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost}|USD 106.30|Planned Media Net Cost Field|
+|wait;|3000|
+|open;|$ntamEmgtOpportunityPageUrl|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|USD 106.30|Planned Total Net Cost Field|
+|stopExtentReport;|
+**********!

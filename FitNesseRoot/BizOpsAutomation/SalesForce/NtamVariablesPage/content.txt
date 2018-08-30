@@ -1,0 +1,81 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce
+*!
+
+!***** variable below allows you to store a business unit(Xaxis,Light Reaction & Plista)
+!define SalesForce_NTAM_Business_Unit_Value {Xaxis}
+**********!
+
+!***** variable below allows you to store a business unit(Xaxis,Light Reaction & Plista) for sell line
+!define SalesForce_NTAM_SL_Business_Unit_Value {Xaxis}
+**********!
+
+!***** variable below allows you to store an Canada Market for APAC agency
+!define SalesForce_NTAM_Agency_Market_Value {Canada}
+**********!
+
+!***** variable below allows you to store a USA user name
+!define SalesForce_NTAM_User_Name {Miguel Ajon}
+**********!
+
+
+!***** variable below allows you to store a USA Market for US agency
+!define SalesForce_NTAM_US_Agency_Market_Value {United States}
+**********!
+
+!***** variable below allows you to store an Canada user name
+!define SalesForce_NTAM_US_User_Name {Brett Giroux}
+**********!
+
+!***** script below allows you to store a method 'getUniqueName' into a variable for reusability
+!|script|DriverClass|
+|$ntamAgencyName=|getUniqueName;|NTAM Agency|
+|$ntamUsAgencyName=|getUniqueName;|NTAM US Agency|
+|$usMaxusAgencyName=|getUniqueName;|US Wavemaker Agency|
+|$ntamAdvertiserName=|getUniqueName;|NTAM Advertiser|
+|$ntamUsAdvertiserName=|getUniqueName;|NTAM US Advertiser|
+|$ntamAccountName=|getUniqueName;|NTAM Canada Account|
+|$ntamUsAccountName=|getUniqueName;|NTAM US Account|
+|$ntamUsMaxAccountName=|getUniqueName;|NTAM US Wavemaker Account|
+|$ntamOppName=|getUniqueName;|NTAM Opportunity|
+|$ntamUsOppName=|getUniqueName;|NTAM US Opportunity|
+|$ntamUsClosedWonOppName=|getUniqueName;|NTAM US Xaxis Closed Won Opportunity|
+|$ntamUsClosedLostOppName=|getUniqueName;|NTAM US Xaxis Closed Lost Opportunity|
+|$ntamUsMaxClosedWonOppName=|getUniqueName;|NTAM US Wavemaker Closed Won Opportunity|
+|$ntamUsMaxClosedLostOppName=|getUniqueName;|NTAM US Wavemaker Closed Lost Opportunity|
+|$ntamSLName=|getUniqueName;|NTAM Sell Line|
+|$ntamUsSellName_Xax=|getUniqueName;|NTAM US Xax Sell Line|
+|$ntamUsSellName_Pl=|getUniqueName;|NTAM US Pl Sell Line|
+|$ntamUsSellName_LR=|getUniqueName;|NTAM US LR Sell Line|
+|$ntamUsSellName_EMGT=|getUniqueName;|NTAM US EMGT Sell Line|
+|$canadaBuyPlacementName=|getUniqueName;|Canada Buy Placement|
+|$usaBuyPlacementName=|getUniqueName;|USA Buy Placement|
+**********!
+
+!***** script below allows you to store a method 'getDesiredDateInFormat' for all date realted variables for reusability
+!|script|DriverClass|
+|$ntamCanCloseDate=|getDesiredDateInFormat;|0 |/|DD|
+|$ntamCloseDate=|getDesiredDateInFormat;|0 |/|MM|
+|$ntamSellLineStartDate=|getDesiredDateInFormat;|0 |/|MM|
+|$ntamSellLineEndDate=|getDesiredDateInFormat;|60|/|MM|
+|$usAnalyticsDate=|getDesiredDateInFormat;|0 |/|DD|
+|$plannedStartDate=|getDesiredDateInFormat;|0 |/|MM|
+|$plannedEndDate=|getDesiredDateInFormat;|20|/|MM|
+**********!
+
+!***** variable below allows you to capture message into variables for USA Stage work flow
+!define contractPendingOpenMessage {The following fields are required for Contract Pending Open: Invoice To, Liability To, Reallocation Parameters. At least 1 sell line(s) required for Contract Pending Open.}
+!define contractPendingMessage {The following fields are required for Contract Pending: Invoice To, Liability To, Reallocation Parameters.}
+!define closedLostMessage {The following fields are required for Closed Lost: Closed Lost Reason.}
+!define closedWonMessage {The following fields are required for Approval: Planned Start Date, Planned End Date, Planned Gross Margin, Planned Margin %.}
+**********!
+
+!***** variable below allows you to store fix start and end month for Emergent Sell Line
+!define emgtSellLineStartDate {03/01/2018}
+!define emgtSellLineEndDate {05/31/2018}
+**********!
+!***** variable below allows you to store fix start and end month for Xaxis Canada Sell Line
+!define ntamCanSellLineStartDate {01/10/2018}
+!define ntamCanSellLineEndDate {31/12/2018}
+**********!
+

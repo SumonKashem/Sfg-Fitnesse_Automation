@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo taskname="fitnesse" message="Starting FitNesse 20151230... (Selenium 2.53.0)"/>
+  <property file="saucelabs.properties"/>
+  <property name="sauce.user" value="[provide user through saucelabs.properties]"/>
+  <property name="sauce.accesskey" value="[provide accesskey through saucelabs.properties]"/>
+  <java fork="true" classname="fitnesseMain.FitNesseMain" classpathref="maven.runtime.classpath">
+    <arg line="-p 8084"/>
+    <arg line="-d ."/>
+    <arg line="-e 0"/>
+    <jvmarg value="-DFITNESSE_SUT_PORT=8082"/>
+    <jvmarg value="-DBROWSER=chrome"/>
+    <jvmarg value="-Dsauce.user=${sauce.user}"/>
+    <jvmarg value="-Dsauce.accesskey=${sauce.accesskey}"/>
+  </java>
+</target>
+</project>

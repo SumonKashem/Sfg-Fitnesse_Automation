@@ -1,0 +1,19 @@
+All Sales Force Log In Variables Are Defined Here....
+
+!define SalesForce_Admin_Name {sumon.kashem@xaxis.com.glstaging}
+!define SalesForce_Admin_Pass {xaxisAuto#13}
+!define SalesForce_UserName_Field {//*[@name="username"]}
+!define SalesForce_Password_Field {//*[@id="password"]}
+!define SalesForce_LogIn_Button {//*[@id="Login"]}
+!define SalesForce_DisplayName_Link {//*[@data-seclke="User"]}
+!define SalesForce_UserDetail_DropDown_Arrow {//*[@id="moderatorMutton"]}
+!define SalesForce_UserDetail_DropDown_Link {//*[@id="USER_DETAIL"]}
+!define SalesForce_User_LogIn_Button {//*[@title="Login"]}
+!define SalesForce_User_Name_Verification {//*[contains(@class,"pageMsg") and starts-with(text(),"Logged in as")]}
+!define SalesForce_User_Details_Edit_Button {//*[@title="Edit"]}
+!define SalesForce_User_Details_Save_Button {//*[@title="Save"]}
+!define SalesForce_User_Details_Active_Checkbox {//*[@name="active"]}
+
+
+
+

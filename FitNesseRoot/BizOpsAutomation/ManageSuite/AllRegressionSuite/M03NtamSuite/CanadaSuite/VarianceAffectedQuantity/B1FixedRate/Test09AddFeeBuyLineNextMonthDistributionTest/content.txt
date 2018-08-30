@@ -1,0 +1,249 @@
+'''INTENT: ''' Add a Media Buy Placement for Next Month Distribution
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+!***** Manual Test Steps
+   Click on Planning button
+   wait
+   Right Click and select Add Media Buy Placement
+   Click on 'Yes' on pop up
+   Scroll
+   Verify Sell Line Net Cost defaults back to 0
+   Verify Monthly Schedule net cost defaults back to 0
+   Verify Opp Gross Budget remains the same on opp detail section
+   Verify Opp Net Cost appears as 150 on opp detail section
+   Click on sync with SF
+   Verify error message appears for all required field on the new fee buy line
+   Verify buy line flag appears indicating it needs to be synced
+   Click on Buy Placement Name Field
+   Enter New Buy Placement Name on Placement Name Field as BP2
+   Click on Vendor dropdown
+   Select first value from the dropdown
+   Click on Billing Platform dropdown
+   Select first value from the dropdown
+   Click on Budget Field
+   Enter Budget as $50 
+   Verify Sell Line Net Cost field appears as 50.00
+   Verify Opp Gross Budget remains the same on opp detail section
+   Verify Opp Net Cost appears as 250 on opp detail section
+   Verify Opp Media Cost as 200
+   Verify Total Sell Volumen as 16,052
+   Scroll to Buy Placement Name field
+   Scroll to Line calculations section
+   Verify Total Gross Budget as 802.608696
+   Verify Total Gross quantity as 16,052
+   Verify Total Net as 250
+   Verify Total Net Quantity as 8,000
+   Sync with SF
+   Verify Placement Flag icon indicating it is synced
+   Verify Sell Line Net Cost field appears as 50.00
+   Verify Opp Gross Budget remains the same on opp detail section
+   Verify Opp Net Cost appears as 250 on opp detail section
+   Verify Opp Media Cost as 200
+   Verify Total Sell Volumen as 16,052
+   Verify Total Gross Budget as 802.608696
+   Verify Total Gross quantity as 16,052
+   Verify Total Net as 250
+   Verify Total Net Quantity as 8,000
+   Scroll to Monthly Budgets
+   Verify all BP monthly budget
+   Switch To SF Tab
+   Verify Total Planned Gross Budget	
+   Total Planned Net Cost
+   Switch To Manage Tab
+   Scroll and click on first monthly schedule
+   enter monthly budget as 20
+   Right click and distribute to next month
+   Verify total variance
+   Verify line variance
+   Verify monthly scheudles budget have changed
+   Click on Refresh button
+   Click on Leave
+   Go to Actualize view by clickin gon Actualize button
+   Scroll and go to First monthly schedule
+   Click on Variance Affected Dropdown
+   Click on Budget as value for Variance Affected
+   Enter 20 for Monthly Budget
+   Verify the total variance
+   Verify the line variance
+   Right click and distribute to next month
+   Verify total variance is 0
+   Verify Line Variance is 0.00
+   Scroll
+   Verify Monthly Budgets
+   Sync With SF
+   Verify Actualized Month appearing as Actualized
+   Scroll and verify all monthly budgets for Buy Placement Line
+   Scroll and verify Line Budget stay same 
+   Verify Line Net Cost appears as 50.00
+**********!
+#|reloadPage;|$planningPageUrl|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|CanadaSuite_Quantity_Fixed_Rate_${PAGE_NAME}|Test09Can-Add a Fee Buy Placement for Next Month Distribution|
+|clickUsingMouseMovement;|${Manage_Planning_Button}|Planning Button|
+|wait;|2500|
+|$planningPageUrl =|getCurrentUrl;|
+|rightClickByRowUsingMouseMovement;|${Manage_Sell_Line_Default_PlacementName_Field_Synced}|2|Sell Line Placement Name Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Add_Fee_Buy_Placement_Line}|Add Fee Buy Placement Button|
+|waitForManageUiToLoad;|
+|scrollIntoViewByRow;|2|${Manage_Sell_Line_NetCost_Field}|
+|wait;|800|
+|objectVerificationByRow;|${Manage_Sell_Line_NetCost_Field}|2|49.99744|SL Net Cost Field|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|802.57|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|200|Opportunity Net Cost|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|objectVerification;|${Manage_Required_Fields_Error_Message}|There are validation errors for the following field: VENDOR, BILLING PLATFORM.|BP Error Message|
+|scroll;|Horizontal|-10000|
+|elementVerificationByRow;|4|${Manage_Buy_Line_Buy_Placement_Name_Field}|Yes|Fee Line Indicating Needs To Be Synced|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Buy_Placement_Name_Field}|4|Fee Line Placement Name Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_Buy_Placement_Name_Field}|4|BP2|Fee Line Placement Name field|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Vendor_Dropdown}|4|Vendor Dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Vendor dropdown value|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_Billing_Platform_Dropdown}|4|Billing Platform Dropdown|
+|clickUsingIndexMouseMovement;|${Manage_Sell_Line_DropDown_Value_1}|0|Billing Platform dropdown value|
+|scroll;|Horizontal|400|
+|clickByRowUsingMouseMovement;|${Manage_Line_Budget_Field}|4|Budget Input Field|
+|typeByRowUsingMouseMovement;|${Manage_Line_Budget_Field}|4|50|Budget Input Field|
+|objectVerificationByRow;|${Manage_Sell_Line_NetCost_Field}|2|99.99744|SL Net Cost Field|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|802.57|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|250|Opportunity Net Cost|
+|objectVerification;|${Manage_Opp_Details_TotalMedia_Text}|200|Opportunity Media Cost|
+|objectVerification;|${Manage_Opp_Details_TotalQuantity_Text}|16,052|Opportunity Quantity Cost|
+|scroll;|Horizontal|-10000|
+|scroll;|Horizontal|570|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|0|802.572701|Total Gross Budget|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|16,052|Total Gross Quantity|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|0|249.99744|Total Net|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|1|8,000|Total Net Quantity|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|scroll;|Horizontal|-10000|
+|elementVerificationByRow;|4|${Manage_Buy_Line_Placement_Field_Synced}|Yes|Fee Line Indicating It Is Synced|
+|scroll;|Horizontal|560|
+|objectVerificationByRow;|${Manage_Sell_Line_NetCost_Field}|2|99.99744|SL Net Cost Field|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|802.57|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|250|Opportunity Net Cost|
+|objectVerification;|${Manage_Opp_Details_TotalMedia_Text}|200|Opportunity Media Cost|
+|objectVerification;|${Manage_Opp_Details_TotalQuantity_Text}|16,052|Opportunity Quantity Cost|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|0|802.572701|Total Gross Budget|
+|objectVerificationByRowAndIndex;|${Manage_Total_Gross_Field}|0|1|16,052|Total Gross Quantity|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|0|249.99744|Total Net|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|1|8,000|Total Net Quantity|
+|scroll;|Horizontal|2800|
+|objectVerificationByRow;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|16.847826|October Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_November_Schedule_Budget_Field}|4|16.304348|November Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_December_Schedule_Budget_Field}|4|16.847826|December Budget Field|
+|switchToNewWindow;|2|
+|wait;|1000|
+|$sfPageUrl=|getCurrentUrl;|
+|wait;|800|
+|open:|$sfPageUrl|
+|wait;|1000|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|USD 802.57|SF Total Planned Gross Budget Field|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|USD 250.00|SF Total Net Cost Field|
+|switchToNewWindow;|1|
+|wait;|800|
+|scroll;|Vertical|1000|
+|scroll;|Horizontal|-1000|
+|clickOnMonthlyTabUsingMouseMovement;|Oct|2018|1800|Planning|
+|wait;|1000|
+|clickUsingMouseMovement;|${Manage_Actualization_Variance_Effected_Dropdown}|Variance Effected Drop Down|
+|clickUsingIndexMouseMovement;|${Manage_Planning_Variance_Eff_Quantity_Dropdown}|0|Quantity Variance Effected|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|October Budget Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|20|October Budget Field|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|-252|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|4|-252.00|Total Line Variance|
+|rightClickByRowUsingMouseMovement;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|October Budget Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Subtract_Next_Month_Distribution}|Subtract Next Month Distribution|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|0|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|4|0.00|Total Variance|
+|scroll;|horizontal|1800|
+|wait;|800|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Net_Cost_Monthly_Schedule_Field}|2|27.90|November MS Net Cost Field|
+|objectVerificationByRow;|${Manage_Buy_Line_November_Schedule_Budget_Field}|4|13.15|November Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_December_Schedule_Budget_Field}|4|16.847826|December Budget Field|
+|clickUsingMouseMovement;|${Manage_Refresh_Bar}|Refresh Bar|
+|clickUsingMouseMovement;|${Manage_Leave_Button}|Leave Button|
+|wait;|3000|
+|clickUsingMouseMovement;|${Manage_Actualize_Button}|Actualize Button|
+|clickOnMonthlyTabUsingMouseMovement;|Oct|2018|1500|
+|wait;|1500|
+|clickUsingMouseMovement;|${Manage_Actualization_Variance_Effected_Dropdown}|Variance Affected Drop Down|
+|clickUsingIndexMouseMovement;|${Manage_Actualization_Variance_Effected_Dropdown_Value}|1|Quantity Variance Affected|
+|wait;|500|
+|clickByRowUsingMouseMovement;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|October Budget Field|
+|typeByRowUsingMouseMovement;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|20|October Budget Field|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|-252|Total Variance As Unit(s)|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|4|-252.00|Total Line Variance|
+|rightClickByRowUsingMouseMovement;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|October Budget Field|
+|clickUsingMouseMovement;|${Manage_Line_Context_Menu_Subtract_Next_Month_Distribution}|Subtract Next Month Distribution|
+|objectVerification;|${Manage_Planning_Total_Variance_Value}|0|Total Variance|
+|objectVerificationByRow;|${Manage_Sell_Line_Variance_Field}|4|0.00|Total Variance|
+|scroll;|Horizontal|10000|
+|wait;|1000|
+|objectVerificationByRowAndIndex;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|1|19.99744|October Planned Budget Field|
+|objectVerificationByRowAndIndex;|${Manage_Buy_Line_October_Schedule_Quantity_Field_Editable}|4|1|1,600|October Planned Quantity Field|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Net_Cost_Monthly_Schedule_Field}|2|27.90|November MS Net Cost Field|
+|objectVerificationByRow;|${Manage_Buy_Line_November_Schedule_Budget_Field}|4|13.15|November Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_November_Schedule_Quantity_Field_Editable}|4|1,052|November Quantity Field|
+|objectVerificationByRow;|${Manage_Buy_Line_December_Schedule_Budget_Field}|4|16.847826|December Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_December_Schedule_Quantity_Field_Editable}|4|1,348|December Quantity Field|
+|scroll;|Horizontal|-10000|
+|scroll;|Horizontal|700|
+|wait;|1000|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|802.57|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|249.99|Opportunity Net Cost|
+|objectVerificationByRow;|${Manage_Line_Budget_Field}|4|49.995266|Line Budget Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|4|12.4988|Line Rate Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|4|4,000|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|0|249.992706|Total Net Budget|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|1|8,000|Total Net Quantity|
+|clickUsingMouseMovement;|${Manage_Sync_Line_Button}|Sync With SF Button|
+|waitForManageUiToLoad;|
+|scroll;|Horizontal|6800|
+|wait;|1000|
+|waitForElementToLoadByRowAndIndex;|//*[@title="Last Actualized Date: $canadaSellLineStartDate"]|4|0|First Month Buy Placement Last Actualized Date Verification|
+|scroll;|Horizontal|10000|
+|wait;|1000|
+|objectVerificationByRow;|${Manage_Buy_Line_October_Schedule_Budget_Field}|4|19.99744|October Planned Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_October_Schedule_Quantity_Field_Editable}|4|1,600|October Planned Quantity Field|
+|objectVerificationByRow;|${Manage_Sell_Line_November_Net_Cost_Monthly_Schedule_Field}|2|27.90|November MS Net Cost Field|
+|objectVerificationByRow;|${Manage_Buy_Line_November_Schedule_Budget_Field}|4|13.15|November Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_November_Schedule_Quantity_Field_Editable}|4|1,052|November Quantity Field|
+|objectVerificationByRow;|${Manage_Buy_Line_December_Schedule_Budget_Field}|4|16.847826|December Budget Field|
+|objectVerificationByRow;|${Manage_Buy_Line_December_Schedule_Quantity_Field_Editable}|4|1,348|December Quantity Field|
+|scroll;|Horizontal|-10000|
+|scroll;|Horizontal|700|
+|wait;|1000|
+|objectVerification;|${Manage_Opp_Details_GrossBudget_Text}|802.57|Opportunity Gross Budget|
+|objectVerification;|${Manage_Opp_Details_TotalCost_Text}|249.99|Opportunity Net Cost|
+|objectVerificationByRow;|${Manage_Line_Budget_Field}|4|49.995266|Line Budget Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Rate}|4|12.4988|Line Rate Field|
+|objectVerificationByRow;|${Manage_Line_Budget_Quantity}|4|4,000|Line Quantity Field|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|0|249.992706|Total Net Budget|
+|objectVerificationByRowAndIndex;|${Manage_Total_Net_Field}|1|1|8,000|Total Net Quantity|
+|switchToNewWindow;|2|
+|wait;|1000|
+|$sfPageUrl=|getCurrentUrl;|
+|wait;|800|
+|open:|$sfPageUrl|
+|wait;|1000|
+|objectVerification;|${SalesForce_Planned_Total_Gross_Budget_Field}|USD 802.57|SF Total Planned Gross Budget Field|
+|objectVerification;|${SalesForce_Planned_Total_Net_Cost_Field}|USD 249.99|SF Total Net Cost Field|
+|switchToNewWindow;|1|
+|clickUsingMouseMovement;|${Manage_Planning_Button}|Planning Button|
+|wait;|2000|
+|scroll;|Horizontal|-10000|
+|scroll;|Horizontal|-500|
+|wait;|1000|
+|elementVerificationByRow;|4|${Manage_Line_Rate_Field_Disabled}|Yes|Disabled Rate Field|
+|stopExtentReport;|
+**********!
+#objectVerificationByRowAndIndex;|${}|0|0|value|element name|
+#|scroll;|Horizontal|10000|
+
