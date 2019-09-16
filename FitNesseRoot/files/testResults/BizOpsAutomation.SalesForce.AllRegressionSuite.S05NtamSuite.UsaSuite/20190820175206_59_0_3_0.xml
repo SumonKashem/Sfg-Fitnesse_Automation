@@ -1,0 +1,1368 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite</rootPath>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test01LogInUsUserTest</name>
+    <date>2019-08-20T17:52:06+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test01LogInUsUserTest?pageHistory&amp;resultDate=20190820175206</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>29131</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test02CreateUsAgencyTest</name>
+    <date>2019-08-20T17:52:35+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test02CreateUsAgencyTest?pageHistory&amp;resultDate=20190820175235</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9174</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test03aCreateUsAdvertiserTest</name>
+    <date>2019-08-20T17:52:44+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test03aCreateUsAdvertiserTest?pageHistory&amp;resultDate=20190820175244</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8510</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test03bVerifyAdvertiserVerticalValuesTest</name>
+    <date>2019-08-20T17:52:53+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test03bVerifyAdvertiserVerticalValuesTest?pageHistory&amp;resultDate=20190820175253</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4411</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test04CreateUsAccountTest</name>
+    <date>2019-08-20T17:52:57+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test04CreateUsAccountTest?pageHistory&amp;resultDate=20190820175257</pageHistoryLink>
+    <counts>
+      <right>32</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>38414</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test05CreateUsOpportunityTest</name>
+    <date>2019-08-20T17:53:36+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test05CreateUsOpportunityTest?pageHistory&amp;resultDate=20190820175336</pageHistoryLink>
+    <counts>
+      <right>19</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20872</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest</name>
+    <date>2019-08-20T17:53:57+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest?pageHistory&amp;resultDate=20190820175357</pageHistoryLink>
+    <counts>
+      <right>80</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>58657</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test06bCreateUsXaxisSellLineTest</name>
+    <date>2019-08-20T17:54:56+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test06bCreateUsXaxisSellLineTest?pageHistory&amp;resultDate=20190820175456</pageHistoryLink>
+    <counts>
+      <right>56</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>30242</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test07aVerifyAllFieldsForLightReactionSellLineTest</name>
+    <date>2019-08-20T17:55:26+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test07aVerifyAllFieldsForLightReactionSellLineTest?pageHistory&amp;resultDate=20190820175526</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>154</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test07bCreateUsLightReactionSellLineTest</name>
+    <date>2019-08-20T17:55:26+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test07bCreateUsLightReactionSellLineTest?pageHistory&amp;resultDate=20190820175526</pageHistoryLink>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16036</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test08aVerifyAllFieldsForPlistaSellLineTest</name>
+    <date>2019-08-20T17:55:42+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test08aVerifyAllFieldsForPlistaSellLineTest?pageHistory&amp;resultDate=20190820175542</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>172</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test08bCreateUsPlistaSellLineTest</name>
+    <date>2019-08-20T17:55:42+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test08bCreateUsPlistaSellLineTest?pageHistory&amp;resultDate=20190820175542</pageHistoryLink>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14633</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test09CreateUsXaxisPackageBuyPlacementTest</name>
+    <date>2019-08-20T17:55:57+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test09CreateUsXaxisPackageBuyPlacementTest?pageHistory&amp;resultDate=20190820175557</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8748</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test10CreateUsXaxisStandAloneBuyPlacementTest</name>
+    <date>2019-08-20T17:56:06+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test10CreateUsXaxisStandAloneBuyPlacementTest?pageHistory&amp;resultDate=20190820175606</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8641</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test11CreateUsXaxisChildBuyPlacementTest</name>
+    <date>2019-08-20T17:56:14+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test11CreateUsXaxisChildBuyPlacementTest?pageHistory&amp;resultDate=20190820175614</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9211</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test12CreateUsXaxisFeeOrderBuyPlacementTest</name>
+    <date>2019-08-20T17:56:24+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test12CreateUsXaxisFeeOrderBuyPlacementTest?pageHistory&amp;resultDate=20190820175624</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9137</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test13CreateUsXaxisDspBuyPlacementTest</name>
+    <date>2019-08-20T17:56:33+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test13CreateUsXaxisDspBuyPlacementTest?pageHistory&amp;resultDate=20190820175633</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8539</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test14CreateXaxisClosedLostOpportunityTest</name>
+    <date>2019-08-20T17:56:42+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test14CreateXaxisClosedLostOpportunityTest?pageHistory&amp;resultDate=20190820175642</pageHistoryLink>
+    <counts>
+      <right>58</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>58669</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test15CreateXaxisClosedWonOpportunityTest</name>
+    <date>2019-08-20T17:57:40+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test15CreateXaxisClosedWonOpportunityTest?pageHistory&amp;resultDate=20190820175740</pageHistoryLink>
+    <counts>
+      <right>80</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>94167</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test16CreateTeamWavemakerAgencyTest</name>
+    <date>2019-08-20T17:59:15+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test16CreateTeamWavemakerAgencyTest?pageHistory&amp;resultDate=20190820175915</pageHistoryLink>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13479</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test17CreateTeamWavemakerAccountTest</name>
+    <date>2019-08-20T17:59:28+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test17CreateTeamWavemakerAccountTest?pageHistory&amp;resultDate=20190820175928</pageHistoryLink>
+    <counts>
+      <right>25</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18659</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test18CreateWavemakerClosedLostOpportunityTest</name>
+    <date>2019-08-20T17:59:47+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test18CreateWavemakerClosedLostOpportunityTest?pageHistory&amp;resultDate=20190820175947</pageHistoryLink>
+    <counts>
+      <right>56</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>63404</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test19CreateWavemakerClosedWonOpportunityTest</name>
+    <date>2019-08-20T18:00:50+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test19CreateWavemakerClosedWonOpportunityTest?pageHistory&amp;resultDate=20190820180050</pageHistoryLink>
+    <counts>
+      <right>89</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>109956</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test20CreateCaseAdOpsTest</name>
+    <date>2019-08-20T18:02:40+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test20CreateCaseAdOpsTest?pageHistory&amp;resultDate=20190820180240</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>26461</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21EditCaseAdOpsTest</name>
+    <date>2019-08-20T18:03:07+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21EditCaseAdOpsTest?pageHistory&amp;resultDate=20190820180307</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6629</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21aaCreateCaseNtamDemandApiAccessTest</name>
+    <date>2019-08-20T18:03:13+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21aaCreateCaseNtamDemandApiAccessTest?pageHistory&amp;resultDate=20190820180313</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12099</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21abEditCaseNtamDemandApiAccessTest</name>
+    <date>2019-08-20T18:03:26+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21abEditCaseNtamDemandApiAccessTest?pageHistory&amp;resultDate=20190820180326</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24513</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21baCreateCaseNtamDemandDspCutoversTest</name>
+    <date>2019-08-20T18:03:50+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21baCreateCaseNtamDemandDspCutoversTest?pageHistory&amp;resultDate=20190820180350</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10247</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21bbEditCaseNtamDemandDspCutoversTest</name>
+    <date>2019-08-20T18:04:00+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21bbEditCaseNtamDemandDspCutoversTest?pageHistory&amp;resultDate=20190820180400</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>22872</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21caCreateCaseNtamDemandErrorTest</name>
+    <date>2019-08-20T18:04:23+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21caCreateCaseNtamDemandErrorTest?pageHistory&amp;resultDate=20190820180423</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12245</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21cbEditCaseNtamDemandErrorTest</name>
+    <date>2019-08-20T18:04:36+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21cbEditCaseNtamDemandErrorTest?pageHistory&amp;resultDate=20190820180436</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20793</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21daCreateCaseNtamDemandMookieTest</name>
+    <date>2019-08-20T18:04:56+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21daCreateCaseNtamDemandMookieTest?pageHistory&amp;resultDate=20190820180456</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9672</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21dbEditCaseNtamDemandMookieTest</name>
+    <date>2019-08-20T18:05:06+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21dbEditCaseNtamDemandMookieTest?pageHistory&amp;resultDate=20190820180506</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20840</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21eaCreateCaseNtamDemandPixelTest</name>
+    <date>2019-08-20T18:05:27+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21eaCreateCaseNtamDemandPixelTest?pageHistory&amp;resultDate=20190820180527</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11351</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21ebEditCaseNtamDemandPixelTest</name>
+    <date>2019-08-20T18:05:38+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21ebEditCaseNtamDemandPixelTest?pageHistory&amp;resultDate=20190820180538</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20898</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21faCreateCaseNtamDemandQaTest</name>
+    <date>2019-08-20T18:05:59+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21faCreateCaseNtamDemandQaTest?pageHistory&amp;resultDate=20190820180559</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9427</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21fbEditCaseNtamDemandQaTest</name>
+    <date>2019-08-20T18:06:09+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21fbEditCaseNtamDemandQaTest?pageHistory&amp;resultDate=20190820180609</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>22666</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21gaCreateCaseNtamDemandPageRequestTest</name>
+    <date>2019-08-20T18:06:32+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21gaCreateCaseNtamDemandPageRequestTest?pageHistory&amp;resultDate=20190820180632</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9711</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21gbEditCaseNtamDemandPageRequestTest</name>
+    <date>2019-08-20T18:06:41+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21gbEditCaseNtamDemandPageRequestTest?pageHistory&amp;resultDate=20190820180641</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20850</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21haCreateCaseNtamDemandTraffickingTest</name>
+    <date>2019-08-20T18:07:02+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21haCreateCaseNtamDemandTraffickingTest?pageHistory&amp;resultDate=20190820180702</pageHistoryLink>
+    <counts>
+      <right>19</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11184</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21hbEditCaseNtamDemandTraffickingTest</name>
+    <date>2019-08-20T18:07:14+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21hbEditCaseNtamDemandTraffickingTest?pageHistory&amp;resultDate=20190820180714</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>22198</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21iaCreateCaseNtamDemandTroubleshootingTest</name>
+    <date>2019-08-20T18:07:36+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21iaCreateCaseNtamDemandTroubleshootingTest?pageHistory&amp;resultDate=20190820180736</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10508</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21ibEditCaseNtamDemandTroubleshootingTest</name>
+    <date>2019-08-20T18:07:46+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test21ibEditCaseNtamDemandTroubleshootingTest?pageHistory&amp;resultDate=20190820180746</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20361</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test22CreateCaseActionxTest</name>
+    <date>2019-08-20T18:08:07+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test22CreateCaseActionxTest?pageHistory&amp;resultDate=20190820180807</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11140</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test23EditCaseActionxTest</name>
+    <date>2019-08-20T18:08:18+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test23EditCaseActionxTest?pageHistory&amp;resultDate=20190820180818</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5050</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test24CreateCaseDspCutoversTest</name>
+    <date>2019-08-20T18:08:23+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test24CreateCaseDspCutoversTest?pageHistory&amp;resultDate=20190820180823</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10286</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test25EditCaseDspCutoversTest</name>
+    <date>2019-08-20T18:08:33+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test25EditCaseDspCutoversTest?pageHistory&amp;resultDate=20190820180833</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>21346</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test26CreateCaseNtamAdLabsTest</name>
+    <date>2019-08-20T18:08:55+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test26CreateCaseNtamAdLabsTest?pageHistory&amp;resultDate=20190820180855</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9111</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test27aCreateCaseRadiaCampaignSetupTest</name>
+    <date>2019-08-20T18:09:04+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test27aCreateCaseRadiaCampaignSetupTest?pageHistory&amp;resultDate=20190820180904</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9135</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test28aCreateCaseUsAnalyticsTest</name>
+    <date>2019-08-20T18:09:13+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test28aCreateCaseUsAnalyticsTest?pageHistory&amp;resultDate=20190820180913</pageHistoryLink>
+    <counts>
+      <right>15</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10385</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test28bCloseCaseUsAnalyticsTest</name>
+    <date>2019-08-20T18:09:24+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test28bCloseCaseUsAnalyticsTest?pageHistory&amp;resultDate=20190820180924</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6696</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test29CreateEmergentAgencyTest</name>
+    <date>2019-08-20T18:09:30+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test29CreateEmergentAgencyTest?pageHistory&amp;resultDate=20190820180930</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9070</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test30CreateEmergentAccountTest</name>
+    <date>2019-08-20T18:09:40+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test30CreateEmergentAccountTest?pageHistory&amp;resultDate=20190820180940</pageHistoryLink>
+    <counts>
+      <right>30</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>31327</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test31CreateEmergentOpportunityTest</name>
+    <date>2019-08-20T18:10:11+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test31CreateEmergentOpportunityTest?pageHistory&amp;resultDate=20190820181011</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>17011</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test32aVerifyAllFieldsForEmergentSellLineTest</name>
+    <date>2019-08-20T18:10:28+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test32aVerifyAllFieldsForEmergentSellLineTest?pageHistory&amp;resultDate=20190820181028</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>171</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test32bCreateEmergentSellLineTest</name>
+    <date>2019-08-20T18:10:28+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test32bCreateEmergentSellLineTest?pageHistory&amp;resultDate=20190820181028</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14726</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test33CreateEmergentBuyPlacementTest</name>
+    <date>2019-08-20T18:10:43+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test33CreateEmergentBuyPlacementTest?pageHistory&amp;resultDate=20190820181043</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9315</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test34ModifyEmergentBuyPlacementRollUpTest</name>
+    <date>2019-08-20T18:10:52+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test34ModifyEmergentBuyPlacementRollUpTest?pageHistory&amp;resultDate=20190820181052</pageHistoryLink>
+    <counts>
+      <right>15</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>200081</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test36ClickCustomButtonsOppDetailsPageTest</name>
+    <date>2019-08-20T18:14:13+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test36ClickCustomButtonsOppDetailsPageTest?pageHistory&amp;resultDate=20190820181413</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>73056</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test37CreateTaskNtamAdLabsTest</name>
+    <date>2019-08-20T18:15:26+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test37CreateTaskNtamAdLabsTest?pageHistory&amp;resultDate=20190820181526</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11957</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test38VerifyDeliveryDataBuyPlacementRollUpTest</name>
+    <date>2019-08-20T18:15:38+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test38VerifyDeliveryDataBuyPlacementRollUpTest?pageHistory&amp;resultDate=20190820181538</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>72275</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test39VerifyUsLeadConversionTest</name>
+    <date>2019-08-20T18:16:50+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S05NtamSuite.UsaSuite.Test39VerifyUsLeadConversionTest?pageHistory&amp;resultDate=20190820181650</pageHistoryLink>
+    <counts>
+      <right>25</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>25253</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:/Program Files/Java/jdk1.8.0_91\bin\java" -cp C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\Desktop\FitNesseWithSelenium\target\classes;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\SumonK\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\SumonK\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\SumonK\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\SumonK\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\SumonK\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\SumonK\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\SumonK\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\SumonK\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\SumonK\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.53.0\selenium-htmlunit-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.18\htmlunit-2.18.jar;C:\Users\SumonK\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\SumonK\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpmime\4.5\httpmime-4.5.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\SumonK\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\SumonK\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\SumonK\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.12.v20150709\websocket-client-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-util\9.2.12.v20150709\jetty-util-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-io\9.2.12.v20150709\jetty-io-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.12.v20150709\websocket-common-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.12.v20150709\websocket-api-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\SumonK\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\SumonK\.m2\repository\com\opera\operadriver\1.1\operadriver-1.1.jar;C:\Users\SumonK\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\SumonK\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\SumonK\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\SumonK\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\SumonK\.m2\repository\com\codeborne\phantomjsdriver\1.2.1\phantomjsdriver-1.2.1.jar;C:\Users\SumonK\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SumonK\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\SumonK\.m2\repository\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\SumonK\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\SumonK\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.3.0\diffutils-1.3.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-simple\1.7.12\slf4j-simple-1.7.12.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.9\maven-classpath-plugin-1.9.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\SumonK\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8094</command>
+    <exitCode>0</exitCode>
+    <stdOut>:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Brett Giroux (brett.giroux2@xaxis.com.glstaging) exist as expected
+Clicking on Plus Icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - NTAM US Agency-190820-0552 exist as expected
+Clicking on Plus Icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - NTAM US Advertiser-190820-0552 exist as expected
+Navigating to url https://cs92.salesforce.com/a003F000002c4ed
+Clicking on Edit Button
+Clicking on Plus Icon Tab
+Clicking on Accounts Button
+Clicking on New Button
+Text value - Media Buying exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+Clicking on Create Account Button
+Text value - "plista non-GroupM" business unit is only valid for non-UK EMEA agencies" exist as expected
+Clicking on Create Account Button
+clearing field
+Text value - NTAM US Account-190820-0552 exist as expected
+Text value - Xaxis Media Buying - NTAM [Change] exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NUut9&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Text value - NTAM US Opportunity-190820-0552 exist as expected
+Text value - Automotive exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on New Xaxis Line Button
+Text value - Xaxis exist as expected
+Text value - USD 15.00 exist as expected
+Text value - USD 15.00 exist as expected
+Text value - USD 15.00 exist as expected
+Text value - NTAM US Xax Sell Line-190820-0552 exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Description Text
+Clicking on December SLMS Link
+Window title is : Sell Line: CP-01064076 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008861643 ~ Salesforce - Performance Edition
+Text value - USD 5.05 exist as expected
+Text value - USD 5.05 exist as expected
+Text value - USD 5.05 exist as expected
+Window title is : Sell Line: CP-01064076 ~ Salesforce - Performance Edition
+Clicking on November SLMS Link
+Window title is : Sell Line: CP-01064076 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008861642 ~ Salesforce - Performance Edition
+Text value - USD 4.89 exist as expected
+Text value - USD 4.89 exist as expected
+Text value - USD 4.89 exist as expected
+Window title is : Sell Line: CP-01064076 ~ Salesforce - Performance Edition
+Clicking on October SLMS Link
+Window title is : Sell Line: CP-01064076 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008861641 ~ Salesforce - Performance Edition
+Text value - USD 5.05 exist as expected
+Text value - USD 5.05 exist as expected
+Text value - USD 5.05 exist as expected
+Window title is : Sell Line: CP-01064076 ~ Salesforce - Performance Edition
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on New LR Sell Line Button
+Text value - Light Reaction exist as expected
+Text value - NTAM US LR Sell Line-190820-0552 exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Description Text
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on New plista Sell Line Button
+Text value - plista exist as expected
+Text value - NTAM US Pl Sell Line-190820-0552 exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Description Text
+Navigating to url https://cs92.salesforce.com/a013F000003dUfK
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Package [Change] exist as expected
+Text value - CP-01064076 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dUfK
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Standalone [Change] exist as expected
+Text value - CP-01064076 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dUfK
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Child [Change] exist as expected
+Text value - CP-01064076 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dUfK
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - FeeOrder [Change] exist as expected
+Text value - CP-01064076 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dUfK
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - DSP [Change] exist as expected
+Text value - CP-01064076 exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NUut9&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Text value - Contacted/Prospecting Open exist as expected
+Window title is : Opportunity: NTAM US Xaxis Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Contract Pending Open: Invoice To, Liability To, Reallocation Parameters. At least 1 sell line(s) required for Contract Pending Open. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Xaxis Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Text value - Proposal Open exist as expected
+Clicking on New Xaxis Sell Line Button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJuQAJ?nooverride=1
+Window title is : Opportunity: NTAM US Xaxis Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Closed Lost: Closed Lost Reason. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Xaxis Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Text value - Closed Lost exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NUut9&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Text value - Contacted/Prospecting Open exist as expected
+Window title is : Opportunity: NTAM US Xaxis Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Contract Pending Open: Invoice To, Liability To, Reallocation Parameters. At least 1 sell line(s) required for Contract Pending Open. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Xaxis Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Text value - Proposal Open exist as expected
+Clicking on New Xaxis Sell Line Button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzK9QAJ?nooverride=1
+Window title is : Opportunity: NTAM US Xaxis Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Approval: Planned Start Date, Planned End Date, Planned Gross Margin, Planned Margin %. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Xaxis Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Window title is : Opportunity: NTAM US Xaxis Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - Please use the Approval Process. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Xaxis Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on User Nav Dropdown button
+Clicking on SF Logout button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzK9QAJ?nooverride=1
+Text value - Closed Won exist as expected
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Clicking on Plus Icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - US Wavemaker Agency-190820-0552 exist as expected
+Clicking on Plus Icon Tab
+Clicking on Accounts Button
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Text value - NTAM US Wavemaker Account-190820-0552 exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NUvcO&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Text value - Information Requested exist as expected
+Text value - Proposal Requested exist as expected
+Window title is : Opportunity: NTAM US Wavemaker Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - At least 1 sell line(s) required for Proposal Sent. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Wavemaker Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on New Xaxis Sell Line Button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzKdQAJ?nooverride=1
+Window title is : Opportunity: NTAM US Wavemaker Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Closed Lost: Closed Lost Reason. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Wavemaker Closed Lost Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Text value - Closed Lost exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NUvcO&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Text value - Information Requested exist as expected
+Text value - Proposal Requested exist as expected
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - At least 1 sell line(s) required for Proposal Sent. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on New Xaxis Sell Line Button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzKsQAJ?nooverride=1
+Text value - Proposal Sent exist as expected
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Contract Pending: Invoice To, Liability To, Reallocation Parameters. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Text value - Contract Pending exist as expected
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - The following fields are required for Approval: Planned Start Date, Planned End Date, Planned Gross Margin, Planned Margin %. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Window title is : 
+Text value - Please use the Approval Process. exist as expected
+Clicking on Ok button
+Window title is : Opportunity: NTAM US Wavemaker Closed Won Opportunity-190820-0552 ~ Salesforce - Performance Edition
+Clicking on User Nav Dropdown button
+Clicking on SF Logout button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzKsQAJ?nooverride=1
+Text value - Closed Won exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on AdOps Case Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCRt
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCRy
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCS3
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCSD
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCSI
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCSN
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCSz
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCT9
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Viewability Right Arrow
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCTE
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCTJ
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Text value - ActionX [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCTO
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a ActionX member before changing the case exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on DSP Cutovers Button
+Text value - NTAM Demand Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCTT
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad ops member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on NTAM Ad Labs Button
+Text value - NTAM Ad Labs [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzK9QAJ?nooverride=1
+Clicking on Radia Campaign Setup Button
+Text value - Radia Campaign Setup Case [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on US Analytics Button
+Text value - US Analytics [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005VCTs
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Plus Icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMGT NTAM US Agency-190820-0552 exist as expected
+Text value - Emergent exist as expected
+Clicking on Plus Icon Tab
+Clicking on Accounts Button
+Clicking on New Button
+Text value - Media Buying exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+Text value - users are not allowed to select Emergent as the Business Unit on Accounts where record type isXaxis_Media_Buying_NTAM exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/CreateAccountPage?retURL=%2F001%2Fo&amp;RecordType=012i0000000Mv7E&amp;ent=Account&amp;save_new=1&amp;sfdc.override=1
+Clicking on Create Account Button
+clearing field
+Text value - EMGT NTAM US Account-190820-0552 exist as expected
+Text value - EMGT Media Buying - NTAM [Change] exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NUwuE&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Text value - EMGT NTAM US Opportunity-190820-0552 exist as expected
+Text value - EMGT-NTAM-United States exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzKZQAZ?nooverride=1
+Clicking on New Sell Line Button
+Text value - Emergent exist as expected
+Text value - NTAM US EMGT Sell Line-190820-0552 exist as expected
+Text value - 4,545 exist as expected
+Text value - EMGT-NTAM-United States exist as expected
+Capturing value on Sell No Description Text
+Navigating to url https://cs92.salesforce.com/a013F000003dUpT
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Child [Change] exist as expected
+Text value - CP-01064083 exist as expected
+Navigating to url https://cs92.salesforce.com/a1J3F000000bq2g
+Clicking on First Monthly BP Schedule Link
+Clicking on First Monthly BP Schedule Edit Button
+clearing field
+Navigating to url https://cs92.salesforce.com/a1J3F000000bq2g
+Text value - USD 106.30 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dUpT
+Text value - USD 106.30 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzKZQAZ?nooverride=1
+Text value - USD 106.30 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on Clone Button
+Clicking on Cancel Button
+Clicking on Action X Button
+Clicking on Cancel Button
+Clicking on AdOps Case Button
+Clicking on Cancel Button
+Clicking on DSP Cutovers Button
+Clicking on Cancel Button
+Clicking on NTAM Ad Labs Button
+Clicking on Cancel Button
+Clicking on Radia Campaign Setup Case Button
+Clicking on US Analytics Button
+Clicking on Cancel Button
+Clicking on Client IO Button
+Clicking on Radia Delivery Push Button
+Clicking on Back to Opp Button
+Clicking on Vendor IO Button
+Clicking on Back to Opp Button
+Clicking on Edit Radia Custom Columns Button
+Clicking on Back to Opp Button
+Navigating to url https://cs92.salesforce.com/0063F00000EuzJfQAJ?nooverride=1
+Clicking on New Task Button
+Clicking on Continue Button
+Clicking on Request Detail Right Arrow
+Clicking on Save Button
+Text value - NTAM US Opportunity-190820-0552 exist as expected
+Navigating to url https://cs92.salesforce.com/a1J3F000000bq2g
+Clicking on First Monthly BP Schedule Link
+Clicking on First Monthly BP Schedule Edit Button
+Text value - USD 33.00 exist as expected
+Text value - 1,500 exist as expected
+Text value - 1,600 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dUpT
+Navigating to url https://cs92.salesforce.com/a013F000003dUpT
+Text value - USD 33.00 exist as expected
+Text value - 1,500 exist as expected
+Text value - 1,600 exist as expected
+Clicking on + Icon Tab
+Clicking on Leads Tab
+Clicking on Leads New Button
+Clicking on Leads Continue Button
+Text value - All (Default) exist as expected
+Clicking on Leads Save Button
+Clicking on Leads Convert Button
+Clicking on Leads Convert Button
+Text value - Alliance exist as expected
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 23622
+Only local connections are allowed.
+[1566323828.166][SEVERE]: Unable to receive message from renderer
+[1566323850.018][SEVERE]: Unable to receive message from renderer
+[1566323886.127][SEVERE]: Unable to receive message from renderer
+[1566323913.387][SEVERE]: Unable to receive message from renderer
+[1566323922.449][SEVERE]: Unable to receive message from renderer
+[1566324014.855][SEVERE]: Unable to receive message from renderer
+[1566324038.531][SEVERE]: Unable to receive message from renderer
+[1566324080.618][SEVERE]: Unable to receive message from renderer
+[1566324100.924][SEVERE]: Unable to receive message from renderer
+[1566324116.457][SEVERE]: Unable to receive message from renderer
+[1566324125.875][SEVERE]: Unable to receive message from renderer
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>59</right>
+    <wrong>0</wrong>
+    <ignores>3</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1510416</totalRunTimeInMillis>
+</suiteResults>
+

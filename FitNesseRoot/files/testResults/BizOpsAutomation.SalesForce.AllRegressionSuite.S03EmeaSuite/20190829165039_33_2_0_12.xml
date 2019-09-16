@@ -1,0 +1,1945 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite</rootPath>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test01LogInUserTest</name>
+    <date>2019-08-29T16:50:39-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190829165039</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>39668</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test02CreateAgencyTest</name>
+    <date>2019-08-29T16:51:19-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190829165119</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12346</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test03CreateAdvertiserTest</name>
+    <date>2019-08-29T16:51:31-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190829165131</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12343</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test04CreateXaxisAccountTest</name>
+    <date>2019-08-29T16:51:44-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test04CreateXaxisAccountTest?pageHistory&amp;resultDate=20190829165144</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>25894</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test05CreateXaxisOpportunityTest</name>
+    <date>2019-08-29T16:52:10-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test05CreateXaxisOpportunityTest?pageHistory&amp;resultDate=20190829165210</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18980</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test06aVerifyAllFieldsForXaxisSellLineTest</name>
+    <date>2019-08-29T16:52:29-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test06aVerifyAllFieldsForXaxisSellLineTest?pageHistory&amp;resultDate=20190829165229</pageHistoryLink>
+    <counts>
+      <right>71</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>53735</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test06bCreateXaxisSellLineTest</name>
+    <date>2019-08-29T16:53:23-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test06bCreateXaxisSellLineTest?pageHistory&amp;resultDate=20190829165323</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13332</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test07aVerifyAllFieldsForPlistaSellLineTest</name>
+    <date>2019-08-29T16:53:36-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test07aVerifyAllFieldsForPlistaSellLineTest?pageHistory&amp;resultDate=20190829165336</pageHistoryLink>
+    <counts>
+      <right>104</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>76209</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test07bCreatePlistaSellLineTest</name>
+    <date>2019-08-29T16:54:52-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test07bCreatePlistaSellLineTest?pageHistory&amp;resultDate=20190829165452</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13382</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test08aVerifyAllFieldsForLightReactionSellLineTest</name>
+    <date>2019-08-29T16:55:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test08aVerifyAllFieldsForLightReactionSellLineTest?pageHistory&amp;resultDate=20190829165506</pageHistoryLink>
+    <counts>
+      <right>65</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>50201</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test08bCreateLightReactionSellLineTest</name>
+    <date>2019-08-29T16:55:56-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test08bCreateLightReactionSellLineTest?pageHistory&amp;resultDate=20190829165556</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16873</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test09CreateLightReactionBuyPlacementTest</name>
+    <date>2019-08-29T16:56:13-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test09CreateLightReactionBuyPlacementTest?pageHistory&amp;resultDate=20190829165613</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12940</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test10CreateCaseEmeaAdLabsTest</name>
+    <date>2019-08-29T16:56:26-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test10CreateCaseEmeaAdLabsTest?pageHistory&amp;resultDate=20190829165626</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16436</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test11EditOpportunityTest</name>
+    <date>2019-08-29T16:56:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test11EditOpportunityTest?pageHistory&amp;resultDate=20190829165643</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8890</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test12EditXaxisBuyPlacementTest</name>
+    <date>2019-08-29T16:56:52-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test12EditXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190829165652</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7554</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test13EditCaseEmeaAdLabsTest</name>
+    <date>2019-08-29T16:56:59-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test13EditCaseEmeaAdLabsTest?pageHistory&amp;resultDate=20190829165659</pageHistoryLink>
+    <counts>
+      <right>25</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>27671</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test16aCreateCaseCampManagementTest</name>
+    <date>2019-08-29T16:57:27-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test16aCreateCaseCampManagementTest?pageHistory&amp;resultDate=20190829165727</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10628</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test16bCloseCaseCampManagementTest</name>
+    <date>2019-08-29T16:57:38-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test16bCloseCaseCampManagementTest?pageHistory&amp;resultDate=20190829165738</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13096</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test17aCreatecaseProdSupportTest</name>
+    <date>2019-08-29T16:57:51-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test17aCreatecaseProdSupportTest?pageHistory&amp;resultDate=20190829165751</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10397</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test17bClosecaseProdSupportTest</name>
+    <date>2019-08-29T16:58:01-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test17bClosecaseProdSupportTest?pageHistory&amp;resultDate=20190829165801</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7344</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test19aCreatecaseTurbineSupportTest</name>
+    <date>2019-08-29T16:58:09-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test19aCreatecaseTurbineSupportTest?pageHistory&amp;resultDate=20190829165809</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9676</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test19bClosecaseTurbineSupportTest</name>
+    <date>2019-08-29T16:58:18-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test19bClosecaseTurbineSupportTest?pageHistory&amp;resultDate=20190829165818</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8038</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test20CreatePlistaAccountTest</name>
+    <date>2019-08-29T16:58:27-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test20CreatePlistaAccountTest?pageHistory&amp;resultDate=20190829165827</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>23782</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test21CreatePlistaOpportunityTest</name>
+    <date>2019-08-29T16:58:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test21CreatePlistaOpportunityTest?pageHistory&amp;resultDate=20190829165850</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16699</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test22CreatePlistaBusinessUnitSellLineTest</name>
+    <date>2019-08-29T16:59:07-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test22CreatePlistaBusinessUnitSellLineTest?pageHistory&amp;resultDate=20190829165907</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>17009</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test23CreatePlistaNonGroupmAccountTest</name>
+    <date>2019-08-29T16:59:24-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test23CreatePlistaNonGroupmAccountTest?pageHistory&amp;resultDate=20190829165924</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24393</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test24CreatePlistaNonGroupmOpportunityTest</name>
+    <date>2019-08-29T16:59:49-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test24CreatePlistaNonGroupmOpportunityTest?pageHistory&amp;resultDate=20190829165949</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16857</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test25CreatePlistaNonGroupmSellLineTest</name>
+    <date>2019-08-29T17:00:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test25CreatePlistaNonGroupmSellLineTest?pageHistory&amp;resultDate=20190829170006</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16862</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test26CreateLightReactionAccountTest</name>
+    <date>2019-08-29T17:00:23-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test26CreateLightReactionAccountTest?pageHistory&amp;resultDate=20190829170023</pageHistoryLink>
+    <counts>
+      <right>19</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24403</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test27CreateLightReactionOpportunityTest</name>
+    <date>2019-08-29T17:00:47-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test27CreateLightReactionOpportunityTest?pageHistory&amp;resultDate=20190829170047</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16559</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test28CreateLightReactionSellLineTest</name>
+    <date>2019-08-29T17:01:04-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test28CreateLightReactionSellLineTest?pageHistory&amp;resultDate=20190829170104</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16291</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test29CloneOpportunityTest</name>
+    <date>2019-08-29T17:01:20-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test29CloneOpportunityTest?pageHistory&amp;resultDate=20190829170120</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12029</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test30CreateXaxFordAccountTest</name>
+    <date>2019-08-29T17:01:32-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test30CreateXaxFordAccountTest?pageHistory&amp;resultDate=20190829170132</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>25412</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test31CreateXaxForOppTest</name>
+    <date>2019-08-29T17:01:58-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test31CreateXaxForOppTest?pageHistory&amp;resultDate=20190829170158</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>9182</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test32CreateXaxFordSellLineTest</name>
+    <date>2019-08-29T17:02:07-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.BelgiumSuite.Test32CreateXaxFordSellLineTest?pageHistory&amp;resultDate=20190829170207</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>16768</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest</name>
+    <date>2019-08-29T17:02:24-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190829170224</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>37544</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test02CreateAgencyTest</name>
+    <date>2019-08-29T17:03:01-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190829170301</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13488</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test03CreateAdvertiserTest</name>
+    <date>2019-08-29T17:03:15-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190829170315</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12851</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test04CreateLightReactionAccountTest</name>
+    <date>2019-08-29T17:03:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test04CreateLightReactionAccountTest?pageHistory&amp;resultDate=20190829170328</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>22994</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test05CreateLightReactionOpportunityTest</name>
+    <date>2019-08-29T17:03:51-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test05CreateLightReactionOpportunityTest?pageHistory&amp;resultDate=20190829170351</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>9844</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06aVerifyAllFieldsForLightReactionSellLineTest</name>
+    <date>2019-08-29T17:04:01-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06aVerifyAllFieldsForLightReactionSellLineTest?pageHistory&amp;resultDate=20190829170401</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>12467</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06bCreateLightReactionSellLineTest</name>
+    <date>2019-08-29T17:04:13-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06bCreateLightReactionSellLineTest?pageHistory&amp;resultDate=20190829170413</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>7420</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06cCreateFordLightReactionAccountTest</name>
+    <date>2019-08-29T17:04:21-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06cCreateFordLightReactionAccountTest?pageHistory&amp;resultDate=20190829170421</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>6796</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06dCreateFordLightReactionOpportunityTest</name>
+    <date>2019-08-29T17:04:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06dCreateFordLightReactionOpportunityTest?pageHistory&amp;resultDate=20190829170428</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>10501</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06eCreateFordLightReactionSellLineTest</name>
+    <date>2019-08-29T17:04:39-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test06eCreateFordLightReactionSellLineTest?pageHistory&amp;resultDate=20190829170439</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>11507</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test07aCreateLightReactionBuyPlacementTest</name>
+    <date>2019-08-29T17:04:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.GermanySuite.Test07aCreateLightReactionBuyPlacementTest?pageHistory&amp;resultDate=20190829170450</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>3</exceptions>
+    </counts>
+    <runTimeInMillis>12012</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:/Program Files/Java/jdk1.8.0_91\bin\java" -cp C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\Desktop\FitNesseWithSelenium\target\classes;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\SumonK\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\SumonK\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\SumonK\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\SumonK\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\SumonK\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\SumonK\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\SumonK\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\SumonK\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\SumonK\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.53.0\selenium-htmlunit-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.18\htmlunit-2.18.jar;C:\Users\SumonK\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\SumonK\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpmime\4.5\httpmime-4.5.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\SumonK\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\SumonK\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\SumonK\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.12.v20150709\websocket-client-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-util\9.2.12.v20150709\jetty-util-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-io\9.2.12.v20150709\jetty-io-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.12.v20150709\websocket-common-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.12.v20150709\websocket-api-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\SumonK\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\SumonK\.m2\repository\com\opera\operadriver\1.1\operadriver-1.1.jar;C:\Users\SumonK\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\SumonK\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\SumonK\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\SumonK\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\SumonK\.m2\repository\com\codeborne\phantomjsdriver\1.2.1\phantomjsdriver-1.2.1.jar;C:\Users\SumonK\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SumonK\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\SumonK\.m2\repository\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\SumonK\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\SumonK\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.3.0\diffutils-1.3.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-simple\1.7.12\slf4j-simple-1.7.12.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.9\maven-classpath-plugin-1.9.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\SumonK\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8087</command>
+    <exitCode>1</exitCode>
+    <stdOut>:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Fail - Expected text 'Simon Paradine (simon.paradine@xaxis.com.glstaging)' doesn't match the actual text 'Logged in as Simon Paradine (simon.paradine@xaxis.com.globalqa)'
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMEA Belgium Agency-190829-0450 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMEA Belgium Advertiser-190829-0450 exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - Xax EMEA Belgium Account-190829-0450 exist as expected
+Text value - Xaxis Media Buying - EMEA [Change] exist as expected
+Navigating to url https://c.cs36.visual.force.com/apex/AccountDetail?id=0012h000003ZkS7&amp;sfdc.override=1
+clearing field
+clearing field
+Clicking on Save Button
+Text value - Xax EMEA Belgium Opportunity-190829-0450 exist as expected
+Text value - Belgium exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on New Xaxis Sell Line Button
+Text value - Xaxis exist as expected
+Text value - EMEA Xax SL-190829-0450 exist as expected
+Text value - Belgium exist as expected
+Text value - 8,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on New Plista Sell Line Button
+Text value - plista exist as expected
+Text value - EMEA Pl SL-190829-0450 exist as expected
+Text value - PL-EMEA exist as expected
+Text value - 8,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on New LR Sell Line Button
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on New Light Reaction Sell Line Button
+Text value - Light Reaction exist as expected
+Text value - EMEA LR SL-190829-0450 exist as expected
+Text value - LR-EMEA-Belgium exist as expected
+Text value - 8,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs36.salesforce.com/a012h000000Zkzn
+Clicking on Save Button
+Capturing value on Buy Placement Number
+Text value - Non Radia [Change] exist as expected
+Text value - CP-01035254 exist as expected
+Clicking on Plus Icon Tab
+Clicking on Cases Link
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMEA Ad Labs [Change] exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Closed Won exist as expected
+Navigating to url https://cs36.salesforce.com/a1J2h000000Bzzq
+Clicking on Edit Button
+clearing field
+clearing field
+Text value - 44,000 exist as expected
+Text value - USD 20,000.00 exist as expected
+Navigating to url https://cs36.salesforce.com/5002h000001DTCc
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad Labs member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad Labs member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a Ad Labs member before changing the case exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on Campaign Management Button
+Text value - Romania exist as expected
+Text value - Campaign Management - Romania exist as expected
+Text value - Campaign Management [Change] exist as expected
+Navigating to url https://cs36.salesforce.com/5002h000001DTCm
+Clicking on Change Owner Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on Product Support Button
+Text value - Great Plains Support [Change] exist as expected
+Text value - Product Support [Change] exist as expected
+Navigating to url https://cs36.salesforce.com/5002h000001DTCr
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsIAAU?nooverride=1
+Clicking on Turbine Button
+Text value - Product Support [Change] exist as expected
+Navigating to url https://cs36.salesforce.com/5002h000001DTCw
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - PL EMEA Belgium Account-190829-0450 exist as expected
+Text value - plista Media Buying - EMEA [Change] exist as expected
+Navigating to url https://c.cs36.visual.force.com/apex/AccountDetail?id=0012h000003ZkSC&amp;sfdc.override=1
+clearing field
+clearing field
+Clicking on Save Button
+Text value - PL EMEA Belgium Opportunity-190829-0450 exist as expected
+Text value - PL-EMEA exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsNAAU?nooverride=1
+Clicking on New Plista Sell Line Button
+Text value - plista exist as expected
+Text value - EMEA Pl SL-190829-0450 exist as expected
+Text value - PL-EMEA exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Detail Field
+Clicking on Accounts Tab
+Clicking on New Button
+Text value - Media Buying exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - pl non-GM EMEA Belgium Account-190829-0450 exist as expected
+Text value - plista Non GroupM - Media Buying - EMEA [Change] exist as expected
+Navigating to url https://c.cs36.visual.force.com/apex/AccountDetail?id=0012h000003ZkSH&amp;sfdc.override=1
+clearing field
+clearing field
+Clicking on Save Button
+Text value - pl non-GM EMEA Belgium Opportunity-190829-0450 exist as expected
+Text value - PL-NonGM-EMEA exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZsSAAU?nooverride=1
+Clicking on New Plista Sell Line Button
+Text value - plista non-GroupM exist as expected
+Text value - pl Non-GM $emeaSLName exist as expected
+Text value - PL-NonGM-EMEA exist as expected
+Text value - 8,000 exist as expected
+Capturing value on Sell No Detail Field
+Clicking on Accounts Tab
+Clicking on New Button
+Text value - Media Buying exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - LR EMEA Belgium Account-190829-0450 exist as expected
+Text value - Light Reaction exist as expected
+Text value - Xaxis Media Buying - EMEA [Change] exist as expected
+Navigating to url https://c.cs36.visual.force.com/apex/AccountDetail?id=0012h000003ZkSR&amp;sfdc.override=1
+clearing field
+clearing field
+clearing field
+Clicking on Save Button
+Text value - LR EMEA Belgium Opportunity-190829-0450 exist as expected
+Text value - LR-EMEA exist as expected
+Navigating to url https://cs36.salesforce.com/0062h000002hZscAAE?nooverride=1
+Clicking on New Light Reaction Sell Line Button
+Text value - Light Reaction exist as expected
+Text value - EMEA LR SL-190829-0450 exist as expected
+Text value - LR-EMEA-Belgium exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs36.salesforce.com/0062h000002hZsNAAU?nooverride=1
+clearing field
+Text value - PL EMEA Belgium Opportunity-190829-0450 Cloned exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Fail - Unable to clear keyword(s) on input field
+Navigating to url $belXaxFordAccountPageUrl
+Fail - Can't switch to frame
+Navigating to url $fordOpportunityPageUrl
+Clicking on New Xaxis Sell Line Button
+Fail - Unable to click on button/link
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Fail - Expected text 'Logged in as Frank Adams (frank.adams@global.com.glstaging)' doesn't match the actual text 'Logged in as Frank Adams (frank.adams@global.com.globalqa)'
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMEA Germany Agency-190829-0450 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+clearing field
+Clicking on Save Button
+Text value - EMEA Germany Advertiser-190829-0450 exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Text value - Media Buying exist as expected
+Clicking on Continue Button
+Fail - Unable to enter keyword on input field
+Navigating to url $gerEmeaAccountPageUrl
+Fail - Can't switch to frame
+Navigating to url $gerEmeaOpportunityPageUrl
+Clicking on New Sell Line Button
+Fail - Unable to click on button/link
+Fail - Unable to enter keyword on input field
+Clicking on Accounts Tab
+Fail - Unable to click on button/link
+Navigating to url $gerFordAccountPageUrl
+Fail - Can't switch to frame
+Navigating to url $gerFordOpportunityPageUrl
+Clicking on New Sell Line Button
+Fail - Unable to click on button/link
+Navigating to url $emeaGerFordLRSellLineUrl
+Navigating to url $gerEmeaOpportunityPageUrl
+Clicking on Enhanced Clone Button
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 27898
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 27479
+Only local connections are allowed.
+Aug 29, 2019 5:03:48 PM org.openqa.selenium.support.ui.ExpectedConditions findElements
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[@class="lookupInput"]/input)
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:388)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:504)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElements(ExpectedConditions.java:917)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$200(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:231)
+	at org.openqa.selenium.support.ui.ExpectedConditions$8.apply(ExpectedConditions.java:228)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.typeByIndex(DriverClass.java:392)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 35 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 36 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 49 more
+
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.typeByIndex(DriverClass.java:398)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 43 more
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.switchToFrame(DriverClass.java:524)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 43 more
+Aug 29, 2019 5:04:10 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[@value="New Sell Line"])
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.click(DriverClass.java:414)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 34 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 48 more
+
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.click(DriverClass.java:420)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 42 more
+Aug 29, 2019 5:04:18 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[text()="Sell Name"]/following::input)
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.type(DriverClass.java:367)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 34 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 48 more
+
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.type(DriverClass.java:373)
+	at sun.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 42 more
+Aug 29, 2019 5:04:25 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[contains(@title,"Accounts Tab")])
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.click(DriverClass.java:414)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 34 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 48 more
+
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.click(DriverClass.java:420)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 42 more
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.switchToFrame(DriverClass.java:524)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 29 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 30 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 43 more
+Aug 29, 2019 5:04:47 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[@value="New Sell Line"])
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.click(DriverClass.java:414)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 34 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 48 more
+
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.click(DriverClass.java:420)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 42 more
+Aug 29, 2019 5:04:59 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[@value="New Buy Placement"])
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.clickByJavaScript(DriverClass.java:599)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 34 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 48 more
+
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:335)
+	at com.fitNesse.DriverClass.getScreenShot(DriverClass.java:2727)
+	at com.fitNesse.DriverClass.clickByJavaScript(DriverClass.java:604)
+	at sun.reflect.GeneratedMethodAccessor46.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 28 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 29 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 42 more
+Aug 29, 2019 5:05:08 PM org.openqa.selenium.support.ui.ExpectedConditions findElement
+WARNING: WebDriverException thrown by findElement(By.xpath: //*[@title="Enhanced Clone"])
+org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50579}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5556_375}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 06fc6d30d3747bd85de10d6a3287a889
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:899)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:41)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	at com.fitNesse.DriverClass.click(DriverClass.java:414)
+	at sun.reflect.GeneratedMethodAccessor16.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at fitnesse.slim.fixtureInteraction.DefaultInteraction.methodInvoke(DefaultInteraction.java:81)
+	at fitnesse.slim.MethodExecutor.callMethod(MethodExecutor.java:57)
+	at fitnesse.slim.MethodExecutor.invokeMethod(MethodExecutor.java:38)
+	at fitnesse.slim.MethodExecutor.findAndInvoke(MethodExecutor.java:72)
+	at fitnesse.slim.FixtureMethodExecutor.execute(FixtureMethodExecutor.java:20)
+	at fitnesse.slim.StatementExecutor.getMethodExecutionResult(StatementExecutor.java:135)
+	at fitnesse.slim.StatementExecutor.call(StatementExecutor.java:108)
+	at fitnesse.slim.instructions.CallInstruction.executeInternal(CallInstruction.java:35)
+	at fitnesse.slim.instructions.Instruction.execute(Instruction.java:29)
+	at fitnesse.slim.ListExecutor$Executive.executeStatement(ListExecutor.java:49)
+	at fitnesse.slim.ListExecutor$Executive.executeStatements(ListExecutor.java:43)
+	at fitnesse.slim.ListExecutor.execute(ListExecutor.java:85)
+	at fitnesse.slim.SlimServer.executeInstructions(SlimServer.java:84)
+	at fitnesse.slim.SlimServer.processOneSetOfInstructions(SlimServer.java:77)
+	at fitnesse.slim.SlimServer.tryProcessInstructions(SlimServer.java:64)
+	at fitnesse.slim.SlimServer.serve(SlimServer.java:49)
+	at fitnesse.slim.SlimService.handle(SlimService.java:154)
+	at fitnesse.slim.SlimService.acceptOne(SlimService.java:162)
+	at fitnesse.slim.SlimService.accept(SlimService.java:124)
+	at fitnesse.slim.SlimService.startWithFactory(SlimService.java:76)
+	at fitnesse.slim.SlimService.main(SlimService.java:56)
+Caused by: org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 34 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:27479 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 35 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 48 more
+
+</stdErr>
+    <exception>Socket closed</exception>
+  </executionLog>
+  <finalCounts>
+    <right>33</right>
+    <wrong>2</wrong>
+    <ignores>0</ignores>
+    <exceptions>12</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>870540</totalRunTimeInMillis>
+</suiteResults>
+

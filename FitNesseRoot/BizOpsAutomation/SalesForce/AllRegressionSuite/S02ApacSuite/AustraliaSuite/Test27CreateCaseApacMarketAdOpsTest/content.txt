@@ -1,0 +1,26 @@
+'''Scenario Name: ''' Create an 'APAC Market Ad Ops' case
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Task Link - https://xaxistech.atlassian.net/browse/SFG-2267
+**********!
+#|type;|${SalesForce_Cases_Opp_Name_Field}|$ausOpportunityName|Opportunity Name Field|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_Australia_Suite_${PAGE_NAME}|Test27Aus-Create an APAC Market Ad Ops Case|
+|click;|${SalesForce_Plus_Icon_Tab}|Plus Icon Tab|
+|click;|${SalesForce_Cases_Button}|Cases Button|
+|click;|${SalesForce_Cases_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Cases_Record_Type_Dropdown}|APAC - Market - Ad Ops|Record Type Dropdown|
+|click;|${SalesForce_Cases_Continue_Button}|Continue Button|
+|selectDropDownByText;|${SalesForce_Cases_Status_Dropdown}|New|Status Dropdown|
+|selectDropDownByText;|${SalesForce_Cases_Market_Dropdown}|Australia|Market Dropdown|
+|click;|${SalesForce_Cases_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Cases_Details_Page_Case_Owner_Field_2}|APAC Ad Ops [Change]|Case Owner on Case Detail Page|
+|objectVerification;|${SalesForce_Cases_Details_Record_Type_Field}|APAC - Market - Ad Ops [Change]|Record Type on Case Detail Page|
+|$apacMarketAdOpsPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

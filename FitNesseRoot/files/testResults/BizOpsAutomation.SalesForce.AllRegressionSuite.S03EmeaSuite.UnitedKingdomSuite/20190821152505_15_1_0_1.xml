@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite</rootPath>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test01LogInUserTest</name>
+    <date>2019-08-21T15:25:05+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190821152505</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>46946</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test02CreateAgencyTest</name>
+    <date>2019-08-21T15:25:52+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190821152552</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12523</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test03CreateAdvertiserTest</name>
+    <date>2019-08-21T15:26:04+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190821152604</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9178</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test04CreateLightReactionAccountTest</name>
+    <date>2019-08-21T15:26:14+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test04CreateLightReactionAccountTest?pageHistory&amp;resultDate=20190821152614</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24707</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test05CreateLightReactionOpportunityTest</name>
+    <date>2019-08-21T15:26:38+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test05CreateLightReactionOpportunityTest?pageHistory&amp;resultDate=20190821152638</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>21572</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test06aVerifyAllFieldsForLightReactionSellLineTest</name>
+    <date>2019-08-21T15:27:00+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test06aVerifyAllFieldsForLightReactionSellLineTest?pageHistory&amp;resultDate=20190821152700</pageHistoryLink>
+    <counts>
+      <right>28</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>22731</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test06bCreateLightReactionSellLineTest</name>
+    <date>2019-08-21T15:27:23+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test06bCreateLightReactionSellLineTest?pageHistory&amp;resultDate=20190821152723</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>18596</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test07CreateXaxisAccountTest</name>
+    <date>2019-08-21T15:27:41+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test07CreateXaxisAccountTest?pageHistory&amp;resultDate=20190821152741</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>23656</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test08CreateXaxisOpportunityTest</name>
+    <date>2019-08-21T15:28:05+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test08CreateXaxisOpportunityTest?pageHistory&amp;resultDate=20190821152805</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16028</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test09aVerifyAllFieldsForXaxisSellLineTest</name>
+    <date>2019-08-21T15:28:21+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test09aVerifyAllFieldsForXaxisSellLineTest?pageHistory&amp;resultDate=20190821152821</pageHistoryLink>
+    <counts>
+      <right>28</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>22080</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test09bCreateXaxisSellLineTest</name>
+    <date>2019-08-21T15:28:43+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test09bCreateXaxisSellLineTest?pageHistory&amp;resultDate=20190821152843</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>29373</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test10aCreateXaxisBuyPlacementTest</name>
+    <date>2019-08-21T15:29:13+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test10aCreateXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190821152913</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12129</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test10bEditXaxisBuyPlacementTest</name>
+    <date>2019-08-21T15:29:25+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test10bEditXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190821152925</pageHistoryLink>
+    <counts>
+      <right>32</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>56822</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test11CloneOpportunityTest</name>
+    <date>2019-08-21T15:30:22+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test11CloneOpportunityTest?pageHistory&amp;resultDate=20190821153022</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15012</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test12ClickCustomButtonsOppDetailsPageTest</name>
+    <date>2019-08-21T15:30:37+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test12ClickCustomButtonsOppDetailsPageTest?pageHistory&amp;resultDate=20190821153037</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>29022</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test14RebookingAnOpportunityTest</name>
+    <date>2019-08-21T15:31:06+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test14RebookingAnOpportunityTest?pageHistory&amp;resultDate=20190821153106</pageHistoryLink>
+    <counts>
+      <right>55</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>96321</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test15MediaApprovalApprovedTest</name>
+    <date>2019-08-21T15:32:42+00:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S03EmeaSuite.UnitedKingdomSuite.Test15MediaApprovalApprovedTest?pageHistory&amp;resultDate=20190821153242</pageHistoryLink>
+    <counts>
+      <right>90</right>
+      <wrong>7</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>213932</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:/Program Files/Java/jdk1.8.0_91\bin\java" -cp C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\Desktop\FitNesseWithSelenium\target\classes;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\SumonK\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\SumonK\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\SumonK\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\SumonK\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\SumonK\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\SumonK\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\SumonK\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\SumonK\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\SumonK\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.53.0\selenium-htmlunit-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.18\htmlunit-2.18.jar;C:\Users\SumonK\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\SumonK\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpmime\4.5\httpmime-4.5.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\SumonK\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\SumonK\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\SumonK\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.12.v20150709\websocket-client-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-util\9.2.12.v20150709\jetty-util-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-io\9.2.12.v20150709\jetty-io-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.12.v20150709\websocket-common-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.12.v20150709\websocket-api-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\SumonK\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\SumonK\.m2\repository\com\opera\operadriver\1.1\operadriver-1.1.jar;C:\Users\SumonK\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\SumonK\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\SumonK\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\SumonK\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\SumonK\.m2\repository\com\codeborne\phantomjsdriver\1.2.1\phantomjsdriver-1.2.1.jar;C:\Users\SumonK\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SumonK\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\SumonK\.m2\repository\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\SumonK\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\SumonK\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.3.0\diffutils-1.3.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-simple\1.7.12\slf4j-simple-1.7.12.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.9\maven-classpath-plugin-1.9.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\SumonK\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8090</command>
+    <exitCode>1</exitCode>
+    <stdOut>:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Natasa Tintor (natasa.tintor@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMEA UK Agency-190821-0325 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - EMEA UK Advertiser-190821-0325 exist as expected
+Clicking on + icon Tab
+Clicking on Accounts Tab
+Clicking on New Button
+Text value - United Kingdom exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - LR EMEA UK Account-190821-0325 exist as expected
+Text value - Light Reaction exist as expected
+Text value - United Kingdom [Change] exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NVF2w&amp;sfdc.override=1
+clearing field
+clearing field
+Text value - LR EMEA UK Opportunity-190821-0325 exist as expected
+Text value - This Opportunity has no Sell Lines. exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev51j&amp;sfdc.override=1
+Clicking on Create New Sell Line Button
+Text value - Light Reaction exist as expected
+Text value - Error: Audio requires Business Unit: Xaxis selection exist as expected
+Fail - Can't switch to frame
+Clicking on + icon Tab
+Clicking on Accounts Tab
+Clicking on New Button
+Text value - United Kingdom exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - XAX EMEA UK Account-190821-0325 exist as expected
+Text value - Xaxis exist as expected
+Text value - United Kingdom [Change] exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NVF3G&amp;sfdc.override=1
+clearing field
+clearing field
+Text value - XAX EMEA UK Opportunity-190821-0325 exist as expected
+Text value - This Opportunity has no Sell Lines. exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Create New Sell Line Button
+Text value - Xaxis exist as expected
+Text value - Error: LR - App Install requires Business Unit: Light Reaction selection exist as expected
+Text value - Xaxis exist as expected
+Text value - EMEA Xax SL-190821-0325 exist as expected
+Text value - 8 exist as expected
+Text value - United Kingdom exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Text value - EMEA Xax SL-190821-0325 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Clicking on Save Button
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Text value - XAX EMEA UK Opportunity-190821-0325 - Clone 2019-08-21 exist as expected
+Text value - Proposal exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on Clone Button
+Text value - XAX EMEA UK Opportunity-190821-0325 - Clone 2019-08-21 exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Rebooking Button
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Natasa Tintor (natasa.tintor@xaxis.com.glstaging) exist as expected
+Clicking on Nav Button
+Clicking on Logout Button
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NVF3G&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Save Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Rebooking Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - � You must enter a Booking ID and Booking Plan before this Opportunity can be Closed Won exist as expected
+Text value - � You must enter the Account Manager &amp; Account Executive if the Opportunity Stage is Contract Pending or Closed Won exist as expected
+Text value - Error: Please select at least one option from the Applicable Task field. If no tasks are needed, select 'None'. exist as expected
+Clicking on Cancel Button
+Clicking on Applicable Tasks Right Arrow
+Clicking on Ok Button
+Clicking on Edit Save Button
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Closed Won exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Pending exist as expected
+Clicking on Recall Approval Request Button
+Clicking on Recall Approval Request Button
+Text value - Recalled exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Pending exist as expected
+Clicking on User Nav Button
+Clicking on Logout Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Clicking on Approve/Reject Link
+Clicking on Reject Button
+Text value - Rejected exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Please ensure all necessary sell lines have received media approval before updating stage to Closed Won. Opportunity must be in Proposal or Contract Pending for sell line approval exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Pending exist as expected
+Clicking on Approve/Reject Link
+Clicking on Approve Button
+Text value - Approved exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev52c&amp;sfdc.override=1
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Text value - Pending exist as expected
+Clicking on Recall Approval Request Button
+Clicking on Recall Approval Request Button
+Text value - Recalled exist as expected
+Clicking on OK Button
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dWWEQA2/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev52c&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TlRveU9EbzFPQzR3TlRkYSxIRzFfd3ZjMWJRVi1UbGpXRkQ4RkZxLFpUUmtOemt5&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWWEQA2%2Fd
+Text value - Recalled exist as expected
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 55587
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 57179
+Only local connections are allowed.
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>15</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>673253</totalRunTimeInMillis>
+</suiteResults>
+

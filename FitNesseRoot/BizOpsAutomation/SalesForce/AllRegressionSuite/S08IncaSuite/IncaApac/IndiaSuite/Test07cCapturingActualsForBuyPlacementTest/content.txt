@@ -1,0 +1,104 @@
+'''Scenario Name: ''' Caputring Actuals For Buy Placements
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+	Refer to Xray Test Case in Jira
+    https://xaxistech.atlassian.net/browse/SFG-1945  
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_INCA_India_Suite_${PAGE_NAME}|Test07cINCAIndia-Capturing Actuals for Buy Placements|
+|open;|$incaIndFeeBuyPlacementPageUrl|
+|objectVerification;|${SalesForce_BuyPlacement_Original_Volume_Text_Field}||Original Volume Text Field|
+|click;|${SalesForce_SellLine_Actualize_Button}|Actualize Button|
+|elementVerification;|${SalesForce_BuyPlacement_Actualize_Main_Title_Text}|Yes|Main Title Message|
+|objectVerification;|${SalesForce_BuyPlacement_Actualize_Actual_Cost_Field}|50.000000|Value|Actual Cost Field|
+|objectVerification;|${SalesForce_BuyPlacement_Actualize_Actual_Payable_Units_Text_Field}|1|Actual Payable Units Text Field|
+|click;|${SalesForce_SellLine_Actualize_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Actualize_Actuals_Saved_Message}|Yes|Actuals Saved Message|
+|wait;|14000|
+|click;|${SalesForce_BuyPlacement_Actualize_Back_To_Buy_Placement_Button}|Back To Buy Placement Button|
+|objectVerification;|${SalesForce_BuyPlacement_Original_Volume_Text_Field}|1|Original Volume Text Field|
+|click;|${SalesForce_SellLine_Actualize_Button}|Actualize Button|
+|elementVerification;|${SalesForce_BuyPlacement_Actualize_Main_Title_Text}|Yes|Main Title Message|
+|clear;|${SalesForce_BuyPlacement_Actualize_Actual_Cost_Field}|Actual Cost Field|
+|type;|${SalesForce_BuyPlacement_Actualize_Actual_Cost_Field}|55|Actual Cost Field|
+|click;|${SalesForce_SellLine_Actualize_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Actualize_Actuals_Saved_Message}|Yes|Actuals Saved Message|
+|wait;|7800|
+|click;|${SalesForce_BuyPlacement_Actualize_Back_To_Buy_Placement_Button}|Back To Buy Placement Button|
+|objectVerification;|${SalesForce_BuyPlacement_Original_Volume_Text_Field}|1|Original Volume Text Field|
+|scroll;|Vertical|5500|
+|clickUsingIndexMouseMovement;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|0|Third BPMS link|
+|elementVerification;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox_Field}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Planned_Payable_Cost_Text_Field}|USD 18.53|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 16.85|Planned Payable Cost Text Field|
+|open;|$incaIndFeeBuyPlacementPageUrl|
+|scroll;|Vertical|5500|
+|clickUsingIndexMouseMovement;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|1|Second BPMS link|
+|elementVerification;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox_Field}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Planned_Payable_Cost_Text_Field}|USD 17.93|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 16.30|Planned Payable Cost Text Field|
+|open;|$incaIndFeeBuyPlacementPageUrl|
+|scroll;|Vertical|5500|
+|clickUsingIndexMouseMovement;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|2|First BPMS link|
+|elementVerification;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox_Field}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Planned_Payable_Cost_Text_Field}|USD 18.53|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 16.85|Planned Payable Cost Text Field|
+|open;|$incaIndSellLineURL|
+|objectVerification;|${SalesForce_SellLine_Original_Third_Party_Cost_Text_Field}|USD 50.00|Original Third Party Cost Text Field|
+|objectVerification;|${SalesForce_SellLine_Third_Party_Cost_Text_Field}|USD 55.00|Third Party Cost Text Field|
+|open;|$incaIndPackBuyPlacementPageUrl|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}||Original Net Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_Original_Volume_Text_Field}||Original Volume Text Field|
+|click;|${SalesForce_SellLine_Actualize_Button}|Actualize Button|
+|elementVerification;|${SalesForce_BuyPlacement_Actualize_Main_Title_Text}|Yes|Main Title Message|
+|objectVerification;|${SalesForce_BuyPlacement_Actualize_Actual_Cost_Field}|50.000000|Value|Actual Cost Field|
+|objectVerification;|${SalesForce_BuyPlacement_Actualize_Actual_Payable_Units_Field}|20000|Value|Actual Payable Units Field|
+|click;|${SalesForce_SellLine_Actualize_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Actualize_Actuals_Saved_Message}|Yes|Actuals Saved Message|
+|wait;|7900|
+|click;|${SalesForce_BuyPlacement_Actualize_Back_To_Buy_Placement_Button}|Back To Buy Placement Button|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 50.00|Original Net Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_Original_Volume_Text_Field}|20,000|Original Volume Text Field|
+|click;|${SalesForce_SellLine_Actualize_Button}|Actualize Button|
+|clear;|${SalesForce_BuyPlacement_Actualize_Actual_Cost_Field}|Actual Cost Field|
+|type;|${SalesForce_BuyPlacement_Actualize_Actual_Cost_Field}|55|Actual Cost Field|
+|clear;|${SalesForce_BuyPlacement_Actualize_Actual_Payable_Units_Field}|Actual Payable Units Field|
+|type;|${SalesForce_BuyPlacement_Actualize_Actual_Payable_Units_Field}|24000|Actual Payable Units Field|
+|click;|${SalesForce_SellLine_Actualize_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Actualize_Actuals_Saved_Message}|Yes|Actuals Saved Message|
+|wait;|8000|
+|click;|${SalesForce_BuyPlacement_Actualize_Back_To_Buy_Placement_Button}|Back To Buy Placement Button|
+|objectVerification;|${SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Cost_Field}|USD 55.00|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_Detail_Page_Planned_Payable_Units_Field}|24,000|Planned Payable Units Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 50.00|Original Net Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_Original_Volume_Text_Field}|20,000|Original Volume Text Field|
+|scroll;|Vertical|5500|
+|clickUsingIndexMouseMovement;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|0|Third BPMS link|
+|elementVerification;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox_Field}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Planned_Payable_Cost_Text_Field}|USD 18.53|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 16.85|Planned Payable Cost Text Field|
+|open;|$incaIndPackBuyPlacementPageUrl|
+|scroll;|Vertical|5500|
+|clickUsingIndexMouseMovement;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|1|Second BPMS link|
+|elementVerification;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox_Field}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Planned_Payable_Cost_Text_Field}|USD 17.93|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 16.30|Planned Payable Cost Text Field|
+|open;|$incaIndPackBuyPlacementPageUrl|
+|scroll;|Vertical|5500|
+|clickUsingIndexMouseMovement;|${SalesForce_BuyPlacement_Detail_Page_First_Monthly_Schedule_Link}|2|First BPMS link|
+|elementVerification;|${SalesForce_BuyPlacment_Monthlly_Schedule_Reconciled_Checkbox_Field}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Planned_Payable_Cost_Text_Field}|USD 18.53|Planned Payable Cost Text Field|
+|objectVerification;|${SalesForce_BuyPlacement_BPMS_Original_Net_Cost_Text_Field}|USD 16.85|Planned Payable Cost Text Field|
+|wait;|14000|
+|open;|$incaIndSellLineURL|
+|objectVerification;|${SalesForce_SellLine_Original_Media_Net_Cost_Text_Field}|USD 50.00|Original Media Net Cost Text Field|
+|objectVerification;|${SalesForce_SellLine_Planned_Media_Net_Cost_Text_Field}|USD 55.00|Planned Media Net Cost Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Planned_Total_Cost_Text_Field}|USD 100.00|Original Planned Total Cost Text Field|
+|stopExtentReport;|
+**********!

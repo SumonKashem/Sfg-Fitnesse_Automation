@@ -1,0 +1,1 @@
+!define 	incaRateTypeDropdownValues {CPM,CPR,CPCV,CPV,CPV (Visit),CPE,CPA,CPP,CPX}

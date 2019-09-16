@@ -1,0 +1,3519 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ExtentReports Library 2.40.2 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
+Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
+Documentation: http://extentreports.relevantcodes.com 
+-->
+
+<meta charset='UTF-8' /> 
+<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+<meta name='robots' content='noodp, noydir' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<title>
+ExtentReports 2.0
+</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href='https://cdn.rawgit.com/anshooarora/extentreports/e4f8ea1de961161791c01b99a71a1e17f81125cf/cdn/extent.css' type='text/css' rel='stylesheet' />
+
+<style>
+
+            
+                
+            
+        
+</style>
+</head>
+
+
+<body class='extent standard hide-overflow'>
+<!-- nav -->
+<nav>
+<div class='logo-container'>
+<a class='logo-content' href='http://extentreports.relevantcodes.com'>
+<span>ExtentReports</span>
+</a>
+<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
+</div>
+<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+<li class='analysis waves-effect'><a href='#!' class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a></li>
+</ul>
+<span class='report-name'>Automation Report</span> <span class='report-headline'></span>
+<ul class='right hide-on-med-and-down nav-right'>
+<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
+<i class='mdi-hardware-desktop-windows'></i>
+</li>
+<li>
+<span class='suite-started-time'>2019-09-16 11:02:26</span>
+</li>
+<li>
+<span>v2.40.2</span>
+</li>
+</ul>
+</nav>
+<!-- /nav -->
+
+<!-- container -->
+<div class='container'>
+
+<!-- dashboard -->
+<div id='dashboard-view' class='row'>
+<div class='time-totals'>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-tests'> 
+<span class='panel-name'>Total Tests</span> 
+<span class='total-tests'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-steps'> 
+<span class='panel-name'>Total Steps</span> 
+<span class='total-steps'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-current'> 
+<span class='panel-name'>Total Time Taken (Current Run)</span> 
+<span class='suite-total-time-current-value panel-lead'>0h 6m 37s+382ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-overall'> 
+<span class='panel-name'>Total Time Taken (Overall)</span> 
+<span class='suite-total-time-overall-value panel-lead'>202h 12175m 730500s+354ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-start-time'>
+<div class='card accent green-accent'> 
+<span class='panel-name'>Start</span> 
+<span class='panel-lead suite-started-time'>2019-09-16 10:55:49</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-end-time'>
+<div class='card accent pink-accent'> 
+<span class='panel-name'>End</span> 
+<span class='panel-lead suite-ended-time'>2019-09-16 11:02:26</span> 
+</div> 
+</div>
+</div>
+<div class='charts'>
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Tests View</span>
+</div> 
+<div class='panel-setting modal-trigger test-count-setting right'>
+<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='test-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+</div> 
+<div>
+<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div> 
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Steps View</span>
+</div> 
+<div class='panel-setting modal-trigger step-status-filter right'>
+<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='step-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>
+</div> 
+<div>
+<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div>
+<div class='col s12 m12 l4 fh'> 
+<div class='card-panel'> 
+<span class='panel-name'>Pass Percentage</span> 
+<span class='pass-percentage panel-lead'></span> 
+<div class='progress light-blue lighten-3'> 
+<div class='determinate light-blue'></div> 
+</div> 
+</div> 
+</div>
+</div>
+<div class='system-view'>
+<div class='col l4 m12 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Environment</span>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows NT (unknown)</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>SumonK</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>1.8.0_91</td>
+</tr>
+<tr>
+<td>Test Environment</td>
+<td>Staging</td>
+</tr>
+<tr>
+<td>Host Name</td>
+<td>EC2AMAZ-FEFP0OS</td>
+</tr>
+<tr>
+<td>Browser Name</td>
+<td>Chrome</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class='category-summary-view'>
+<div class='col l4 m6 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Categories</span>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Test01Aus-Log In as an APAC user Apurva Prasanna
+</td>
+</tr>
+<tr>
+<td>
+Test01Ger-Log In as a Germany user Frank Adams
+</td>
+</tr>
+<tr>
+<td>
+Test01INCAUK-Log In as a INCA UK user sf qa team
+</td>
+</tr>
+<tr>
+<td>
+Test01IncaUser-Verify User sf qa team is Active
+</td>
+</tr>
+<tr>
+<td>
+Test01UK-Log In as a UK user Natasa Tintor
+</td>
+</tr>
+<tr>
+<td>
+Test02INCAInd-Create an INCA India agency
+</td>
+</tr>
+<tr>
+<td>
+Test02INCAUK-Create an INCA UK agency
+</td>
+</tr>
+<tr>
+<td>
+Test03INCAInd-Create an INCA India Advertiser
+</td>
+</tr>
+<tr>
+<td>
+Test03INCAUK-Create an INCA UK Advertiser
+</td>
+</tr>
+<tr>
+<td>
+Test05INCAInd-Create an INCA India Opportunity
+</td>
+</tr>
+<tr>
+<td>
+Test05INCAUK-Create an INCA UK Opportunity
+</td>
+</tr>
+<tr>
+<td>
+Test06aINCAInd-Verify All Fields Available for INCA APAC Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test06aINCAUK-Verify All Fields Available for INCA Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test06bINCAInd-Create an INCA India Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test06bINCAUK-Create an INCA UK Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test06cINCAInd-Update SLMS APAC Fields for SL Rollup
+</td>
+</tr>
+<tr>
+<td>
+Test06dINCAInd-Create an 'INCA' Fee Buy Placement
+</td>
+</tr>
+<tr>
+<td>
+Test07aINCAInd-Create an APAC 'INCA' Buy Placement
+</td>
+</tr>
+<tr>
+<td>
+Test07aINCAUK-Create an 'INCA' Package Buy Placement
+</td>
+</tr>
+<tr>
+<td>
+Test07bINCAInd-Capturing Actuals for Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test07bINCAUK-Create an 'INCA' Fee Buy Placement
+</td>
+</tr>
+<tr>
+<td>
+Test07cINCAIndia-Capturing Actuals for Buy Placements
+</td>
+</tr>
+<tr>
+<td>
+Test08INCAInd- Accessing INCA account with Non INCA users
+</td>
+</tr>
+<tr>
+<td>
+Test08INCAUK-Capturing Actuals for Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test09INCAUK-Capturing Actuals for Buy Line
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- /dashboard -->
+
+<!-- tests -->
+<div id='test-view' class='row _addedTable'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Tests</h5>
+</div>
+<div class='card-panel filters'>
+<div>
+<a data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#' class='dropdown-button button tests-toggle'><i class='mdi-action-subject icon'></i></a>
+<ul id='tests-toggle' class='dropdown-content'>
+<li class='pass'><a href='#!'>Pass</a></li>
+<li class='fail'><a href='#!'>Fail</a></li>
+<li class='skip'><a href='#!'>Skip</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#' class='category-toggle dropdown-button button'><i class='mdi-maps-local-offer icon'></i></a>
+<ul id='category-toggle' class='dropdown-content'>
+<li class='Test01Aus-Log In as an APAC user Apurva Prasanna'><a href='#!'>Test01Aus-Log In as an APAC user Apurva Prasanna</a></li>
+<li class='Test01Ger-Log In as a Germany user Frank Adams'><a href='#!'>Test01Ger-Log In as a Germany user Frank Adams</a></li>
+<li class='Test01INCAUK-Log In as a INCA UK user sf qa team'><a href='#!'>Test01INCAUK-Log In as a INCA UK user sf qa team</a></li>
+<li class='Test01IncaUser-Verify User sf qa team is Active'><a href='#!'>Test01IncaUser-Verify User sf qa team is Active</a></li>
+<li class='Test01UK-Log In as a UK user Natasa Tintor'><a href='#!'>Test01UK-Log In as a UK user Natasa Tintor</a></li>
+<li class='Test02INCAInd-Create an INCA India agency'><a href='#!'>Test02INCAInd-Create an INCA India agency</a></li>
+<li class='Test02INCAUK-Create an INCA UK agency'><a href='#!'>Test02INCAUK-Create an INCA UK agency</a></li>
+<li class='Test03INCAInd-Create an INCA India Advertiser'><a href='#!'>Test03INCAInd-Create an INCA India Advertiser</a></li>
+<li class='Test03INCAUK-Create an INCA UK Advertiser'><a href='#!'>Test03INCAUK-Create an INCA UK Advertiser</a></li>
+<li class='Test05INCAInd-Create an INCA India Opportunity'><a href='#!'>Test05INCAInd-Create an INCA India Opportunity</a></li>
+<li class='Test05INCAUK-Create an INCA UK Opportunity'><a href='#!'>Test05INCAUK-Create an INCA UK Opportunity</a></li>
+<li class='Test06aINCAInd-Verify All Fields Available for INCA APAC Sell Line'><a href='#!'>Test06aINCAInd-Verify All Fields Available for INCA APAC Sell Line</a></li>
+<li class='Test06aINCAUK-Verify All Fields Available for INCA Sell Line'><a href='#!'>Test06aINCAUK-Verify All Fields Available for INCA Sell Line</a></li>
+<li class='Test06bINCAInd-Create an INCA India Sell Line'><a href='#!'>Test06bINCAInd-Create an INCA India Sell Line</a></li>
+<li class='Test06bINCAUK-Create an INCA UK Sell Line'><a href='#!'>Test06bINCAUK-Create an INCA UK Sell Line</a></li>
+<li class='Test06cINCAInd-Update SLMS APAC Fields for SL Rollup'><a href='#!'>Test06cINCAInd-Update SLMS APAC Fields for SL Rollup</a></li>
+<li class='Test06dINCAInd-Create an 'INCA' Fee Buy Placement'><a href='#!'>Test06dINCAInd-Create an 'INCA' Fee Buy Placement</a></li>
+<li class='Test07aINCAInd-Create an APAC 'INCA' Buy Placement'><a href='#!'>Test07aINCAInd-Create an APAC 'INCA' Buy Placement</a></li>
+<li class='Test07aINCAUK-Create an 'INCA' Package Buy Placement'><a href='#!'>Test07aINCAUK-Create an 'INCA' Package Buy Placement</a></li>
+<li class='Test07bINCAInd-Capturing Actuals for Sell Line'><a href='#!'>Test07bINCAInd-Capturing Actuals for Sell Line</a></li>
+<li class='Test07bINCAUK-Create an 'INCA' Fee Buy Placement'><a href='#!'>Test07bINCAUK-Create an 'INCA' Fee Buy Placement</a></li>
+<li class='Test07cINCAIndia-Capturing Actuals for Buy Placements'><a href='#!'>Test07cINCAIndia-Capturing Actuals for Buy Placements</a></li>
+<li class='Test08INCAInd- Accessing INCA account with Non INCA users'><a href='#!'>Test08INCAInd- Accessing INCA account with Non INCA users</a></li>
+<li class='Test08INCAUK-Capturing Actuals for Sell Line'><a href='#!'>Test08INCAUK-Capturing Actuals for Sell Line</a></li>
+<li class='Test09INCAUK-Capturing Actuals for Buy Line'><a href='#!'>Test09INCAUK-Capturing Actuals for Buy Line</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a id='clear-filters' alt='Clear Filters' title='Clear Filters'><i class='mdi-navigation-close icon'></i></a>
+</div>
+<div>&nbsp;&middot;&nbsp;</div>
+<div>
+<a id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'><i class='mdi-action-track-changes icon'></i></a>
+</div>
+<div>
+<a id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters' class='enabled'><i class='mdi-navigation-refresh icon'></i></i></a>
+</div>
+<div>&nbsp;&middot;</div>
+<div class='search' alt='Search Tests' title='Search Tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v no-margin-v'>
+<div class='wrapper'>
+<ul id='test-collection' class='test-collection'>
+<li class='collection-item test displayed active fail ' extentid='54c590a6-b25d-4ecb-a2a2-69d0a74c6cef'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_Suite_Test01SfUserActivationTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01incauser-verifyusersfqateamisactive'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:55:49</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:56:09</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 20s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01IncaUser-Verify User sf qa team is Active</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:55:49</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:55:49</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:55:58</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:55:58</td>
+<td class='step-details'>Entering key word on Password Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:00</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:06</td>
+<td class='step-details'>Unable to click on LogIn Button Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50652}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir4292_17858}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 74d89ad6bf0e1f8e8902b2040d46c0bb</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:09</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:09</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:19</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:09</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:09</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='578ba6e4-4669-4f52-b28c-95c17052c66b'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test02CreateAgencyTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test02incaind-createanincaindiaagency'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:56:11</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:56:16</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test02INCAInd-Create an INCA India agency</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:11</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:11</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:14</td>
+<td class='step-details'>Unable to click on + icon Tab Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50652}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir4292_17858}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 74d89ad6bf0e1f8e8902b2040d46c0bb</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:16</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:16</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:04</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:16</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:16</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='3a01f618-80b1-4ba7-9d7c-107c8702836e'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test03CreateAdvertiserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test03incaind-createanincaindiaadvertiser'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:56:19</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:56:24</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test03INCAInd-Create an INCA India Advertiser</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:19</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:19</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:22</td>
+<td class='step-details'>Unable to click on + icon Tab Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50652}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir4292_17858}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 74d89ad6bf0e1f8e8902b2040d46c0bb</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:24</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:24</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:05</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:24</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:24</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='c9e0a3e7-7428-48eb-9632-e803d455140b'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01uk-loginasaukusernatasatintor'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:56:33</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:56:54</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 21s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01UK-Log In as a UK user Natasa Tintor</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:33</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:33</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:47</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:49</td>
+<td class='step-details'>Entering key word on Password Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:52</td>
+<td class='step-details'>Unable to enter keyword on Password Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:56:54</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:54</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:21</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:54</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:56:54</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='f4fc9b1d-6469-4b25-806d-01b6231e59e6'>
+<div class='test-head'>
+<span class='test-name'>EMEA_Germany_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01ger-loginasagermanyuserfrankadams'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:57:02</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:57:13</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 11s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01Ger-Log In as a Germany user Frank Adams</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:02</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:02</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:08</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:57:11</td>
+<td class='step-details'>Unable to enter keyword on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:57:13</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:13</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:10</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:13</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:13</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='08b35f3a-6594-4ca9-97e7-5cf23f404860'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_Suite_Test01SfUserActivationTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01incauser-verifyusersfqateamisactive'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:57:41</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:57:49</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01IncaUser-Verify User sf qa team is Active</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:41</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:41</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:44</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:57:47</td>
+<td class='step-details'>Unable to enter keyword on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:57:49</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:49</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:49</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:49</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='2d646d87-07a3-4f6f-a37b-0aa6c5567b76'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test05CreateIncaOppTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test05incaind-createanincaindiaopportunity'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:57:51</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:58:00</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test05INCAInd-Create an INCA India Opportunity</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:51</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:51</td>
+<td class='step-details'>Navigating to url $incaIndAccountPageUrl</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:57:55</td>
+<td class='step-details'>Switching to Opportunity Frame Iframe</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:57:57</td>
+<td class='step-details'>Can't switch Opportunity Frame Iframe</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:00</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:00</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:08</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:00</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:00</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='2ea93363-de66-4809-b222-8e661ee3cc3a'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test06aVerifyAllFieldsForIncaSellLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test06aincaind-verifyallfieldsavailableforincaapacsellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:58:03</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:58:12</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06aINCAInd-Verify All Fields Available for INCA APAC Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:03</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:03</td>
+<td class='step-details'>Navigating to url $incaIndOpportunityPageUrl</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:07</td>
+<td class='step-details'>Clicking on New INCA Sell Line Button</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:10</td>
+<td class='step-details'>Unable to click on New INCA Sell Line Button Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50843}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5980_20438}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 2fdab169d1dc9ab25294145b9a52bdc1</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:12</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:12</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:12</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:12</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='a0a2293e-d94b-4efd-969a-82e26ce6affc'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_INDIA_Suite_Test06bCreateIncaSellLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test06bincaind-createanincaindiasellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:58:14</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:58:19</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06bINCAInd-Create an INCA India Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:14</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:14</td>
+<td class='step-details'>Entering key word APAC INCA SL-190916-1055 on Sell Line Name Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:17</td>
+<td class='step-details'>Unable to enter keyword on Sell Line Name Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:19</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:19</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:04</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:19</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:19</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='0fd2a659-4875-44df-aa39-3d510e1edd0f'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_INDIA_Suite_Test06cSellLineSlmsApacFieldsRollUpTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test06cincaind-updateslmsapacfieldsforslrollup'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:58:21</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:58:28</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06cINCAInd-Update SLMS APAC Fields for SL Rollup</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:21</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:21</td>
+<td class='step-details'>Navigating to url $incaIndSellLineURL</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:25</td>
+<td class='step-details'>Unable to scroll - org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50843}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5980_20438}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 2fdab169d1dc9ab25294145b9a52bdc1</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:28</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:28</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:28</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:28</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='16c9a473-b253-4e68-8aef-6d923e108120'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test06daCreateIncaFeeBuyPlacementTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test06dincaind-createan'inca'feebuyplacement'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:58:31</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:58:41</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06dINCAInd-Create an 'INCA' Fee Buy Placement</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:31</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:31</td>
+<td class='step-details'>Navigating to url $incaIndSellLineURL</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:36</td>
+<td class='step-details'>Clicking on New Buy Placement Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:38</td>
+<td class='step-details'>Unable to click on New Buy Placement Button by using script</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:41</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:41</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:41</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:41</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='15efb796-5a44-4a23-968e-f0c90d9d6753'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test07aCreateIncaPackBuyPlacementTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test07aincaind-createanapac'inca'buyplacement'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:58:43</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:58:53</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test07aINCAInd-Create an APAC 'INCA' Buy Placement</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:43</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:43</td>
+<td class='step-details'>Navigating to url $incaIndSellLineURL</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:48</td>
+<td class='step-details'>Clicking on New Buy Placement Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:50</td>
+<td class='step-details'>Unable to click on New Buy Placement Button by using script</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:53</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:53</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:53</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:53</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='c79050ac-edc1-49a5-aae7-a34a1f389ccc'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test07bCapturingActualsForSellLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test07bincaind-capturingactualsforsellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:58:55</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:59:01</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test07bINCAInd-Capturing Actuals for Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:55</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:58:55</td>
+<td class='step-details'>Navigating to url $incaIndSellLineURL</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:58:59</td>
+<td class='step-details'>Verification object is not present/visible on Original Gross Budget Text Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:59:01</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:01</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:06</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:01</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:01</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='51d2b0d0-c678-4d98-800a-37585c348904'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test07cCapturingActualsForBuyPlacementTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test07cincaindia-capturingactualsforbuyplacements'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:59:03</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:59:10</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test07cINCAIndia-Capturing Actuals for Buy Placements</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:03</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:03</td>
+<td class='step-details'>Navigating to url $incaIndFeeBuyPlacementPageUrl</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:59:08</td>
+<td class='step-details'>Verification object is not present/visible on Original Volume Text Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:59:10</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:10</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:06</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:10</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:10</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='e1a09fad-7ee5-4a82-89ee-bd152bada404'>
+<div class='test-head'>
+<span class='test-name'>APAC_INCA_India_Suite_Test08AccessingIncaAccountWithNonIncaUsersTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test08incaind-accessingincaaccountwithnonincausers'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:59:12</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:59:17</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test08INCAInd- Accessing INCA account with Non INCA users</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:12</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:12</td>
+<td class='step-details'>Clicking on User Navigation Button</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:59:15</td>
+<td class='step-details'>Unable to click on User Navigation Button Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:50843}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir5980_20438}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 2fdab169d1dc9ab25294145b9a52bdc1</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>10:59:17</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:17</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:04</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:17</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:17</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='508b828e-44bb-4b05-ab43-f034f451fc07'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test01incauk-loginasaincaukusersfqateam'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 10:59:25</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 10:59:59</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 34s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01INCAUK-Log In as a INCA UK user sf qa team</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:25</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:25</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:38</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:39</td>
+<td class='step-details'>Entering key word on Password Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:40</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:45</td>
+<td class='step-details'>Entering key word sf qa team on Search Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:47</td>
+<td class='step-details'>Clicking on Search Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:50</td>
+<td class='step-details'>Clicking on Display Name Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:52</td>
+<td class='step-details'>Clicking on User Action Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:53</td>
+<td class='step-details'>Clicking on User Detail Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:55</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>10:59:59</td>
+<td class='step-details'>Text value - Logged in as SF QA Team (sf.qa2@xaxis.com.glstaging) exist as expected on Home Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:59</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:34</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:59</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>10:59:59</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='2164f289-d0f4-49a1-a652-3b0f8816fb20'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test02CreateAgencyTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test02incauk-createanincaukagency'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:00:01</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:00:06</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test02INCAUK-Create an INCA UK agency</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:01</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:01</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:04</td>
+<td class='step-details'>Unable to click on + icon Tab Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51152}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir92_31249}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 47b920be4ddd653303a58a0325ed3bbe</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:06</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:06</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:05</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:06</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:06</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='57b21f68-aff9-4559-8e68-96afd4792f73'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test03CreateAdvertiserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test03incauk-createanincaukadvertiser'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:00:08</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:00:13</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test03INCAUK-Create an INCA UK Advertiser</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:08</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:08</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:11</td>
+<td class='step-details'>Unable to click on + icon Tab Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51152}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir92_31249}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 47b920be4ddd653303a58a0325ed3bbe</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:13</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:13</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:05</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:13</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:13</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='a719d966-a6ba-470f-9db8-c325d2659e88'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01uk-loginasaukusernatasatintor'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:00:24</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:00:33</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01UK-Log In as a UK user Natasa Tintor</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:24</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:24</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:28</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:31</td>
+<td class='step-details'>Unable to enter keyword on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:33</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:33</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:33</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:33</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='b2681653-2a1b-437c-bbad-eeeb47057765'>
+<div class='test-head'>
+<span class='test-name'>APAC_Australia_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01aus-loginasanapacuserapurvaprasanna'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:00:45</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:00:52</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01Aus-Log In as an APAC user Apurva Prasanna</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:45</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:45</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:47</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:50</td>
+<td class='step-details'>Unable to enter keyword on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:00:52</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:52</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:52</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:00:52</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='735c1f32-4f4a-4f34-976b-0f766fc845a6'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test01incauk-loginasaincaukusersfqateam'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:01:01</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:01:09</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01INCAUK-Log In as a INCA UK user sf qa team</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:01</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:01</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:04</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:07</td>
+<td class='step-details'>Unable to enter keyword on UserName Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:09</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:09</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:09</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:09</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='2c8f8815-dcf9-4622-93e2-53ba38fc7bf5'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test05CreateIncaOppTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test05incauk-createanincaukopportunity'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:01:11</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:01:20</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test05INCAUK-Create an INCA UK Opportunity</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:11</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:11</td>
+<td class='step-details'>Navigating to url $incaUkAccountPageUrl</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:15</td>
+<td class='step-details'>Switching to Opportunity Frame Iframe</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:17</td>
+<td class='step-details'>Can't switch Opportunity Frame Iframe</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:20</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:20</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:08</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:20</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:20</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='ab9d1fd0-323d-4393-911b-b92d5b3358c4'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test06aVerifyAllFieldsForIncaSellLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test06aincauk-verifyallfieldsavailableforincasellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:01:23</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:01:33</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06aINCAUK-Verify All Fields Available for INCA Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:23</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:23</td>
+<td class='step-details'>Navigating to url $incaUkOpportunityPageUrl</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:28</td>
+<td class='step-details'>Clicking on New INCA Sell Line Button</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:31</td>
+<td class='step-details'>Unable to click on New INCA Sell Line Button Exception: org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died. Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46' System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91' Driver info: driver.version: RemoteWebDriver Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:51479}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir3740_209}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}] Session ID: 1e36c3564bdf7528afd6a25fffba0ee9</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:33</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:33</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:33</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:33</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='e4a5c32f-0c7f-4016-893f-28c23391dbe8'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test06bCreateIncaSellLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test06bincauk-createanincauksellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:01:36</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:01:41</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 5s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06bINCAUK-Create an INCA UK Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:36</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:36</td>
+<td class='step-details'>Entering key word INCA EMEA LR SL-190916-1055 on Sell Line Name Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:39</td>
+<td class='step-details'>Unable to enter keyword on Sell Line Name Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:41</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:41</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:05</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:41</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:41</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='efd2f6ec-72f9-418a-a70b-a5a7748d6ecc'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test07aCreateIncaPackageBuyPlacementTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test07aincauk-createan'inca'packagebuyplacement'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:01:44</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:01:54</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test07aINCAUK-Create an 'INCA' Package Buy Placement</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:44</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:44</td>
+<td class='step-details'>Navigating to url $incaUkSellLineURL</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:49</td>
+<td class='step-details'>Clicking on New Buy Placement Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:51</td>
+<td class='step-details'>Unable to click on New Buy Placement Button by using script</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:01:54</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:54</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:10</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:54</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:54</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='4fe09b4e-b45b-4140-9523-281ed8fad9ff'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test07bCreateIncaFeeBuyPlacementTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test07bincauk-createan'inca'feebuyplacement'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:01:56</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:02:06</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test07bINCAUK-Create an 'INCA' Fee Buy Placement</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:56</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:01:56</td>
+<td class='step-details'>Navigating to url $incaUkSellLineURL</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:01</td>
+<td class='step-details'>Clicking on New Buy Placement Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:02:03</td>
+<td class='step-details'>Unable to click on New Buy Placement Button by using script</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:02:06</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:06</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:06</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:06</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='07ee8e90-b186-4af3-bc17-eb23b33cd613'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test08CapturingActualsForSellLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test08incauk-capturingactualsforsellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:02:08</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:02:16</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 8s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test08INCAUK-Capturing Actuals for Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:08</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:08</td>
+<td class='step-details'>Navigating to url $incaUkSellLineURL</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:02:14</td>
+<td class='step-details'>Verification object is not present/visible on Original Gross Budget Text Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:02:16</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:16</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:16</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:16</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='7ffe8730-084c-40e0-a823-0ab3f0eb172d'>
+<div class='test-head'>
+<span class='test-name'>EMEA_INCA_UK_Suite_Test09CapturingActualsForBuyLineTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test09incauk-capturingactualsforbuyline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-09-16 11:02:18</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-09-16 11:02:26</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+777ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test09INCAUK-Capturing Actuals for Buy Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:18</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:18</td>
+<td class='step-details'>Navigating to url $incaFeeBuyPlacementPageUrl</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:02:23</td>
+<td class='step-details'>Verification object is not present/visible on Original Third Party Cost Text Field</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>11:02:26</td>
+<td class='step-details'>Error Occured while taking SCREENSHOT!!!</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:26</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:26</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>11:02:26</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190916-1055.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='test-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='details-name'></h5>
+<div class='details-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /tests -->
+
+<!-- categories -->
+<div id='categories-view' class='row _addedTable hide'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Categories</h5>
+</div>
+<div class='card-panel filters'>
+<div class='search' alt='Search tests' title='Search tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v'>
+<div class='wrapper'>
+<ul id='cat-collection' class='cat-collection'>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test01Aus-Log In as an APAC user Apurva Prasanna</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:00:45</td>
+<td><span class='category-link linked' extentid='b2681653-2a1b-437c-bbad-eeeb47057765'>APAC_Australia_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test01Ger-Log In as a Germany user Frank Adams</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:57:02</td>
+<td><span class='category-link linked' extentid='f4fc9b1d-6469-4b25-806d-01b6231e59e6'>EMEA_Germany_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test01INCAUK-Log In as a INCA UK user sf qa team</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-09-16 10:59:25</td>
+<td><span class='category-link linked' extentid='508b828e-44bb-4b05-ab43-f034f451fc07'>EMEA_INCA_UK_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tr class='fail'>
+<td>2019-09-16 11:01:01</td>
+<td><span class='category-link linked' extentid='735c1f32-4f4a-4f34-976b-0f766fc845a6'>EMEA_INCA_UK_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test01IncaUser-Verify User sf qa team is Active</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 2</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>2</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:55:49</td>
+<td><span class='category-link linked' extentid='54c590a6-b25d-4ecb-a2a2-69d0a74c6cef'>EMEA_INCA_Suite_Test01SfUserActivationTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tr class='fail'>
+<td>2019-09-16 10:57:41</td>
+<td><span class='category-link linked' extentid='08b35f3a-6594-4ca9-97e7-5cf23f404860'>EMEA_INCA_Suite_Test01SfUserActivationTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test01UK-Log In as a UK user Natasa Tintor</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 2</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>2</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:56:33</td>
+<td><span class='category-link linked' extentid='c9e0a3e7-7428-48eb-9632-e803d455140b'>EMEA_UK_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tr class='fail'>
+<td>2019-09-16 11:00:24</td>
+<td><span class='category-link linked' extentid='a719d966-a6ba-470f-9db8-c325d2659e88'>EMEA_UK_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test02INCAInd-Create an INCA India agency</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:56:11</td>
+<td><span class='category-link linked' extentid='578ba6e4-4669-4f52-b28c-95c17052c66b'>APAC_INCA_India_Suite_Test02CreateAgencyTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test02INCAUK-Create an INCA UK agency</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:00:01</td>
+<td><span class='category-link linked' extentid='2164f289-d0f4-49a1-a652-3b0f8816fb20'>EMEA_INCA_UK_Suite_Test02CreateAgencyTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test03INCAInd-Create an INCA India Advertiser</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:56:19</td>
+<td><span class='category-link linked' extentid='3a01f618-80b1-4ba7-9d7c-107c8702836e'>APAC_INCA_India_Suite_Test03CreateAdvertiserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test03INCAUK-Create an INCA UK Advertiser</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:00:08</td>
+<td><span class='category-link linked' extentid='57b21f68-aff9-4559-8e68-96afd4792f73'>EMEA_INCA_UK_Suite_Test03CreateAdvertiserTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test05INCAInd-Create an INCA India Opportunity</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:57:51</td>
+<td><span class='category-link linked' extentid='2d646d87-07a3-4f6f-a37b-0aa6c5567b76'>APAC_INCA_India_Suite_Test05CreateIncaOppTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test05INCAUK-Create an INCA UK Opportunity</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:01:11</td>
+<td><span class='category-link linked' extentid='2c8f8815-dcf9-4622-93e2-53ba38fc7bf5'>EMEA_INCA_UK_Suite_Test05CreateIncaOppTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06aINCAInd-Verify All Fields Available for INCA APAC Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:58:03</td>
+<td><span class='category-link linked' extentid='2ea93363-de66-4809-b222-8e661ee3cc3a'>APAC_INCA_India_Suite_Test06aVerifyAllFieldsForIncaSellLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06aINCAUK-Verify All Fields Available for INCA Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:01:23</td>
+<td><span class='category-link linked' extentid='ab9d1fd0-323d-4393-911b-b92d5b3358c4'>EMEA_INCA_UK_Suite_Test06aVerifyAllFieldsForIncaSellLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06bINCAInd-Create an INCA India Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:58:14</td>
+<td><span class='category-link linked' extentid='a0a2293e-d94b-4efd-969a-82e26ce6affc'>APAC_INCA_INDIA_Suite_Test06bCreateIncaSellLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06bINCAUK-Create an INCA UK Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:01:36</td>
+<td><span class='category-link linked' extentid='e4a5c32f-0c7f-4016-893f-28c23391dbe8'>EMEA_INCA_UK_Suite_Test06bCreateIncaSellLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06cINCAInd-Update SLMS APAC Fields for SL Rollup</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:58:21</td>
+<td><span class='category-link linked' extentid='0fd2a659-4875-44df-aa39-3d510e1edd0f'>APAC_INCA_INDIA_Suite_Test06cSellLineSlmsApacFieldsRollUpTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06dINCAInd-Create an 'INCA' Fee Buy Placement</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:58:31</td>
+<td><span class='category-link linked' extentid='16c9a473-b253-4e68-8aef-6d923e108120'>APAC_INCA_India_Suite_Test06daCreateIncaFeeBuyPlacementTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test07aINCAInd-Create an APAC 'INCA' Buy Placement</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:58:43</td>
+<td><span class='category-link linked' extentid='15efb796-5a44-4a23-968e-f0c90d9d6753'>APAC_INCA_India_Suite_Test07aCreateIncaPackBuyPlacementTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test07aINCAUK-Create an 'INCA' Package Buy Placement</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:01:44</td>
+<td><span class='category-link linked' extentid='efd2f6ec-72f9-418a-a70b-a5a7748d6ecc'>EMEA_INCA_UK_Suite_Test07aCreateIncaPackageBuyPlacementTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test07bINCAInd-Capturing Actuals for Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:58:55</td>
+<td><span class='category-link linked' extentid='c79050ac-edc1-49a5-aae7-a34a1f389ccc'>APAC_INCA_India_Suite_Test07bCapturingActualsForSellLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test07bINCAUK-Create an 'INCA' Fee Buy Placement</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:01:56</td>
+<td><span class='category-link linked' extentid='4fe09b4e-b45b-4140-9523-281ed8fad9ff'>EMEA_INCA_UK_Suite_Test07bCreateIncaFeeBuyPlacementTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test07cINCAIndia-Capturing Actuals for Buy Placements</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:59:03</td>
+<td><span class='category-link linked' extentid='51d2b0d0-c678-4d98-800a-37585c348904'>APAC_INCA_India_Suite_Test07cCapturingActualsForBuyPlacementTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test08INCAInd- Accessing INCA account with Non INCA users</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 10:59:12</td>
+<td><span class='category-link linked' extentid='e1a09fad-7ee5-4a82-89ee-bd152bada404'>APAC_INCA_India_Suite_Test08AccessingIncaAccountWithNonIncaUsersTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test08INCAUK-Capturing Actuals for Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:02:08</td>
+<td><span class='category-link linked' extentid='07ee8e90-b186-4af3-bc17-eb23b33cd613'>EMEA_INCA_UK_Suite_Test08CapturingActualsForSellLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test09INCAUK-Capturing Actuals for Buy Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-09-16 11:02:18</td>
+<td><span class='category-link linked' extentid='7ffe8730-084c-40e0-a823-0ab3f0eb172d'>EMEA_INCA_UK_Suite_Test09CapturingActualsForBuyLineTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='cat-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='cat-name'></h5>
+<div class='cat-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /categories -->
+
+<!-- exceptions -->
+<!-- /exceptions -->
+
+<!-- testrunner logs -->
+<!-- /testrunner logs -->
+
+</div>
+<!-- /container -->
+
+<!-- test dashboard counts setting -->
+<div id='test-count-setting' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Configure Tests Count Setting</h5> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+<label for='childNodes'>Child Tests Only</label> 
+</div> 
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /test dashboard counts setting -->
+
+<!-- filter for step status -->
+<div id='step-status-filter' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Select status</h5> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
+<label for='step-dashboard-filter-pass'>Pass</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
+<label for='step-dashboard-filter-fail'>Fail</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
+<label for='step-dashboard-filter-fatal'>Fatal</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
+<label for='step-dashboard-filter-error'>Error</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
+<label for='step-dashboard-filter-warning'>Warning</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
+<label for='step-dashboard-filter-skip'>Skipped</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
+<label for='step-dashboard-filter-info'>Info</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
+<label for='step-dashboard-filter-unknown'>Unknown</label> 
+</div>
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /filter for step status -->
+
+<script src='https://cdn.rawgit.com/anshooarora/extentreports/c936a26fc8bb9c5fc0253b5bc6f289e1d14bb595/cdn/extent.js' type='text/javascript'></script>
+
+<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
+<script>
+
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+</script>
+</body>
+</html>

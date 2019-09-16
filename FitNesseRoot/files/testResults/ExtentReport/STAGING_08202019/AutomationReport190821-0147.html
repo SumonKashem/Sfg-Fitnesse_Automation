@@ -1,0 +1,4230 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+ExtentReports Library 2.40.2 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
+Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
+Documentation: http://extentreports.relevantcodes.com 
+-->
+
+<meta charset='UTF-8' /> 
+<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+<meta name='robots' content='noodp, noydir' />
+<meta name='viewport' content='width=device-width, initial-scale=1' />
+
+<title>
+ExtentReports 2.0
+</title>
+
+
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+<link href='https://cdn.rawgit.com/anshooarora/extentreports/e4f8ea1de961161791c01b99a71a1e17f81125cf/cdn/extent.css' type='text/css' rel='stylesheet' />
+
+<style>
+
+            
+                
+            
+        
+</style>
+</head>
+
+
+<body class='extent standard hide-overflow'>
+<!-- nav -->
+<nav>
+<div class='logo-container'>
+<a class='logo-content' href='http://extentreports.relevantcodes.com'>
+<span>ExtentReports</span>
+</a>
+<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
+</div>
+<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+<li class='analysis waves-effect'><a href='#!' class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a></li>
+</ul>
+<span class='report-name'>Automation Report</span> <span class='report-headline'></span>
+<ul class='right hide-on-med-and-down nav-right'>
+<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
+<i class='mdi-hardware-desktop-windows'></i>
+</li>
+<li>
+<span class='suite-started-time'>2019-08-21 13:57:34</span>
+</li>
+<li>
+<span>v2.40.2</span>
+</li>
+</ul>
+</nav>
+<!-- /nav -->
+
+<!-- container -->
+<div class='container'>
+
+<!-- dashboard -->
+<div id='dashboard-view' class='row'>
+<div class='time-totals'>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-tests'> 
+<span class='panel-name'>Total Tests</span> 
+<span class='total-tests'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s6'>
+<div class='card suite-total-steps'> 
+<span class='panel-name'>Total Steps</span> 
+<span class='total-steps'> <span class='panel-lead'></span> </span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-current'> 
+<span class='panel-name'>Total Time Taken (Current Run)</span> 
+<span class='suite-total-time-current-value panel-lead'>0h 10m 8s+25ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s12'>
+<div class='card suite-total-time-overall'> 
+<span class='panel-name'>Total Time Taken (Overall)</span> 
+<span class='suite-total-time-overall-value panel-lead'>85h 5146m 308801s+376ms</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-start-time'>
+<div class='card accent green-accent'> 
+<span class='panel-name'>Start</span> 
+<span class='panel-lead suite-started-time'>2019-08-21 13:47:26</span> 
+</div> 
+</div>
+<div class='col l2 m4 s6 suite-end-time'>
+<div class='card accent pink-accent'> 
+<span class='panel-name'>End</span> 
+<span class='panel-lead suite-ended-time'>2019-08-21 13:57:34</span> 
+</div> 
+</div>
+</div>
+<div class='charts'>
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Tests View</span>
+</div> 
+<div class='panel-setting modal-trigger test-count-setting right'>
+<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='test-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+</div> 
+<div>
+<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div> 
+<div class='col s12 m6 l4 fh'> 
+<div class='card-panel'> 
+<div>
+<span class='panel-name'>Steps View</span>
+</div> 
+<div class='panel-setting modal-trigger step-status-filter right'>
+<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
+</div> 
+<div class='chart-box'>
+<canvas class='text-centered' id='step-analysis'></canvas>
+</div> 
+<div>
+<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>
+</div> 
+<div>
+<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
+</div> 
+</div> 
+</div>
+<div class='col s12 m12 l4 fh'> 
+<div class='card-panel'> 
+<span class='panel-name'>Pass Percentage</span> 
+<span class='pass-percentage panel-lead'></span> 
+<div class='progress light-blue lighten-3'> 
+<div class='determinate light-blue'></div> 
+</div> 
+</div> 
+</div>
+</div>
+<div class='system-view'>
+<div class='col l4 m12 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Environment</span>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OS</td>
+<td>Windows NT (unknown)</td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>SumonK</td>
+</tr>
+<tr>
+<td>Java Version</td>
+<td>1.8.0_91</td>
+</tr>
+<tr>
+<td>Test Environment</td>
+<td>Staging</td>
+</tr>
+<tr>
+<td>Host Name</td>
+<td>EC2AMAZ-FEFP0OS</td>
+</tr>
+<tr>
+<td>Browser Name</td>
+<td>Chrome</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class='category-summary-view'>
+<div class='col l4 m6 s12'>
+<div class='card-panel'>
+<span class='label info outline right'>Categories</span>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Test015aUK-Sell Line Reject/Approval
+</td>
+</tr>
+<tr>
+<td>
+Test01UK-Log In as a UK user Natasa Tintor
+</td>
+</tr>
+<tr>
+<td>
+Test02UK-Create an UK agency
+</td>
+</tr>
+<tr>
+<td>
+Test03UK-Create an APAC Advertiser
+</td>
+</tr>
+<tr>
+<td>
+Test04UK-Create a UK LR Account
+</td>
+</tr>
+<tr>
+<td>
+Test05UK-Create a UK Opportunity
+</td>
+</tr>
+<tr>
+<td>
+Test06aUK-Verify All Fields Available for LR Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test06bUK-Create a Light Reaction Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test07UK-Create a UK XAX Account
+</td>
+</tr>
+<tr>
+<td>
+Test08UK-Create a UK Xax Opportunity
+</td>
+</tr>
+<tr>
+<td>
+Test09aUK-Verify All Fields Available for XAX Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test09bUK-Create a Xaxis Sell Line
+</td>
+</tr>
+<tr>
+<td>
+Test10aUK-Create a UK Xaxis Buy Placement
+</td>
+</tr>
+<tr>
+<td>
+Test10bUK-Edit UK Xaxis Buy Placements
+</td>
+</tr>
+<tr>
+<td>
+Test11UK-Clone an existing 'UK' Opportunity
+</td>
+</tr>
+<tr>
+<td>
+Test12UK-Verify by clicking on all custom buttons in Opp detail page
+</td>
+</tr>
+<tr>
+<td>
+Test14UK-Rebook a Xaxis opportunity
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- /dashboard -->
+
+<!-- tests -->
+<div id='test-view' class='row _addedTable'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Tests</h5>
+</div>
+<div class='card-panel filters'>
+<div>
+<a data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#' class='dropdown-button button tests-toggle'><i class='mdi-action-subject icon'></i></a>
+<ul id='tests-toggle' class='dropdown-content'>
+<li class='pass'><a href='#!'>Pass</a></li>
+<li class='fail'><a href='#!'>Fail</a></li>
+<li class='skip'><a href='#!'>Skip</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#' class='category-toggle dropdown-button button'><i class='mdi-maps-local-offer icon'></i></a>
+<ul id='category-toggle' class='dropdown-content'>
+<li class='Test015aUK-Sell Line Reject/Approval'><a href='#!'>Test015aUK-Sell Line Reject/Approval</a></li>
+<li class='Test01UK-Log In as a UK user Natasa Tintor'><a href='#!'>Test01UK-Log In as a UK user Natasa Tintor</a></li>
+<li class='Test02UK-Create an UK agency'><a href='#!'>Test02UK-Create an UK agency</a></li>
+<li class='Test03UK-Create an APAC Advertiser'><a href='#!'>Test03UK-Create an APAC Advertiser</a></li>
+<li class='Test04UK-Create a UK LR Account'><a href='#!'>Test04UK-Create a UK LR Account</a></li>
+<li class='Test05UK-Create a UK Opportunity'><a href='#!'>Test05UK-Create a UK Opportunity</a></li>
+<li class='Test06aUK-Verify All Fields Available for LR Sell Line'><a href='#!'>Test06aUK-Verify All Fields Available for LR Sell Line</a></li>
+<li class='Test06bUK-Create a Light Reaction Sell Line'><a href='#!'>Test06bUK-Create a Light Reaction Sell Line</a></li>
+<li class='Test07UK-Create a UK XAX Account'><a href='#!'>Test07UK-Create a UK XAX Account</a></li>
+<li class='Test08UK-Create a UK Xax Opportunity'><a href='#!'>Test08UK-Create a UK Xax Opportunity</a></li>
+<li class='Test09aUK-Verify All Fields Available for XAX Sell Line'><a href='#!'>Test09aUK-Verify All Fields Available for XAX Sell Line</a></li>
+<li class='Test09bUK-Create a Xaxis Sell Line'><a href='#!'>Test09bUK-Create a Xaxis Sell Line</a></li>
+<li class='Test10aUK-Create a UK Xaxis Buy Placement'><a href='#!'>Test10aUK-Create a UK Xaxis Buy Placement</a></li>
+<li class='Test10bUK-Edit UK Xaxis Buy Placements'><a href='#!'>Test10bUK-Edit UK Xaxis Buy Placements</a></li>
+<li class='Test11UK-Clone an existing 'UK' Opportunity'><a href='#!'>Test11UK-Clone an existing 'UK' Opportunity</a></li>
+<li class='Test12UK-Verify by clicking on all custom buttons in Opp detail page'><a href='#!'>Test12UK-Verify by clicking on all custom buttons in Opp detail page</a></li>
+<li class='Test14UK-Rebook a Xaxis opportunity'><a href='#!'>Test14UK-Rebook a Xaxis opportunity</a></li>
+<li class='divider'></li>
+<li class='clear'><a href='#!'>Clear Filters</a></li>
+</ul>
+</div>
+<div>
+<a id='clear-filters' alt='Clear Filters' title='Clear Filters'><i class='mdi-navigation-close icon'></i></a>
+</div>
+<div>&nbsp;&middot;&nbsp;</div>
+<div>
+<a id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'><i class='mdi-action-track-changes icon'></i></a>
+</div>
+<div>
+<a id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters' class='enabled'><i class='mdi-navigation-refresh icon'></i></i></a>
+</div>
+<div>&nbsp;&middot;</div>
+<div class='search' alt='Search Tests' title='Search Tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v no-margin-v'>
+<div class='wrapper'>
+<ul id='test-collection' class='test-collection'>
+<li class='collection-item test displayed active pass ' extentid='9b1574b8-90d2-4b62-ab1f-cc1af6777599'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test01uk-loginasaukusernatasatintor'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:47:26</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:47:38</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01UK-Log In as a UK user Natasa Tintor</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:26</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:26</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:28</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:28</td>
+<td class='step-details'>Entering key word on Password Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:28</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:32</td>
+<td class='step-details'>Entering key word Natasa Tintor on Search Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:32</td>
+<td class='step-details'>Clicking on Search Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:34</td>
+<td class='step-details'>Clicking on Display Name Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:36</td>
+<td class='step-details'>Clicking on User Action Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:36</td>
+<td class='step-details'>Clicking on User Detail Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:37</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:47:38</td>
+<td class='step-details'>Text value - Logged in as Natasa Tintor (natasa.tintor@xaxis.com.glstaging) exist as expected on Home Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:38</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:12</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:38</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:38</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='59f4163b-3008-4408-90b7-d172b52aff14'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test02CreateAgencyTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test02uk-createanukagency'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:47:40</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:47:47</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test02UK-Create an UK agency</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:40</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:40</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:41</td>
+<td class='step-details'>Clicking on Companies Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:41</td>
+<td class='step-details'>Clicking on New Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:42</td>
+<td class='step-details'>selecting value Agency Company on Company Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:42</td>
+<td class='step-details'>Clicking on Continue Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:43</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:45</td>
+<td class='step-details'>Entering key word EMEA UK Agency-190821-0147 on Company Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:45</td>
+<td class='step-details'>selecting value United Kingdom on Market Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:46</td>
+<td class='step-details'>selecting value Xaxis on Assigned To Team Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:46</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:47:47</td>
+<td class='step-details'>Text value - EMEA UK Agency-190821-0147 exist as expected on Company Detail page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:47</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:07</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:47</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:47</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='66f12cbd-834c-47ac-aacb-4a1225c3ae3a'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test03CreateAdvertiserTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test03uk-createanapacadvertiser'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:47:49</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:47:55</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test03UK-Create an APAC Advertiser</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:49</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:49</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:49</td>
+<td class='step-details'>Clicking on Companies Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:50</td>
+<td class='step-details'>Clicking on New Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:51</td>
+<td class='step-details'>selecting value Advertiser Company on Company Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:51</td>
+<td class='step-details'>Clicking on Continue Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:52</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:54</td>
+<td class='step-details'>Entering key word EMEA UK Advertiser-190821-0147 on Company Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:54</td>
+<td class='step-details'>selecting value Advertiser on Company Type Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:54</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:47:55</td>
+<td class='step-details'>Text value - EMEA UK Advertiser-190821-0147 exist as expected on Company Detail Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:55</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:06</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:55</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:55</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='ffbcc984-5c04-4c52-b2b6-263eeb4d9f79'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test04CreateLightReactionAccountTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test04uk-createauklraccount'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:47:57</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:48:19</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 22s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test04UK-Create a UK LR Account</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:57</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:57</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:58</td>
+<td class='step-details'>Clicking on Accounts Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:58</td>
+<td class='step-details'>Clicking on New Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:47:59</td>
+<td class='step-details'>Text value - United Kingdom exist as expected on Default Account Record Type</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:47:59</td>
+<td class='step-details'>Clicking on Continue Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:02</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:04</td>
+<td class='step-details'>Entering key word EMEA UK Agency-190821-0147 on Agency Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:04</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:06</td>
+<td class='step-details'>Entering key word EMEA UK Advertiser-190821-0147 on Advertiser Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:06</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:08</td>
+<td class='step-details'>selecting value Light Reaction on Business Unit Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:08</td>
+<td class='step-details'>Clicking on Create Account Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:08</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:10</td>
+<td class='step-details'>clearing field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:10</td>
+<td class='step-details'>Entering key word LR EMEA UK Account-190821-0147 on Account Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:11</td>
+<td class='step-details'>selecting value A on SLA Classification Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:11</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>Text value - LR EMEA UK Account-190821-0147 exist as expected on Account Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>Text value - Light Reaction exist as expected on Business Unit Field</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>Text value - United Kingdom [Change] exist as expected on Account Record Type</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:22</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:19</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='5de431c5-60a5-40c3-a68f-11dfd68b7915'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test05CreateLightReactionOpportunityTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test05uk-createaukopportunity'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:48:21</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:48:37</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 16s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test05UK-Create a UK Opportunity</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:21</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:21</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NVFxB&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:24</td>
+<td class='step-details'>Switching to Opportunity Frame Iframe</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:24</td>
+<td class='step-details'>Clicking on New Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:27</td>
+<td class='step-details'>clearing field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:27</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:29</td>
+<td class='step-details'>Entering key word LR EMEA UK Opportunity-190821-0147 on Opportunity Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:30</td>
+<td class='step-details'>selecting value Contacted / Prospecting on Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:30</td>
+<td class='step-details'>clearing field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:30</td>
+<td class='step-details'>Entering key word 21/09/2019 on Close Date Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:31</td>
+<td class='step-details'>Clicking on Save Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:36</td>
+<td class='step-details'>Text value - LR EMEA UK Opportunity-190821-0147 exist as expected on Opportunity Detail Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:37</td>
+<td class='step-details'>Switching to SL Frame Iframe</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:37</td>
+<td class='step-details'>Text value - This Opportunity has no Sell Lines. exist as expected on No SL alert message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:37</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:37</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:15</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:37</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:37</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='26e3fe1e-bc57-4a2e-939c-e1aa58f3ce79'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test06aVerifyAllFieldsForLightReactionSellLineTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test06auk-verifyallfieldsavailableforlrsellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:48:38</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:49:00</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 22s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06aUK-Verify All Fields Available for LR Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:38</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:38</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5i1&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:42</td>
+<td class='step-details'>Switching to SL Frame Iframe</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:48:43</td>
+<td class='step-details'>Clicking on Create New Sell Line Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:44</td>
+<td class='step-details'>Element Business Unit Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:45</td>
+<td class='step-details'>Element Sell Name Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:45</td>
+<td class='step-details'>Element Device Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:46</td>
+<td class='step-details'>Element Channel Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:47</td>
+<td class='step-details'>Element Media Type Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:47</td>
+<td class='step-details'>Element Product Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:48</td>
+<td class='step-details'>Element Start Date Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:49</td>
+<td class='step-details'>Element Start Date Link exist as expected</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:49</td>
+<td class='step-details'>Element End Date Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:50</td>
+<td class='step-details'>Element End Date Link exist as expected</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:51</td>
+<td class='step-details'>Element Input Gross as Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:51</td>
+<td class='step-details'>Element Rate Type Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:52</td>
+<td class='step-details'>Element Sell Volume Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:53</td>
+<td class='step-details'>Element Gross Rate Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:53</td>
+<td class='step-details'>Element Planned Gross Budget Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:54</td>
+<td class='step-details'>Element Discount Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:55</td>
+<td class='step-details'>Element Request Media Team Checkbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:55</td>
+<td class='step-details'>Element Note For Media Team Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:56</td>
+<td class='step-details'>Element Request Optimisation Team Checkbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:57</td>
+<td class='step-details'>Element Note For Optimisation Team Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:57</td>
+<td class='step-details'>Element Sell Line Description Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:58</td>
+<td class='step-details'>Element Sell LR Partner Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:59</td>
+<td class='step-details'>Element Save &amp; Add Button exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:48:59</td>
+<td class='step-details'>Element Save &amp; complete Button exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:00</td>
+<td class='step-details'>Element Cancel Button exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:00</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:21</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:00</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:00</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='b69c60ce-aca3-4442-8cea-4bca38bee2fc'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test06bCreateLightReactionSellLineTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test06buk-createalightreactionsellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:49:02</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:49:19</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 17s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test06bUK-Create a Light Reaction Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:02</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:02</td>
+<td class='step-details'>Text value - Light Reaction exist as expected on Business Unit Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:02</td>
+<td class='step-details'>Entering key word EMEA LR SL-190821-0147 on Sell Line Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:03</td>
+<td class='step-details'>selecting value Desktop on Device Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:03</td>
+<td class='step-details'>selecting value Display on Channel Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:03</td>
+<td class='step-details'>selecting value Standard on Media Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:03</td>
+<td class='step-details'>selecting value Audio on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:03</td>
+<td class='step-details'>Entering key word 01/10/2019 on Start Date Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:04</td>
+<td class='step-details'>Entering key word 31/12/2019 on End Date Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:04</td>
+<td class='step-details'>selecting value Rate / Gross Cost on Input Gross As Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:04</td>
+<td class='step-details'>selecting value CPM on Rate Type Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:04</td>
+<td class='step-details'>Entering key word 25 on Gross Rate Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:04</td>
+<td class='step-details'>Entering key word 200 on Gross Budget Field</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:05</td>
+<td class='step-details'>Element Discount Field With Default Value exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:05</td>
+<td class='step-details'>Clicking on Save &amp; Complete Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:06</td>
+<td class='step-details'>Text value - Error: Audio requires Business Unit: Xaxis selection exist as expected on Error Message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:06</td>
+<td class='step-details'>selecting value Headlight on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:07</td>
+<td class='step-details'>Clicking on Save &amp; Complete Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:07</td>
+<td class='step-details'>Waiting 3500 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:12</td>
+<td class='step-details'>Waiting 2000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:16</td>
+<td class='step-details'>Switching to Sell Line Iframe</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:16</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:17</td>
+<td class='step-details'>Clicking on Sell Line number hyper link by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>Text value - Light Reaction exist as expected on Business Unit on Sell Line Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>Text value - EMEA LR SL-190821-0147 exist as expected on Sell Line Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>Text value - 8,000 exist as expected on Sell Volume Value</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>Text value - United Kingdom exist as expected on Record Type</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:17</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:19</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='438ef499-4dca-4263-8be5-03ab6c5ca0ba'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test07CreateXaxisAccountTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test07uk-createaukxaxaccount'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:49:21</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:49:39</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 18s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test07UK-Create a UK XAX Account</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:21</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:21</td>
+<td class='step-details'>Clicking on + icon Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:22</td>
+<td class='step-details'>Clicking on Accounts Tab</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:23</td>
+<td class='step-details'>Clicking on New Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:24</td>
+<td class='step-details'>Text value - United Kingdom exist as expected on Default Account Record Type</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:24</td>
+<td class='step-details'>Clicking on Continue Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:26</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:28</td>
+<td class='step-details'>Entering key word EMEA UK Agency-190821-0147 on Agency Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:28</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:30</td>
+<td class='step-details'>Entering key word EMEA UK Advertiser-190821-0147 on Advertiser Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:30</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:32</td>
+<td class='step-details'>selecting value Xaxis on Business Unit Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:32</td>
+<td class='step-details'>Clicking on Create Account Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:32</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:34</td>
+<td class='step-details'>clearing field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:34</td>
+<td class='step-details'>Entering key word XAX EMEA UK Account-190821-0147 on Account Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:35</td>
+<td class='step-details'>selecting value A on SLA Classification Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:36</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>Text value - XAX EMEA UK Account-190821-0147 exist as expected on Account Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>Text value - Xaxis exist as expected on Business Unit Field</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>Text value - United Kingdom [Change] exist as expected on Account Record Type</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:18</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:39</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='53a56970-53f3-4081-a9d7-b9fd924875d1'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test08CreateXaxisOpportunityTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test08uk-createaukxaxopportunity'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:49:41</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:49:55</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 14s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test08UK-Create a UK Xax Opportunity</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:41</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:41</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NVFw5&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:45</td>
+<td class='step-details'>Switching to Opportunity Frame Iframe</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:45</td>
+<td class='step-details'>Clicking on New Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:46</td>
+<td class='step-details'>clearing field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:47</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:49</td>
+<td class='step-details'>Entering key word XAX EMEA UK Opportunity-190821-0147 on Opportunity Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:49</td>
+<td class='step-details'>selecting value Contacted / Prospecting on Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:49</td>
+<td class='step-details'>clearing field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:49</td>
+<td class='step-details'>Entering key word 21/09/2019 on Close Date Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:50</td>
+<td class='step-details'>Clicking on Save Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:54</td>
+<td class='step-details'>Text value - XAX EMEA UK Opportunity-190821-0147 exist as expected on Opportunity Detail Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:55</td>
+<td class='step-details'>Switching to SL Frame Iframe</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:49:55</td>
+<td class='step-details'>Text value - This Opportunity has no Sell Lines. exist as expected on No SL alert message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:55</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:55</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:14</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:55</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:55</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='47ed86d7-779c-48b2-883f-dd2348ea3eee'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test09aVerifyAllFieldsForXaxisSellLineTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test09auk-verifyallfieldsavailableforxaxsellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:49:57</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:50:18</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 21s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test09aUK-Verify All Fields Available for XAX Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:57</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:49:57</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:00</td>
+<td class='step-details'>Switching to SL Frame Iframe</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:01</td>
+<td class='step-details'>Clicking on Create New Sell Line Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:02</td>
+<td class='step-details'>Element Business Unit Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:03</td>
+<td class='step-details'>Element Sell Name Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:04</td>
+<td class='step-details'>Element Device Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:04</td>
+<td class='step-details'>Element Channel Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:05</td>
+<td class='step-details'>Element Media Type Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:06</td>
+<td class='step-details'>Element Product Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:06</td>
+<td class='step-details'>Element Start Date Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:07</td>
+<td class='step-details'>Element Start Date Link exist as expected</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:08</td>
+<td class='step-details'>Element End Date Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:08</td>
+<td class='step-details'>Element End Date Link exist as expected</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:09</td>
+<td class='step-details'>Element Input Gross as Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:10</td>
+<td class='step-details'>Element Rate Type Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:10</td>
+<td class='step-details'>Element Sell Volume Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:11</td>
+<td class='step-details'>Element Gross Rate Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:12</td>
+<td class='step-details'>Element Planned Gross Budget Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:12</td>
+<td class='step-details'>Element Discount Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:13</td>
+<td class='step-details'>Element Request Media Team Checkbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:14</td>
+<td class='step-details'>Element Note For Media Team Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:14</td>
+<td class='step-details'>Element Request Optimisation Team Checkbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:15</td>
+<td class='step-details'>Element Note For Optimisation Team Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:16</td>
+<td class='step-details'>Element Sell Line Description Field exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:16</td>
+<td class='step-details'>Element Sell LR Partner Dropdown exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:17</td>
+<td class='step-details'>Element Save &amp; Add Button exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:17</td>
+<td class='step-details'>Element Save &amp; complete Button exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:18</td>
+<td class='step-details'>Element Cancel Button exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:18</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:21</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:18</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:18</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='dac1f67f-7b26-4008-8381-8b3ec91ab160'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test09bCreateXaxisSellLineTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test09buk-createaxaxissellline'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:50:20</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:50:40</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 20s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test09bUK-Create a Xaxis Sell Line</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:20</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:20</td>
+<td class='step-details'>Text value - Xaxis exist as expected on Business Unit Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:20</td>
+<td class='step-details'>Entering key word EMEA Xax SL-190821-0147 on Sell Line Name Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:21</td>
+<td class='step-details'>selecting value Desktop on Device Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:21</td>
+<td class='step-details'>selecting value Display on Channel Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:21</td>
+<td class='step-details'>selecting value Standard on Media Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:21</td>
+<td class='step-details'>selecting value LR - App Install on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:25</td>
+<td class='step-details'>Entering key word 01/10/2019 on Start Date Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:25</td>
+<td class='step-details'>Entering key word 31/12/2019 on End Date Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:26</td>
+<td class='step-details'>selecting value Rate / Gross Cost on Input Gross As Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:26</td>
+<td class='step-details'>selecting value CPC on Rate Type Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:26</td>
+<td class='step-details'>Entering key word 25 on Gross Rate Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:26</td>
+<td class='step-details'>Entering key word 200 on Gross Budget Field</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:27</td>
+<td class='step-details'>Element Discount Field With Default Value exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:27</td>
+<td class='step-details'>Clicking on Save &amp; Complete Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:28</td>
+<td class='step-details'>Text value - Error: LR - App Install requires Business Unit: Light Reaction selection exist as expected on Error Message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:28</td>
+<td class='step-details'>selecting value Audio on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:28</td>
+<td class='step-details'>Clicking on Save &amp; Complete Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:28</td>
+<td class='step-details'>Waiting 6000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:34</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:36</td>
+<td class='step-details'>Switching to Sell Line Iframe</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:36</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:37</td>
+<td class='step-details'>Clicking on Sell Line number hyper link by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:39</td>
+<td class='step-details'>Text value - Xaxis exist as expected on Business Unit on Sell Line Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>Text value - EMEA Xax SL-190821-0147 exist as expected on Sell Line Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>Text value - 8 exist as expected on Sell Volume Value</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>Text value - United Kingdom exist as expected on Record Type</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:19</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:40</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='4b273390-3660-4341-a2b3-571f47602b9a'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test10aCreateXaxisBuyPlacementTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test10auk-createaukxaxisbuyplacement'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:50:41</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:50:51</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 10s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test10aUK-Create a UK Xaxis Buy Placement</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:41</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:41</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:43</td>
+<td class='step-details'>Clicking on New Buy Line Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:45</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:46</td>
+<td class='step-details'>Entering key word Xaxis Audio: Buy Media - Audio product on Partner Lookup Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:47</td>
+<td class='step-details'>Entering key word 22 on Est Volume Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:47</td>
+<td class='step-details'>Entering key word 2 on Gross Buy Rate Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:47</td>
+<td class='step-details'>Clicking on Save &amp; Complete Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:50:51</td>
+<td class='step-details'>Text value - EMEA Xax SL-190821-0147 exist as expected on Sell Line Name on SL Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:51</td>
+<td class='step-details'>Capturing current page url</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:51</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:09</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:51</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:51</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='65b55d83-1db3-4232-9535-3626a26ab2bd'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test10bEditXaxisBuyPlacementTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test10buk-editukxaxisbuyplacements'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:50:53</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:51:53</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 0s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test10bUK-Edit UK Xaxis Buy Placements</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:53</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:53</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:55</td>
+<td class='step-details'>Clicking on First Buy Line Link by using mouse movement</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:50:58</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:02</td>
+<td class='step-details'>Double click on Partner Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:03</td>
+<td class='step-details'>Entering key word Xaxis Audio: Buy Media - Audio product on Partner Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:07</td>
+<td class='step-details'>Double click on Gross Buy Rate Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:07</td>
+<td class='step-details'>Entering key word 2 on Gross Buy Rate Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:10</td>
+<td class='step-details'>Double click on Primary Goal Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:11</td>
+<td class='step-details'>selecting value index of 1 on Primary Goal Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:14</td>
+<td class='step-details'>Double click on Primary Goal Details Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:15</td>
+<td class='step-details'>Entering key word Test on Primary Goals Details Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:18</td>
+<td class='step-details'>Double click on Secondary Goal Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:18</td>
+<td class='step-details'>selecting value index of 1 on Secondary Goal Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:21</td>
+<td class='step-details'>Double click on Secondary Goal Details Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:21</td>
+<td class='step-details'>Entering key word Test on Secondary Goals Details Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:22</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:22</td>
+<td class='step-details'>Waiting 2000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:24</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&amp;_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&amp;common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:27</td>
+<td class='step-details'>Waiting 2000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:30</td>
+<td class='step-details'>Clicking on Second Buy Line Link by using mouse movement</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:34</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:38</td>
+<td class='step-details'>Double click on Gross Buy Rate Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:38</td>
+<td class='step-details'>Entering key word 2 on Gross Buy Rate Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:41</td>
+<td class='step-details'>Double click on Primary Goal Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:42</td>
+<td class='step-details'>selecting value index of 1 on Primary Goal Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:45</td>
+<td class='step-details'>Double click on Primary Goal Details Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:45</td>
+<td class='step-details'>Entering key word Test on Primary Goals Details Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:48</td>
+<td class='step-details'>Double click on Secondary Goal Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:49</td>
+<td class='step-details'>selecting value index of 1 on Secondary Goal Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:52</td>
+<td class='step-details'>Double click on Secondary Goal Details Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:52</td>
+<td class='step-details'>Entering key word Test on Secondary Goals Details Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:52</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:53</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:01:00</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:53</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:53</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='d73d6495-62e6-4fe2-932a-f060df941a18'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test11CloneOpportunityTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test11uk-cloneanexisting'uk'opportunity'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:51:55</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:52:07</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 12s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test11UK-Clone an existing 'UK' Opportunity</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:55</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:55</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:51:59</td>
+<td class='step-details'>Clicking on Clone Button by using JavaScript</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:52:07</td>
+<td class='step-details'>Text value - XAX EMEA UK Opportunity-190821-0147 - Clone 2019-08-21 exist as expected on Opportunity Detail Page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:52:07</td>
+<td class='step-details'>Text value - Proposal exist as expected on Opp Stage</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:07</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:12</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:07</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:07</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='4e14411b-07fe-47ba-aafd-f440ea4dbc47'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test12ClickCustomButtonsOppDetailsPageTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test12uk-verifybyclickingonallcustombuttonsinoppdetailpage'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:52:09</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:52:36</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 27s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test12UK-Verify by clicking on all custom buttons in Opp detail page</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:09</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:09</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:12</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:14</td>
+<td class='step-details'>Clicking on Cancel Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:19</td>
+<td class='step-details'>Clicking on Delete Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:19</td>
+<td class='step-details'>Dismissing Alert pop up</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:22</td>
+<td class='step-details'>Clicking on Clone Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:52:29</td>
+<td class='step-details'>Text value - XAX EMEA UK Opportunity-190821-0147 - Clone 2019-08-21 exist as expected on Clone Opp Name</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:29</td>
+<td class='step-details'>Waiting 800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:30</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:32</td>
+<td class='step-details'>Clicking on Rebooking Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:33</td>
+<td class='step-details'>Waiting 1000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:34</td>
+<td class='step-details'>Dismissing Alert pop up</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:36</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:27</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:36</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:36</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='af79f3c2-7052-455e-a90b-e906b89b89b5'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test01LogInUserTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test01uk-loginasaukusernatasatintor'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:52:47</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:53:11</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 24s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test01UK-Log In as a UK user Natasa Tintor</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:47</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:47</td>
+<td class='step-details'>Navigating to url https://test.salesforce.com</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:53</td>
+<td class='step-details'>Entering key word sumon.kashem@xaxis.com.glstaging on UserName Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:54</td>
+<td class='step-details'>Entering key word on Password Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:54</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:58</td>
+<td class='step-details'>Entering key word Natasa Tintor on Search Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:52:59</td>
+<td class='step-details'>Clicking on Search Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:02</td>
+<td class='step-details'>Clicking on Display Name Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:04</td>
+<td class='step-details'>Clicking on User Action Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:04</td>
+<td class='step-details'>Clicking on User Detail Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:06</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:53:11</td>
+<td class='step-details'>Text value - Logged in as Natasa Tintor (natasa.tintor@xaxis.com.glstaging) exist as expected on Home Page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:11</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:00:24</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:11</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:11</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active pass ' extentid='5c171668-62b2-458d-b6b4-5da5a5abdd54'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test14RebookingAnOpportunityTest </span>
+<span class='test-status label right outline capitalize pass'>pass</span>
+<span class='category-assigned hide  test14uk-rebookaxaxisopportunity'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:53:13</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:54:25</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 1m 12s+0ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test14UK-Rebook a Xaxis opportunity</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:13</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:13</td>
+<td class='step-details'>Clicking on Nav Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:13</td>
+<td class='step-details'>Clicking on Logout Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:14</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NVFw5&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:19</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:22</td>
+<td class='step-details'>selecting value index of 1 on Opt In Status Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:22</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:27</td>
+<td class='step-details'>Waiting 1500 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:28</td>
+<td class='step-details'>Entering key word Natasa Tintor on Search Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:29</td>
+<td class='step-details'>Clicking on Search Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:32</td>
+<td class='step-details'>Clicking on Display Name Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:33</td>
+<td class='step-details'>Clicking on User Action Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:34</td>
+<td class='step-details'>Clicking on User Detail Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:35</td>
+<td class='step-details'>Clicking on LogIn Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:36</td>
+<td class='step-details'>Waiting 5800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:42</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&amp;sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:45</td>
+<td class='step-details'>Clicking on Rebooking Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:53:47</td>
+<td class='step-details'>Alert text matches with Expected --Opportunity should be Closed Won</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:48</td>
+<td class='step-details'>Waiting 1500 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:49</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:51</td>
+<td class='step-details'>selecting value Closed Won on Stage Dropdown Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:51</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:53:52</td>
+<td class='step-details'>Text value - ? You must enter a Booking ID and Booking Plan before this Opportunity can be Closed Won exist as expected on Booking ID Error Message</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:53:52</td>
+<td class='step-details'>Text value - ? You must enter the Account Manager &amp; Account Executive if the Opportunity Stage is Contract Pending or Closed Won exist as expected on Account Manager Error Message</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:53:52</td>
+<td class='step-details'>Text value - Error: Please select at least one option from the Applicable Task field. If no tasks are needed, select 'None'. exist as expected on Applicable Tasks Error Message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:52</td>
+<td class='step-details'>Clicking on Cancel Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:58</td>
+<td class='step-details'>Double click on Applicable Tasks Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:58</td>
+<td class='step-details'>selecting value index of 1 on Applicable Tasks Picklist</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:58</td>
+<td class='step-details'>Clicking on Applicable Tasks Right Arrow</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:53:58</td>
+<td class='step-details'>Clicking on Ok Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:01</td>
+<td class='step-details'>Double click on Account Manager Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:01</td>
+<td class='step-details'>Entering key word Natasa Tintor on Account Manager Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:05</td>
+<td class='step-details'>Double click on Account Executive Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:05</td>
+<td class='step-details'>Entering key word Natasa Tintor on Account Executive Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:08</td>
+<td class='step-details'>Double click on Booking ID Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:08</td>
+<td class='step-details'>Entering key word Book ID --190821-0147 on Booking ID Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:12</td>
+<td class='step-details'>Double click on Booking Plan Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:12</td>
+<td class='step-details'>Entering key word Test on Booking Plan Input Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:12</td>
+<td class='step-details'>Clicking on Edit Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:12</td>
+<td class='step-details'>Waiting 1800 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:14</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:17</td>
+<td class='step-details'>selecting value Closed Won on Stage Dropdown Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:18</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:54:25</td>
+<td class='step-details'>Text value - Closed Won exist as expected on Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:25</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:01:11</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:25</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:25</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+<li class='collection-item test displayed active fail ' extentid='21c55139-108d-4595-a682-de3f3ff60f5c'>
+<div class='test-head'>
+<span class='test-name'>EMEA_UK_Suite_Test15MediaApprovalApprovedTest </span>
+<span class='test-status label right outline capitalize fail'>fail</span>
+<span class='category-assigned hide  test015auk-selllinereject/approval'></span>
+</div>
+<div class='test-body'>
+<div class='test-info'>
+<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-08-21 13:54:27</span>
+<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-08-21 13:57:34</span>
+<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 3m 6s+743ms</span>
+</div>
+<div class='test-desc'></div>
+<div class='test-attributes'>
+<div class='categories'>
+<span class='category text-white'>Test015aUK-Sell Line Reject/Approval</span>
+</div>
+</div>
+<div class='test-steps'>
+<table class='bordered table-results'>
+<thead>
+<tr>
+<th>Status</th>
+<th>Timestamp</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:27</td>
+<td class='step-details'>TEST STARTED:</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:27</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:29</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:32</td>
+<td class='step-details'>selecting value Contacted / Prospecting on Opp Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:32</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:37</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:54:39</td>
+<td class='step-details'>Element Requires Media Approval Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:54:48</td>
+<td class='step-details'>Element Approval Submitted UnCheckbox not found... org.openqa.selenium.TimeoutException: Timed out after 7 seconds waiting for visibility of element located by By.xpath: //[text()="Aprroval Submitted"]/following::img[@title="Not Checked"]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir8696_29661}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: adcb47db6006f5778e2cff6dc66e383f</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:54:49</td>
+<td class='step-details'><img class='report-img' data-featherlight='Screenshots//ScreenShotubu69k0z801d.png' src='Screenshots//ScreenShotubu69k0z801d.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:54:50</td>
+<td class='step-details'>Element Media Approval Received Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:54:50</td>
+<td class='step-details'>Element Needs Approval Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:50</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:54</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:57</td>
+<td class='step-details'>selecting value Proposal on Opp Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:54:57</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:01</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:03</td>
+<td class='step-details'>Element Requires Media Approval Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:55:12</td>
+<td class='step-details'>Element Approval Submitted Uncheckbox not found... org.openqa.selenium.TimeoutException: Timed out after 7 seconds waiting for visibility of element located by By.xpath: //[text()="Aprroval Submitted"]/following::img[@title="Not Checked"]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir8696_29661}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: adcb47db6006f5778e2cff6dc66e383f</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:55:14</td>
+<td class='step-details'><img class='report-img' data-featherlight='Screenshots//ScreenShots4mski8v0ns1.png' src='Screenshots//ScreenShots4mski8v0ns1.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:14</td>
+<td class='step-details'>Element Media Approval Received Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:15</td>
+<td class='step-details'>Element Needs Approval Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:15</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:16</td>
+<td class='step-details'>selecting value Rich Media on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:16</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:22</td>
+<td class='step-details'>Element Requires Media Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:22</td>
+<td class='step-details'>Element Approval Submitted Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:23</td>
+<td class='step-details'>Element Media Approval Received Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:24</td>
+<td class='step-details'>Element Needs Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:24</td>
+<td class='step-details'>Text value - Pending exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:24</td>
+<td class='step-details'>Clicking on Recall Approval Request Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:25</td>
+<td class='step-details'>Entering key word Approve on Comments Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:25</td>
+<td class='step-details'>Clicking on Recall Approval Request Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:28</td>
+<td class='step-details'>Element Requires Media Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:55:37</td>
+<td class='step-details'>Element Approval Submitted Checkedbox not found... org.openqa.selenium.TimeoutException: Timed out after 7 seconds waiting for visibility of element located by By.xpath: //[text()="Aprroval Submitted"]/following::img[@title="Not Checked"]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir8696_29661}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: adcb47db6006f5778e2cff6dc66e383f</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:55:38</td>
+<td class='step-details'><img class='report-img' data-featherlight='Screenshots//ScreenShot1k22sadw1i6uw.png' src='Screenshots//ScreenShot1k22sadw1i6uw.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:39</td>
+<td class='step-details'>Element Media Approval Received Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:39</td>
+<td class='step-details'>Element Needs Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:39</td>
+<td class='step-details'>Text value - Recalled exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:39</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:40</td>
+<td class='step-details'>selecting value Premium on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:41</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:45</td>
+<td class='step-details'>Element Requires Media Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:46</td>
+<td class='step-details'>Element Approval Submitted Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:47</td>
+<td class='step-details'>Element Media Approval Received Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:47</td>
+<td class='step-details'>Element Needs Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:47</td>
+<td class='step-details'>Text value - Pending exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:47</td>
+<td class='step-details'>Clicking on User Nav Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:47</td>
+<td class='step-details'>Clicking on Logout Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:49</td>
+<td class='step-details'>Waiting 3000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:52</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:54</td>
+<td class='step-details'>Clicking on Approve/Reject Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:55</td>
+<td class='step-details'>Entering key word Rejected on Comments Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:55</td>
+<td class='step-details'>Clicking on Reject Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:55:58</td>
+<td class='step-details'>Text value - Rejected exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:55:58</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:02</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:05</td>
+<td class='step-details'>selecting value Closed Won on Opp Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:05</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:06</td>
+<td class='step-details'>Waiting 2000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:09</td>
+<td class='step-details'>Text value - Please ensure all necessary sell lines have received media approval before updating stage to Closed Won. Opportunity must be in Proposal or Contract Pending for sell line approval exist as expected on Error Message</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:09</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:10</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:12</td>
+<td class='step-details'>selecting value Short Form Video on Product Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:12</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:17</td>
+<td class='step-details'>Text value - Pending exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:17</td>
+<td class='step-details'>Clicking on Approve/Reject Link</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:18</td>
+<td class='step-details'>Entering key word Approve on Comments Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:19</td>
+<td class='step-details'>Clicking on Approve Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:22</td>
+<td class='step-details'>Element Requires Media Approval Unheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:56:31</td>
+<td class='step-details'>Element Approval Submitted Checkedbox not found... org.openqa.selenium.TimeoutException: Timed out after 7 seconds waiting for visibility of element located by By.xpath: //[text()="Aprroval Submitted"]/following::img[@title="Not Checked"]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir8696_29661}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: adcb47db6006f5778e2cff6dc66e383f</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:56:32</td>
+<td class='step-details'><img class='report-img' data-featherlight='Screenshots//ScreenShottru4tsrgnwoh.png' src='Screenshots//ScreenShottru4tsrgnwoh.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:33</td>
+<td class='step-details'>Element Media Approval Received Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:34</td>
+<td class='step-details'>Element Needs Approval Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:34</td>
+<td class='step-details'>Text value - Approved exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:34</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:37</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:40</td>
+<td class='step-details'>selecting value Contacted / Prospecting on Opp Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:40</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:45</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:48</td>
+<td class='step-details'>Element Requires Media Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:56:56</td>
+<td class='step-details'>Element Approval Submitted UnCheckbox not found... org.openqa.selenium.TimeoutException: Timed out after 7 seconds waiting for visibility of element located by By.xpath: //[text()="Aprroval Submitted"]/following::img[@title="Not Checked"]
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'EC2AMAZ-FEFP0OS', ip: '10.199.140.93', os.name: 'Windows NT (unknown)', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63507}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90), userDataDir=C:\Users\SumonK\AppData\Local\Temp\2\scoped_dir8696_29661}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: adcb47db6006f5778e2cff6dc66e383f</td>
+</tr>
+<tr>
+<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+<td class='timestamp'>13:56:58</td>
+<td class='step-details'><img class='report-img' data-featherlight='Screenshots//ScreenShott4ht6y7li4ab.png' src='Screenshots//ScreenShott4ht6y7li4ab.png' /></td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:59</td>
+<td class='step-details'>Element Media Approval Received Uncheckbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:56:59</td>
+<td class='step-details'>Element Needs Approval Checkedbox exist as expected...</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:56:59</td>
+<td class='step-details'>Navigating to url https://c.cs92.visual.force.com/apex/OppDetail?id=0063F00000Ev5iB&sfdc.override=1</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:03</td>
+<td class='step-details'>Clicking on Edit Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:05</td>
+<td class='step-details'>selecting value Proposal on Opp Stage Dropdown</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:06</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:11</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:57:14</td>
+<td class='step-details'>Text value - Pending exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:14</td>
+<td class='step-details'>Clicking on Recall Approval Request Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:15</td>
+<td class='step-details'>Entering key word Recalled Approval on Comments Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:15</td>
+<td class='step-details'>Clicking on Recall Approval Request Button</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:57:18</td>
+<td class='step-details'>Text value - Recalled exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:19</td>
+<td class='step-details'>Clicking on First Buy Line Link by using mouse movement</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:22</td>
+<td class='step-details'>Waiting 2000 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:27</td>
+<td class='step-details'>Double click on Targeting Field by using JavaScript Executor</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:27</td>
+<td class='step-details'>Entering key word Test on Targeting Text Field</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:28</td>
+<td class='step-details'>Clicking on OK Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:28</td>
+<td class='step-details'>Clicking on Save Button</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:29</td>
+<td class='step-details'>Waiting 1500 milliseconds on a page</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:30</td>
+<td class='step-details'>Navigating to url https://cs92.salesforce.com/a013F000003dWcvQAE/d?retURL=https%3A%2F%2Fc.cs92.visual.force.com%2Fapex%2FOpportunityBuysRelatedList%3Finline%3D1%26id%3D0063F00000Ev5iB&_CONFIRMATIONTOKEN=VmpFPSxNakF4T1Mwd09DMHlORlF4TnpvMU1Eb3pNaTR4T1RoYSxnSlNvWE9RM3ZYRGMtNmJnaFNkU083LE9HWTJaakEw&common.udd.actions.ActionsUtilORIG_URI=%2Fa013F000003dWcvQAE%2Fd</td>
+</tr>
+<tr>
+<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+<td class='timestamp'>13:57:34</td>
+<td class='step-details'>Text value - Recalled exist as expected on Overall Status Text Value</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:34</td>
+<td class='step-details'>Total Execution Time for Test Suite: : 0:03:06</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:34</td>
+<td class='step-details'>********************* END OF AUTOMATION TEST *********************</td>
+</tr>
+<tr>
+<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+<td class='timestamp'>13:57:34</td>
+<td class='step-details'>TEST RESULT SAVED IN: FitNesseRoot/files/testResults/ExtentReport/STAGING/AutomationReport190821-0147.html</td>
+</tr>
+</tbody>
+</table>
+<ul class='collapsible node-list' data-collapsible='accordion'>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='test-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='details-name'></h5>
+<div class='details-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /tests -->
+
+<!-- categories -->
+<div id='categories-view' class='row _addedTable hide'>
+<div class='col _addedCell1'>
+<div class='contents'>
+<div class='card-panel heading'>
+<h5>Categories</h5>
+</div>
+<div class='card-panel filters'>
+<div class='search' alt='Search tests' title='Search tests'>
+<div class='input-field left'>
+<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+</div>
+<i class='mdi-action-search icon'></i>
+</div>
+</div>
+<div class='card-panel no-padding-h no-padding-v'>
+<div class='wrapper'>
+<ul id='cat-collection' class='cat-collection'>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test015aUK-Sell Line Reject/Approval</span>
+</div>
+<div class='category-status-counts'>
+<span class='fail label dot'>Fail: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='fail'>
+<td>2019-08-21 13:54:27</td>
+<td><span class='category-link linked' extentid='21c55139-108d-4595-a682-de3f3ff60f5c'>EMEA_UK_Suite_Test15MediaApprovalApprovedTest</span></td>
+<td><div class='status label capitalize fail'>fail</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test01UK-Log In as a UK user Natasa Tintor</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 2</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>2</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:47:26</td>
+<td><span class='category-link linked' extentid='9b1574b8-90d2-4b62-ab1f-cc1af6777599'>EMEA_UK_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tr class='pass'>
+<td>2019-08-21 13:52:47</td>
+<td><span class='category-link linked' extentid='af79f3c2-7052-455e-a90b-e906b89b89b5'>EMEA_UK_Suite_Test01LogInUserTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test02UK-Create an UK agency</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:47:40</td>
+<td><span class='category-link linked' extentid='59f4163b-3008-4408-90b7-d172b52aff14'>EMEA_UK_Suite_Test02CreateAgencyTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test03UK-Create an APAC Advertiser</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:47:49</td>
+<td><span class='category-link linked' extentid='66f12cbd-834c-47ac-aacb-4a1225c3ae3a'>EMEA_UK_Suite_Test03CreateAdvertiserTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test04UK-Create a UK LR Account</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:47:57</td>
+<td><span class='category-link linked' extentid='ffbcc984-5c04-4c52-b2b6-263eeb4d9f79'>EMEA_UK_Suite_Test04CreateLightReactionAccountTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test05UK-Create a UK Opportunity</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:48:21</td>
+<td><span class='category-link linked' extentid='5de431c5-60a5-40c3-a68f-11dfd68b7915'>EMEA_UK_Suite_Test05CreateLightReactionOpportunityTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06aUK-Verify All Fields Available for LR Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:48:38</td>
+<td><span class='category-link linked' extentid='26e3fe1e-bc57-4a2e-939c-e1aa58f3ce79'>EMEA_UK_Suite_Test06aVerifyAllFieldsForLightReactionSellLineTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test06bUK-Create a Light Reaction Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:49:02</td>
+<td><span class='category-link linked' extentid='b69c60ce-aca3-4442-8cea-4bca38bee2fc'>EMEA_UK_Suite_Test06bCreateLightReactionSellLineTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test07UK-Create a UK XAX Account</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:49:21</td>
+<td><span class='category-link linked' extentid='438ef499-4dca-4263-8be5-03ab6c5ca0ba'>EMEA_UK_Suite_Test07CreateXaxisAccountTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test08UK-Create a UK Xax Opportunity</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:49:41</td>
+<td><span class='category-link linked' extentid='53a56970-53f3-4081-a9d7-b9fd924875d1'>EMEA_UK_Suite_Test08CreateXaxisOpportunityTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test09aUK-Verify All Fields Available for XAX Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:49:57</td>
+<td><span class='category-link linked' extentid='47ed86d7-779c-48b2-883f-dd2348ea3eee'>EMEA_UK_Suite_Test09aVerifyAllFieldsForXaxisSellLineTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test09bUK-Create a Xaxis Sell Line</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:50:20</td>
+<td><span class='category-link linked' extentid='dac1f67f-7b26-4008-8381-8b3ec91ab160'>EMEA_UK_Suite_Test09bCreateXaxisSellLineTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test10aUK-Create a UK Xaxis Buy Placement</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:50:41</td>
+<td><span class='category-link linked' extentid='4b273390-3660-4341-a2b3-571f47602b9a'>EMEA_UK_Suite_Test10aCreateXaxisBuyPlacementTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test10bUK-Edit UK Xaxis Buy Placements</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:50:53</td>
+<td><span class='category-link linked' extentid='65b55d83-1db3-4232-9535-3626a26ab2bd'>EMEA_UK_Suite_Test10bEditXaxisBuyPlacementTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test11UK-Clone an existing 'UK' Opportunity</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:51:55</td>
+<td><span class='category-link linked' extentid='d73d6495-62e6-4fe2-932a-f060df941a18'>EMEA_UK_Suite_Test11CloneOpportunityTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test12UK-Verify by clicking on all custom buttons in Opp detail page</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:52:09</td>
+<td><span class='category-link linked' extentid='4e14411b-07fe-47ba-aafd-f440ea4dbc47'>EMEA_UK_Suite_Test12ClickCustomButtonsOppDetailsPageTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+<li class='category-item displayed'>
+<div class='cat-head'>
+<span class='category-name'>Test14UK-Rebook a Xaxis opportunity</span>
+</div>
+<div class='category-status-counts'>
+<span class='pass label dot'>Pass: 1</span>
+</div>
+<div class='cat-body'>
+<div class='category-status-counts'>
+<div class='button-group'>
+<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+</div>
+</div>
+<div class='cat-tests'>
+<table class='bordered'>
+<thead>
+<tr>
+<th>RunDate</th>
+<th>Test Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class='pass'>
+<td>2019-08-21 13:53:13</td>
+<td><span class='category-link linked' extentid='5c171668-62b2-458d-b6b4-5da5a5abdd54'>EMEA_UK_Suite_Test14RebookingAnOpportunityTest</span></td>
+<td><div class='status label capitalize pass'>pass</div></td>
+</tr>
+<tbody>
+</table>
+</div>
+</div> 
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id='cat-details-wrapper' class='col _addedCell2'>
+<div class='contents'>
+<div class='card-panel details-view'>
+<h5 class='cat-name'></h5>
+<div class='cat-container'>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- /categories -->
+
+<!-- exceptions -->
+<!-- /exceptions -->
+
+<!-- testrunner logs -->
+<!-- /testrunner logs -->
+
+</div>
+<!-- /container -->
+
+<!-- test dashboard counts setting -->
+<div id='test-count-setting' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Configure Tests Count Setting</h5> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
+<br> 
+<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+<label for='childNodes'>Child Tests Only</label> 
+</div> 
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /test dashboard counts setting -->
+
+<!-- filter for step status -->
+<div id='step-status-filter' class='modal bottom-sheet'> 
+<div class='modal-content'> 
+<h5>Select status</h5> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
+<label for='step-dashboard-filter-pass'>Pass</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
+<label for='step-dashboard-filter-fail'>Fail</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
+<label for='step-dashboard-filter-fatal'>Fatal</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
+<label for='step-dashboard-filter-error'>Error</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
+<label for='step-dashboard-filter-warning'>Warning</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
+<label for='step-dashboard-filter-skip'>Skipped</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
+<label for='step-dashboard-filter-info'>Info</label> 
+<br> 
+<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
+<label for='step-dashboard-filter-unknown'>Unknown</label> 
+</div>
+<div class='modal-footer'> 
+<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+</div> 
+</div>
+<!-- /filter for step status -->
+
+<script src='https://cdn.rawgit.com/anshooarora/extentreports/c936a26fc8bb9c5fc0253b5bc6f289e1d14bb595/cdn/extent.js' type='text/javascript'></script>
+
+<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
+<script>
+
+            
+                $(document).ready(function() {
+                    
+                });
+            
+        
+</script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite</rootPath>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test01LogInUserTest</name>
+    <date>2019-08-26T11:00:47-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190826110047</pageHistoryLink>
+    <counts>
+      <right>33</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>94266</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test02CreateAgencyTest</name>
+    <date>2019-08-26T11:02:21-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190826110221</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>16050</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test03CreateAdvertiserTest</name>
+    <date>2019-08-26T11:02:38-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190826110238</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12503</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test04aCreateIncaAccountWithUkUserTest</name>
+    <date>2019-08-26T11:02:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test04aCreateIncaAccountWithUkUserTest?pageHistory&amp;resultDate=20190826110250</pageHistoryLink>
+    <counts>
+      <right>26</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>57270</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test04bCreateIncaAccountWithEmeaUserTest</name>
+    <date>2019-08-26T11:03:48-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test04bCreateIncaAccountWithEmeaUserTest?pageHistory&amp;resultDate=20190826110348</pageHistoryLink>
+    <counts>
+      <right>25</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>64764</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test04cCreateIncaAccountTest</name>
+    <date>2019-08-26T11:04:53-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test04cCreateIncaAccountTest?pageHistory&amp;resultDate=20190826110453</pageHistoryLink>
+    <counts>
+      <right>52</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>106662</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test05CreateIncaOppTest</name>
+    <date>2019-08-26T11:06:39-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test05CreateIncaOppTest?pageHistory&amp;resultDate=20190826110639</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>19342</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06aVerifyAllFieldsForIncaSellLineTest</name>
+    <date>2019-08-26T11:06:59-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06aVerifyAllFieldsForIncaSellLineTest?pageHistory&amp;resultDate=20190826110659</pageHistoryLink>
+    <counts>
+      <right>41</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>32895</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06bCreateIncaSellLineTest</name>
+    <date>2019-08-26T11:07:32-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06bCreateIncaSellLineTest?pageHistory&amp;resultDate=20190826110732</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>19051</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06cSellLineSlmsApacFieldsRollUpTest</name>
+    <date>2019-08-26T11:07:51-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06cSellLineSlmsApacFieldsRollUpTest?pageHistory&amp;resultDate=20190826110751</pageHistoryLink>
+    <counts>
+      <right>41</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>59957</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06daCreateIncaFeeBuyPlacementTest</name>
+    <date>2019-08-26T11:08:51-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test06daCreateIncaFeeBuyPlacementTest?pageHistory&amp;resultDate=20190826110851</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>19614</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test07aCreateIncaPackBuyPlacementTest</name>
+    <date>2019-08-26T11:09:11-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test07aCreateIncaPackBuyPlacementTest?pageHistory&amp;resultDate=20190826110911</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14138</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test07bCapturingActualsForSellLineTest</name>
+    <date>2019-08-26T11:09:25-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test07bCapturingActualsForSellLineTest?pageHistory&amp;resultDate=20190826110925</pageHistoryLink>
+    <counts>
+      <right>44</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>58805</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test07cCapturingActualsForBuyPlacementTest</name>
+    <date>2019-08-26T11:10:24-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test07cCapturingActualsForBuyPlacementTest?pageHistory&amp;resultDate=20190826111024</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>2</exceptions>
+    </counts>
+    <runTimeInMillis>12949</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test08AccessingIncaAccountWithNonIncaUsersTest</name>
+    <date>2019-08-26T11:10:37-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test08AccessingIncaAccountWithNonIncaUsersTest?pageHistory&amp;resultDate=20190826111037</pageHistoryLink>
+    <counts>
+      <right>28</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>43743</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:/Program Files/Java/jdk1.8.0_91\bin\java" -cp C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\Desktop\FitNesseWithSelenium\target\classes;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\SumonK\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\SumonK\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\SumonK\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\SumonK\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\SumonK\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\SumonK\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\SumonK\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\SumonK\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\SumonK\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.53.0\selenium-htmlunit-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.18\htmlunit-2.18.jar;C:\Users\SumonK\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\SumonK\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpmime\4.5\httpmime-4.5.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\SumonK\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\SumonK\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\SumonK\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.12.v20150709\websocket-client-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-util\9.2.12.v20150709\jetty-util-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-io\9.2.12.v20150709\jetty-io-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.12.v20150709\websocket-common-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.12.v20150709\websocket-api-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\SumonK\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\SumonK\.m2\repository\com\opera\operadriver\1.1\operadriver-1.1.jar;C:\Users\SumonK\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\SumonK\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\SumonK\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\SumonK\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\SumonK\.m2\repository\com\codeborne\phantomjsdriver\1.2.1\phantomjsdriver-1.2.1.jar;C:\Users\SumonK\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SumonK\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\SumonK\.m2\repository\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\SumonK\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\SumonK\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.3.0\diffutils-1.3.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-simple\1.7.12\slf4j-simple-1.7.12.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.9\maven-classpath-plugin-1.9.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\SumonK\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on Edit Button
+Clicking on Edit Button
+Clicking on Save Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as SF QA Team (sf.qa2@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - INCA India Agency-190826-1100 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - INCA India Advertiser-190826-1100 exist as expected
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Natasa Tintor (natasa.tintor@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Accounts Tab
+Clicking on New Button
+Text value - United Kingdom exist as expected
+Clicking on Continue Button
+Clicking on Create Account Button
+Text value - Only INCA users should be able to create INCA accounts(must have a role of INCA) exist as expected
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Frank Adams (frank.adams@global.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+Text value - Only INCA users should be able to create INCA accounts(must have a role of INCA) exist as expected
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on Edit Button
+Clicking on Edit Button
+Clicking on Save Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as SF QA Team (sf.qa2@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+Attribute value - INCA - INCA India Agency-190826-1100 - IND - INCA India Advertiser-190826-1100 exist as expected
+clearing field
+Clicking on Save Button
+Text value - INCA India Account-190826-1100 exist as expected
+Text value - INCA exist as expected
+Text value - INCA Media Buying - APAC [Change] exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NWDhn&amp;sfdc.override=1
+clearing field
+clearing field
+Text value - INCA India Opportunity-190826-1100 exist as expected
+Text value - INCA-APAC exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000F0KZeQAN?nooverride=1
+Clicking on New INCA Sell Line Button
+Text value - Sell Line Edit exist as expected
+Text value - Error: Please enter a value greater than 0 when Service Model is "% Media Fee Gross" exist as expected
+Fail - Expected text 'Error: Please enter a value greater than 0 when Service Model is "% Media Fee Net"' doesn't match the actual text 'Error: Please enter a value greater than 0 when Service Model is "% Media Fee Gross"'
+Text value - INCA exist as expected
+Text value - INCA-APAC exist as expected
+Text value - APAC INCA SL-190826-1100 exist as expected
+Text value - 20,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+clearing field
+clearing field
+clearing field
+clearing field
+clearing field
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value - 10 exist as expected
+Text value - 10 exist as expected
+Text value - 10 exist as expected
+Text value - 10 exist as expected
+Text value - 10 exist as expected
+clearing field
+clearing field
+clearing field
+clearing field
+clearing field
+Clicking on Save Button
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value - 20 exist as expected
+Text value - 20 exist as expected
+Text value - 20 exist as expected
+Text value - 20 exist as expected
+Text value - 20 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value - Error: You must enter a value exist as expected
+Fail - Unable to enter keyword on input field
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value - Error: You must enter a value exist as expected
+Capturing value on Buy Placement Number
+Text value - INCA-APAC [Change] exist as expected
+Text value - CP-01066002 exist as expected
+Text value - USD 50.00 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value -  exist as expected
+Text value -  exist as expected
+Text value -  exist as expected
+Clicking on Actualize Button
+clearing field
+clearing field
+Clicking on Save Button
+Clicking on Back To Sell Line Button
+Text value - USD 1,000.00 exist as expected
+Text value - 20,000 exist as expected
+Text value - USD 50.00 exist as expected
+Clicking on Actualize Button
+clearing field
+clearing field
+Clicking on Save Button
+Clicking on Back To Sell Line Button
+Text value - USD 1,000.00 exist as expected
+Text value - 20,000 exist as expected
+Text value - USD 50.00 exist as expected
+Text value - USD 1,600.00 exist as expected
+Text value - 24,000 exist as expected
+Text value - USD 336.96 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value - USD 326.09 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F000003dm3O
+Text value - USD 336.96 exist as expected
+Navigating to url $incaIndFeeBuyPlacementPageUrl
+Fail - Verification object is not present/visible
+Clicking on User Navigation Button
+Clicking on User Logout Button
+Clicking on Search Button
+Clicking on Display UK Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NWDhn&amp;sfdc.override=1
+Clicking on User Navigation Button
+Clicking on User Logout Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000NWDhn&amp;sfdc.override=1
+Clicking on User Navigation Button
+Clicking on User Logout Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 52324
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 12214
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 21371
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 18523
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 28886
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 30850
+Only local connections are allowed.
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>12</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>2</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>635075</totalRunTimeInMillis>
+</suiteResults>
+

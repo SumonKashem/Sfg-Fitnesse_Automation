@@ -1,0 +1,88 @@
+!***< [configurations]
+#!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S01LogInSuite.AdminUserTest
+*!
+
+'''Scenario Name: ''' Caputring Actuals For Sell Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+	Go to INCA India Sell Line Page
+    Verify Original Gross Budget Field
+    Verify Original Billable Volume Field
+    Verify Original Billable Rate Field
+    Verify the Actualize button by Clicking on it
+    Enter Actual Gross Budget 
+    Enter Actual Billable Units
+    Click on Save button
+    Verify Actuals Saved! message
+    Click on Back to Sell Line button
+    Verify Original Gross Budget Field
+    Verify Original Billable Volume Field
+    Verify Original Billable Rate Field
+	Click on Actualize button
+    Clear and enter new Gross Budget value
+    Clear and enter new Billable Units value
+    Click on Save button
+    Verify Actuals Saved! message
+    Click on Back to Sell Line button
+    Verify Planned Gross Budget changed
+    Verify Sell Volume changed
+    Click on Edit link for all SLMS
+    Verify on all SLMS that the Reconciled box is checked and planned gross budget stays same as the value when it was first actualized
+**********!
+#|selectDropDownByText;|${SalesForce_SellLine_Device_DropDown}|Desktop|Device Dropdown|
+#|selectDropDownByText;|${SalesForce_SellLine_Media_DropDown}|Standard|Media Dropdown|
+#https://cs92.salesforce.com/a013F000003daN1QAI
+#$incaIndSellLineURL
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_INCA_India_Suite_${PAGE_NAME}|Test07bINCAInd-Capturing Actuals for Sell Line|
+|open;|$incaIndSellLineURL|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Gross_Budget_Text_Field}||Original Gross Budget Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Billable_Volume_Text_Field}||Original Billable Volume Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Effective_Billable_Rate_Text_Field}||Original Effective Billable Rate Text Field|
+|click;|${SalesForce_SellLine_Actualize_Button}|Actualize Button|
+|clear;|${SalesForce_SellLine_Actualize_Actuals_Gross_Budget_Input_Field}|Actual Gross Budget Field|
+|type;|${SalesForce_SellLine_Actualize_Actuals_Gross_Budget_Input_Field}|1500|Actual Gross Budget Field|
+|clear;|${SalesForce_SellLine_Actualize_Actuals_Billable_Units_Input_Field}|Actual Billable Units Field|
+|type;|${SalesForce_SellLine_Actualize_Actuals_Billable_Units_Input_Field}|23000|Actual Billable Units Field|
+|click;|${SalesForce_SellLine_Actualize_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Actualize_Actuals_Saved_Message}|Yes|Actuals Saved Message|
+|wait;|14000|
+|click;|${SalesForce_SellLine_Actualize_Back_To_Sell_Line_Button}|Back To Sell Line Button|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Gross_Budget_Text_Field}|USD 1,000.00|Original Gross Budget Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Billable_Volume_Text_Field}|20,000|Original Billable Volume Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Effective_Billable_Rate_Text_Field}|USD 50.00|Original Effective Billable Rate Text Field|
+|click;|${SalesForce_SellLine_Actualize_Button}|Actualize Button|
+|clear;|${SalesForce_SellLine_Actualize_Actuals_Gross_Budget_Input_Field}|Actual Gross Budget Field|
+|type;|${SalesForce_SellLine_Actualize_Actuals_Gross_Budget_Input_Field}|1600|Actual Gross Budget Field|
+|clear;|${SalesForce_SellLine_Actualize_Actuals_Billable_Units_Input_Field}|Actual Billable Units Field|
+|type;|${SalesForce_SellLine_Actualize_Actuals_Billable_Units_Input_Field}|24000|Actual Billable Units Field|
+|click;|${SalesForce_SellLine_Actualize_Save_Button}|Save Button|
+|elementVerification;|${SalesForce_SellLine_Actualize_Actuals_Saved_Message}|Yes|Actuals Saved Message|
+|wait;|9800|
+|click;|${SalesForce_SellLine_Actualize_Back_To_Sell_Line_Button}|Back To Sell Line Button|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Gross_Budget_Text_Field}|USD 1,000.00|Original Gross Budget Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Billable_Volume_Text_Field}|20,000|Original Billable Volume Text Field|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Effective_Billable_Rate_Text_Field}|USD 50.00|Original Effective Billable Rate Text Field|
+|objectVerification;|${SalesForce_SellLine_Details_Planned_Gross_Budget_Content}|USD 1,600.00|Planned Gross Budget Text Field|
+|objectVerification;|${SalesForce_SellLine_Detail_Sell_Volume_Text}|24,000|Sell Volume Text Field|
+|scroll;|Vertical|6000|
+|clickUsingIndexMouseMovement;|${SalesForce_SellLine_Edit_Record_Link}|0|Last Monthly Schedule Link|
+|elementVerification;|${SalesForce_SellLine_Monthly_Schedule_Reconciled_Checkbox}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Gross_Budget_SLMS_Text_Field}|USD 336.96|Original Gross Budget Text Field|
+|open;|$incaIndSellLineURL|
+|scroll;|Vertical|6000|
+|clickUsingIndexMouseMovement;|${SalesForce_SellLine_Edit_Record_Link}|1|Second Monthly Schedule Link|
+|elementVerification;|${SalesForce_SellLine_Monthly_Schedule_Reconciled_Checkbox}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Gross_Budget_SLMS_Text_Field}|USD 326.09|Original Gross Budget Text Field|
+|open;|$incaIndSellLineURL|
+|scroll;|Vertical|6000|
+|clickUsingIndexMouseMovement;|${SalesForce_SellLine_Edit_Record_Link}|2|First Monthly Schedule Link|
+|elementVerification;|${SalesForce_SellLine_Monthly_Schedule_Reconciled_Checkbox}|Yes|Reconciled Checkbox|
+|objectVerification;|${SalesForce_SellLine_Original_Targets_Gross_Budget_SLMS_Text_Field}|USD 336.96|Original Gross Budget Text Field|
+|stopExtentReport;|
+**********!
