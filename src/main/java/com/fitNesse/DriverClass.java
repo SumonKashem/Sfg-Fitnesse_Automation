@@ -6,11 +6,13 @@ import com.sun.xml.internal.ws.policy.spi.PolicyAssertionValidator;
 import com.thoughtworks.selenium.CommandProcessor;
 import javafx.scene.paint.Stop;
 import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.UnreachableBrowserException;
@@ -21,6 +23,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import sun.awt.geom.AreaOp;
@@ -34,6 +37,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.nio.ByteBuffer;
 import java.rmi.server.UID;
+import java.security.Key;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -87,16 +91,18 @@ public class DriverClass extends Object{
         //Kill ALL instances and services of Chrome and ChromeDriver then free memory
         // Runtime.getRuntime().exec("C:\\Users\\sumon.kashem\\Documents\\FitNesse\\src\\main\\resources\\CleanUp.cmd");
         //Runtime.getRuntime().exec("taskkill /f /im chrome.exe");
+        //Thread.sleep(1000);
+        Runtime.getRuntime().exec("taskkill /f /im chromedriver2.exe");
         Runtime.getRuntime().exec("taskkill /f /im chromedriver.exe");
         Runtime.getRuntime().exec("taskkill /f /im chrome.exe");
 
-        Thread.sleep(1700);
+        Thread.sleep(2000);
 
         System.out.println("================= STARTING AUTOMATION TEST ON ENVIRONMENT: " + getUrl.toUpperCase() + " =================");
 
         if (browser.equalsIgnoreCase("FireFox")) {
             System.out.println("Firefox Browser is used");
-            System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriver.exe");
+            //System.setProperty("webdriver.gecko.driver", "src\\main\\resources\\geckodriver.exe");
             driver = new FirefoxDriver();
             driver.manage().window().maximize();
         }
@@ -109,11 +115,14 @@ public class DriverClass extends Object{
             driver.manage().window().maximize();
         } else if (browser.equalsIgnoreCase("Chrome")) {
             System.out.println("Chrome Browser is used");
-            System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver2.exe");
             ChromeOptions options = new ChromeOptions();
-            options.addArguments("port="+ port +"","--incognito", "--start-maximized", "--disable-extensions");
+            options.setExperimentalOption("useAutomationExtension", false);
+            options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+            options.addArguments("port="+ port +"","--incognito", "--disable-extensions","--disable-infobars","--start-maximized");
             driver = new ChromeDriver(options);
             driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+
         }
 
     }
@@ -137,6 +146,7 @@ public class DriverClass extends Object{
                 if(driver.findElements(By.xpath(Locator)).size() > 0){
                     //System.out.println("Element - - " + Locator + " - - is found on iteration " + i);
                     Long endTime = System.currentTimeMillis();
+                    //
                     extentTest.log(LogStatus.PASS,"Element " + elementName + " is found");
                     //extentTest.log(LogStatus.INFO,"Element is found in " + convertSecondsToHMmSs(endTIme - startTime));
                     break;
@@ -258,6 +268,25 @@ public class DriverClass extends Object{
         }
     }
 
+    public void deleteRadiaLine(String locator) throws IOException, InterruptedException {
+        WebDriverWait wait = new WebDriverWait(driver,7);
+            extentTest.log(LogStatus.INFO,"Deleting existing radia Sell Line if exist");
+                Actions action = new Actions(driver);
+            try{
+                WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+                action.moveToElement(element).click().build().perform();
+                Thread.sleep(950);
+                driver.findElement(By.xpath("//*[text()='Remove']")).click();
+                Thread.sleep(900);
+                driver.findElement(By.xpath("//*[text()='Exclude']")).click();
+                Thread.sleep(1900);
+            } catch (Exception e){
+
+            }
+    }
+
+
+
 
     public boolean waitForElementToLoadByIndex(String Locator, int indexNumber, String elementName) throws InterruptedException {
         int i = 0;
@@ -351,6 +380,32 @@ public class DriverClass extends Object{
 
         }
     }
+
+    //type by index
+    public boolean typeByIndex(String locator, int indexNumber, String value, String elementName) throws InterruptedException, IOException {
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, 7);
+            if(elementName.toLowerCase().contains("password")) {
+                extentTest.log(LogStatus.INFO, "Entering key word on " + elementName);
+            } else {
+                extentTest.log(LogStatus.INFO, "Entering key word " + value + " on " + elementName);
+            }
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator))).get(indexNumber).sendKeys(value);
+            return true;
+        } catch (Exception e) {
+            Thread.sleep(800);
+            System.out.println("Fail - Unable to enter keyword on input field");
+            extentTest.log(LogStatus.FAIL,"Unable to enter keyword on " + elementName);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("Unable to type now failing the test - " + e);
+            }
+            return false;
+
+        }
+    }
+
     public boolean click(String locator, String elementName) throws IOException, InterruptedException {
         try{
             WebDriverWait wait = new WebDriverWait(driver, 7);
@@ -362,11 +417,69 @@ public class DriverClass extends Object{
         } catch (Exception e) {
             Thread.sleep(800);
             System.out.println("Fail - Unable to click on button/link");
-            extentTest.log(LogStatus.FAIL,"Unable to click on " + elementName);
+            extentTest.log(LogStatus.FAIL,"Unable to click on " + elementName + " Exception: " + e);
             getScreenShot(driver);
             stopExtentReport();
             if (stopBrowserOnAssertion) {
                 throw new AssertionAndStopTestError("Unable to click now failing the test");
+            }
+            return false;
+        }
+    }
+
+    public boolean verifyDropdownValues(String locator,String elementName,String[]...values) throws IOException, InterruptedException {
+        String size;
+        WebDriverWait wait = new WebDriverWait(driver, 7);
+        try{
+            size = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).getAttribute("tabindex");
+            int sizeNum = Integer.parseInt(size);
+            if(sizeNum + 1 < values.length || sizeNum + 1 > values.length){
+                extentTest.log(LogStatus.FAIL, "Failed due to dropdown values count not matching -- " + (sizeNum + 1) + " -- on element " + elementName);
+            } else if(sizeNum + 1 == values.length){
+                extentTest.log(LogStatus.PASS,"Dropdown values count matches -- " + values.length + " -- on element " + elementName);
+            }
+            for(int i = 0; i < values.length; i++){
+                String arr1 = null, arr2 = null;
+                try{
+                    Select ddown = new Select(driver.findElement(By.xpath(locator)));
+                    arr1 = Arrays.toString(values[i]).replace("[","");
+                    arr2 = arr1.replace("]","");
+                    extentTest.log(LogStatus.INFO,"Selecting Value " + arr2);
+                    ddown.selectByVisibleText(arr2);
+                    //extentTest.log(LogStatus.INFO, "Element value " + values[i] + " exist for " + elementName);
+                } catch (Exception e) {
+                    extentTest.log(LogStatus.FAIL, "Element value " + arr2 + " doesn't exist for " + elementName);
+                }
+            }//exit for
+            return true;
+        } catch (Exception e) {
+            Thread.sleep(800);
+            extentTest.log(LogStatus.FAIL,"Unable to select on " + elementName + " Exception: " + e);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("Unable to select on " + elementName + " now failing the test");
+            }
+            return false;
+        }
+    }
+
+    public boolean submit(String locator, String elementName) throws IOException, InterruptedException {
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, 7);
+            System.out.println("Submitting on " + elementName);
+            extentTest.log(LogStatus.INFO,"Submitting on " + elementName);
+            //Thread.sleep(1800);
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(locator))).submit();
+            return true;
+        } catch (Exception e) {
+            Thread.sleep(800);
+            System.out.println("Fail - Unable to submit on button/link");
+            extentTest.log(LogStatus.FAIL,"Unable to submit on " + elementName);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("Unable to submit now failing the test");
             }
             return false;
         }
@@ -377,6 +490,28 @@ public class DriverClass extends Object{
         long l = ByteBuffer.wrap(uuid.toString().getBytes()).getLong();
         return Long.toString(l, Character.MAX_RADIX);
     }
+
+    private static int inc = 0;
+
+    public long getId(int maxNumber){
+
+        long id = Long.parseLong(String.valueOf(System.currentTimeMillis())
+                .substring(1,maxNumber)
+                .concat(String.valueOf(inc)));
+        inc = (inc+1)%10;
+        return id;
+    }
+
+    public String getId(int maxNumber,String emailType){
+
+        long id = Long.parseLong(String.valueOf(System.currentTimeMillis())
+                .substring(1,maxNumber)
+                .concat(String.valueOf(inc)));
+        inc = (inc+1)%10;
+        return id + getUniqueName("Email") + emailType;
+    }
+
+
 
     public boolean switchToFrame(String id, String elementName) throws InterruptedException, IOException {
         try {
@@ -586,8 +721,8 @@ public class DriverClass extends Object{
             WebDriverWait wait = new WebDriverWait(driver, 7);
             extentTest.log(LogStatus.INFO,"Clicking on " + elementName + " by using mouse movement");
             Actions mouse = new Actions(driver);
-            mouse.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
-            mouse.click().build().perform();
+            mouse.moveToElement(driver.findElement(By.xpath(locator))).click().perform();
+            //mouse.click().build().perform();
             return true;
         } catch (Exception e) {
             System.out.println("Fail - Unable to click on element by mouse movement");
@@ -898,7 +1033,7 @@ public class DriverClass extends Object{
             WebDriverWait wait = new WebDriverWait(driver, 7);
             extentTest.log(LogStatus.INFO,"Typing "  + value +  " for " + elementName + " by using mouse movement");
             Actions mouse = new Actions(driver);
-            mouse.moveToElement(driver.findElement(By.xpath(locator))).build().perform();
+            mouse.moveToElement(driver.findElement(By.xpath(locator))).click().build().perform();
             mouse.sendKeys(value).sendKeys(Keys.ENTER).build().perform();
             return true;
         } catch (Exception e) {
@@ -961,6 +1096,34 @@ public class DriverClass extends Object{
             stopExtentReport();
             if (stopBrowserOnAssertion) {
                 throw new AssertionAndStopTestError("Unable to type on edit field using mouse movement now failing the test - " + e);
+            }
+            return false;
+        }
+    }
+
+    public boolean typeByRowUsingKeysMouseMovement(String locator, String rowNumber, String value, String elementName) throws InterruptedException {
+        try{
+            String loc = null;
+            WebDriverWait wait = new WebDriverWait(driver, 7);
+            if(locator.startsWith("//*[")) {
+                loc = locator.replace("//*[", "//*[@data-row='" + rowNumber + "' and ");
+            } else if(locator.startsWith("[@data")){
+                loc = locator.replace("[@data", "//*[@data-row='" + rowNumber + "' and @data");
+            }
+            extentTest.log(LogStatus.INFO,"Typing "  + value +  " for " + elementName + " by using key mouse movement");
+            Actions mouse = new Actions(driver);
+            mouse.moveToElement(driver.findElement(By.xpath(loc))).build().perform();
+            //mouse.sendKeys(Keys.DELETE).build().perform();
+            mouse.sendKeys(value).sendKeys(Keys.ENTER).sendKeys(Keys.ENTER).build().perform();
+            return true;
+        } catch (Exception e) {
+            System.out.println("Fail - Unable to type on edit field by key mouse movement");
+            extentTest.log(LogStatus.FAIL,"Unable to type on " + elementName + " by key mouse movement");
+            Thread.sleep(800);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("Unable to type on edit field using key mouse movement now failing the test - " + e);
             }
             return false;
         }
@@ -1192,6 +1355,54 @@ public class DriverClass extends Object{
         }
     }
 
+    public boolean alertTextVerification(String expected) throws InterruptedException {
+        Thread.sleep(1200);
+        String alertText = null;
+        try {
+            Alert alert = driver.switchTo().alert();
+            alertText = alert.getText();
+            if(alertText.equals(expected)){
+                extentTest.log(LogStatus.PASS, "Alert text matches with Expected --" + expected);
+                return true;
+            } else {
+                extentTest.log(LogStatus.FAIL, "Alert text --" + alertText + " -- doesn't match with Expected --" + expected);
+                Thread.sleep(800);
+                getScreenShot(driver);
+                stopExtentReport();
+                return false;
+            }
+        } catch (NoAlertPresentException e) {
+            extentTest.log(LogStatus.INFO, "No Alert present while reloading page... " + e);
+            Thread.sleep(800);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("No Alert Present - " + e);
+            }
+            return false;
+        }
+    }
+
+    public String getText(String locator,int indexNumber,String elementName) throws InterruptedException {
+        Thread.sleep(1200);
+        String alertText = null;
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        try {
+            alertText = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(locator))).get(indexNumber).getText();
+            return alertText;
+        } catch (NoAlertPresentException e) {
+            extentTest.log(LogStatus.INFO, "No locator is present while capturing text for element " + elementName + " and exception message is..." + e);
+            Thread.sleep(800);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("no locator is present while capturing text..." + e);
+            }
+            return alertText;
+        }
+    }
+
+
     public boolean reloadPage(String url) throws InterruptedException {
         Thread.sleep(800);
         try{
@@ -1358,13 +1569,6 @@ public class DriverClass extends Object{
         try{
             WebDriverWait wait = new WebDriverWait(driver, 7);
             check = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).getText();
-            /*if(check.contains("[Change]")){
-              String[] arrayCheck = check.split(" \\[");
-              check2 = arrayCheck[0];
-            } else {
-                check2 = check;
-            }*/
-            //Assert.assertEquals(check,value);
             if(check.contains(value)){
                 System.out.println("Text value - " + value + " exist as expected");
                 extentTest.log(LogStatus.PASS,"Text value - " + value + " exist as expected on " + elementName);
@@ -1374,6 +1578,39 @@ public class DriverClass extends Object{
                 scrollIntoView(locator);
                 Thread.sleep(800);
                 extentTest.log(LogStatus.FAIL,"Expected text '" + value + "' doesn't match the actual text '" + check + "' on " + elementName);
+                getScreenShot(driver);
+                //stopExtentReport();
+                /*if (stopBrowserOnAssertion) {
+                    throw new AssertionAndStopTestError("Expected "+ value + " doesn't match with actual " + check + "...Now failing the test");
+                }*/
+                return false;
+            }
+        } catch (Exception e) {
+            System.out.println("Fail - Verification object is not present/visible");
+            Thread.sleep(800);
+            extentTest.log(LogStatus.FAIL,"Verification object is not present/visible on " + elementName);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("Unable to verify element now failing the test - " + e);
+            }
+            return false;
+        }
+    }
+    public boolean objectVerification(String locator, String value, String byAttribute,String elementName) throws InterruptedException, IOException {
+        String check = null, check2 = null;
+        try{
+            WebDriverWait wait = new WebDriverWait(driver, 7);
+            check = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).getAttribute(byAttribute.toLowerCase());
+            if(check.contains(value)){
+                System.out.println("Attribute value - " + value + " exist as expected");
+                extentTest.log(LogStatus.PASS,"Attribute value - " + value + " exist as expected on " + elementName);
+                return true;
+            } else {
+                System.out.println("Fail - Expected attribute value '" + value + "' doesn't match the actual attribute value '" + check + "'");
+                scrollIntoView(locator);
+                Thread.sleep(800);
+                extentTest.log(LogStatus.FAIL,"Expected attribute value '" + value + "' doesn't match the actual attribute vlaue '" + check + "' on " + elementName);
                 getScreenShot(driver);
                 //stopExtentReport();
                 /*if (stopBrowserOnAssertion) {
@@ -1451,14 +1688,19 @@ public class DriverClass extends Object{
         WebDriverWait wait = new WebDriverWait(driver, 7);
         boolean returnVariable = true;
         Thread.sleep(2500);
-        if(driver.findElement(By.xpath(locator)).isDisplayed()){
-            extentTest.log(LogStatus.INFO,"Pop up exist and clicking on 'Ok' button");
-            driver.findElement(By.xpath("//*[text()='OK']")).click();
+        if(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).isDisplayed()){
+            extentTest.log(LogStatus.INFO,"Pop up exist and clicking on 'Ok/close' button");
+            try{
+                driver.findElement(By.xpath("//*[text()='OK']")).click();
+            } catch (Exception e) {
+                driver.findElement(By.xpath("//*[@id='helpBubbleCloseX']/img")).click();
+            }
             returnVariable = true;
         }
 
         return returnVariable;
     }
+
 
 
     public boolean VerifyUserIsActive(String locator) throws InterruptedException {
@@ -2045,9 +2287,9 @@ public class DriverClass extends Object{
 
 
     public boolean selectDropDownByText(String locator, String text, String elementName) throws IOException, InterruptedException {
-        WebDriverWait wait = new WebDriverWait(driver, 3);
-        Select select = new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))));
+        WebDriverWait wait = new WebDriverWait(driver, 6);
         try{
+            Select select = new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))));
             extentTest.log(LogStatus.INFO,"selecting value " + text + " on " + elementName);
             select.selectByVisibleText(text);
             return true;
@@ -2152,10 +2394,11 @@ public class DriverClass extends Object{
         }
     }
 
-    public boolean wait(int miliSec) throws InterruptedException, IOException {
+    public boolean wait(int milliSec) throws InterruptedException, IOException {
 
         try{
-            Thread.sleep(miliSec);
+            extentTest.log(LogStatus.INFO,"Waiting " + milliSec + " milliseconds on a page");
+            Thread.sleep(milliSec);
             return true;
         } catch (Exception e) {
             Thread.sleep(800);
@@ -2311,6 +2554,17 @@ public class DriverClass extends Object{
 
         return name + "-" + today;
     }
+    public String getUniqueName(String name,int randomNumber) {
+        String shortId;
+        shortId = RandomStringUtils.randomNumeric(randomNumber);
+
+        return name + "-" + today + "-" + shortId;
+    }
+
+    public int getTenDigitsNum() {
+        Random r = new Random(System.currentTimeMillis());
+        return 1000000000 + r.nextInt(2000000000);
+    }
 
     public static void takeErrorScreenShots(String screenShotName) throws IOException {
         String returnlFile = null;
@@ -2326,6 +2580,7 @@ public class DriverClass extends Object{
 
         }
     }
+
 
     public boolean getScreenShot(String path){
         try {
@@ -2570,6 +2825,59 @@ public class DriverClass extends Object{
         extentTest.log(LogStatus.INFO,"SmartBoard Loaded Successfully: Element Color is Green");
         Thread.sleep(6000);
         return elemExist;
+    }
+
+    //method below will verify the expire date for CPT in Finecast Buy line
+    public boolean verifyCptExpireDate(String locator) throws InterruptedException {
+
+        String date = getDesiredDateInFormat(0, "/","mm");
+        String[] arrayDate = date.split("/");
+        String dateRange = null, cptField = null;
+        WebDriverWait wait = new WebDriverWait(driver, 7);
+        boolean returnValue = true;
+        try{
+            cptField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator))).getText();
+            if(arrayDate[0].equals("02")){
+                if(arrayDate[1].equals("28")){
+                    dateRange = getDesiredDateInFormat(12,"/","mm");
+                } else if(arrayDate[1].equals("29")) {
+                    dateRange = getDesiredDateInFormat(11,"/","mm");
+                }
+                if(dateRange.equals(cptField)){
+                    extentTest.log(LogStatus.PASS,"CPT Expire date matches with actual");
+                    returnValue =  true;
+                } else {
+                    extentTest.log(LogStatus.FAIL,"Expected CPT Expire date " + dateRange + " doesn't match with actual " + cptField);
+                    Thread.sleep(800);
+                    getScreenShot(driver);
+                    returnValue =  false;
+                }//end of expected vs actual condition
+            } else if(arrayDate[1].equals("30") || arrayDate[1].equals("31")){
+                dateRange = getDesiredDateInFormat(10,"/","mm");
+                if(dateRange.equals(cptField)){
+                    extentTest.log(LogStatus.PASS,"CPT Expire date matches with actual");
+                    returnValue = true;
+                } else {
+                    extentTest.log(LogStatus.FAIL,"Expected CPT Expire date " + dateRange + " doesn't match with actual " + cptField);
+                    Thread.sleep(800);
+                    getScreenShot(driver);
+                    returnValue =  false;
+                }//end of expected vs actual condition
+            }//end of date range condition
+                    return returnValue;
+        } catch (Exception e) {
+
+            extentTest.log(LogStatus.FAIL,"Fail - CPT Expire field is not found - " + e);
+            Thread.sleep(800);
+            getScreenShot(driver);
+            stopExtentReport();
+            if (stopBrowserOnAssertion) {
+                throw new AssertionAndStopTestError("Fail - CPT Expire field is not found - " + e);
+            }
+            return false;
+
+        }
+
     }
 
 
