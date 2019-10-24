@@ -1,0 +1,42 @@
+'''Scenario Name: ''' Create a Finecast Buy Line
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp page
+   Scroll into New Buy Line button
+   Click on New Buy Line button
+   Enter required fields
+   Verify CPT Expire Date Field
+   Verify Buy Line Name
+   Verify Volume calculations 
+   Verify Record Type
+**********!
+#|objectVerification;|${SalesForce_SellLine_Business_Unit_Text}|Finecast|Business Unit on Detail Page|
+#|verifyCptExpireDate;|${SalesForce_BuyLine_CPT_Expire_Date_Field_Text}|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test07baFncast-Create a Finecast Buy Line with current day + 1 Start Date|
+|open;|$finecastOpp2PageUrl|
+|scrollIntoView;|${SalesForce_SellLine_New_Buy_Line_Button}|
+|click;|${SalesForce_SellLine_New_Buy_Line_Button}|New Buy Line Button|
+|type;|${SalesForce_SellLine_Buy_Name_Field}|$finecastBuyLineName|Buy Name Field|
+|type;|${SalesForce_SellLine_Finecast_Start_Date_Field}|$fineCastBuyLineCurrPlusFifteenStartDate|Start Date Field|
+|type;|${SalesForce_SellLine_Finecast_End_Date_Field}|$finecastBuyLineCurrPlusSixtyEndDate|End Date Field|
+|selectDropDownByText;|${SalesForce_SellLine_Finecast_Rate_Type_DropDown}|CPM|Rate Type Dropdown|
+|type;|${SalesForce_SellLine_Finecast_Planned_Grossed_Budget_Field}|200|Gross Budget Field|
+|type;|${SalesForce_SellLine_Finecast_Gross_Rate_Field}|50|Gross Rate Field|
+|type;|${SalesForce_SellLine_Finecast_Sell_Volume_Field}|150|Sell Volume Field|
+|selectDropDownByIndex;|${SalesForce_SellLine_Finecast_Product_Dropdown}|1|Product Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Finecast_Supply_Mix_Dropdown}|1|Supply Mix Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Finecast_Restricted_Dropdown}|1|Restricted Dropdown|
+|selectDropDownByIndex;|${SalesForce_SellLine_Finecast_Data_Provider_Dropdown}|1|Data Provider Dropdown|
+|clickByJavaScript;|${SalesForce_SellLine_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_SellLine_Finecast_Detail_Sell_Name_Field}|$finecastBuyLineName|Buy Line Name on Detail Page|
+|objectVerification;|${SalesForce_SellLine_Finecast_Sell_Volume_Text}|4,000|Sell Volume Text|
+|objectVerification;|${SalesForce_SellLine_Finecast_Record_Type_Field}|FC-EMEA|Record Type|
+|$finecastSellLine2Url=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

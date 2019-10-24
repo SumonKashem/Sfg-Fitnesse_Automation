@@ -1,0 +1,1326 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite</rootPath>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test01LogInUserTest</name>
+    <date>2019-09-27T16:08:12-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190927160812</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>25515</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test02CreateAgencyTest</name>
+    <date>2019-09-27T16:08:37-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190927160837</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9985</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test03CreateAdvertiserTest</name>
+    <date>2019-09-27T16:08:48-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190927160848</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8790</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test04CreateAccountTest</name>
+    <date>2019-09-27T16:08:56-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test04CreateAccountTest?pageHistory&amp;resultDate=20190927160856</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18946</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test05aCreateOpportunityTest</name>
+    <date>2019-09-27T16:09:16-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test05aCreateOpportunityTest?pageHistory&amp;resultDate=20190927160916</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14174</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test05bCreateOpportunityForEnhancedCloneTest</name>
+    <date>2019-09-27T16:09:30-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test05bCreateOpportunityForEnhancedCloneTest?pageHistory&amp;resultDate=20190927160930</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13248</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest</name>
+    <date>2019-09-27T16:09:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest?pageHistory&amp;resultDate=20190927160943</pageHistoryLink>
+    <counts>
+      <right>67</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>45441</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test06bCreateXaxisSellLineTest</name>
+    <date>2019-09-27T16:10:29-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test06bCreateXaxisSellLineTest?pageHistory&amp;resultDate=20190927161029</pageHistoryLink>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10931</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest</name>
+    <date>2019-09-27T16:10:40-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest?pageHistory&amp;resultDate=20190927161040</pageHistoryLink>
+    <counts>
+      <right>67</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>44733</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test07bCreatePlistaSellLineTest</name>
+    <date>2019-09-27T16:11:25-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test07bCreatePlistaSellLineTest?pageHistory&amp;resultDate=20190927161125</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11241</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test09aCreateXaxisBuyPlacementTest</name>
+    <date>2019-09-27T16:11:36-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test09aCreateXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190927161136</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8844</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test09bCreateEnhancedCloneTest</name>
+    <date>2019-09-27T16:11:45-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test09bCreateEnhancedCloneTest?pageHistory&amp;resultDate=20190927161145</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20098</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test10CreateCaseAdHocRequestTest</name>
+    <date>2019-09-27T16:12:05-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test10CreateCaseAdHocRequestTest?pageHistory&amp;resultDate=20190927161205</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9372</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test11EditOpportunityTest</name>
+    <date>2019-09-27T16:12:15-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test11EditOpportunityTest?pageHistory&amp;resultDate=20190927161215</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7604</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test12EditXaxisBuyPlacementTest</name>
+    <date>2019-09-27T16:12:22-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test12EditXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190927161222</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5688</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test13EditCaseAdHocRequestTest</name>
+    <date>2019-09-27T16:12:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test13EditCaseAdHocRequestTest?pageHistory&amp;resultDate=20190927161228</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14744</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test14CreateCaseApacAdOpsTest</name>
+    <date>2019-09-27T16:12:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test14CreateCaseApacAdOpsTest?pageHistory&amp;resultDate=20190927161243</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6901</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test15CloseCaseApacAdOpsTest</name>
+    <date>2019-09-27T16:12:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test15CloseCaseApacAdOpsTest?pageHistory&amp;resultDate=20190927161250</pageHistoryLink>
+    <counts>
+      <right>30</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>17334</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test16CreateCaseAudienceInsightsTest</name>
+    <date>2019-09-27T16:13:07-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test16CreateCaseAudienceInsightsTest?pageHistory&amp;resultDate=20190927161307</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9572</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test17EditCaseAudienceInsightsTest</name>
+    <date>2019-09-27T16:13:17-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test17EditCaseAudienceInsightsTest?pageHistory&amp;resultDate=20190927161317</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15833</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test18CreateCaseAustraliaReportingTest</name>
+    <date>2019-09-27T16:13:33-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test18CreateCaseAustraliaReportingTest?pageHistory&amp;resultDate=20190927161333</pageHistoryLink>
+    <counts>
+      <right>21</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9750</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test19CreateCaseBrandUpliftStudyTest</name>
+    <date>2019-09-27T16:13:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test19CreateCaseBrandUpliftStudyTest?pageHistory&amp;resultDate=20190927161343</pageHistoryLink>
+    <counts>
+      <right>26</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9598</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test20EditCaseBrandUpliftStudyTest</name>
+    <date>2019-09-27T16:13:53-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test20EditCaseBrandUpliftStudyTest?pageHistory&amp;resultDate=20190927161353</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14400</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test23CreateCasePerformanceInsightsTest</name>
+    <date>2019-09-27T16:14:07-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test23CreateCasePerformanceInsightsTest?pageHistory&amp;resultDate=20190927161407</pageHistoryLink>
+    <counts>
+      <right>28</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10119</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test24EditCasePerformanceInsightsTest</name>
+    <date>2019-09-27T16:14:17-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test24EditCasePerformanceInsightsTest?pageHistory&amp;resultDate=20190927161417</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15078</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test26ClickCustomButtonsOppDetailsPageTest</name>
+    <date>2019-09-27T16:14:32-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test26ClickCustomButtonsOppDetailsPageTest?pageHistory&amp;resultDate=20190927161432</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>25529</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test27CreateCaseApacMarketAdOpsTest</name>
+    <date>2019-09-27T16:14:58-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test27CreateCaseApacMarketAdOpsTest?pageHistory&amp;resultDate=20190927161458</pageHistoryLink>
+    <counts>
+      <right>10</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7454</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test28CloseCaseApacMarketAdOpsTest</name>
+    <date>2019-09-27T16:15:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.AustraliaSuite.Test28CloseCaseApacMarketAdOpsTest?pageHistory&amp;resultDate=20190927161506</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12368</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test01LogInUserTest</name>
+    <date>2019-09-27T16:15:18-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190927161518</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20473</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test02CreateAgencyTest</name>
+    <date>2019-09-27T16:15:38-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190927161538</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7861</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test03CreateAdvertiserTest</name>
+    <date>2019-09-27T16:15:46-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190927161546</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8564</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test04CreateAccountTest</name>
+    <date>2019-09-27T16:15:55-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test04CreateAccountTest?pageHistory&amp;resultDate=20190927161555</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>26946</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test05aCreateOpportunityTest</name>
+    <date>2019-09-27T16:16:22-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test05aCreateOpportunityTest?pageHistory&amp;resultDate=20190927161622</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12681</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest</name>
+    <date>2019-09-27T16:16:35-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest?pageHistory&amp;resultDate=20190927161635</pageHistoryLink>
+    <counts>
+      <right>69</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>45685</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test06bCreateXaxisSellLineTest</name>
+    <date>2019-09-27T16:17:21-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test06bCreateXaxisSellLineTest?pageHistory&amp;resultDate=20190927161721</pageHistoryLink>
+    <counts>
+      <right>19</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10350</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest</name>
+    <date>2019-09-27T16:17:31-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest?pageHistory&amp;resultDate=20190927161731</pageHistoryLink>
+    <counts>
+      <right>68</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>44824</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test07bCreatePlistaSellLineTest</name>
+    <date>2019-09-27T16:18:16-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test07bCreatePlistaSellLineTest?pageHistory&amp;resultDate=20190927161816</pageHistoryLink>
+    <counts>
+      <right>19</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9840</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test09CreateXaxisBuyPlacementTest</name>
+    <date>2019-09-27T16:18:26-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test09CreateXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190927161826</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8456</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test10CreateCaseAdHocRequestTest</name>
+    <date>2019-09-27T16:18:34-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test10CreateCaseAdHocRequestTest?pageHistory&amp;resultDate=20190927161834</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8845</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test11EditOpportunityTest</name>
+    <date>2019-09-27T16:18:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test11EditOpportunityTest?pageHistory&amp;resultDate=20190927161843</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6891</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test12EditXaxisBuyPlacementTest</name>
+    <date>2019-09-27T16:18:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test12EditXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190927161850</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5020</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test13EditCaseAdHocRequestTest</name>
+    <date>2019-09-27T16:18:55-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test13EditCaseAdHocRequestTest?pageHistory&amp;resultDate=20190927161855</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13451</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test14CreateCaseAudienceInsightsTest</name>
+    <date>2019-09-27T16:19:09-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test14CreateCaseAudienceInsightsTest?pageHistory&amp;resultDate=20190927161909</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9582</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test15EditCaseAudienceInsightsTest</name>
+    <date>2019-09-27T16:19:19-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test15EditCaseAudienceInsightsTest?pageHistory&amp;resultDate=20190927161919</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14333</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test16CreateCaseBrandUpliftStudyTest</name>
+    <date>2019-09-27T16:19:33-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test16CreateCaseBrandUpliftStudyTest?pageHistory&amp;resultDate=20190927161933</pageHistoryLink>
+    <counts>
+      <right>26</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9437</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test17EditCaseBrandUpliftStudyTest</name>
+    <date>2019-09-27T16:19:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test17EditCaseBrandUpliftStudyTest?pageHistory&amp;resultDate=20190927161943</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13573</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test20CreateCasePerformanceInsightsTest</name>
+    <date>2019-09-27T16:19:56-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test20CreateCasePerformanceInsightsTest?pageHistory&amp;resultDate=20190927161956</pageHistoryLink>
+    <counts>
+      <right>28</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9882</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test21EditCasePerformanceInsightsTest</name>
+    <date>2019-09-27T16:20:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.ChinaSuite.Test21EditCasePerformanceInsightsTest?pageHistory&amp;resultDate=20190927162006</pageHistoryLink>
+    <counts>
+      <right>22</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15458</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test01LogInUserTest</name>
+    <date>2019-09-27T16:20:22-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20190927162022</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20512</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test02CreateAgencyTest</name>
+    <date>2019-09-27T16:20:42-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test02CreateAgencyTest?pageHistory&amp;resultDate=20190927162042</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8557</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test03CreateAdvertiserTest</name>
+    <date>2019-09-27T16:20:51-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test03CreateAdvertiserTest?pageHistory&amp;resultDate=20190927162051</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8213</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test04CreateAccountTest</name>
+    <date>2019-09-27T16:20:59-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test04CreateAccountTest?pageHistory&amp;resultDate=20190927162059</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>22355</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test05CreateOpportunityTest</name>
+    <date>2019-09-27T16:21:22-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test05CreateOpportunityTest?pageHistory&amp;resultDate=20190927162122</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13589</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest</name>
+    <date>2019-09-27T16:21:35-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test06aVerifyAllFieldsForXaxisSellLineTest?pageHistory&amp;resultDate=20190927162135</pageHistoryLink>
+    <counts>
+      <right>79</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>53045</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test06bCreateXaxisSellLineTest</name>
+    <date>2019-09-27T16:22:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test06bCreateXaxisSellLineTest?pageHistory&amp;resultDate=20190927162228</pageHistoryLink>
+    <counts>
+      <right>29</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14033</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest</name>
+    <date>2019-09-27T16:22:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test07aVerifyAllFieldsForPlistaSellLineTest?pageHistory&amp;resultDate=20190927162243</pageHistoryLink>
+    <counts>
+      <right>72</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>48209</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test07bCreatePlistaSellLineTest</name>
+    <date>2019-09-27T16:23:31-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test07bCreatePlistaSellLineTest?pageHistory&amp;resultDate=20190927162331</pageHistoryLink>
+    <counts>
+      <right>27</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11614</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test09CreateXaxisBuyPlacementTest</name>
+    <date>2019-09-27T16:23:42-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test09CreateXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190927162342</pageHistoryLink>
+    <counts>
+      <right>7</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8344</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test10EditOpportunityTest</name>
+    <date>2019-09-27T16:23:51-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test10EditOpportunityTest?pageHistory&amp;resultDate=20190927162351</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7375</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test11EditXaxisBuyPlacementTest</name>
+    <date>2019-09-27T16:23:58-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test11EditXaxisBuyPlacementTest?pageHistory&amp;resultDate=20190927162358</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5576</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test13DistributeFutureMonthsXaxSellLineTest</name>
+    <date>2019-09-27T16:24:04-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test13DistributeFutureMonthsXaxSellLineTest?pageHistory&amp;resultDate=20190927162404</pageHistoryLink>
+    <counts>
+      <right>29</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18103</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test14DistributeNextMonthsXaxSellLineTest</name>
+    <date>2019-09-27T16:24:22-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test14DistributeNextMonthsXaxSellLineTest?pageHistory&amp;resultDate=20190927162422</pageHistoryLink>
+    <counts>
+      <right>30</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>15992</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test15DistributeBudgetXaxSellLineTest</name>
+    <date>2019-09-27T16:24:38-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.AllRegressionSuite.S02ApacSuite.IndiaSuite.Test15DistributeBudgetXaxSellLineTest?pageHistory&amp;resultDate=20190927162438</pageHistoryLink>
+    <counts>
+      <right>33</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24271</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:/Program Files/Java/jdk1.8.0_91\bin\java" -cp C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\Desktop\FitNesseWithSelenium\target\classes;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\SumonK\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\SumonK\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\SumonK\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\SumonK\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\SumonK\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\SumonK\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\SumonK\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\SumonK\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\SumonK\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.53.0\selenium-htmlunit-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.18\htmlunit-2.18.jar;C:\Users\SumonK\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\SumonK\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpmime\4.5\httpmime-4.5.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\SumonK\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\SumonK\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\SumonK\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.12.v20150709\websocket-client-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-util\9.2.12.v20150709\jetty-util-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-io\9.2.12.v20150709\jetty-io-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.12.v20150709\websocket-common-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.12.v20150709\websocket-api-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\SumonK\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\SumonK\.m2\repository\com\opera\operadriver\1.1\operadriver-1.1.jar;C:\Users\SumonK\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\SumonK\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\SumonK\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\SumonK\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\SumonK\.m2\repository\com\codeborne\phantomjsdriver\1.2.1\phantomjsdriver-1.2.1.jar;C:\Users\SumonK\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SumonK\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\SumonK\.m2\repository\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\SumonK\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\SumonK\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.3.0\diffutils-1.3.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-simple\1.7.12\slf4j-simple-1.7.12.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.9\maven-classpath-plugin-1.9.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\SumonK\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8085</command>
+    <exitCode>0</exitCode>
+    <stdOut>:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Apurva Prasanna (apurva.prasanna@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC Aus Agency-190927-0408 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC Aus Advertiser-190927-0408 exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - APAC Aus Account-190927-0408 exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000OoqrD&amp;sfdc.override=1
+Clicking on New Button
+clearing field
+clearing field
+clearing field
+Clicking on Save Button
+Text value - APAC Australia Opportunity-190927-0408 Enhanced exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000OoqrD&amp;sfdc.override=1
+Clicking on New Button
+clearing field
+clearing field
+clearing field
+Clicking on Save Button
+Text value - APAC Australia Opportunity-190927-0408 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000Fse5mQAB?nooverride=1
+Clicking on New Xaxis Sell Line Button
+Text value - Sell Line Edit exist as expected
+clearing field
+Text value - Xaxis exist as expected
+Text value - APAC Xax SL-190927-0408 exist as expected
+Text value - 42,000 exist as expected
+Text value - Australia exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on New Plista Sell Line Button
+Text value - Sell Line Edit exist as expected
+Text value - plista exist as expected
+Text value - APAC Pl SL-190927-0408 exist as expected
+Text value - 42,000 exist as expected
+Text value - PL-APAC-Australia exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/a013F0000046Is0
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Non Radia [Change] exist as expected
+Text value - CP-01086676 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000Fse5mQAB?nooverride=1
+Clicking on Enhanced Clone Button
+Text value - Contacted / Prospecting exist as expected
+Text value - APAC Australia Opportunity-190927-0408 - Clone 2019-09-27 exist as expected
+Text value - GBP 0.00 exist as expected
+Text value - GBP 0.00 exist as expected
+Text value - 1 exist as expected
+Fail - Expected text 'clone apacSellName_Xax' doesn't match the actual text ''
+Clicking on SL Link
+Text value - GBP 0.00 exist as expected
+Text value - GBP 0.00 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Ad Hoc Request Button
+Clicking on Due Date Link
+Clicking on Save Button
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Ad Hoc Request [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Closed Won exist as expected
+Navigating to url https://cs92.salesforce.com/a1J3F000000eloh
+Clicking on Edit Button
+clearing field
+clearing field
+Text value - 44,000 exist as expected
+Text value - GBP 20,000.00 exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2AV
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on APAC Ad Ops Button
+Clicking on Save Button
+Text value - APAC Ad Ops [Change] exist as expected
+Text value - APAC Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2Ao
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Adops member before changing the status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Adops member before changing the status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - This case has previously been closed, it cannot be closed again. exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - This case has previously been closed, it cannot be closed again. exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Audience Insights Button
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Required Uploads Right Arrow
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Audience Insights [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2Ay
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Australia Reporting Button
+clearing field
+Text value - Australia Reporting [Change] exist as expected
+Text value - Australia Reporting [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Brand Uplift Study Button
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Required Uploads Right Arrow
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Brand Uplift Study [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2GB
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Performance Insights Button
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Required Uploads Right Arrow
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Performance Insights [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2GL
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FseCBQAZ?nooverride=1
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on Clone Button
+Clicking on Cancel Button
+Clicking on Sharing Button
+Clicking on Opp Link
+Clicking on APAC Ad Ops Button
+Clicking on Cancel Button
+Clicking on Australia Reporting Button
+Clicking on Cancel Button
+Clicking on Change Currency Code Button
+Clicking on Back to Opportunity Button
+Clicking on Plus Icon Tab
+Clicking on Cases Button
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC Ad Ops [Change] exist as expected
+Text value - APAC - Market - Ad Ops [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2GV
+Clicking on Edit Button
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - This case has previously been closed, it cannot be closed again. exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - This case has previously been closed, it cannot be closed again. exist as expected
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Apurva Prasanna (apurva.prasanna@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC China Agency-190927-0408 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC China Advertiser-190927-0408 exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+Clicking on Create Account Button
+Text value - "plista non-GroupM" business unit is only valid for non-UK EMEA agencies" exist as expected
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - APAC China Account-190927-0408 exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000Oor7B&amp;sfdc.override=1
+Clicking on New Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - APAC China Opportunity-190927-0408 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on New Xaxis Sell Line Button
+Text value - Sell Line Edit exist as expected
+Text value - Xaxis exist as expected
+Text value - APAC Xax SL-190927-0408 exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on New Plista Sell Line Button
+Text value - Sell Line Edit exist as expected
+Text value - plista exist as expected
+Text value - APAC Pl SL-190927-0408 exist as expected
+Text value - 42,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/a013F0000046J6A
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Non Radia [Change] exist as expected
+Text value - CP-01086679 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on Ad Hoc Request Button
+Clicking on Save Button
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Ad Hoc Request [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Closed Won exist as expected
+Navigating to url https://cs92.salesforce.com/a1J3F000000elom
+Clicking on Edit Button
+clearing field
+clearing field
+Text value - 44,000 exist as expected
+Text value - GBP 20,000.00 exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2H9
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on Audience Insights Button
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Required Uploads Right Arrow
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Audience Insights [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2HE
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on Brand Uplift Study Button
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Required Uploads Right Arrow
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Brand Uplift Study [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2HJ
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FselRQAR?nooverride=1
+Clicking on Performance Insights Button
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Analysis Checklist Right Arrow
+Clicking on Required Uploads Right Arrow
+Text value - APAC Insights &amp; Analytics exist as expected
+Text value - APAC Analytics - Performance Insights [Change] exist as expected
+Navigating to url https://cs92.salesforce.com/5003F000005h2A2
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Error: Please assign the case to a APAC Analytics team member before changing the case status exist as expected
+Clicking on Cancel Button
+Clicking on Case Owner Change Link
+Clicking on Save Button
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Lucas Alonso (lucas.alonso@xaxis.com.glstaging) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC India Agency-190927-0408 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - APAC India Advertiser-190927-0408 exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+Text value - "plista non-GroupM" business unit is only valid for non-UK EMEA agencies" exist as expected
+Clicking on Create Account Button
+clearing field
+Clicking on Save Button
+Text value - APAC India Account-190927-0408 exist as expected
+Navigating to url https://c.cs92.visual.force.com/apex/AccountDetail?id=0013F00000OorB1&amp;sfdc.override=1
+Clicking on New Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - APAC India Opportunity-190927-0408 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FsegQQAR?nooverride=1
+Clicking on New Xaxis Sell Line Button
+Text value - Sell Line Edit exist as expected
+Clicking on Billing Vendors Right Arrow
+Clicking on Billing Vendors Right Arrow
+Text value - Xaxis exist as expected
+Text value - APAC Xax SL-190927-0408 exist as expected
+Text value - 8,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/0063F00000FsegQQAR?nooverride=1
+Clicking on New Plista Sell Line Button
+Text value - Sell Line Edit exist as expected
+Clicking on Billing Vendors Right Arrow
+Clicking on Billing Vendors Right Arrow
+Text value - plista exist as expected
+Text value - APAC Pl SL-190927-0408 exist as expected
+Text value - 8,000 exist as expected
+Capturing value on Sell No Detail Field
+Navigating to url https://cs92.salesforce.com/a013F0000046JAV
+Clicking on New Buy Placement Button
+Capturing value on Buy Placement Number
+Text value - Non Radia [Change] exist as expected
+Text value - CP-01086920 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FsegQQAR?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - Closed Won exist as expected
+Navigating to url https://cs92.salesforce.com/a1J3F000000elor
+Clicking on Edit Button
+clearing field
+clearing field
+Text value - 44,000 exist as expected
+Text value - SGD 20,000.00 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F0000046JAV
+Clicking on October MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912426 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - SGD 75.00 exist as expected
+Text value - 2,800 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Clicking on November MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912427 ~ Salesforce - Performance Edition
+Text value - SGD 61.48 exist as expected
+Text value - 2,557 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Clicking on December MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912428 ~ Salesforce - Performance Edition
+Text value - SGD 63.52 exist as expected
+Text value - 2,643 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Navigating to url https://cs92.salesforce.com/a013F0000046JAV
+Clicking on November MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912427 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - SGD 70.00 exist as expected
+Text value - 2,600 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Clicking on November MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912428 ~ Salesforce - Performance Edition
+Text value - SGD 55.00 exist as expected
+Text value - 2,600 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Clicking on December MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912426 ~ Salesforce - Performance Edition
+Text value - SGD 75.00 exist as expected
+Text value - 2,800 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Text value - SGD 200.00 exist as expected
+Navigating to url https://cs92.salesforce.com/a013F0000046JAV
+Clicking on December MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912428 ~ Salesforce - Performance Edition
+Clicking on Edit Button
+clearing field
+Clicking on Save Button
+Text value - SGD 60.00 exist as expected
+Text value - 2,600 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Clicking on November MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912427 ~ Salesforce - Performance Edition
+Text value - SGD 70.00 exist as expected
+Text value - 2,600 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Clicking on December MS Link
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Window title is : Monthly Schedule: CS-0008912426 ~ Salesforce - Performance Edition
+Text value - SGD 75.00 exist as expected
+Text value - 2,800 exist as expected
+Window title is : Sell Line: CP-01086920 ~ Salesforce - Performance Edition
+Navigating to url https://cs92.salesforce.com/a013F0000046JAV
+Text value - SGD 205.00 exist as expected
+Text value - 8,000 exist as expected
+Navigating to url https://cs92.salesforce.com/0063F00000FsegQQAR?nooverride=1
+Text value - SGD 405.00 exist as expected
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 29787
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 33414
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 20784
+Only local connections are allowed.
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>62</right>
+    <wrong>1</wrong>
+    <ignores>0</ignores>
+    <exceptions>0</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1012167</totalRunTimeInMillis>
+</suiteResults>
+

@@ -1,0 +1,26 @@
+'''Scenario Name: ''' Delete Alert Verification Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to account page
+   Click on Delete button
+   Accept the alert
+   Click on 'Delete Anyway'
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test16aaFncast-Delete Alert Verification Opportunity|
+|open;|$finecastOpp2PageUrl|
+|wait;|2000|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|wait;|1000|
+|acceptAlert;|
+|wait;|1200|
+|click;|${SalesForce_Opportunities_Delete_Opp_Button}|Delete Anyway Button|
+|wait;|800|
+|stopExtentReport;|
+**********!

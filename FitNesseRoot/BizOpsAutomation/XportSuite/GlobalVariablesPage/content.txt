@@ -1,0 +1,1 @@
+!define SalesForce_Xport_Opportunies_Xport_Button {//*[@alt="Xport"]}

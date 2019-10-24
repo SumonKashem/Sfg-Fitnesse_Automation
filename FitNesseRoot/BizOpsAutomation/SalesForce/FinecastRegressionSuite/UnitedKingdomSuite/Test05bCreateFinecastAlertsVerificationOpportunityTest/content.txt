@@ -1,0 +1,43 @@
+'''Scenario Name: ''' Create an Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to account page
+   Click on 'New Opportunity' button
+   Clear pre filled opportunity name
+   Enter new opportunity name
+   Select stage as 'Forecast'
+   Clear Close Date field
+   Enter Close Date
+   Click on 'Save' button
+   Verify Opportunity name appears on opportunity detail page
+   Verify Probability percent is 25%
+   Verify Record Type
+   Capture opportunity page url for resuable purpose
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test05Fncast-Create a Finecast Opportunity|
+|open;|$finecastAccountPageUrl|
+|click;|${SalesForce_Opportunities_New_Opp_Button}|New Button|
+|clear;|${SalesForce_Opportunities_Name_Field}|Opportunity Name Field|
+|wait;|2000|
+|type;|${SalesForce_Opportunities_Name_Field}|$finecastOppName -- Alet|Opportunity Name Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Forecast|Stage Dropdown|
+|type;|${SalesForce_Opportunities_Finecast_IO_Number_Field}|123|IO Number Field|
+|type;|${SalesForce_Opportunities_Brand_Field}|Test|Brand Field|
+|clear;|${SalesForce_Opportunities_Close_Date_Field}|Close Date Field|
+|type;|${SalesForce_Opportunities_Close_Date_Field}|$closeDateForFncastOpp|Close Date Field|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|$finecastOppName -- Alert|Opportunity Name Field|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|25%|Probability % Field|
+|objectVerification;|${SalesForce_Finecast_Opportunities_Opt_In_Status_Locked_Text_Field}|${optInStatusDropDownValue}|Opt In Status Locked Text Field|
+|objectVerification;|${SalesForce_Finecast_Opportunities_Industry_Locked_Text_Field}|${industrytextValue}|Industry Locked Text Field|
+|objectVerification;|${SalesForce_Opportunities_Finecast_Record_Type_Text}|FC-EMEA|Record Type Field|
+|$finecastOpp2PageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

@@ -1,0 +1,157 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Opp Validation Rules should access Advertiser Opt-In Instead of Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Story Link(s) Covered in this test
+   https://xaxistech.atlassian.net/browse/SFG-2439
+**********!
+#!define finecastAusOppPageUrl {https://finecast--fcqa2.my.salesforce.com/0061F000007bfjRQAQ}
+#!define finecastAusChildAdvertiserPageUrl {https://finecast--fcqa2.my.salesforce.com/a011F00000B9uR9}
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_Australia_Suite_${PAGE_NAME}|Test10Fncast-Opp Validation Rules should access Advertiser Opt-In|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Credit Exceeded|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|You cannot update Opportunity Stage to IO Received or Closed Won/Live if Advertiser Opt-in Status = Credit Exceeded.|Error Message 2|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|You cannot update Opportunity Stage to IO Received or Closed Won/Live if Advertiser Opt-in Status = Credit Exceeded.|Error Message 2|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Inactive Client|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Not Signed|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Signed (Data Only)|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Details_Error_Message}|The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions.|Error Message 1|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Credit Insured|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|IO Received|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|Live|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Signed (Excl. Data)|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|IO Received|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|Live|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Signed (Full)|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|IO Received|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|Live|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusChildAdvertiserPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Companies_Opt_In_Status_Text_Field}|Opt-in Status Field|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Test|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|IO Received|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|IO Received|Stage Text Field|
+|wait;|2500|
+|open;|$finecastAusOppPageUrl|
+|doubleClickUsingMouseMovement;|${SalesForce_Opportunities_Stage_Text_Field}|Stage Field|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Opportunities_Stage_Text_Field}|Live|Stage Text Field|
+|stopExtentReport;|
+**********!

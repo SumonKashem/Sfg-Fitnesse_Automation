@@ -1,0 +1,33 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Alert Verificaiton
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+#!define finecastOpp2PageUrl {https://finecast--fcqa2.my.salesforce.com/0061F000007bfjRQAQ}
+#!define finecastChildAdvertiserPageUrl {https://finecast--fcqa2.my.salesforce.com/a011F00000B9uR9}
+#|$finecastOpp2PageUrl=|returnValue;|https://finecast--fcqa2.my.salesforce.com/0061F000007cWCqQAM|
+#|verifyAlertDates;|PCA Due Alert|
+#|verifyAlertDates;|IO Reminder Alert|
+#|$finecastOpp2PageUrl=|returnValue;|https://finecast--fcqa2.my.salesforce.com/0061F000007m0bFQAQ|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test15hFncast-Alerts Verificaiton|
+|click;|${SalesForce_User_Navigation_Button}|User Nav Button|
+|click;|${SalesForce_User_Logout_Button}|Logout Button|
+|open;|$finecastOpp2PageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Response to Brief|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|50%|Probability % Field|
+|verifyAlertDates;|Price Expiry Pre-Alert|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|verifyAlertDates;|Campaign Live Alert|
+|stopExtentReport;|
+**********!

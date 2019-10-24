@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.XportSuite
+*!
+
+!***** Test Cases
+X01LogInSuite.Test01LogInUserTest
+**********!

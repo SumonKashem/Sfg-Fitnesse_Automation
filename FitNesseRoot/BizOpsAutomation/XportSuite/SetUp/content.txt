@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.XportSuite
+!include .BizOpsAutomation.SalesForce.SetUp
+*!
+!include .BizOpsAutomation.XportSuite.LoginVariablesPage
+!include .BizOpsAutomation.XportSuite.GlobalVariablesPage
+!include .BizOpsAutomation.XportSuite.OppDetailVariablesPage

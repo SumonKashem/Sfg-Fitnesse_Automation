@@ -1,0 +1,40 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.OpenBrowser
+*!
+
+'''INTENT: ''' Log In as US User
+'''RELEASE: ''' !-...-!
+'''TEST TYPE: ''' Manual
+'''REQUIREMENT: ''...' 
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):''' 
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to test.salesforce.com
+   Enter Admin email on email field
+   Enter Admin password on password field
+   Click on 'Login To Sandbox' button
+   Verify user name displays after logging in
+**********!
+
+!***** Setting up Automation Report Name as 'AutomationReport'
+!|script|DriverClass|
+|startExtentReport;|AutomationReport|Automation Report|
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Login as an admin ${SalesForce_Admin_Name}|
+|open;|https://test.salesforce.com|
+|type;| ${SalesForce_UserName_Field}|${SalesForce_Xport_UserName_Field}|UserName Field|
+|type;| ${SalesForce_Password_Field}|${SalesForce_Xport_Password_Field}|Password Field|
+|click;|${SalesForce_LogIn_Button}|LogIn Button|
+|stopExtentReport;|
+**********!
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Verify all buttons on Opportunity
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** SFG User Story Link(s)
+   https://xaxistech.atlassian.net/browse/SFG-2393
+**********!
+#|$finecastOppPageUrl=|returnValue;|https://finecast--fcqa2.my.salesforce.com/0061F000007bfjRQAQ|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test05bFncast-Verify all buttons on Opportunity|
+|$finecastOppPageUrl=|returnValue;|https://finecast--fcqa2.my.salesforce.com/0061F000007bfjRQAQ|
+|open;|$finecastOppPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|cancelAlert;|
+|click;|${SalesForce_Opportunities_Clone_Button}|Clone Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Enhanced_Clone_Button}|Enhanced Clone Button|
+|wait;|4500|
+|objectVerification;|${SalesForce_Opportunities_Name_Text}|- Cloned|Opportunity 'Cloned' Text|
+|click;|${SalesForce_Opportunities_Change_Currency_Code_Button}|Change Curreny Code Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opportunity Button|
+|click;|${SalesForce_Opportunities_Create_Documents_Button}|Create Documents Button|
+|click;|${SalesForce_Opportunities_Back_To_Opp_Button}|Back to Opportunity Button|
+|click;|${SalesForce_Opportunities_Send_Email_To_Opportunity}|Send Email to Opp Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_New_Avails_Case_Button}|New Avails Case Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_New_Campaign_Management_Case_Button}|New Camp Management Case Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Cases_New_Creatives_Case_Button}|New Creatives Case Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_SellLine_New_Buy_Line_Button}|New Buy Line Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_New_Button}|New Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|clickByIndex;|${SalesForce_Cases_New_Avails_Case_Button}|2|New Avails Case 3rd Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|clickByIndex;|${SalesForce_Cases_New_Campaign_Management_Case_Button}|2|New Camp Management Case 3rd Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|clickByIndex;|${SalesForce_Cases_New_Creatives_Case_Button}|2|New Creatives Case 3rd Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_New_Task_Button}|New Task Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_New_Event_Button}|New Event Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Log_a_Call_Button}|Log a Call Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Send_An_Email_Button}|Send An Email Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_New_Note_Button}|New Note Button|
+|click;|${SalesForce_Opportunities_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Opportunities_Attach_File_Button}|Attach File Button|
+|elementVerification;|${SalesForce_Opportunities_Choose_File_Content}|Yes|Choose File Content|
+|stopExtentReport;|
+**********!

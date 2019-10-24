@@ -1,0 +1,45 @@
+'''Scenario Name: ''' Create a Child Advertiser
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Click on + icon tab
+   Click on 'Companies' tab
+   Click on 'New' Button
+   Select Record Type as 'Parent Advertiser'
+   Click on 'Continue' button
+   Enter Advertiser Name
+   Verify Advertiser is selected on drop down
+   Type Parent company
+   Select Market as 'UK'
+   Select Industry
+   Click on 'Save' button
+   Verify Child Advertiser name appears on company detail page
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_Australia_Suite_${PAGE_NAME}|Test03cFncast-Create a UK Child advertiser|
+|click;|${SalesForce_Plus_Icon_Tab}|+ icon Tab|
+|click;|${SalesForce_Companies_Tab}|Companies Tab|
+|click;|${SalesForce_New_Button}|New Button|
+|selectDropDownByText;|${SalesForce_Select_Company_DropDown}|Child Advertiser|Company Dropdown|
+|click;|${SalesForce_Continue_Button}|Continue Button|
+|wait;|2300|
+|type;|${SalesForce_Company_Name_Field}|UK $finecastChildAdvertiserName|Company Name Field|
+|selectDropDownByText;|${SalesForce_Companies_Finecast_Company_Type_DropDown}|Advertiser|Company Type Dropdown|
+|wait;|1900|
+|type;|${SalesForce_Companies_Parent_Company_Field}|AUS $finecastParentAdvertiserName|Parent Company Field|
+|type;|${SalesForce_Companies_Radia_Advertiser_Code_Field}|001|Radia Advertiser Text Field|
+|selectDropDownByText;|${SalesForce_Finecast_Market_DropDown}|United Kingdom|Market Dropdown|
+|selectDropDownByText;|${SalesForce_Companies_Industry_Dropdown}|${industrytextValue}|Industry Dropdown|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|${optInStatusDropDownValue}|Industry Dropdown|
+|type;|${SalesForce_Companies_Opt_In_Status_Notes_Field}|${optInStatusNotesTextValue}|Opt-in Status Notes Field|
+|click;|${SalesForce_Companies_Opt_In_Status_Date_Link}|Opt-in Status Date Link|
+|click;|${SalesForce_Save_Button}|Save Button|
+|objectVerification;|${SalesForce_Company_Name}|UK $finecastChildAdvertiserName|Company Detail Page|
+|$finecastUkChildAdvertiserPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

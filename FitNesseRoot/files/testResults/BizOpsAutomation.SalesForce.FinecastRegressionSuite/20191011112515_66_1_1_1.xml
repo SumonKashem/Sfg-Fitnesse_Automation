@@ -1,0 +1,1430 @@
+<?xml version="1.0"?>
+<suiteResults>
+  <FitNesseVersion>v20151230</FitNesseVersion>
+  <rootPath>BizOpsAutomation.SalesForce.FinecastRegressionSuite</rootPath>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test01LogInUserTest</name>
+    <date>2019-10-11T11:25:15-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20191011112515</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>28686</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test02CreateParentAgencyTest</name>
+    <date>2019-10-11T11:25:43-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test02CreateParentAgencyTest?pageHistory&amp;resultDate=20191011112543</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12193</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test02bCreateChildAgencyTest</name>
+    <date>2019-10-11T11:25:56-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test02bCreateChildAgencyTest?pageHistory&amp;resultDate=20191011112556</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10227</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test03CreateParentAdvertiserTest</name>
+    <date>2019-10-11T11:26:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test03CreateParentAdvertiserTest?pageHistory&amp;resultDate=20191011112606</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9056</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test03bCreateChildAdvertiserTest</name>
+    <date>2019-10-11T11:26:15-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test03bCreateChildAdvertiserTest?pageHistory&amp;resultDate=20191011112615</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12882</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test03cCreateUkChildAdvertiserTest</name>
+    <date>2019-10-11T11:26:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test03cCreateUkChildAdvertiserTest?pageHistory&amp;resultDate=20191011112628</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12770</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test04CreateFinecastAccountTest</name>
+    <date>2019-10-11T11:26:41-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test04CreateFinecastAccountTest?pageHistory&amp;resultDate=20191011112641</pageHistoryLink>
+    <counts>
+      <right>31</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>30891</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test04bVerifyAllButtonsOnAccountTest</name>
+    <date>2019-10-11T11:27:12-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test04bVerifyAllButtonsOnAccountTest?pageHistory&amp;resultDate=20191011112712</pageHistoryLink>
+    <counts>
+      <right>29</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>33236</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test05CreateFinecastOpportunityTest</name>
+    <date>2019-10-11T11:27:45-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test05CreateFinecastOpportunityTest?pageHistory&amp;resultDate=20191011112745</pageHistoryLink>
+    <counts>
+      <right>15</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14523</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test06CreateContactRolestest</name>
+    <date>2019-10-11T11:28:00-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test06CreateContactRolestest?pageHistory&amp;resultDate=20191011112800</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9793</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test07aVerifyAllFieldsForBuyLineTest</name>
+    <date>2019-10-11T11:28:10-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test07aVerifyAllFieldsForBuyLineTest?pageHistory&amp;resultDate=20191011112810</pageHistoryLink>
+    <counts>
+      <right>0</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>282</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test07bCreateBuyLineTest</name>
+    <date>2019-10-11T11:28:10-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test07bCreateBuyLineTest?pageHistory&amp;resultDate=20191011112810</pageHistoryLink>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>20922</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test07cVerifyAllButtonsOnOppTest</name>
+    <date>2019-10-11T11:28:31-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test07cVerifyAllButtonsOnOppTest?pageHistory&amp;resultDate=20191011112831</pageHistoryLink>
+    <counts>
+      <right>55</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>111085</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test08AddOpportunityTeamTest</name>
+    <date>2019-10-11T11:30:22-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test08AddOpportunityTeamTest?pageHistory&amp;resultDate=20191011113022</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12819</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test09aCreateCaseAvailsTest</name>
+    <date>2019-10-11T11:30:35-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test09aCreateCaseAvailsTest?pageHistory&amp;resultDate=20191011113035</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>14856</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test09bCloseCaseAvailsTest</name>
+    <date>2019-10-11T11:30:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test09bCloseCaseAvailsTest?pageHistory&amp;resultDate=20191011113050</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6644</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test11UpdateOppStagesTest</name>
+    <date>2019-10-11T11:30:57-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test11UpdateOppStagesTest?pageHistory&amp;resultDate=20191011113057</pageHistoryLink>
+    <counts>
+      <right>33</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>33856</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12aDeleteCaseAvailsTest</name>
+    <date>2019-10-11T11:31:31-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12aDeleteCaseAvailsTest?pageHistory&amp;resultDate=20191011113131</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6170</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12bDeleteOpportunityTest</name>
+    <date>2019-10-11T11:31:37-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12bDeleteOpportunityTest?pageHistory&amp;resultDate=20191011113137</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>13581</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12cDeleteAccountTest</name>
+    <date>2019-10-11T11:31:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12cDeleteAccountTest?pageHistory&amp;resultDate=20191011113150</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5378</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12dDeleteChildAgencyTest</name>
+    <date>2019-10-11T11:31:56-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12dDeleteChildAgencyTest?pageHistory&amp;resultDate=20191011113156</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4930</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12eDeleteChildAdvertiserTest</name>
+    <date>2019-10-11T11:32:01-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12eDeleteChildAdvertiserTest?pageHistory&amp;resultDate=20191011113201</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4745</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12fDeleteAusChildAdvertiserTest</name>
+    <date>2019-10-11T11:32:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12fDeleteAusChildAdvertiserTest?pageHistory&amp;resultDate=20191011113206</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4676</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12gDeleteParentAgencyTest</name>
+    <date>2019-10-11T11:32:11-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12gDeleteParentAgencyTest?pageHistory&amp;resultDate=20191011113211</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4436</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12hDeleteParentAdvertiserTest</name>
+    <date>2019-10-11T11:32:15-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AustraliaSuite.Test12hDeleteParentAdvertiserTest?pageHistory&amp;resultDate=20191011113215</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4678</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AutraliaSuite.Test03cCreateUkChildAdvertiserTest</name>
+    <date>2019-10-11T11:32:20-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.AutraliaSuite.Test03cCreateUkChildAdvertiserTest?pageHistory&amp;resultDate=20191011113220</pageHistoryLink>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>1</exceptions>
+    </counts>
+    <runTimeInMillis>23975</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest</name>
+    <date>2019-10-11T11:32:44-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest?pageHistory&amp;resultDate=20191011113244</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>24209</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test02CreateParentAgencyTest</name>
+    <date>2019-10-11T11:33:08-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test02CreateParentAgencyTest?pageHistory&amp;resultDate=20191011113308</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9708</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test02bCreateChildAgencyTest</name>
+    <date>2019-10-11T11:33:18-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test02bCreateChildAgencyTest?pageHistory&amp;resultDate=20191011113318</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9703</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test03CreateParentAdvertiserTest</name>
+    <date>2019-10-11T11:33:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test03CreateParentAdvertiserTest?pageHistory&amp;resultDate=20191011113328</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8336</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test03bCreateChildAdvertiserTest</name>
+    <date>2019-10-11T11:33:36-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test03bCreateChildAdvertiserTest?pageHistory&amp;resultDate=20191011113336</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11953</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test03cCreateAusChildAdvertiserTest</name>
+    <date>2019-10-11T11:33:48-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test03cCreateAusChildAdvertiserTest?pageHistory&amp;resultDate=20191011113348</pageHistoryLink>
+    <counts>
+      <right>18</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12417</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test04CreateFinecastAccountTest</name>
+    <date>2019-10-11T11:34:01-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test04CreateFinecastAccountTest?pageHistory&amp;resultDate=20191011113401</pageHistoryLink>
+    <counts>
+      <right>35</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>33064</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test04bVerifyAllButtonsOnAccountTest</name>
+    <date>2019-10-11T11:34:34-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test04bVerifyAllButtonsOnAccountTest?pageHistory&amp;resultDate=20191011113434</pageHistoryLink>
+    <counts>
+      <right>29</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>31771</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test05CreateFinecastOpportunityTest</name>
+    <date>2019-10-11T11:35:06-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test05CreateFinecastOpportunityTest?pageHistory&amp;resultDate=20191011113506</pageHistoryLink>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11311</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test05bCreateFinecastAlertsVerificationOpportunityTest</name>
+    <date>2019-10-11T11:35:17-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test05bCreateFinecastAlertsVerificationOpportunityTest?pageHistory&amp;resultDate=20191011113517</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11692</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test06aCreateNewFinecastContactsTest</name>
+    <date>2019-10-11T11:35:29-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test06aCreateNewFinecastContactsTest?pageHistory&amp;resultDate=20191011113529</pageHistoryLink>
+    <counts>
+      <right>20</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>18468</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test06bCreateContactRolesTest</name>
+    <date>2019-10-11T11:35:47-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test06bCreateContactRolesTest?pageHistory&amp;resultDate=20191011113547</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10713</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test06cCreateContactRolesForAlertOppTest</name>
+    <date>2019-10-11T11:35:58-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test06cCreateContactRolesForAlertOppTest?pageHistory&amp;resultDate=20191011113558</pageHistoryLink>
+    <counts>
+      <right>9</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10597</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test07bCreateFinecastSellLineTest</name>
+    <date>2019-10-11T11:36:09-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test07bCreateFinecastSellLineTest?pageHistory&amp;resultDate=20191011113609</pageHistoryLink>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11401</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test07baCreateCurrPlusFifteenStartDateSellLineTest</name>
+    <date>2019-10-11T11:36:20-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test07baCreateCurrPlusFifteenStartDateSellLineTest?pageHistory&amp;resultDate=20191011113620</pageHistoryLink>
+    <counts>
+      <right>17</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10548</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test07cVerifyAllButtonsOnOppTest</name>
+    <date>2019-10-11T11:36:31-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test07cVerifyAllButtonsOnOppTest?pageHistory&amp;resultDate=20191011113631</pageHistoryLink>
+    <counts>
+      <right>44</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>89111</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test08AddOpportunityTeamTest</name>
+    <date>2019-10-11T11:38:00-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test08AddOpportunityTeamTest?pageHistory&amp;resultDate=20191011113800</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11723</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test09aCreateCaseAvailsTest</name>
+    <date>2019-10-11T11:38:12-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test09aCreateCaseAvailsTest?pageHistory&amp;resultDate=20191011113812</pageHistoryLink>
+    <counts>
+      <right>13</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11002</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test09bCloseCaseAvailsTest</name>
+    <date>2019-10-11T11:38:23-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test09bCloseCaseAvailsTest?pageHistory&amp;resultDate=20191011113823</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6489</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test09cCreateCaseAvailsFromCaseSectionTest</name>
+    <date>2019-10-11T11:38:29-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test09cCreateCaseAvailsFromCaseSectionTest?pageHistory&amp;resultDate=20191011113829</pageHistoryLink>
+    <counts>
+      <right>14</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10201</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test10aCreateCaseCampaignManagementTest</name>
+    <date>2019-10-11T11:38:40-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test10aCreateCaseCampaignManagementTest?pageHistory&amp;resultDate=20191011113840</pageHistoryLink>
+    <counts>
+      <right>11</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10515</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test10bCloseCaseCampaignManagementTest</name>
+    <date>2019-10-11T11:38:50-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test10bCloseCaseCampaignManagementTest?pageHistory&amp;resultDate=20191011113850</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>7053</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test10cCreateCaseCampaignManagementFromCaseSectionTest</name>
+    <date>2019-10-11T11:38:57-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test10cCreateCaseCampaignManagementFromCaseSectionTest?pageHistory&amp;resultDate=20191011113857</pageHistoryLink>
+    <counts>
+      <right>12</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>9572</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test11aCreateCaseCreativesTest</name>
+    <date>2019-10-11T11:39:07-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test11aCreateCaseCreativesTest?pageHistory&amp;resultDate=20191011113907</pageHistoryLink>
+    <counts>
+      <right>15</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11538</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test11bCloseCaseCreativesTest</name>
+    <date>2019-10-11T11:39:19-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test11bCloseCaseCreativesTest?pageHistory&amp;resultDate=20191011113919</pageHistoryLink>
+    <counts>
+      <right>5</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>6611</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test11cCreateCaseCreativesFromCaseSectionTest</name>
+    <date>2019-10-11T11:39:25-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test11cCreateCaseCreativesFromCaseSectionTest?pageHistory&amp;resultDate=20191011113925</pageHistoryLink>
+    <counts>
+      <right>16</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>10387</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test13aOppValidationRulesTest</name>
+    <date>2019-10-11T11:39:36-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test13aOppValidationRulesTest?pageHistory&amp;resultDate=20191011113936</pageHistoryLink>
+    <counts>
+      <right>137</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>199001</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15aDeleteCaseAvailsTest</name>
+    <date>2019-10-11T11:42:55-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15aDeleteCaseAvailsTest?pageHistory&amp;resultDate=20191011114255</pageHistoryLink>
+    <counts>
+      <right>6</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>8259</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15bDeleteCaseCampaignManagementTest</name>
+    <date>2019-10-11T11:43:03-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15bDeleteCaseCampaignManagementTest?pageHistory&amp;resultDate=20191011114303</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5262</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15cDeleteCaseCreativesTest</name>
+    <date>2019-10-11T11:43:09-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15cDeleteCaseCreativesTest?pageHistory&amp;resultDate=20191011114309</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5151</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15dDeleteCaseAvailsFromCasesTest</name>
+    <date>2019-10-11T11:43:14-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15dDeleteCaseAvailsFromCasesTest?pageHistory&amp;resultDate=20191011114314</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4712</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15eDeleteCaseCampaignManagementFromCasesTest</name>
+    <date>2019-10-11T11:43:19-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15eDeleteCaseCampaignManagementFromCasesTest?pageHistory&amp;resultDate=20191011114319</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4851</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15fDeleteCaseCreativesFromCasesTest</name>
+    <date>2019-10-11T11:43:24-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15fDeleteCaseCreativesFromCasesTest?pageHistory&amp;resultDate=20191011114324</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4879</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15gUpdateOppStagesTest</name>
+    <date>2019-10-11T11:43:28-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15gUpdateOppStagesTest?pageHistory&amp;resultDate=20191011114328</pageHistoryLink>
+    <counts>
+      <right>33</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>33342</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15hcOppAlertsTest</name>
+    <date>2019-10-11T11:44:02-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test15hcOppAlertsTest?pageHistory&amp;resultDate=20191011114402</pageHistoryLink>
+    <counts>
+      <right>24</right>
+      <wrong>1</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>43839</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16aDeleteOpportunityTest</name>
+    <date>2019-10-11T11:44:46-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16aDeleteOpportunityTest?pageHistory&amp;resultDate=20191011114446</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>11896</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16aaDeleteAlertOpportunityTest</name>
+    <date>2019-10-11T11:44:58-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16aaDeleteAlertOpportunityTest?pageHistory&amp;resultDate=20191011114458</pageHistoryLink>
+    <counts>
+      <right>8</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>12119</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16bDeleteAccountTest</name>
+    <date>2019-10-11T11:45:10-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16bDeleteAccountTest?pageHistory&amp;resultDate=20191011114510</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5492</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16cDeleteChildAgencyTest</name>
+    <date>2019-10-11T11:45:16-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16cDeleteChildAgencyTest?pageHistory&amp;resultDate=20191011114516</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5154</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16dDeleteChildAdvertiserTest</name>
+    <date>2019-10-11T11:45:21-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16dDeleteChildAdvertiserTest?pageHistory&amp;resultDate=20191011114521</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5419</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16eDeleteAusChildAdvertiserTest</name>
+    <date>2019-10-11T11:45:26-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16eDeleteAusChildAdvertiserTest?pageHistory&amp;resultDate=20191011114526</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5396</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16fDeleteParentAgencyTest</name>
+    <date>2019-10-11T11:45:32-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16fDeleteParentAgencyTest?pageHistory&amp;resultDate=20191011114532</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>4990</runTimeInMillis>
+  </pageHistoryReference>
+  <pageHistoryReference>
+    <name>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16gDeleteParentAdvertiserTest</name>
+    <date>2019-10-11T11:45:37-04:00</date>
+    <pageHistoryLink>BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test16gDeleteParentAdvertiserTest?pageHistory&amp;resultDate=20191011114537</pageHistoryLink>
+    <counts>
+      <right>4</right>
+      <wrong>0</wrong>
+      <ignores>0</ignores>
+      <exceptions>0</exceptions>
+    </counts>
+    <runTimeInMillis>5533</runTimeInMillis>
+  </pageHistoryReference>
+  <executionLog>
+    <testSystem>slim:fitnesse.slim.SlimService</testSystem>
+    <command>"C:/Program Files/Java/jdk1.8.0_91\bin\java" -cp C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\Desktop\FitNesseWithSelenium\target\classes;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\2.53.0\selenium-remote-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\testng\testng\6.9.10\testng-6.9.10.jar;C:\Users\SumonK\.m2\repository\com\relevantcodes\extentreports\2.40.2\extentreports-2.40.2.jar;C:\Users\SumonK\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\SumonK\.m2\repository\org\jsoup\jsoup\1.8.3\jsoup-1.8.3.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-server\2.53.0\selenium-server-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-java\2.53.0\selenium-java-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\beust\jcommander\1.48\jcommander-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.48\bcprov-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.48\bcpkix-jdk15on-1.48.jar;C:\Users\SumonK\.m2\repository\mx4j\mx4j-tools\3.0.1\mx4j-tools-3.0.1.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-repacked\9.2.13.v20150730\jetty-repacked-9.2.13.v20150730.jar;C:\Users\SumonK\.m2\repository\javax\servlet\javax.servlet-api\3.1.0\javax.servlet-api-3.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\jetty-rc-repacked\5\jetty-rc-repacked-5.jar;C:\Users\SumonK\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar;C:\Users\SumonK\.m2\repository\org\yaml\snakeyaml\1.8\snakeyaml-1.8.jar;C:\Users\SumonK\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-api\2.53.0\selenium-api-2.53.0.jar;C:\Users\SumonK\.m2\repository\com\google\code\gson\gson\2.3.1\gson-2.3.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpclient\4.5.1\httpclient-4.5.1.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpcore\4.4.3\httpcore-4.4.3.jar;C:\Users\SumonK\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\SumonK\.m2\repository\cglib\cglib-nodep\2.1_3\cglib-nodep-2.1_3.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna\4.1.0\jna-4.1.0.jar;C:\Users\SumonK\.m2\repository\net\java\dev\jna\jna-platform\4.1.0\jna-platform-4.1.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\2.53.0\selenium-chrome-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\2.53.0\selenium-edge-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-htmlunit-driver\2.53.0\selenium-htmlunit-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit\2.18\htmlunit-2.18.jar;C:\Users\SumonK\.m2\repository\xalan\xalan\2.7.2\xalan-2.7.2.jar;C:\Users\SumonK\.m2\repository\xalan\serializer\2.7.2\serializer-2.7.2.jar;C:\Users\SumonK\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\SumonK\.m2\repository\org\apache\httpcomponents\httpmime\4.5\httpmime-4.5.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\htmlunit\htmlunit-core-js\2.17\htmlunit-core-js-2.17.jar;C:\Users\SumonK\.m2\repository\xerces\xercesImpl\2.11.0\xercesImpl-2.11.0.jar;C:\Users\SumonK\.m2\repository\xml-apis\xml-apis\1.4.01\xml-apis-1.4.01.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\nekohtml\nekohtml\1.9.22\nekohtml-1.9.22.jar;C:\Users\SumonK\.m2\repository\net\sourceforge\cssparser\cssparser\0.9.16\cssparser-0.9.16.jar;C:\Users\SumonK\.m2\repository\org\w3c\css\sac\1.3\sac-1.3.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-client\9.2.12.v20150709\websocket-client-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-util\9.2.12.v20150709\jetty-util-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\jetty-io\9.2.12.v20150709\jetty-io-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-common\9.2.12.v20150709\websocket-common-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\org\eclipse\jetty\websocket\websocket-api\9.2.12.v20150709\websocket-api-9.2.12.v20150709.jar;C:\Users\SumonK\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\2.53.0\selenium-firefox-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\2.53.0\selenium-ie-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\2.53.0\selenium-safari-driver-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-support\2.53.0\selenium-support-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\webbitserver\webbit\0.4.14\webbit-0.4.14.jar;C:\Users\SumonK\.m2\repository\io\netty\netty\3.5.2.Final\netty-3.5.2.Final.jar;C:\Users\SumonK\.m2\repository\org\seleniumhq\selenium\selenium-leg-rc\2.53.0\selenium-leg-rc-2.53.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-api\1.7.12\slf4j-api-1.7.12.jar;C:\Users\SumonK\.m2\repository\com\opera\operadriver\1.1\operadriver-1.1.jar;C:\Users\SumonK\.m2\repository\com\opera\operalaunchers\1.1\operalaunchers-1.1.jar;C:\Users\SumonK\.m2\repository\com\google\protobuf\protobuf-java\2.4.1\protobuf-java-2.4.1.jar;C:\Users\SumonK\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\SumonK\.m2\repository\org\ini4j\ini4j\0.5.2\ini4j-0.5.2.jar;C:\Users\SumonK\.m2\repository\com\codeborne\phantomjsdriver\1.2.1\phantomjsdriver-1.2.1.jar;C:\Users\SumonK\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\SumonK\.m2\repository\org\json\json\20140107\json-20140107.jar;C:\Users\SumonK\.m2\repository\com\google\guava\guava\14.0\guava-14.0.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\fitnesse\20151230\fitnesse-20151230.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmlparser\2.1\htmlparser-2.1.jar;C:\Users\SumonK\.m2\repository\org\htmlparser\htmllexer\2.1\htmllexer-2.1.jar;C:\Users\SumonK\.m2\repository\org\apache\velocity\velocity\1.7\velocity-1.7.jar;C:\Users\SumonK\.m2\repository\com\googlecode\java-diff-utils\diffutils\1.3.0\diffutils-1.3.0.jar;C:\Users\SumonK\.m2\repository\org\slf4j\slf4j-simple\1.7.12\slf4j-simple-1.7.12.jar;C:\Users\SumonK\.m2\repository\org\fitnesse\plugins\maven-classpath-plugin\1.9\maven-classpath-plugin-1.9.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-embedder\3.0.4\maven-embedder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings\3.0.4\maven-settings-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-core\3.0.4\maven-core-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model\3.0.4\maven-model-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-settings-builder\3.0.4\maven-settings-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-repository-metadata\3.0.4\maven-repository-metadata-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-artifact\3.0.4\maven-artifact-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-aether-provider\3.0.4\maven-aether-provider-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-spi\1.13.1\aether-spi-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-impl\1.13.1\aether-impl-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-api\1.13.1\aether-api-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\sonatype\aether\aether-util\1.13.1\aether-util-1.13.1.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-plugin-api\3.0.4\maven-plugin-api-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-model-builder\3.0.4\maven-model-builder-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\maven-compat\3.0.4\maven-compat-3.0.4.jar;C:\Users\SumonK\.m2\repository\org\apache\maven\wagon\wagon-provider-api\2.2\wagon-provider-api-2.2.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.6\plexus-utils-2.0.6.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4\plexus-classworlds-2.4.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\2.3.0\sisu-inject-plexus-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-inject-bean\2.3.0\sisu-inject-bean-2.3.0.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\SumonK\.m2\repository\org\sonatype\sisu\sisu-guava\0.9.9\sisu-guava-0.9.9.jar;C:\Users\SumonK\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SumonK\.m2\repository\org\sonatype\plexus\plexus-cipher\1.7\plexus-cipher-1.7.jar;C:\Users\SumonK\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar fitnesse.slim.SlimService 8090</command>
+    <exitCode>0</exitCode>
+    <stdOut>:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Text value - Sumon Kashem exist as expected
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Tania David (tania.david@finecast.com.fcqa2) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - Aus QA Test Finecast Parent Agency-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - Aus QA Test Finecast Child Agency-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - Aus QA Test Finecast Parent Advertiser-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Opt-in Status Date Link
+Clicking on Save Button
+Text value - Aus QA Test Finecast Child Advertiser-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Opt-in Status Date Link
+Clicking on Save Button
+Text value - UK QA Test Finecast Child Advertiser-191011-1125 exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Create Account Button
+Text value - Agency and Advertiser must be from same Market. exist as expected
+Clicking on Create Account Button
+Text value - Agency and Advertiser must be from same Market. exist as expected
+Attribute value - Aus QA Test Finecast Child Agency-191011-1125 - AUS - Aus QA Test Finecast Child Advertiser-191011-1125 exist as expected
+clearing field
+Clicking on Save Button
+Text value - Finecast exist as expected
+Text value - QA Test Finecast AUS Account-191011-1125 [View Hierarchy] exist as expected
+Text value - Australia exist as expected
+Clicking on Edit Button
+clearing field
+Clicking on Save Button
+Text value - You cannot edit Brand once Account is created exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000Vzyk4
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on New Contact Button
+Clicking on Cancel Button
+Clicking on Merge Contacts Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000Vzyk4
+Clicking on New Opportunity Button
+Clicking on Cancel Button
+Clicking on New Button
+Clicking on Cancel Button
+Clicking on New Case Button
+Clicking on Cancel Button
+Clicking on New Task Button
+Clicking on Cancel Button
+Clicking on New Event Button
+Clicking on Cancel Button
+Clicking on Log a Call Button
+Clicking on Cancel Button
+Clicking on New Note Button
+Clicking on Cancel Button
+Clicking on Add Team Button
+Clicking on Cancel Button
+Clicking on Attach File Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000Vzyk4
+Clicking on New Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - QA Test Finecast AUS Opportunity-191011-1125 exist as expected
+Text value - 25% exist as expected
+Text value - Aus Brand exist as expected
+Text value - FC-APAC exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on Contact Roles 'New' Button
+clearing field
+Clicking on Save Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on New Buy Line Button
+Text value - QA Test Finecast Buy Line-191011-1125 exist as expected
+Text value - 4,000 exist as expected
+Text value - FC-APAC exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on Clone Button
+Clicking on Cancel Button
+Clicking on Change Curreny Code Button
+Clicking on Back to Opportunity Button
+Clicking on Create Documents Button
+Clicking on Back to Opportunity Button
+Clicking on Send Email to Opp Button
+Clicking on Cancel Button
+Clicking on New Avails Case Button
+Clicking on Cancel Button
+Clicking on New Camp Management Case Button
+Clicking on Cancel Button
+Clicking on New Creatives Case Button
+Clicking on Cancel Button
+Clicking on New Buy Line Button
+Clicking on Cancel Button
+Clicking on New Button
+Clicking on Cancel Button
+Clicking on Cancel Button
+Clicking on Cancel Button
+Clicking on Cancel Button
+Clicking on New Task Button
+Clicking on Cancel Button
+Clicking on New Event Button
+Clicking on Cancel Button
+Clicking on Log a Call Button
+Clicking on Cancel Button
+Clicking on Send An Email Button
+Clicking on Cancel Button
+Clicking on New Note Button
+Clicking on Cancel Button
+Clicking on Attach File Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on Add Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on New Avails Case Button
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast AU Ops [Change] exist as expected
+Text value - Avails exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0Ah
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 10% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 25% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 50% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 75% exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQ8
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 100% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 0% exist as expected
+Text value - Closed Lost exist as expected
+Clicking on User Nav Arrow
+Clicking on Log Out Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0Ah
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBCXQA2?nooverride=1
+Clicking on Delete Button
+Clicking on Delete Anyway Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000Vzyk4
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXPy
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQD
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQ8
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXPt
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQ3
+Clicking on Delete Button
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Opt-in Status Date Link
+Clicking on Save Button
+Fail - Verification object is not present/visible
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Text value - Sumon Kashem exist as expected
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Livvy Button (livvy.button@finecast.com.fcqa2) exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - QA Test Finecast Parent Agency-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - QA Test Finecast Child Agency-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Save Button
+Text value - QA Test Finecast Parent Advertiser-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Opt-in Status Date Link
+Clicking on Save Button
+Text value - QA Test Finecast Child Advertiser-191011-1125 exist as expected
+Clicking on + icon Tab
+Clicking on Companies Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Opt-in Status Date Link
+Clicking on Save Button
+Text value - QA Test Finecast Child Advertiser-191011-1125 --AUS exist as expected
+Clicking on Accounts Tab
+Clicking on New Button
+Clicking on Continue Button
+Clicking on Brand Text Field
+Clicking on Create Account Button
+Text value - Agency and Advertiser must be from same Market. exist as expected
+Clicking on Create Account Button
+Attribute value - QA Test Finecast Child Agency-191011-1125 - GRB - QA Test Finecast Child Advertiser-191011-1125 exist as expected
+clearing field
+Clicking on Save Button
+Text value - Finecast exist as expected
+Text value - QA Test Finecast UK Account-191011-1125 [View Hierarchy] exist as expected
+Text value - United Kingdom exist as expected
+Text value - 001 exist as expected
+Text value - Credit Exceeded exist as expected
+Text value - Opt-In Notes Test exist as expected
+Text value - 11/10/2019 exist as expected
+Text value - Appliances exist as expected
+Clicking on Edit Button
+clearing field
+Clicking on Save Button
+Text value - You cannot edit Brand once Account is created exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000VzymP
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on New Contact Button
+Clicking on Cancel Button
+Clicking on Merge Contacts Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000VzymP
+Clicking on New Opportunity Button
+Clicking on Cancel Button
+Clicking on New Button
+Clicking on Cancel Button
+Clicking on New Case Button
+Clicking on Cancel Button
+Clicking on New Task Button
+Clicking on Cancel Button
+Clicking on New Event Button
+Clicking on Cancel Button
+Clicking on Log a Call Button
+Clicking on Cancel Button
+Clicking on New Note Button
+Clicking on Cancel Button
+Clicking on Add Team Button
+Clicking on Cancel Button
+Clicking on Attach File Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000VzymP
+Clicking on New Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - QA Test Finecast UK Opportunity-191011-1125 exist as expected
+Text value - 25% exist as expected
+Text value - Credit Exceeded exist as expected
+Text value - Appliances exist as expected
+Text value - UK Brand exist as expected
+Text value - FC-EMEA exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000VzymP
+Clicking on New Button
+clearing field
+clearing field
+Clicking on Save Button
+Text value - QA Test Finecast UK Opportunity-191011-1125 -- Alert exist as expected
+Text value - 25% exist as expected
+Text value - Credit Exceeded exist as expected
+Text value - Appliances exist as expected
+Text value - FC-EMEA exist as expected
+Clicking on + icon Tab
+Clicking on Contacts Tab
+Clicking on New Button
+Clicking on Save Button
+Text value - Finecast Contacts exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Contact Roles 'New' Button
+clearing field
+Clicking on Save Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBDBQA2?nooverride=1
+Clicking on Contact Roles 'New' Button
+clearing field
+Clicking on Save Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on New Buy Line Button
+Text value - QA Test Finecast Buy Line-191011-1125 exist as expected
+Text value - 4,000 exist as expected
+Text value - FC-EMEA exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBDBQA2?nooverride=1
+Clicking on New Buy Line Button
+Text value - QA Test Finecast Buy Line-191011-1125 exist as expected
+Text value - 4,000 exist as expected
+Text value - FC-EMEA exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Edit Button
+Clicking on Cancel Button
+Clicking on Delete Button
+Clicking on Clone Button
+Clicking on Cancel Button
+Clicking on Enhanced Clone Button
+Text value - - Cloned exist as expected
+Clicking on Change Curreny Code Button
+Clicking on Back to Opportunity Button
+Clicking on Create Documents Button
+Clicking on Back to Opportunity Button
+Clicking on Send Email to Opp Button
+Clicking on Cancel Button
+Clicking on New Avails Case Button
+Clicking on Cancel Button
+Clicking on New Camp Management Case Button
+Clicking on Cancel Button
+Clicking on New Creatives Case Button
+Clicking on Cancel Button
+Clicking on New Buy Line Button
+Clicking on Cancel Button
+Clicking on New Button
+Clicking on Cancel Button
+Clicking on Cancel Button
+Clicking on Cancel Button
+Clicking on Cancel Button
+Clicking on New Task Button
+Clicking on Cancel Button
+Clicking on New Event Button
+Clicking on Cancel Button
+Clicking on Log a Call Button
+Clicking on Cancel Button
+Clicking on Send An Email Button
+Clicking on Cancel Button
+Clicking on New Note Button
+Clicking on Cancel Button
+Clicking on Attach File Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Add Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on New Avails Case Button
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast UK Ops [Change] exist as expected
+Text value - Avails exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0Bw
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast UK Ops [Change] exist as expected
+Text value - Avails exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on New Campaign Management Case Button
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast UK Ops [Change] exist as expected
+Text value - Campaign Managemen exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0CB
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast UK Ops [Change] exist as expected
+Text value - Campaign Managemen exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on New Creatives Case Button
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast UK Ops [Change] exist as expected
+Text value - Creatives exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0CL
+Clicking on Close Case Button
+Clicking on Save Button
+Text value - Closed exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Opp Buyline Checkbox
+Clicking on Add Selected Button
+Clicking on Save Button
+Text value - Finecast UK Ops [Change] exist as expected
+Text value - Creatives exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Text value - You cannot update Opportunity Stage to IO Received or Closed Won/Live if Advertiser Opt-in Status = Credit Exceeded. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Text value - You cannot update Opportunity Stage to IO Received or Closed Won/Live if Advertiser Opt-in Status = Credit Exceeded. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - The Advertiser does not have the required Opt-In Status, please contact Finecast Finance to obtain the necessary permissions. exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - IO Received exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - Live exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - IO Received exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - Live exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - IO Received exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - Live exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - IO Received exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Save Button
+Text value - Live exist as expected
+Clicking on User Nav Arrow
+Clicking on Log Out Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0Bw
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0CB
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0CL
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0C1
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0CG
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/5001F000004v0CV
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 10% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 25% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 50% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 75% exist as expected
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 100% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 0% exist as expected
+Text value - Closed Lost exist as expected
+:::::::::::::::::: CLOSING ALL INSTANCES OF CHROME BROWSER AND DRIVER ::::::::::::::::::
+================= STARTING AUTOMATION TEST ON ENVIRONMENT: STAGING =================
+Chrome Browser is used
+Navigating to url https://test.salesforce.com
+Clicking on LogIn Button
+Text value - Sumon Kashem exist as expected
+Clicking on Search Button
+Clicking on Display Name Link
+Clicking on User Action Dropdown
+Clicking on User Detail Link
+Clicking on LogIn Button
+Text value - Logged in as Livvy Button (livvy.button@finecast.com.fcqa2) exist as expected
+Clicking on User Nav Button
+Clicking on Logout Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBDBQA2?nooverride=1
+Clicking on Edit Button
+Clicking on Save Button
+Text value - 50% exist as expected
+Clicking on Edit Button
+Clicking on Save Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBD6QAM?nooverride=1
+Clicking on Delete Button
+Clicking on Delete Anyway Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0061F000007pBDBQA2?nooverride=1
+Clicking on Delete Button
+Clicking on Delete Anyway Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/0011F00000VzymP
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQS
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQc
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQh
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQN
+Clicking on Delete Button
+Navigating to url https://finecast--fcqa2.my.salesforce.com/a011F00000BMXQX
+Clicking on Delete Button
+</stdOut>
+    <stdErr>Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 12008
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 62382
+Only local connections are allowed.
+Starting ChromeDriver 2.44.609538 (b655c5a60b0b544917107a59d4153d4bf78e1b90) on port 25270
+Only local connections are allowed.
+</stdErr>
+  </executionLog>
+  <finalCounts>
+    <right>66</right>
+    <wrong>1</wrong>
+    <ignores>1</ignores>
+    <exceptions>1</exceptions>
+  </finalCounts>
+  <totalRunTimeInMillis>1229005</totalRunTimeInMillis>
+</suiteResults>
+

@@ -1,0 +1,2 @@
+!define SalesForce_Xport_UserName_Field {brett.giroux2@xaxis.com.globalqa}
+!define SalesForce_Xport_Password_Field {xaxisAuto#1}

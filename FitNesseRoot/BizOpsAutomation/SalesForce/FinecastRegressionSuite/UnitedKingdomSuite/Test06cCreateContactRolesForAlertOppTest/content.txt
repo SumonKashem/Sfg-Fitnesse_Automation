@@ -1,0 +1,30 @@
+'''Scenario Name: ''' Create a Opp Contact Roles
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to Opp page
+   Scroll into Contact Roles 'New' button
+   Click on New button
+   Clear first contact field
+   Enter a contact on first contact field
+   Click on 'Save' button
+**********!
+#|objectVerification;|${SalesForce_SellLine_Business_Unit_Text}|Finecast|Business Unit on Detail Page|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test06cFncast-Create a Contact Role From Opp|
+|open;|$finecastOpp2PageUrl|
+|scrollIntoView;|${SalesForce_Opportunities_Contact_Roles_New_Button}|
+|click;|${SalesForce_Opportunities_Contact_Roles_New_Button}|Contact Roles 'New' Button|
+|clear;|${SalesForce_Opportunities_Contact_Roles_First_Field}|First Contact Field|
+|type;|${SalesForce_Opportunities_Contact_Roles_First_Field}|${contactRoleName}|First Contact Field|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|wait;|1000|
+|selectDropDownByText;|${SalesForce_Contacts_Role1_Dropdown}|${contactRoleName}|Contact Role 1 Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|elementVerification;|${Finecast_Contact_Roles_User_Text_Link}|Yes|Contact Role User Link|
+|stopExtentReport;|
+**********!

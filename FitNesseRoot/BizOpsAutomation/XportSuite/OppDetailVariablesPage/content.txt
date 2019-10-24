@@ -1,0 +1,1 @@
+!define SalesForce_Xport_Opp_Detail_Label_Text {//*[text()="Opportunity Detail"]}

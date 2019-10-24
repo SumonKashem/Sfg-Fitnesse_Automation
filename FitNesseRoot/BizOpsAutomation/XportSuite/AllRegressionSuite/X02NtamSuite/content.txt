@@ -1,0 +1,7 @@
+!*< [configurations]
+!include .BizOpsAutomation.XportSuite
+*!
+
+!***** MARKETS
+[[USA][X02NtamSuite.UsaSuite]]
+**********!

@@ -1,0 +1,48 @@
+!*< [configurations]
+#!include .BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Verify all buttons on Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** SFG User Story Link(s)
+   https://xaxistech.atlassian.net/browse/SFG-2393
+**********!
+#|$finecastAccountPageUrl=|returnValue;|https://finecast--fcqa2.my.salesforce.com/0011F00000VQJpm|
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_Australia_Suite_${PAGE_NAME}|Test04bFncast-Verify all buttons on Account|
+|open;|$finecastAusAccountPageUrl|
+|click;|${SalesForce_Accounts_Edit_Button}|Edit Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_Delete_Button}|Delete Button|
+|cancelAlert;|
+|click;|${SalesForce_Accounts_New_Contact_Button}|New Contact Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_Merge_Contacts_Button}|Merge Contacts Button|
+|elementVerification;|${SalesForce_Accounts_Merge_Contacts_Label}|Yes|Merge Contacts Label|
+|open;|$finecastAusAccountPageUrl|
+|click;|${SalesForce_Opportunities_New_Opp_Button}|New Opportunity Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_New_Button}|New Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_New_Case_Button}|New Case Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_NewTask_Button}|New Task Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_NewEvent_Button}|New Event Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_Log_a_Call_Button}|Log a Call Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_New_Note_Button}|New Note Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|scroll;|Vertical|8000|
+|click;|${SalesForce_Accounts_Team_Add_Button}|Add Team Button|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|click;|${SalesForce_Accounts_Attach_File_Button}|Attach File Button|
+|elementVerification;|${SalesForce_Accounts_Choose_File_Content}|Yes|Choose File Content|
+|stopExtentReport;|
+**********!

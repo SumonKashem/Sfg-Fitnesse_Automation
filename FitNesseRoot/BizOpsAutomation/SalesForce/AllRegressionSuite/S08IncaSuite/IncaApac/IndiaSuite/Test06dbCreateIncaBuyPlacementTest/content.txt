@@ -1,0 +1,55 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.AllRegressionSuite.S08IncaSuite.IncaApac.IndiaSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Create an INCA Buy Placement
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+'''SFG SUBTASK LINK:''' https://xaxistech.atlassian.net/browse/SFG-1944
+
+!***** Manual Test Steps
+   Search for 'Sell Line'
+   Navigate to INCA Sell Line Url
+   Scroll Into New Buy Placement Button
+   Click on 'New Buy Placement' button
+   Enter Buy Placement Name
+   Select Package Type as 'None'
+   Click on Save button
+   Verify Package Type Required Error Mesage
+   Select Package Type from drop down
+   Enter Planned Payable Cost as 50
+   Enter Third Party Cost as 50
+   Click on 'Save' button
+   Capture placement auto number and store it in to a variable for reusability
+   Verify Record Type is 'INCA'
+   Verify Accurate Sell Number appears on Buy Placement page
+   Verify Planned Payable Cost
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|APAC_INCA_India_Suite_${PAGE_NAME}|Test06dINCAInd-Create an 'INCA' Fee Buy Placement|
+|$incaIndSellLineURL=|returnValue;|
+|open;|$incaIndSellLineURL|https://cs36.salesforce.com/a012h000000OoVh|
+|scrollIntoView;|${SalesForce_BuyPlacement_New_Buy_Placement_Button}|
+|clickByJavaScript;|${SalesForce_BuyPlacement_New_Buy_Placement_Button}|New Buy Placement Button|
+|type;|${SalesForce_BuyPlacement_Name_Field}|INCA FeeOrder BP|Buy Placement Name Field|
+|type;|${SalesForce_BuyPlacement_Planned_Payable_Cost_Field}|50|Planned Payable Cost Field|
+|selectDropDownByText;|${SalesForce_BuyPlacement_Supplier_Type_Dropdown}|Publisher - Website|Supplier Type Dropdown|
+|verifyDropDownValueFromExcel;|INCA_APAC|Publishers - Website|${SalesForce_BuyPlacement_Supplier_Dropdown}|Supplier Dropdown|
+|selectDropDownByIndex;|${SalesForce_BuyPlacement_Adformat_Picklist}|1|Adformat Picklist|
+|clickByIndexJavaScript;|${SalesForce_BuyPlacement_Picklist_Right_Arrow}|0|Adformat Right Arrow|
+|selectDropDownByIndex;|${SalesForce_BuyPlacement_Supplier_Dropdown}|1|Supplier Dropdown|
+|selectDropDownByIndex;|${SalesForce_BuyPlacement_INCA_Channel_Picklist}|1|INCA Channel Picklist|
+|clickByIndexJavaScript;|${SalesForce_BuyPlacement_Picklist_Right_Arrow}|1|INCA Channel Right Arrow|
+|elementVerification;|${SalesForce_BuyPlacement_Confirmed_Live_Checkbox}|Yes|Buy Placement Confirmed Live Checkbox|
+|clickByJavaScript;|${SalesForce_BuyPlacement_Save_Button}|Save Button|
+|$buyPlacementNumber=|getValue;|${SalesForce_BuyPlacement_AutoNumber}|Buy Placement Number|
+|objectVerification;|${SalesForce_BuyPlacement_RecordType_Text}|INCA-APAC [Change]|Record Type Text|
+|objectVerification;|${SalesForce_BuyPlacement_SellLineNumber_Text}|$sellLineNo|Sell Line Number Text on Buy Line page|
+|objectVerification;|${SalesForce_BuyLine_Details_Planned_Payable_Cost_Field}|USD 50.00|Planned Payabled Cost Field|
+|$incaIndFeeBuyPlacementPageUrl=|getCurrentUrl;|
+|stopExtentReport;|
+**********!

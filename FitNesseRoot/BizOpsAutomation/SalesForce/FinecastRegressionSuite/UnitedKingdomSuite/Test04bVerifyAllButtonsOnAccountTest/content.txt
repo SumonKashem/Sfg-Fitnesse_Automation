@@ -1,0 +1,19 @@
+'''Scenario Name: ''' Verify all buttons on Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** SFG User Story Link(s)
+   https://xaxistech.atlassian.net/browse/SFG-2393
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test04bFncast-Verify all buttons on Account|
+|open;|$finecastAccountPageUrl|
+|click;|${SalesForce_Accounts_Edit_Button}|Edit Button|
+|elementVerification;|${SalesForce_Accounts_Edit_Label}|Yes|Account Edit Label|
+|click;|${SalesForce_Accounts_Cancel_Button}|Cancel Button|
+|stopExtentReport;|
+**********!

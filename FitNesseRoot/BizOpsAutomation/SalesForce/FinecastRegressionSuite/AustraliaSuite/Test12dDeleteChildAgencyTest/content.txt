@@ -1,0 +1,21 @@
+'''Scenario Name: ''' Delete child agency
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Manual Test Steps
+   Navigate to child agency page
+   Click on Delete button
+   Accept the alert
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_Australia_Suite_${PAGE_NAME}|Test12dFncast-Delete Child agency|
+|open;|$finecastAusChildAgencyPageUrl|
+|click;|${SalesForce_Opportunities_Delete_Button}|Delete Button|
+|wait;|1000|
+|acceptAlert;|
+|stopExtentReport;|
+**********!

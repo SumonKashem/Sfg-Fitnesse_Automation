@@ -1,0 +1,23 @@
+!*< [configurations]
+!include .BizOpsAutomation.XportSuite.AllRegressionSuite.X02NtamSuite.UsaSuite.Test01LogInUsUserTest
+*!
+
+'''Scenario Name: ''' Click on Xport button from SFG Opp Verification
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Story Link(s)
+   https://xaxistech.atlassian.net/browse/SFG-2308
+   https://xaxistech.atlassian.net/browse/SFG-2309
+**********!
+
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|NTAM_USA_Suite_${PAGE_NAME}|Test02US-Click on Xport button from SFG Opp Verification|
+|open;|https://cs36.salesforce.com/0062h000002U6hJAAS|
+|click;|${SalesForce_Xport_Opportunies_Xport_Button}|Xport Button|
+|elementVerification;|${SalesForce_Xport_Opp_Detail_Label_Text}|True|Opp Detail Text Label|
+|stopExtentReport;|
+**********!

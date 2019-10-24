@@ -1,0 +1,53 @@
+!*< [configurations]
+!include .BizOpsAutomation.SalesForce.FinecastRegressionSuite.UnitedKingdomSuite.Test01LogInUserTest
+*!
+
+'''Scenario Name: ''' Opp Validation Rules should access Advertiser Opt-In Instead of Account
+'''TEST TYPE: ''' Manual
+'''TEST DESIGNER:''' Sumon Kashem
+'''EXECUTION STATUS (<P/F/N><iteration>):'''
+'''DEFECT:''' none
+
+!***** Story Link(s) Covered in this test
+   https://xaxistech.atlassian.net/browse/SFG-2439
+**********!
+!define finecastOppPageUrl {https://finecast--fcqa2.my.salesforce.com/0061F000007bfjRQAQ}
+!define finecastChildAdvertiserPageUrl {https://finecast--fcqa2.my.salesforce.com/a011F00000B9uR9}
+!***** Automated Test Steps
+!|script|DriverClass|
+|startExtentReport;|Finecast_UK_Suite_${PAGE_NAME}|Test13aFncast-Opp Validation Rules should access Advertiser Opt-In|
+|open;|$finecastOppPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Pitch|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|10%|Probability % Field|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Forecast|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|25%|Probability % Field|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Response to Brief|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|50%|Probability % Field|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Confirmed|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|75%|Probability % Field|
+|open;|$finecastChildAdvertiserPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Companies_Opt_In_Status_Dropdown}|Signed (Full)|Opt-in Status Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|open;|$finecastOppPageUrl|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Live|Stage Dropdown|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|100%|Probability % Field|
+|click;|${SalesForce_Opportunities_Edit_Button}|Edit Button|
+|selectDropDownByText;|${SalesForce_Opportunities_Stage_DropDown}|Closed Lost|Stage Dropdown|
+|selectDropDownByIndex;|${SalesForce_Opportunities_Finecast_Closed_Lost_Reason_Dropdown}|1|Cosed Lost Reason Dropdown|
+|type;|${SalesForce_Opportunities_Finecast_Closed_Lost_Detail_Field}|Test|Closed Lost Detail Field|
+|click;|${SalesForce_Opportunities_Save_Button}|Save Button|
+|objectVerification;|${SalesFroce_Opportunities_Probablity_Percentage_Text_Field}|0%|Probability % Field|
+|objectVerification;|${SalesForce_Opportunities_Stage_label_Content}|Closed Lost|Stage Label Field|
+|stopExtentReport;|
+**********!
